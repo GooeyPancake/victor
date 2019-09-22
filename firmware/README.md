@@ -35,7 +35,7 @@ openssl dgst \
 OTA images are `tar.gz` files with an `.ota` extension containing four files within:
 
 ```sh
-└── latest.ota
+└── 1.6.0.3331.ota
     ├── apq8009-robot-boot.img.gz (encrypted)
     ├── apq8009-robot-sysfs.img.gz (encrypted)
     ├── manifest.ini
