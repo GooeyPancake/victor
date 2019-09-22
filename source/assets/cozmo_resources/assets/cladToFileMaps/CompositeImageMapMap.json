@@ -1,0 +1,34 @@
+[
+  {
+    "CladEvent": "WeatherCondCloudy_01",
+    "MapName": "cloudy_01"
+  },
+  {
+    "CladEvent": "WeatherCondColdClear_01",
+    "MapName": "cold_clear_01"
+  },
+  {
+    "CladEvent": "WeatherCondRain_01",
+    "MapName": "rain_01"
+  },
+  {
+    "CladEvent": "WeatherCondSnow_01",
+    "MapName": "snow_01"
+  },
+  {
+    "CladEvent": "WeatherCondStars_01",
+    "MapName": "stars_01"
+  },
+  {
+    "CladEvent": "WeatherCondSunny_01",
+    "MapName": "sunny_01"
+  },
+  {
+    "CladEvent": "WeatherCondThunderstorms_01",
+    "MapName": "thunderstorms_01"
+  },
+  {
+    "CladEvent": "WeatherCondWindy_01",
+    "MapName": "windy_01"
+  }
+]

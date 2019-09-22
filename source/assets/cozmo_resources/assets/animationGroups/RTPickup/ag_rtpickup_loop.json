@@ -1,0 +1,64 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_rtpickup_loop_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_02",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_03",
+      "Weight": 0.2,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_04",
+      "Weight": 0.8,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_05",
+      "Weight": 0.8,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_06",
+      "Weight": 0.6,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_07",
+      "Weight": 0.6,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_08",
+      "Weight": 0.4,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_09",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_rtpickup_loop_10",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

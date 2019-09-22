@@ -1,0 +1,22 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_observing_distance_area_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_observing_nearby_area_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_observing_self_absorbed_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

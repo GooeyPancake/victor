@@ -1,0 +1,16 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_loco_driving01_start_02",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 60.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_loco_driving01_start_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

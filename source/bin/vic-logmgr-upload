@@ -1,0 +1,92 @@
+#!/bin/sh
+#
+# platform/config/bin/vic-logmgr-upload
+#
+# Victor log manager upload
+#
+# This script collects a snapshot of recent log data into a compressed
+# (gzip) file, then uploads the file to an Anki Blobstore bucket.
+#
+# If upload fails, exit with an appropriate error. There is no attempt
+# at retry or deferred send.
+#
+# The default filter specification will capture everything logged at Android DEBUG level or higher.
+#
+# Default configuration values may be overridden by environment.
+#
+set -eu
+
+: ${VIC_LOGMGR_DIRECTORY:="/data/data/com.anki.victor/cache/vic-logmgr"}
+
+#
+# Callers must provide APP_URL, APP_KEY and APP_USER on command line.
+# These values are used to establish blobstore credentials.
+# These values should not be stored on the robot.
+#
+APP_URL="$1"
+APP_KEY="$2"
+APP_USER="$3"
+
+if [ -z ${APP_URL} -o -z ${APP_KEY} -o -z ${APP_USER} ]; then
+  echo "Usage: $0 app_url app_key app_user"
+  exit 1
+fi
+
+#
+# Collect some metadata to describe the upload
+#
+esn="`/bin/emr-cat e`"
+timestamp="`/bin/date +%Y-%m-%d-%H-%M-%S`"
+version="`/bin/cat /anki/etc/version`"
+revision="`/bin/cat /anki/etc/revision`"
+osversion="`/bin/cat /etc/os-version`"
+osrevision="`/bin/cat /etc/os-version-rev`"
+pid="$$"
+
+#
+# Helper function to perform upload
+#
+function upload {
+  url=${1}
+  path=${2}
+  name=${3}
+  /usr/bin/curl -s -f -X PUT \
+    -H "Anki-App-Key: ${APP_KEY}" \
+    -H "Usr-Username: ${APP_USER}" \
+    -H "Usr-RobotESN: ${esn}" \
+    -H "Usr-RobotTimestamp: ${timestamp}" \
+    -H "Usr-RobotVersion: ${version}" \
+    -H "Usr-RobotRevision: ${revision}" \
+    -H "Usr-RobotOSVersion: ${osversion}" \
+    -H "Usr-RobotOSRevision: ${osrevision}" \
+    --data-binary @${path} \
+    ${url}
+  status=$?
+  /bin/rm -f ${path}
+  if [ ${status} == 0 ]; then
+    echo "Uploaded ${name}"
+  else
+    echo "Failed to upload ${name}"
+    exit 1
+  fi
+}
+
+#
+# Set up scratch directory
+#
+blobdir=${VIC_LOGMGR_DIRECTORY}
+/bin/mkdir -p ${blobdir}
+
+#
+# Prepare log messages for upload
+#
+blobname="victor-${esn}-${timestamp}-${pid}.log.gz"
+blobpath="${blobdir}/${blobname}"
+bloburl="${APP_URL}/${blobname}"
+logpath="/var/log"
+
+/anki/bin/vic-log-cat | /bin/gzip > ${blobpath}
+
+upload ${bloburl} ${blobpath} ${blobname}
+
+exit 0

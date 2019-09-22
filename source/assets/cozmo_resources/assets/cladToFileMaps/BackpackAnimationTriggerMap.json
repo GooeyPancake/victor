@@ -1,0 +1,111 @@
+[
+  {
+    "CladEvent": "AlexaNotification",
+    "AnimName": "alexaNotification"
+  },
+  {
+      "CladEvent": "Charging",
+      "AnimName": "charging"
+  },
+  {
+      "CladEvent": "DanceToTheBeat",
+      "AnimName": "danceToTheBeat"
+  },
+  {
+      "CladEvent": "MeetVictor",
+      "AnimName": "meetVictor"
+  },
+  {
+      "CladEvent": "Muted",
+      "AnimName": "muted"
+  },
+  {
+      "CladEvent": "Idle_09",
+      "AnimName": "idle_09"
+  },
+  {
+      "CladEvent": "LowBattery",
+      "AnimName": "badCharger"
+  },
+  {
+      "CladEvent": "Off",
+      "AnimName": "off"
+  },
+  {
+      "CladEvent": "Offline",
+      "AnimName": "offline"
+  },
+  {
+      "CladEvent": "Offline_Off",
+      "AnimName": "offline_off"
+  },
+  {
+      "CladEvent": "SpinnerBlueCelebration",
+      "AnimName": "spinner_blue_celebration"
+  },
+  {
+      "CladEvent": "SpinnerBlueHoldTarget",
+      "AnimName": "spinner_blue_hold_target"
+  },
+  {
+      "CladEvent": "SpinnerBlueSelectTarget",
+      "AnimName": "spinner_blue_select_target"
+  },
+  {
+      "CladEvent": "SpinnerGreenCelebration",
+      "AnimName": "spinner_green_celebration"
+  },
+  {
+      "CladEvent": "SpinnerGreenHoldTarget",
+      "AnimName": "spinner_green_hold_target"
+  },
+  {
+      "CladEvent": "SpinnerGreenSelectTarget",
+      "AnimName": "spinner_green_select_target"
+  },
+  {
+      "CladEvent": "SpinnerPurpleCelebration",
+      "AnimName": "spinner_purple_celebration"
+  },
+  {
+      "CladEvent": "SpinnerPurpleHoldTarget",
+      "AnimName": "spinner_purple_hold_target"
+  },
+  {
+      "CladEvent": "SpinnerPurpleSelectTarget",
+      "AnimName": "spinner_purple_select_target"
+  },
+  {
+      "CladEvent": "SpinnerRedCelebration",
+      "AnimName": "spinner_red_celebration"
+  },
+  {
+      "CladEvent": "SpinnerRedHoldTarget",
+      "AnimName": "spinner_red_hold_target"
+  },
+  {
+      "CladEvent": "SpinnerRedSelectTarget",
+      "AnimName": "spinner_red_select_target"
+  },
+  {
+      "CladEvent": "SpinnerYellowCelebration",
+      "AnimName": "spinner_yellow_celebration"
+  },
+  {
+      "CladEvent": "SpinnerYellowHoldTarget",
+      "AnimName": "spinner_yellow_hold_target"
+  },
+  {
+      "CladEvent": "SpinnerYellowSelectTarget",
+      "AnimName": "spinner_yellow_select_target"
+  },
+  {
+      "CladEvent": "Streaming",
+      "AnimName": "streaming"
+  },
+  {
+      "CladEvent": "WorkingOnIt",
+      "AnimName": "workingOnIt"
+  }
+]
+

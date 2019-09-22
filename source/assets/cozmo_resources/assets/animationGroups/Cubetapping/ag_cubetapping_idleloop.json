@@ -1,0 +1,22 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_explorer_idle_03",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_lookinplaceforfaces_keepalive_long",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_explorer_idle_02",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+#!/bin/sh
+# DESCRIPTION:  it is used to allow either hsic or hsusb to have no composition at all(must reboot to take effect).
+

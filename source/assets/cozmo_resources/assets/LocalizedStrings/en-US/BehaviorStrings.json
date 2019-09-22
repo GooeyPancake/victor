@@ -1,0 +1,105 @@
+{
+  "smartling": {
+    "translate_paths": [
+      "*/translation"
+    ],
+    "variants_enabled": true,
+    "translate_mode": "custom",
+    "placeholder_format_custom": [
+      "%%[^%]+?%%",
+      "%[^%]+?%",
+      "##[^#]+?##",
+      "__[^_]+?__",
+      "[$]\\{[^\\}\\{]+?\\}",
+      "\\{\\{[^\\}\\{]+?\\}\\}",
+      "(?<!\\{)\\{[^\\}\\{]+?\\}(?!\\})"
+    ],
+    "source_key_paths": [
+      "/{*}"
+    ]
+  },
+  "behavior.DevTest1": {
+    "translation": "I am Vector"
+  },
+  "behavior.DevTest2": {
+    "translation": "I am {0}"
+  },
+  "BehaviorDisplayWeather.Cloudy": {
+    "translation": "{0} degrees and cloudy"
+  },
+  "BehaviorDisplayWeather.Cold": {
+    "translation": "{0} degrees and cold"
+  },
+  "BehaviorDisplayWeather.Rain": {
+    "translation": "{0} degrees and raining"
+  },
+  "BehaviorDisplayWeather.Snow": {
+    "translation": "{0} degrees and snowing"
+  },
+  "BehaviorDisplayWeather.Stars": {
+    "translation": "{0} degrees and clear"
+  },
+  "BehaviorDisplayWeather.Sunny": {
+    "translation": "{0} degrees and sunny"
+  },
+  "BehaviorDisplayWeather.Thunderstorms": {
+    "translation": "{0} degrees with thunderstorms"
+  },
+  "BehaviorDisplayWeather.Windy": {
+    "translation": "{0} degrees and windy"
+  },
+  "BehaviorEnrollFace.HaveWeMetBefore": {
+    "translation": "Have we met before, {0}?"
+  },
+  "BehaviorEnrollFace.AlreadyKnowVowelName": {
+    "translation": "I already know an {0}"
+  },
+  "BehaviorEnrollFace.AlreadyKnowConsonantName": {
+    "translation": "I already know a {0}"
+  },
+  "BehaviorEnrollFace.AlreadyKnowYou": {
+    "translation": "I already know you!"
+  },
+  "BehaviorEnrollFace.AlreadyKnowFace": {
+    "translation": "You're {0}, not {1}"
+  },
+  "BehaviorHowOldAreYou.OneDay": {
+    "translation": "One day"
+  },
+  "BehaviorHowOldAreYou.SomeDays": {
+    "translation": "{0} days"
+  },
+  "BehaviorHowOldAreYou.OneMonth": {
+    "translation": "One month"
+  },
+  "BehaviorHowOldAreYou.SomeMonths": {
+    "translation": "{0} months"
+  },
+  "BehaviorKnowledgeGraphQuestion.Ready": {
+    "translation": "Ready"
+  },
+  "BehaviorLeaveAMessage.NoRecipient": {
+    "translation": "I did not hear the name"
+  },
+  "BehaviorLeaveAMessage.UnknownRecipient": {
+    "translation": "I do not know a {0}"
+  },
+  "BehaviorLeaveAMessage.MailboxFull": {
+    "translation": "Voice mailbox is full"
+  },
+  "BehaviorPlaybackMessage.AnnounceSingle": {
+    "translation": "One message for {0}"
+  },
+  "BehaviorPlaybackMessage.AnnouncePlural": {
+    "translation": "{1} messages for {0}"
+  },
+  "BehaviorPlaybackMessage.NoRecipient": {
+    "translation": "I did not hear the name"
+  },
+  "BehaviorPlaybackMessage.NoMessages": {
+    "translation": "I have no messages for {0}"
+  },
+  "BehaviorSayName.DontKnow": {
+    "translation": "I don't know"
+  }
+}

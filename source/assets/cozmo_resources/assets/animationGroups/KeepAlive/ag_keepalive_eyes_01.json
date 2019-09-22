@@ -1,0 +1,22 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_keepalive_eyes_01_updown",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_keepalive_eyes_01_right",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_keepalive_eyes_01_forward",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

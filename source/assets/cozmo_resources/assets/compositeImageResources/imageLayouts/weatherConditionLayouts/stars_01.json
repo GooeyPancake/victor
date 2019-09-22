@@ -1,0 +1,15 @@
+[
+  {  
+    "layerName" : "Layer_6",
+    "spriteBoxLayout" : [
+      {
+        "spriteBoxName": "WeatherBox_1",
+        "spriteRenderMethod" : "RGBA",
+        "x": 0,
+        "y": 0,
+        "width": 184,
+        "height": 96
+      }
+    ]
+  }
+]

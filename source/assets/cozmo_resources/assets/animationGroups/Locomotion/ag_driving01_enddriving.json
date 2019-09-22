@@ -1,0 +1,10 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_loco_driving01_end_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 60.0,
+      "Mood": "Default"
+    }
+  ]
+}

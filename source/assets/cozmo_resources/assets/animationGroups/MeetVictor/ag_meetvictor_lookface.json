@@ -1,0 +1,22 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_meetvictor_lookface_loop_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 2.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_meetvictor_lookface_loop_02",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 2.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_meetvictor_lookface_loop_03",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 1.3,
+      "Mood": "Default"
+    }
+  ]
+}

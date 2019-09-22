@@ -1,0 +1,10 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_avs_listen2weather_03",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

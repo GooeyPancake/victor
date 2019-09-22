@@ -1,0 +1,16 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_keepaway_pounce_quick_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_keepaway_pounce_slow_05",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_driving_upset_start_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 60.0,
+      "Mood": "Default"
+    }
+  ]
+}

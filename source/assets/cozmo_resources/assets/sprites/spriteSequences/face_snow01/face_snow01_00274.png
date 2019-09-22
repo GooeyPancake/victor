@@ -1,0 +1,227 @@
+#!/bin/sh
+#
+# Copyright (c) 2012-2015,2017, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived from
+#       this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT ARE DISCLAIMED.  IN NO
+# EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+# INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# DESCRIPTION: DIAG + ADB + SERIAL + RMNET + Mass Storage + Audio [Android]
+
+echo "Switching to composition number 0x9056" > /dev/kmsg
+
+if [ "$1" = "y" ]; then
+	num="1"
+else
+	num="0"
+fi
+
+if [ "$#" -ge 2 ]; then
+	delay=$2
+else
+	delay="0"
+fi
+
+if [ "$#" -ge 3 ]; then
+	from_adb=$3
+else
+	from_adb="n"
+fi
+
+run_9x15() {
+	echo 0 > /sys/class/android_usb/android$num/enable
+	echo 0x9056 > /sys/class/android_usb/android$num/idProduct
+	echo 0x05C6 > /sys/class/android_usb/android$num/idVendor
+	echo diag > /sys/class/android_usb/android0/f_diag/clients
+	echo smd > /sys/class/android_usb/android0/f_serial/transports
+	echo SMD,BAM2BAM > /sys/class/android_usb/android0/f_rmnet/transports
+	echo diag,adb,serial,rmnet,mass_storage,audio > /sys/class/android_usb/android$num/functions
+	sleep $delay
+	echo 1 > /sys/class/android_usb/android$num/enable
+}
+
+run_9x25() {
+	echo 0 > /sys/class/android_usb/android$num/enable
+	echo 0x9056 > /sys/class/android_usb/android$num/idProduct
+	echo 0x05C6 > /sys/class/android_usb/android$num/idVendor
+	echo diag > /sys/class/android_usb/android0/f_diag/clients
+	echo smd > /sys/class/android_usb/android0/f_serial/transports
+	echo SMD,BAM2BAM_IPA > /sys/class/android_usb/android0/f_rmnet/transports
+	echo diag,adb,serial,rmnet,mass_storage,audio > /sys/class/android_usb/android$num/functions
+	sleep $delay
+	echo 1 > /sys/class/android_usb/android$num/enable
+}
+
+run_9x25_v2() {
+	echo 0 > /sys/class/android_usb/android$num/enable
+	echo 0x9056 > /sys/class/android_usb/android$num/idProduct
+	echo 0x05C6 > /sys/class/android_usb/android$num/idVendor
+	echo diag > /sys/class/android_usb/android0/f_diag/clients
+	echo smd > /sys/class/android_usb/android0/f_serial/transports
+	echo QTI,BAM2BAM_IPA > /sys/class/android_usb/android0/f_rmnet/transports
+	echo diag,adb,serial,rmnet,mass_storage,audio > /sys/class/android_usb/android$num/functions
+	sleep $delay
+	echo 1 > /sys/class/android_usb/android$num/enable
+}
+
+run_9x35() {
+	if [ $from_adb = "n" ]
+	then
+		pkill adbd
+	fi
+	echo 0 > /sys/class/android_usb/android$num/enable
+	echo 9056 > /sys/class/android_usb/android$num/idProduct
+	echo 05C6 > /sys/class/android_usb/android$num/idVendor
+	echo diag > /sys/class/android_usb/android0/f_diag/clients
+	echo smd > /sys/class/android_usb/android0/f_serial/transports
+	echo QTI,BAM2BAM_IPA > /sys/class/android_usb/android0/f_rmnet/transports
+	echo diag,ffs,serial,rmnet,mass_storage,audio > /sys/class/android_usb/android$num/functions
+	sleep $delay
+	echo 1 > /sys/class/android_usb/android$num/enable
+	if [ $from_adb = "n" ]
+	then
+		/etc/launch_adbd start
+	fi
+}
+
+run_9607() {
+	if [ $from_adb = "n" ]
+	then
+		pkill adbd
+	fi
+	echo 0 > /sys/class/android_usb/android$num/enable
+	echo 9056 > /sys/class/android_usb/android$num/idProduct
+	echo 05C6 > /sys/class/android_usb/android$num/idVendor
+	echo diag > /sys/class/android_usb/android0/f_diag/clients
+	echo smd > /sys/class/android_usb/android0/f_serial/transports
+	echo QTI,BAM_DMUX > /sys/class/android_usb/android0/f_rmnet/transports
+	echo diag,ffs,serial,rmnet,mass_storage,audio > /sys/class/android_usb/android$num/functions
+	sleep $delay
+	echo 1 > /sys/class/android_usb/android$num/enable
+	if [ $from_adb = "n" ]
+	then
+		/etc/launch_adbd start
+	fi
+}
+
+run_9650() {
+	if [ $from_adb = "n" ]
+	then
+		pkill adbd
+	fi
+	echo 0 > /sys/class/android_usb/android$num/enable
+	echo 9056 > /sys/class/android_usb/android$num/idProduct
+	echo 05C6 > /sys/class/android_usb/android$num/idVendor
+	echo diag > /sys/class/android_usb/android0/f_diag/clients
+	echo smd > /sys/class/android_usb/android0/f_serial/transports
+	echo diag,ffs,serial,rmnet_gsi,mass_storage,audio > /sys/class/android_usb/android$num/functions
+	sleep $delay
+	echo 1 > /sys/class/android_usb/android$num/enable
+	if [ $from_adb = "n" ]
+	then
+		/etc/launch_adbd start
+	fi
+}
+
+run_sdx20() {
+	if [ $from_adb = "n" ]
+	then
+		pkill adbd
+	fi
+	echo 0 > /sys/class/android_usb/android$num/enable
+	echo 9056 > /sys/class/android_usb/android$num/idProduct
+	echo 05C6 > /sys/class/android_usb/android$num/idVendor
+	echo diag > /sys/class/android_usb/android0/f_diag/clients
+	echo char_bridge > /sys/class/android_usb/android0/f_serial/transports
+	echo diag,ffs,serial,rmnet_gsi,mass_storage,audio > /sys/class/android_usb/android$num/functions
+	sleep $delay
+	echo 1 > /sys/class/android_usb/android$num/enable
+	if [ $from_adb = "n" ]
+	then
+		/etc/launch_adbd start
+	fi
+}
+
+run_configfs() {
+	if [ $from_adb = "n" ]
+	then
+		pkill adbd
+		/etc/launch_adbd start
+		sleep 1
+	fi
+	cd /sys/kernel/config/usb_gadget/g1
+	rm configs/c*/f*
+	echo 0x05c6 > idVendor
+	echo 0x9056 > idProduct
+	echo "DIAG_ADB_SER_RMNET_MS_AUDIO" > configs/c.1/strings/0x409/configuration
+	ln -s functions/diag.diag configs/c.1/f1
+	ln -s functions/ffs.adb configs/c.1/f2
+	ln -s functions/cser.dun.0 configs/c.1/f3
+	ln -s functions/gsi.rmnet configs/c.1/f4
+	ln -s functions/mass_storage.0 configs/c.1/f5
+	ln -s functions/uac1.uac1 configs/c.1/f6
+	echo "binding UDC with Gadget..." $1
+	echo $1 > UDC
+}
+
+case `source /sbin/usb/target` in
+	*9x15* )
+		run_9x15 &
+		;;
+	*9x25* )
+		case `cat /sys/devices/soc0/revision` in
+			*1.0* )
+				run_9x25 &
+				;;
+			*2.* )
+				run_9x25_v2 &
+				;;
+			* )
+				run_9x25 &
+				;;
+		esac
+		;;
+	*9x35* )
+		run_9x35 &
+		;;
+	*9607* )
+		run_9607 &
+		;;
+	*8909* )
+		echo "This composition can't be supported on 8909"
+		;;
+	*9640* )
+		run_9x35 &
+		;;
+	*9650* )
+		run_9650 &
+		;;
+	*sdx20* )
+		run_sdx20 &
+		;;
+	*sdxpoorwills* )
+		udcname=`ls -1 /sys/class/udc | head -n 1`
+		run_configfs $udcname &
+		;;
+	* )
+		run_9650 &
+		;;
+esac

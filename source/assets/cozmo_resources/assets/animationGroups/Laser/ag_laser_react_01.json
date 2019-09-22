@@ -1,0 +1,10 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_reacttoblock_react_01_head_angle_-20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

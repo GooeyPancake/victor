@@ -1,0 +1,11 @@
+[
+  {  
+    "layerName" : "Layer_5",
+    "images" :[
+      {
+        "spriteBoxName" : "WeatherBox_1",
+        "spriteName"    : "Face_Windy01"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_reacttocliff_stuckonedge_left_01",
+      "Weight": 3.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_reacttocliff_stuckonedge_alert_left_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_reacttocliff_stuckonedge_left_02",
+      "Weight": 2.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

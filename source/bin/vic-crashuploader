@@ -1,0 +1,154 @@
+#!/bin/sh
+#
+# platform/config/bin/vic-crashuploader
+#
+# Victor crash file uploader
+#
+# This script runs as a background to periodically check for written
+# crash report files, upload them, and eventually delete them.
+#
+# Default configuration values may be overridden by environment.
+# When run from vic-crashuploader.service, environment values may
+# be set in /anki/etc/vic-crashuploader.env.
+#
+
+: ${VIC_CRASH_UPLOADER_KEEP_LATEST:=30}
+: ${VIC_CRASH_FOLDER:="/data/data/com.anki.victor/cache/crashDumps"}
+: ${VIC_CRASH_UPLOAD_URL:='https://anki.sp.backtrace.io:6098/post?format=minidump&token=6fd2bd053e8dd542ee97c05903b1ea068f090d37c7f6bbfa873c5f3b9c40b1d9'}
+: ${VIC_CRASH_UPLOAD_LOG:=0}
+: ${VIC_CRASH_SCRAPE_PERIOD_SEC:=30}
+
+# Where is magic DAS opt-in file?
+DAS_ALLOW_UPLOAD_FILE=/run/das_allow_upload
+
+UPLOADED_EXT=uploaded
+LOCAL_EXT=local
+mkdir -p $VIC_CRASH_FOLDER
+
+# We don't want to upload crash dumps for a local build
+# (since symbols aren't uploaded unless you do so manually)
+: ${VIC_RUNNING_VERSIONED_BUILD:=1}
+# Determine if we're running a local build:
+# Read /anki/etc/version file, parse "0.10.NNNNd", where NNNN is a build version, or 0 for local build
+versionLine=$(head -n 1 /anki/etc/version)
+lastField=${versionLine##*.}
+buildNumber=${lastField//[!0-9]/}
+if [ "$buildNumber" = "0" ]; then
+  echo "Running LOCAL build"
+  VIC_RUNNING_VERSIONED_BUILD=0
+else
+  echo "Running build number "$buildNumber
+fi
+
+#
+# Collect some robot data
+#
+hostname=""
+if [ -x /bin/hostname ]; then
+  hostname="`/bin/hostname`"
+fi
+
+esn=""
+if [ -x /bin/emr-cat ]; then
+  esn=`/bin/emr-cat esn`""
+fi
+
+os_version=""
+if [ -f /etc/os-version ]; then
+  os_version="`/bin/cat /etc/os-version`"
+fi
+
+anki_version=""
+if [ -f /anki/etc/version ]; then
+  anki_version="`/bin/cat /anki/etc/version`"
+fi
+
+while :
+do
+    cd $VIC_CRASH_FOLDER > /dev/null
+
+    # Go through all the crash files we haven't uploaded
+    shopt -s nullglob
+    for i in ./*.dmp
+    do
+        if [[ -s ${i} ]]; then
+            if [[ ${i} =~ [V] ]]; then
+                # New filename format ("V" in filename)
+                TEMP=${i#*V}
+                VERSION=${TEMP%%"-"*}
+                if [ "$VERSION" = "0" ]; then
+                    UPLOAD_THIS_CRASH=0
+                else
+                    UPLOAD_THIS_CRASH=1
+                fi
+            else
+                # Older filename format (no "V" in filename)
+                # For any few remaining crash dumps using the old filename format,
+                # use the same logic we had before (upload if running versioned build)
+                UPLOAD_THIS_CRASH=$VIC_RUNNING_VERSIONED_BUILD
+            fi
+
+            if [ $UPLOAD_THIS_CRASH -gt 0 ]; then
+                # If file size is greater than zero, attempt to upload it
+                echo "Uploading crash dump file ${i}"
+                #
+                # Upload crash dump plus metadata as multipart form
+                #
+                form="-F upload_file=@${i}"
+                form="${form} -F hostname=${hostname}"
+                form="${form} -F robot.esn=${esn}"
+                form="${form} -F robot.os_version=${os_version}"
+                form="${form} -F robot.anki_version=${anki_version}"
+
+                # If user has opted out of data collection, do not upload crash log
+                UPLOAD_THIS_LOG=${VIC_CRASH_UPLOAD_LOG}
+                if [ ! -f ${DAS_ALLOW_UPLOAD_FILE} ]; then
+                    UPLOAD_THIS_LOG=0
+                fi
+
+                if [ ${UPLOAD_THIS_LOG} -gt 0 ]; then
+                    if [ -f ${i}.log ]; then
+                        form="${form} -F attachment_messages.log=@${i}.log"
+                    fi
+                fi
+
+                if /usr/bin/curl ${form} "${VIC_CRASH_UPLOAD_URL}" ; then
+                    echo "Successfully uploaded ${i}"
+
+                    # Rename the file so that we can keep it around for a while before deletion
+                    mv ${i} ${i}.${UPLOADED_EXT}
+                    if [ -f ${i}.log ]; then
+                        mv ${i}.log ${i}.${UPLOADED_EXT}.log
+                    fi
+                else
+                    echo "Failed to upload ${i}"
+                fi
+            else
+                # Don't upload, but rename
+                echo "Renaming local build crash dump file ${i}"
+                mv ${i} ${i}.${LOCAL_EXT}
+                if [ -f ${i}.log ]; then
+                    mv ${i}.log ${i}.${LOCAL_EXT}.log
+                fi
+            fi
+        else
+            # If file size is zero, at this point it has been abandoned
+            echo "Deleting abandoned crash dump file ${i}"
+            rm -f ${i} ${i}.log
+        fi
+    done
+    shopt -u nullglob
+
+    # Now delete all but the oldest N crash files that have already been uploaded and/or renamed
+    processed_files_total=$(ls -1 *.${UPLOADED_EXT} *.${LOCAL_EXT} 2>/dev/null | wc -l)
+    if (( ${processed_files_total} > ${VIC_CRASH_UPLOADER_KEEP_LATEST} )); then
+        num_files_to_delete=$(( ${processed_files_total} - ${VIC_CRASH_UPLOADER_KEEP_LATEST} ))
+        echo "Deleting ${num_files_to_delete} crash dump file(s), but keeping the newest ${VIC_CRASH_UPLOADER_KEEP_LATEST} crash dump files"
+        files="`ls -1tr *.${UPLOADED_EXT} *.${LOCAL_EXT} | head -n${num_files_to_delete}`"
+        for f in ${files} ; do
+          /bin/rm -f ${f} ${f}.log
+        done
+    fi
+
+    sleep ${VIC_CRASH_SCRAPE_PERIOD_SEC}
+done

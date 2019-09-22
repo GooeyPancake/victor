@@ -1,0 +1,199 @@
+[
+    {
+        "CladEvent": "Carrying",
+        "AnimName": "interacting"
+    },
+    {
+        "CladEvent": "Connected",
+        "AnimName": "connected"
+    },
+    {
+        "CladEvent": "CubePouncePlayerLose",
+        "AnimName": "cubePouncePlayerLose"
+    },
+    {
+        "CladEvent": "CubePouncePlayerWin",
+        "AnimName": "cubePouncePlayerWin"
+    },
+    {
+        "CladEvent": "DrivingTo",
+        "AnimName": "interacting"
+    },
+    {
+        "CladEvent": "Flash",
+        "AnimName": "flash"
+    },
+    {
+        "CladEvent": "GatherCubesAllCubesInBeacon",
+        "AnimName": "gatherCubesAllCubesInBeacon"
+    },
+    {
+        "CladEvent": "GatherCubesCubeInBeacon",
+        "AnimName": "gatherCubesCubeInBeacon"
+    },
+    {
+        "CladEvent": "Interacting",
+        "AnimName": "interacting"
+    },
+    {
+        "CladEvent": "InteractingBehaviorLock",
+        "AnimName": "interactingBehaviorLock"
+    },
+    {
+        "CladEvent": "Onboarding",
+        "AnimName": "wakeUp"
+    },
+    {
+        "CladEvent": "ShutDown",
+        "AnimName": "shutDown"
+    },
+    {
+        "CladEvent": "Sleep",
+        "AnimName": "sleep"
+    },
+    {
+        "CladEvent": "SleepNoFade",
+        "AnimName": "sleepNoFade"
+    },
+    {
+        "CladEvent": "SpeedTapWin",
+        "AnimName": "speedTapWin"
+    },
+    {
+        "CladEvent": "SpeedTapLose",
+        "AnimName": "speedTapLose"
+    },
+    {
+        "CladEvent": "SpinnerBlueCelebration",
+        "AnimName": "spinner_blue_celebration"
+    },
+    {
+        "CladEvent": "SpinnerBlueCycle",
+        "AnimName": "spinner_blue_cycle"
+    },
+    {
+        "CladEvent": "SpinnerBlueLockIn",
+        "AnimName": "spinner_blue_lock_in"
+    },
+    {
+        "CladEvent": "SpinnerBlueLockedPulse",
+        "AnimName": "spinner_blue_locked_pulse"
+    },
+    {
+        "CladEvent": "SpinnerBlueLocked",
+        "AnimName": "spinner_blue_locked"
+    },
+    {
+        "CladEvent": "SpinnerGreenCelebration",
+        "AnimName": "spinner_green_celebration"
+    },
+    {
+        "CladEvent": "SpinnerGreenCycle",
+        "AnimName": "spinner_green_cycle"
+    },
+    {
+        "CladEvent": "SpinnerGreenLockIn",
+        "AnimName": "spinner_green_lock_in"
+    },
+    {
+        "CladEvent": "SpinnerGreenLockedPulse",
+        "AnimName": "spinner_green_locked_pulse"
+    },
+    {
+        "CladEvent": "SpinnerGreenLocked",
+        "AnimName": "spinner_green_locked"
+    },
+    {
+        "CladEvent": "SpinnerPlayerError",
+        "AnimName": "spinner_player_error"
+    },
+    {
+        "CladEvent": "SpinnerPurpleCelebration",
+        "AnimName": "spinner_purple_celebration"
+    },
+    {
+        "CladEvent": "SpinnerPurpleCycle",
+        "AnimName": "spinner_purple_cycle"
+    },
+    {
+        "CladEvent": "SpinnerPurpleLockIn",
+        "AnimName": "spinner_purple_lock_in"
+    },
+    {
+        "CladEvent": "SpinnerPurpleLockedPulse",
+        "AnimName": "spinner_purple_locked_pulse"
+    },
+    {
+        "CladEvent": "SpinnerPurpleLocked",
+        "AnimName": "spinner_purple_locked"
+    },
+    {
+        "CladEvent": "SpinnerRedCelebration",
+        "AnimName": "spinner_red_celebration"
+    },
+    {
+        "CladEvent": "SpinnerRedCycle",
+        "AnimName": "spinner_red_cycle"
+    },
+    {
+        "CladEvent": "SpinnerRedLockIn",
+        "AnimName": "spinner_red_lock_in"
+    },
+    {
+        "CladEvent": "SpinnerRedLockedPulse",
+        "AnimName": "spinner_red_locked_pulse"
+    },
+    {
+        "CladEvent": "SpinnerRedLocked",
+        "AnimName": "spinner_red_locked"
+    },
+    {
+        "CladEvent": "SpinnerStartGame",
+        "AnimName": "spinner_start_game"
+    },
+    {
+        "CladEvent": "SpinnerYellowCelebration",
+        "AnimName": "spinner_yellow_celebration"
+    },
+    {
+        "CladEvent": "SpinnerYellowCycle",
+        "AnimName": "spinner_yellow_cycle"
+    },
+    {
+        "CladEvent": "SpinnerYellowLockIn",
+        "AnimName": "spinner_yellow_lock_in"
+    },
+    {
+        "CladEvent": "SpinnerYellowLockedPulse",
+        "AnimName": "spinner_yellow_locked_pulse"
+    },
+    {
+        "CladEvent": "SpinnerYellowLocked",
+        "AnimName": "spinner_yellow_locked"
+    },
+    {
+        "CladEvent": "TapResponsePulse",
+        "AnimName": "tapResponsePulse"
+    },
+    {
+        "CladEvent": "TestAllLeds",
+        "AnimName": "testAllLeds"
+    },
+    {
+        "CladEvent": "TestOffset",
+        "AnimName": "testOffset"
+    },
+    {
+        "CladEvent": "TestRotation",
+        "AnimName": "testRotation"
+    },
+    {
+        "CladEvent": "Visible",
+        "AnimName": "visible"
+    },
+    {
+        "CladEvent": "WakeUp",
+        "AnimName": "wakeUp"
+    }
+]
+

@@ -1,0 +1,2081 @@
+[
+  {
+    "CladEvent": "InvalidAnimTrigger",
+    "AnimName": "ag_communication_cantdothat"
+  },
+  {
+    "CladEvent": "DEPRECATED_AcknowledgeFaceNamed",
+    "AnimName": "ag_freeplay_reacttoface_sayname"
+  },
+  {
+    "CladEvent": "DEPRECATED_AcknowledgeFaceUnnamed",
+    "AnimName": "ag_freeplay_reacttoface_unidentified"
+  },
+  {
+    "CladEvent": "DEPRECATED_AcknowledgeObject",
+    "AnimName": "ag_reacttoblock_react_short"
+  },
+  {
+    "CladEvent": "AlexaIdle2Listen",
+    "AnimName": "ag_avs_l_getin_01"
+  },
+  {
+    "CladEvent": "AlexaIdle2Speak",
+    "AnimName": "ag_avs_suddenspeak_01"
+  },
+  {
+    "CladEvent": "AlexaIdle2Error",
+    "AnimName": "ag_avs_error_getin"
+  },
+  {
+    "CladEvent": "AlexaListenLoop",
+    "AnimName": "ag_avs_l_loop_01"
+  },
+  {
+    "CladEvent": "AlexaThinkLoop",
+    "AnimName": "ag_avs_think_loop"
+  },
+  {
+    "CladEvent": "AlexaSpeakLoop",
+    "AnimName": "ag_avs_speak_loop_01"
+  },
+  {
+    "CladEvent": "AlexaErrorLoop",
+    "AnimName": "ag_avs_error_loop"
+  },
+  {
+    "CladEvent": "AlexaListen2Think",
+    "AnimName": "ag_avs_listen2think"
+  },
+  {
+    "CladEvent": "AlexaListen2Speak",
+    "AnimName": "ag_avs_listen2speak_01"
+  },
+  {
+    "CladEvent": "AlexaListen2Error",
+    "AnimName": "ag_avs_listen2error"
+  },
+  {
+    "CladEvent": "AlexaSignOut",
+    "AnimName" : "ag_blackjack_victorlose"
+  },
+  {
+    "CladEvent": "AlexaSpeak2Listen",
+    "AnimName": "ag_avs_back2listen_01"
+  },
+  {
+    "CladEvent": "AlexaSpeak2Error",
+    "AnimName": "ag_avs_speak2error"
+  },
+  {
+    "CladEvent": "AlexaThink2Speak",
+    "AnimName": "ag_avs_think2speak"
+  },
+  {
+    "CladEvent": "AlexaThink2Error",
+    "AnimName": "ag_avs_think2error"
+  },
+  {
+    "CladEvent": "AlexaListen2Idle",
+    "AnimName": "ag_avs_listen_timeout_01"
+  },
+  {
+    "CladEvent": "AlexaThink2Idle",
+    "AnimName": "ag_avs_think_timeout_01"
+  },
+  {
+    "CladEvent": "AlexaSpeak2Idle",
+    "AnimName": "ag_avs_speak_getout_01"
+  },
+  {
+    "CladEvent": "AlexaError2Idle",
+    "AnimName": "ag_avs_error_getout"
+  },
+  {
+    "CladEvent": "AlreadyAtFace",
+    "AnimName": "ag_movement_comehere_alreadyhere"
+  },  
+  {
+    "CladEvent": "AudioOnlyHuh",
+    "AnimName": "ag_explorer_huh"
+  },
+  {
+    "CladEvent": "BlackJack_Deal",
+    "AnimName" : "ag_blackjack_deal"
+  },
+  {
+    "CladEvent": "BlackJack_GoodLuck",
+    "AnimName" : "ag_blackjack_goodluck"
+  },
+  {
+    "CladEvent": "BlackJack_GetIn",
+    "AnimName" : "ag_blackjack_getin"
+  },
+  {
+    "CladEvent": "BlackJack_Idle",
+    "AnimName" : "ag_blackjack_idle"
+  },
+  {
+    "CladEvent": "BlackJack_Quit",
+    "AnimName" : "ag_blackjack_quit"
+  },
+  {
+    "CladEvent": "BlackJack_Response",
+    "AnimName" : "ag_blackjack_response"
+  },
+  {
+    "CladEvent": "BlackJack_RtpIdle",
+    "AnimName" : "ag_rtp_blackjack_idle"
+  },
+  {
+    "CladEvent": "BlackJack_RtpPlayerNo",
+    "AnimName" : "ag_rtp_blackjack_playerno"
+  },
+  {
+    "CladEvent": "BlackJack_RtpPlayerYes",
+    "AnimName" : "ag_rtp_blackjack_playeryes"
+  },
+  {
+    "CladEvent": "BlackJack_RtpRequest",
+    "AnimName" : "ag_rtp_blackjack_request"
+  },
+  {
+    "CladEvent": "BlackJack_RtpTimeOut",
+    "AnimName" : "ag_rtp_blackjack_timeout"
+  },
+  {
+    "CladEvent": "BlackJack_SpeechGetIn",
+    "AnimName" : "ag_blackjack_speech_getin"
+  },
+  {
+    "CladEvent": "BlackJack_SpeechShortStatement",
+    "AnimName" : "ag_blackjack_speech_short_statement"
+  },
+  {
+    "CladEvent": "BlackJack_Spread",
+    "AnimName" : "ag_blackjack_spread"
+  },
+  {
+    "CladEvent": "BlackJack_Swipe",
+    "AnimName" : "ag_blackjack_swipe"
+  },
+  {
+    "CladEvent": "BlackJack_VictorBlackJackLose",
+    "AnimName" : "ag_blackjack_victorblackjacklose"
+  },
+  {
+    "CladEvent": "BlackJack_VictorBlackJackWin",
+    "AnimName" : "ag_blackjack_victorblackjackwin"
+  },
+  {
+    "CladEvent": "BlackJack_VictorBust",
+    "AnimName" : "ag_blackjack_victorbust"
+  },
+  {
+    "CladEvent": "BlackJack_VictorLose",
+    "AnimName" : "ag_blackjack_victorlose"
+  },
+  {
+    "CladEvent": "BlackJack_VictorPush",
+    "AnimName" : "ag_blackjack_victorpush"
+  },
+  {
+    "CladEvent": "BlackJack_VictorWin",
+    "AnimName" : "ag_blackjack_victorwin"
+  },
+  {
+    "CladEvent": "ConnectToCubeFailure",
+    "AnimName":  "ag_cubeconnection_connectionfailure"
+  },
+  {
+    "CladEvent": "ConnectToCubeGetIn",
+    "AnimName":  "ag_cubeconnection_getin"
+  },
+  {
+    "CladEvent": "ConnectToCubeLoop",
+    "AnimName":  "ag_cubeconnection_loop"
+  },
+  {
+    "CladEvent": "ConnectToCubeLostConnection",
+    "AnimName":  "ag_cubeconnection_connectionlost"
+  },
+  {
+    "CladEvent": "ConnectToCubeSuccess",
+    "AnimName":  "ag_cubeconnection_connectionsuccess"
+  },
+  {
+    "CladEvent": "ChargerDockingAlreadyHere",
+    "AnimName": "ag_communication_cantdothat"
+  },
+  {
+    "CladEvent": "ChargerDockingDrivingEnd",
+    "AnimName": "ag_chargerdocking_driving_end"
+  },
+  {
+    "CladEvent": "ChargerDockingDrivingLoop",
+    "AnimName": "ag_chargerdocking_driving_loop"
+  },
+  {
+    "CladEvent": "ChargerDockingDrivingStart",
+    "AnimName": "ag_chargerdocking_drive_start"
+  },
+  {
+    "CladEvent": "ChargerDockingFailure",
+    "AnimName": "ag_chargerdocking_searchforcharger_canthelp"
+  },
+  {
+    "CladEvent": "ChargerDockingLeftTurn",
+    "AnimName": "ag_chargerdocking_leftturn"
+  },
+  {
+    "CladEvent": "ChargerDockingRaiseLift",
+    "AnimName": "ag_chargerdocking_liftup"
+  },
+  {
+    "CladEvent": "ChargerDockingRequest",
+    "AnimName": "ag_chargerdocking_request"
+  },
+  {
+    "CladEvent": "ChargerDockingRequestGetout",
+    "AnimName": "ag_chargerdocking_requestgetout"
+  },
+  {
+    "CladEvent": "ChargerDockingRequestPickup",
+    "AnimName": "ag_chargerdocking_pickup"
+  },
+  {
+    "CladEvent": "ChargerDockingRequestWaitLoop",
+    "AnimName": "ag_chargerdocking_requestwait"
+  },
+  {
+    "CladEvent": "ChargerDockingRightTurn",
+    "AnimName": "ag_chargerdocking_rightturn"
+  },
+  {
+    "CladEvent": "ChargerDockingSearchAfterCompletedSearch",
+    "AnimName": "ag_chargerdocking_searchforcharger_canthelp"
+  },
+  {
+    "CladEvent": "ChargerDockingSearchSingleTurn",
+    "AnimName": "ag_chargerdocking_searchforchargerturns"
+  },
+  {
+    "CladEvent": "ChargerDockingSearchSingleTurnEnd",
+    "AnimName": "ag_chargerdocking_searchforchargerturns_default_getout"
+  },
+  {
+    "CladEvent": "ChargerDockingSearchWaitForImages",
+    "AnimName": "ag_chargerdocking_searchforchargerturns_default_loop"
+  },
+  {
+    "CladEvent": "ChargerDockingSettle",
+    "AnimName": "ag_chargerdocking_settle"
+  },
+  {
+    "CladEvent": "ChargerDockingSevereRequest",
+    "AnimName": "ag_chargerdocking_severerequest"
+  },
+  {
+    "CladEvent": "ChargerDockingSevereRequestGetout",
+    "AnimName": "ag_chargerdocking_severegetout"
+  },
+  {
+    "CladEvent": "ChargerDockingSorryButLowBattery",
+    "AnimName": "ag_chargerdocking_searchforcharger_canthelp"
+  },
+  {
+    "CladEvent": "ChargerReaction",
+    "AnimName": "ag_chargerdocking_reaction"
+  },
+  {
+    "CladEvent": "ClockGetIn",
+    "AnimName": "ag_timer_set_getin"
+  },
+  {
+    "CladEvent": "ClockGetOut",
+    "AnimName": "ag_timer_set_getout"
+  },
+  {
+    "CladEvent": "ConnectWakeUp",
+    "AnimName": "ag_gotosleep_wakeup"
+  },
+  {
+    "CladEvent": "ConnectWakeUpLights",
+    "AnimName": "ag_rtillumination_lightonwakeup"
+  },
+  {
+    "CladEvent": "CountingFastLoop",
+    "AnimName": "ag_howold_fastloop"
+  },
+  {
+    "CladEvent": "CountingGetInEven",
+    "AnimName": "ag_howold_getin_even"
+  },
+  {
+    "CladEvent": "CountingGetInOdd",
+    "AnimName": "ag_howold_getin_odd"
+  },
+  {
+    "CladEvent": "CountingGetOut",
+    "AnimName": "ag_howold_getout"
+  },
+  {
+    "CladEvent": "CountingSlowLoop",
+    "AnimName": "ag_howold_slowloop"
+  },
+  {
+    "CladEvent": "DEPRECATED_ComeHere_SearchForFace",
+    "AnimName": "ag_vc_reaction_nofaceheardyou"
+  },
+  {
+    "CladEvent": "DEPRECATED_CubeMovedSense",
+    "AnimName": "ag_reacttoblock_blockpickup_01"
+  },
+  {
+    "CladEvent": "DEPRECATED_CubeMovedUpset",
+    "AnimName": "ag_reacttoblock_blockgone_01"
+  },
+  {
+    "CladEvent": "CubePounceBackup",
+    "AnimName": "ag_keepaway_backup"
+  },
+  {
+    "CladEvent": "CubePounceDriveGetIn",
+    "AnimName": "ag_keepaway_driving_getin"
+  },
+  {
+    "CladEvent": "CubePounceDriveGetOut",
+    "AnimName": "ag_keepaway_driving_getout"
+  },
+  {
+    "CladEvent": "CubePounceDriveLoop",
+    "AnimName": "ag_keepaway_driving_loop"
+  },
+  {
+    "CladEvent": "CubePounceFake",
+    "AnimName": "ag_keepaway_fakeout"
+  },
+  {
+    "CladEvent": "CubePounceLoseHand",
+    "AnimName": "ag_keepaway_losehand"
+  },
+  {
+    "CladEvent": "CubePounceLoseSession",
+    "AnimName": "ag_keepaway_losegame"
+  },
+  {
+    "CladEvent": "CubePouncePounceNormal",
+    "AnimName": "ag_keepaway_pounce"
+  },
+  {
+    "CladEvent": "CubePouncePounceClose",
+    "AnimName": "ag_keepaway_pounce_mousetrap"
+  },
+  {
+    "CladEvent": "CubePounceWinHand",
+    "AnimName": "ag_keepaway_winhand"
+  },
+  {
+    "CladEvent": "CubePounceWinSession",
+    "AnimName": "ag_keepaway_wingame"
+  },
+  {
+    "CladEvent": "CubePounceGetIn",
+    "AnimName": "ag_keepaway_getin_02"
+  },
+  {
+    "CladEvent": "CubePounceGetOutBored",
+    "AnimName": "ag_keepaway_getout_bored"
+  },
+  {
+    "CladEvent": "CubePounceGetReady",
+    "AnimName": "ag_keepaway_getready"
+  },
+  {
+    "CladEvent": "CubePounceGetUnready",
+    "AnimName": "ag_keepaway_unready"
+  },
+  {
+    "CladEvent": "CubePounceIdleLiftUp",
+    "AnimName": "ag_keepaway_idle"
+  },
+  {
+    "CladEvent": "CubePounceIdleLiftDown",
+    "AnimName": "ag_keepaway_idleliftdown"
+  },
+  {
+    "CladEvent": "CubePounceReactToCube",
+    "AnimName": "ag_rtpkeepaway_reacttocube"
+  },
+  {
+    "CladEvent": "DanceBeatCantDoThat",
+    "AnimName": "ag_dancebeat_cantdothat"
+  },
+  {
+    "CladEvent": "DanceBeatEyeHold",
+    "AnimName": "ag_dancebeat_eyehold"
+  },
+  {
+    "CladEvent": "DanceBeatGetIn",
+    "AnimName": "ag_dancebeat_getin"
+  },
+  {
+    "CladEvent": "DanceBeatGetOut",
+    "AnimName": "ag_dancebeat_getout"
+  },
+  {
+    "CladEvent": "DanceBeatGetReady",
+    "AnimName": "ag_dancebeat_getready"
+  },
+  {
+    "CladEvent": "DanceBeatListening",
+    "AnimName": "ag_dancebeat_listening"
+  },
+  {
+    "CladEvent" : "DanceBeatNoBeatDetected",
+    "AnimName": "ag_dancebeat_nobeatdetected"
+  },
+  {
+    "CladEvent": "ReactToShake_GetIn",
+    "AnimName": "ag_rtshake_getin"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl1Loop",
+    "AnimName": "ag_rtshake_lv1loop"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl1Waiting",
+    "AnimName": "ag_rtshake_lv1pregetout"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl1InHand",
+    "AnimName": "ag_rtshake_lv1rtonhand"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl1OnGround",
+    "AnimName": "ag_rtshake_lv1rtonground"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl2Loop",
+    "AnimName": "ag_rtshake_lv2loop"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl2Waiting",
+    "AnimName": "ag_rtshake_lv2pregetout"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl2InHand",
+    "AnimName": "ag_rtshake_lv2rtonhand"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl2OnGround",
+    "AnimName": "ag_rtshake_lv2rtonground"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl3Loop",
+    "AnimName": "ag_rtshake_lv3loop"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl3Waiting",
+    "AnimName": "ag_rtshake_lv3pregetout"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl3InHand",
+    "AnimName": "ag_rtshake_lv3rtonhand"
+  },
+  {
+    "CladEvent": "ReactToShake_Lvl3OnGround",
+    "AnimName": "ag_rtshake_lv3rtonground"
+  },
+  {
+    "CladEvent": "ReactToShakeSnowGlobe_GetIn",
+    "AnimName": "ag_snowglobe_getin"
+  },
+  {
+    "CladEvent": "ReactToShakeSnowGlobe_Lvl1Loop",
+    "AnimName": "ag_snowglobe_loop"
+  },
+  {
+    "CladEvent": "ReactToShakeSnowGlobe_Lvl1Waiting",
+    "AnimName": "ag_snowglobe_pregetout"
+  },
+  {
+    "CladEvent": "ReactToShakeSnowGlobe_Lvl1InHand",
+    "AnimName": "ag_snowglobe_rtonhand"
+  },
+  {
+    "CladEvent": "ReactToShakeSnowGlobe_Lvl1OnGround",
+    "AnimName": "ag_snowglobe_rtonground"
+  },
+  {
+    "CladEvent": "DEPRECATED_DizzyReactionHard",
+    "AnimName": "ag_dizzy_reaction_hard"
+  },
+  {
+    "CladEvent": "DEPRECATED_DizzyReactionMedium",
+    "AnimName": "ag_dizzy_reaction_medium"
+  },
+  {
+    "CladEvent": "DEPRECATED_DizzyReactionSoft",
+    "AnimName": "ag_dizzy_reaction_soft"
+  },
+  {
+    "CladEvent": "DEPRECATED_DizzyShakeLoop",
+    "AnimName": "ag_dizzy_shake_loop"
+  },
+  {
+    "CladEvent": "DEPRECATED_DizzyShakeStop",
+    "AnimName": "ag_dizzy_shake_stop"
+  },
+  {
+    "CladEvent": "DEPRECATED_DizzyStillPickedUp",
+    "AnimName": "ag_dizzy_pickup"
+  },
+  {
+    "CladEvent": "DockEndDefault",
+    "AnimName": "ag_cubedocking_drive_getout"
+  },
+  {
+    "CladEvent": "DockLoopDefault",
+    "AnimName": "ag_cubedocking_drive_loop"
+  },
+  {
+    "CladEvent": "DockStartDefault",
+    "AnimName": "ag_cubedocking_drive_getin"
+  },
+  {
+    "CladEvent": "DriveEndAngry",
+    "AnimName": "ag_driving_upset_end"
+  },
+  {
+    "CladEvent": "DriveEndDefault",
+    "AnimName": "ag_driving01_enddriving"
+  },
+  {
+    "CladEvent": "DriveEndHappy",
+    "AnimName": "ag_play_needisfull_enddriving"
+  },
+  {
+    "CladEvent": "DriveEndLaunch",
+    "AnimName": "ag_driving01_enddriving"
+  },
+  {
+    "CladEvent": "DriveLoopAngry",
+    "AnimName": "ag_driving_upset_loop"
+  },
+  {
+    "CladEvent": "DriveLoopDefault",
+    "AnimName": "ag_driving01_drivingloop"
+  },
+  {
+    "CladEvent": "DriveLoopHappy",
+    "AnimName": "ag_play_needisfull_drivingloop"
+  },
+  {
+    "CladEvent": "DriveLoopLaunch",
+    "AnimName": "ag_driving01_drivingloop"
+  },
+  {
+    "CladEvent": "DriveOffChargerFarLeft",
+    "AnimName": "ag_chargerdocking_comeoff_left_02"
+  },
+  {
+    "CladEvent": "DriveOffChargerFarRight",
+    "AnimName": "ag_chargerdocking_comeoff_right_02"
+  },
+  {
+    "CladEvent": "DriveOffChargerLeft",
+    "AnimName": "ag_chargerdocking_comeoff_left"
+  },
+  {
+    "CladEvent": "DriveOffChargerRight",
+    "AnimName": "ag_chargerdocking_comeoff_right"
+  },
+  {
+    "CladEvent": "DriveOffChargerStraight",
+    "AnimName": "ag_chargerdocking_comeoff_straight"
+  },
+  {
+    "CladEvent": "DriveStartAngry",
+    "AnimName": "ag_driving_upset_start"
+  },
+  {
+    "CladEvent": "DriveStartDefault",
+    "AnimName": "ag_driving01_startdriving"
+  },
+  {
+    "CladEvent": "DriveStartHappy",
+    "AnimName": "ag_play_needisfull_startdriving"
+  },
+  {
+    "CladEvent": "DriveStartLaunch",
+    "AnimName": "ag_driving01_startdriving"
+  },
+  {
+    "CladEvent": "EyeColorIdle",
+    "AnimName": "ag_eyecolorreact_idle"
+  },
+  {
+    "CladEvent": "EyeColorGetIn",
+    "AnimName": "ag_eyecolorreact_getin"
+  },
+  {
+    "CladEvent": "EyeColorGetOut",
+    "AnimName": "ag_eyecolorreact_getout"
+  },
+  {
+    "CladEvent": "EyeColorSwitch",
+    "AnimName": "ag_eyecolorreact_switch"
+  },
+  {
+    "CladEvent": "EyeContactLookLoop",
+    "AnimName": "ag_eyecontact_lookloop"
+  },
+  {
+    "CladEvent": "ExploringHuhClose",
+    "AnimName": "ag_explorer_huh_close"
+  },
+  {
+    "CladEvent": "ExploringHuhFar",
+    "AnimName": "ag_explorer_huh_far"
+  },
+  {
+    "CladEvent": "ExploringLookAround",
+    "AnimName": "ag_explorer_lookaround"
+  },
+  {
+    "CladEvent": "ExploringLookAtHuman",
+    "AnimName": "ag_referencing_reaction"
+  },
+  {
+    "CladEvent": "ExploringQuickScan",
+    "AnimName": "ag_explorer_scan_short"
+  },
+  {
+   "CladEvent": "ExploringReactToHandGetIn",
+   "AnimName": "ag_handdetection_getin"
+  },
+  {
+   "CladEvent": "ExploringReactToHandDrive",
+   "AnimName": "ag_handdetection_drive_loop"
+  },
+  {
+   "CladEvent": "ExploringReactToHandLift",
+   "AnimName": "ag_handdetection_lift"
+  },
+  {
+    "CladEvent": "ExploringReactToHandReaction",
+    "AnimName": "ag_handdetection_reaction"
+  },
+  {
+   "CladEvent": "ExploringReactToHandGetOut",
+   "AnimName": "ag_handdetection_getout"
+  },
+  {
+    "CladEvent": "ExploringScanToLeft",
+    "AnimName": "ag_explorer_scan_left"
+  },
+  {
+    "CladEvent": "ExploringScanToRight",
+    "AnimName": "ag_explorer_scan_right"
+  },
+  {
+    "CladEvent": "ExploringScanCenterFromLeft",
+    "AnimName": "ag_explorer_center_right"
+  },
+  {
+    "CladEvent": "ExploringScanCenterFromRight",
+    "AnimName": "ag_explorer_center_left"
+  },
+  {
+    "CladEvent": "FacePlantRoll",
+    "AnimName": "ag_reacttocliff_faceplantroll_01"
+  },
+  {
+    "CladEvent": "FacePlantRollArmUp",
+    "AnimName": "ag_reacttocliff_faceplantroll_armup_01"
+  },
+  {
+    "CladEvent": "FailedToRightFromFace",
+    "AnimName": "ag_reacttocliff_turtlerollfail_01"
+  },
+  {
+    "CladEvent": "FetchCubeFailure",
+    "AnimName": "ag_pounceonmotionfail"
+  },
+  {
+    "CladEvent": "FetchCubeSetDown",
+    "AnimName": "ag_reacttoblock_dropsuccess"
+  },
+  {
+    "CladEvent": "FetchCubeSuccess",
+    "AnimName": "ag_knowledgegraph_success_01"
+  },
+  {
+    "CladEvent": "FindCubeReactToCube",
+    "AnimName": "ag_rollcube_initial"
+  },
+  {
+    "CladEvent": "FindCubeTurns",
+    "AnimName": "ag_cubedocking_searchforcubeturns"
+  },
+  {
+    "CladEvent": "FindCubeWaitLoop",
+    "AnimName": "ag_cubebehaviors_keepalive"
+  },
+  {
+    "CladEvent": "FistBumpIdle",
+    "AnimName": "ag_fistbump_idle"
+  },
+  {
+    "CladEvent": "FistBumpRequestOnce",
+    "AnimName": "ag_fistbump_requestonce"
+  },
+  {
+    "CladEvent": "FistBumpRequestRetry",
+    "AnimName": "ag_fistbump_requesttwice"
+  },
+  {
+    "CladEvent": "FistBumpSuccess",
+    "AnimName": "ag_fistbump_success"
+  },
+  {
+    "CladEvent": "FistBumpLeftHanging",
+    "AnimName": "ag_fistbump_fail"
+  },
+  {
+    "CladEvent": "FlipDownFromBack",
+    "AnimName": "ag_reacttocliff_turtleroll_01"
+  },  
+  {
+    "CladEvent": "FoundFace",
+    "AnimName": "ag_movement_reacttoface"
+  },
+  {
+    "CladEvent": "FrustratedByFailureMajor",
+    "AnimName": "ag_reacttoblock_frustrated"
+  },
+  {
+    "CladEvent": "GoToSleepGetIn",
+    "AnimName": "ag_gotosleep_getin"
+  },
+  {
+    "CladEvent": "GoToSleepOff",
+    "AnimName": "ag_gotosleep_off"
+  },
+  {
+    "CladEvent": "GoToSleepSleeping",
+    "AnimName": "ag_gotosleep_sleeping"
+  },
+  {
+    "CladEvent": "HighTemperatureWarningFace",
+    "AnimName": "ag_powersavemode_temperature"
+  },
+  {
+    "CladEvent": "InvestigateHeldCubeGetIn",
+    "AnimName": "ag_inspectheldcube_getin"
+  },
+  {
+    "CladEvent": "InvestigateHeldCubeGetOutBored",
+    "AnimName": "ag_inspectheldcube_timeout"
+  },
+  {
+    "CladEvent": "InvestigateHeldCubeGetOutCubeLost",
+    "AnimName": "ag_inspectheldcube_cubemissing"
+  },
+  {
+    "CladEvent": "InvestigateHeldCubeOnSetDown",
+    "AnimName": "ag_inspectheldcube_cubeonground"
+  },
+  {
+    "CladEvent": "InvestigateHeldCubeTrackingLoop",
+    "AnimName": "ag_inspectheldcube_loop"
+  },
+  {
+    "CladEvent": "ICantDoThat",
+    "AnimName": "ag_communication_cantdothat"
+  },
+  {
+    "CladEvent": "InitialWakeUp",
+    "AnimName": "ag_power_offon_01"
+  },
+  {
+    "CladEvent": "InteractWithFaceTrackingIdle",
+    "AnimName": "ag_pause_idle"
+  },
+  {
+    "CladEvent": "InteractWithFacesInitialNamed",
+    "AnimName": "ag_freeplay_reacttoface_sayname"
+  },
+  {
+    "CladEvent": "InteractWithFacesInitialUnnamed",
+    "AnimName": "ag_freeplay_reacttoface_unidentified"
+  },
+  {
+    "CladEvent": "LookAtDevice",
+    "AnimName": "ag_lookatdevice_icon"
+  },
+  {
+    "CladEvent": "LookAtDeviceGetIn",
+    "AnimName": "ag_lookatdevice_getin"
+  },
+  {
+    "CladEvent": "LookAtDeviceGetOut",
+    "AnimName": "ag_lookatdevice_getout"
+  },
+  {
+    "CladEvent": "LookAtUserEndearingly",
+    "AnimName": "ag_onboarding_eyecontact_loop"
+  },
+  {
+    "CladEvent": "DEPRECATED_LaserAcknowledge",
+    "AnimName": "ag_laser_react_01"
+  },
+  {
+    "CladEvent": "DEPRECATED_LaserDriveEnd",
+    "AnimName": "ag_pouncedriveend"
+  },
+  {
+    "CladEvent": "DEPRECATED_LaserDriveLoop",
+    "AnimName": "ag_laserdriveloop"
+  },
+  {
+    "CladEvent": "DEPRECATED_LaserDriveStart",
+    "AnimName": "ag_laserdrivestart"
+  },
+  {
+    "CladEvent": "DEPRECATED_LaserGetOut",
+    "AnimName": "ag_pouncedriveface_getout"
+  },
+  {
+    "CladEvent": "DEPRECATED_LaserPounce",
+    "AnimName": "ag_pounceonmotionpounce"
+  },
+  {
+    "CladEvent": "LookAround",
+    "AnimName": "ag_lookinplaceforfaces_bodymovepause"
+  },
+  {
+    "CladEvent": "LookInPlaceForFacesBodyPause_Active",
+    "AnimName": "ag_movement_lookinplaceforfaces"
+  },
+  {
+    "CladEvent": "LookInPlaceForFacesBodyPause",
+    "AnimName": "ag_lookinplaceforfaces_bodymovepause"
+  },
+  {
+    "CladEvent": "LookInPlaceForFacesHeadMovePause",
+    "AnimName": "ag_lookinplaceforfaces_headmovepauses"
+  },
+  {
+    "CladEvent": "MeetVictorGetIn",
+    "AnimName" : "ag_meetvictor_getin"
+  },
+  {
+    "CladEvent": "MeetVictorLookFace",
+    "AnimName" : "ag_meetvictor_lookface"
+  },
+  {
+    "CladEvent": "MeetVictorSayName",
+    "AnimName" : "ag_meetvictor_sayname_01"
+  },
+  {
+    "CladEvent": "MeetVictorSayNameAgain",
+    "AnimName" : "ag_meetvictor_sayname_02"
+  },
+  {
+    "CladEvent": "MeetVictorSawWrongFace",
+    "AnimName" : "ag_meetvictor_youarebob_01"
+  },
+  {
+    "CladEvent": "MeetVictorLookFaceInterrupt",
+    "AnimName" : "ag_meetvictor_interrupt"
+  },
+  {
+    "CladEvent": "MeetVictorConfusion",
+    "AnimName": "ag_meetvictor_timeout"
+  },
+  {
+    "CladEvent": "MeetVictorDuplicateName",
+    "AnimName": "ag_meetvictor_alreadyknowbob_01"
+  },
+  {
+    "CladEvent": "DEPRECATED_NamedFaceInitialGreeting",
+    "AnimName" : "ag_greeting_hello"
+  },
+  {
+    "CladEvent": "NeutralFace",
+    "AnimName" : "ag_neutral_face"
+  },
+  {
+    "CladEvent": "NothingToDoBoredIdle",
+    "AnimName": "ag_hiking_lookaround"
+  },  
+  {
+    "CladEvent": "OnboardingComeHere",
+    "AnimName": "ag_onboarding_drive_to_face"
+  },
+  {
+    "CladEvent": "OnboardingComeHereGetOut",
+    "AnimName": "ag_onboarding_drive_to_face_idle_getout"
+  },
+  {
+    "CladEvent": "OnboardingCubeDriveGetIn",
+    "AnimName": "ag_onboarding_cube_drive_getin"
+  },
+  {
+    "CladEvent": "OnboardingCubeDriveGetOut",
+    "AnimName": "ag_onboarding_cube_drive_getout"
+  },
+  {
+    "CladEvent": "OnboardingCubeDriveLoop",
+    "AnimName": "ag_onboarding_cube_drive_loop"
+  },
+  {
+    "CladEvent": "OnboardingCubeHuh",
+    "AnimName": "ag_rollcube_initial"
+  },
+  {
+    "CladEvent": "OnboardingDriveOffCharger",
+    "AnimName": "ag_onboarding_drive_straight"
+  },
+  {
+    "CladEvent": "OnboardingDriveOffCharger_1p0",
+    "AnimName": "ag_onboarding_drive_straight_alternative"
+  },
+  {
+    "CladEvent": "OnboardingLookAtUserGetOut_1p0",
+    "AnimName": "ag_onboarding_eyecontact_getout"
+  },
+  {
+    "CladEvent": "OnboardingLookAround",
+    "AnimName": "ag_onboarding_lookaround_loop"
+  },
+  {
+    "CladEvent": "OnboardingLookAtPhoneUp",
+    "AnimName": "ag_lookatphone_getin"
+  },
+  {
+    "CladEvent": "OnboardingLookAtUser",
+    "AnimName": "ag_onboarding_eyecontact_loop"
+  },
+  {
+    "CladEvent": "OnboardingLookAtPhoneLoop",
+    "AnimName": "ag_lookatphone_loop"
+  },
+  {
+    "CladEvent": "OnboardingLookAtPhoneDown",
+    "AnimName": "ag_lookatphone_getout"
+  },
+  {
+    "CladEvent": "OnboardingLookDown",
+    "AnimName": "ag_onboarding_lookdown_loop"
+  },
+  {
+    "CladEvent": "OnboardingLookForCube",
+    "AnimName": "ag_cubetapping_searchforcube"
+  },
+  {
+    "CladEvent": "OnboardingListenGetIn",
+    "AnimName": "ag_onboarding_wakeword_getin_01"
+  },
+  {
+    "CladEvent": "OnboardingListenGetOut",
+    "AnimName": "ag_onboarding_wakeword_getout_01"
+  },
+  {
+    "CladEvent": "OnboardingReactToFaceHappy",
+    "AnimName": "ag_onboarding_reacttoface_happy"
+  },
+  {
+    "CladEvent": "OnboardingWakeUp",
+    "AnimName": "ag_onboarding_wakeup"
+  },
+  {
+    "CladEvent": "OnboardingWakeWordGetIn",
+    "AnimName": "ag_onboarding_wakeword_getin_01"
+  },  
+  {
+    "CladEvent": "OnboardingWakeWordSuccess",
+    "AnimName": "ag_onboarding_wakeword_success"
+  },  
+  {
+    "CladEvent": "PettingLevel1",
+    "AnimName": "ag_petting_lvl1"
+  },
+  {
+    "CladEvent": "PettingLevel2",
+    "AnimName": "ag_petting_lvl2"
+  },
+  {
+    "CladEvent": "PettingLevel3",
+    "AnimName": "ag_petting_lvl3"
+  },
+  {
+    "CladEvent": "PettingBlissLoop",
+    "AnimName": "ag_petting_blissloop"
+  },
+  {
+    "CladEvent": "PettingBlissGetout",
+    "AnimName": "ag_petting_bliss_getout"
+  },
+  {
+    "CladEvent": "PettingLevel4",
+    "AnimName": "ag_petting_lvl4"
+  },
+  {
+    "CladEvent": "PettingLevel1Getout",
+    "AnimName": "ag_petting_lvl1_getout"
+  },
+  {
+    "CladEvent": "PettingLevel2Getout",
+    "AnimName": "ag_petting_lvl2_getout"
+  },
+  {
+    "CladEvent": "PettingLevel3Getout",
+    "AnimName": "ag_petting_lvl3_getout"
+  },
+  {
+    "CladEvent": "PettingLevel4Getout",
+    "AnimName": "ag_petting_lvl4_getout"
+  },
+  {
+    "CladEvent":"PickupCubePreperation",
+    "AnimName": "ag_rollcube_initial"
+  },
+  {
+    "CladEvent":"PickupCubeRetry",
+    "AnimName": "ag_rollcube_retry"
+  },
+  {
+    "CladEvent":"PickupCubeSuccess",
+    "AnimName": "ag_pickupcube_success"
+  },
+  {
+    "CladEvent":"PlaceCubeByChargerFail",
+    "AnimName": "ag_reacttoblock_dropfail"
+  },
+  {
+    "CladEvent":"PlaceCubeByChargerReactToCharger",
+    "AnimName": "ag_reacttoblock_reacttocharger"
+  },
+  {
+    "CladEvent":"PlaceCubeByChargerSuccess",
+    "AnimName": "ag_reacttoblock_dropsuccess"
+  },
+  {
+    "CladEvent": "PlanningGetIn",
+    "AnimName" : "ag_explorer_planning_getin"
+  },
+  {
+    "CladEvent": "PlanningLoop",
+    "AnimName" : "ag_explorer_planning"
+  },
+  {
+    "CladEvent": "PlanningGetOut",
+    "AnimName" : "ag_explorer_planning_getout"
+  },
+  {
+    "CladEvent": "PopAWheelieInitial",
+    "AnimName": "ag_rollcube_initial"
+  },
+  {
+    "CladEvent": "PopAWheeliePreActionNamedFace",
+    "AnimName": "ag_freeplay_reacttoface_identified"
+  },
+  {
+    "CladEvent": "PopAWheeliePreActionUnnamedFace",
+    "AnimName": "ag_freeplay_reacttoface_unidentified"
+  },
+  {
+    "CladEvent": "PopAWheelieRealign",
+    "AnimName": "ag_rollcube_realign"
+  },
+  {
+    "CladEvent": "PopAWheelieRetry",
+    "AnimName": "ag_rollcube_retry"
+  },
+  {
+    "CladEvent": "PounceFail",
+    "AnimName": "ag_pounceonmotionfail"
+  },
+  {
+    "CladEvent": "PounceSuccess",
+    "AnimName": "ag_pounceonmotionsuccess"
+  },
+  {
+    "CladEvent": "PounceWProxForward",
+    "AnimName": "ag_quick_pounce_forward"
+  },
+  {
+    "CladEvent": "PutDownBlockKeepAlive",
+    "AnimName": "ag_lookatface_keepalive"
+  },
+  {
+    "CladEvent": "PutDownBlockPutDown",
+    "AnimName": "ag_putdownblock"
+  },
+  {
+    "CladEvent": "ReactToCliff",
+    "AnimName": "ag_reacttocliff_edge"
+  },
+  {
+    "CladEvent": "ReactToCliffFront",
+    "AnimName": "ag_reacttocliff_huh_01"
+  },
+  {
+    "CladEvent": "ReactToCliffFrontLeft",
+    "AnimName": "ag_reacttocliff_reaction_front_left"
+  },
+  {
+    "CladEvent": "ReactToCliffFrontRight",
+    "AnimName": "ag_reacttocliff_reaction_front_right"
+  },
+  {
+    "CladEvent": "ReactToCliffBack",
+    "AnimName": "ag_reacttocliff_reaction_back"
+  },
+  {
+    "CladEvent": "ReactToCliffBackLeft",
+    "AnimName": "ag_reacttocliff_reaction_rear_left"
+  },
+  {
+    "CladEvent": "ReactToCliffBackRight",
+    "AnimName": "ag_reacttocliff_reaction_rear_right"
+  },
+  {
+    "CladEvent": "ReactToDarkness",
+    "AnimName": "ag_rtillumination_lighttodark"
+  },
+  {
+    "CladEvent": "ReactToObstacle",
+    "AnimName": "ag_sudden_object_react"
+  },
+  {
+    "CladEvent": "ReactToOnLeftSideGetIn",
+    "AnimName": "ag_reacttocliff_stuckleftside_getin_01"
+  },
+  {
+    "CladEvent": "ReactToOnLeftSideLoop",
+    "AnimName": "ag_reacttocliff_stuckleftside_01"
+  },
+  {
+    "CladEvent": "ReactToOnRightSideGetIn",
+    "AnimName": "ag_reacttocliff_stuckrightside_getin_01"
+  },
+  {
+    "CladEvent": "ReactToOnRightSideLoop",
+    "AnimName": "ag_reacttocliff_stuckrightside_01"
+  },
+  {
+    "CladEvent": "ReactToOnSideEffort",
+    "AnimName": "ag_reacttocliff_sidestuck_effort_01"
+  },
+  {
+    "CladEvent": "ReactToOnSideGetOut",
+    "AnimName": "ag_reacttocliff_sidestuck_getout_01"
+  },
+  {
+    "CladEvent": "ReactToPerchedOnBlock",
+    "AnimName": "ag_reacttoblock_stuckonblock"
+  },
+  {
+    "CladEvent": "ReactToPickupInitial",
+    "AnimName": "ag_rtpickup_reaction"
+  },
+  {
+    "CladEvent": "ReactToPickupLoop",
+    "AnimName": "ag_rtpickup_loop"
+  },
+  {
+    "CladEvent": "ReactToPutDown",
+    "AnimName": "ag_rtpickup_putdown"
+  },
+  {
+    "CladEvent": "ReactToUnexpectedMovement",
+    "AnimName": "ag_reacttostop"
+  },
+  {
+    "CladEvent": "RollBlockRealign",
+    "AnimName": "ag_rollcube_realign"
+  },
+  {
+    "CladEvent": "RollBlockRetry",
+    "AnimName": "ag_rollcube_retry"
+  },
+  {
+    "CladEvent": "RollBlockSuccess",
+    "AnimName": "ag_rollcube_success"
+  },
+  {
+    "CladEvent": "DEPRECATED_SearchForFace_Search",
+    "AnimName": "ag_vc_reaction_nofaceheardyou"
+  },
+  {
+    "CladEvent": "DEPRECATED_SearchForFace_FoundFace",
+    "AnimName": "ag_vc_reaction_nofaceheardyou_getout"
+  },  
+  {
+    "CladEvent": "BumpObjectSlowGetIn",
+    "AnimName": "ag_slowbump_getin"
+  },
+  {
+    "CladEvent": "BumpObjectSlowLoop",
+    "AnimName": "ag_slowbump_loop"
+  },
+  {
+    "CladEvent": "BumpObjectSlowGetOut",
+    "AnimName": "ag_slowbump_getout"
+  },
+  {
+    "CladEvent": "BumpObjectFastGetIn",
+    "AnimName": "ag_fastbump_getin"
+  },
+  {
+    "CladEvent": "BumpObjectFastLoop",
+    "AnimName": "ag_fastbump_loop"
+  },
+  {
+    "CladEvent": "BumpObjectFastGetOut",
+    "AnimName": "ag_fastbump_getout"
+  },
+  {
+    "CladEvent": "SoundOnlyLiftEffortPickup",
+    "AnimName": "ag_lifteffortpickup"
+  },
+  {
+    "CladEvent": "SoundOnlyLiftEffortPlaceHigh",
+    "AnimName": "ag_lifteffortplacehigh"
+  },
+  {
+    "CladEvent": "SoundOnlyLiftEffortPlaceLow",
+    "AnimName": "ag_lifteffortplacelow"
+  },
+  {
+    "CladEvent": "SoundOnlyLiftEffortPlaceRoll",
+    "AnimName": "ag_lifteffortroll"
+  },
+  {
+    "CladEvent": "DEPRECATED_StackBlocksSuccess",
+    "AnimName": "ag_stackcube_success"
+  },
+  {
+    "CladEvent": "StuckOnEdgeGetIn",
+    "AnimName": "ag_reacttocliff_stuckonedge_getin"
+  },
+  {
+    "CladEvent": "StuckOnEdgeIdle",
+    "AnimName": "ag_reacttocliff_stuckonedge_01"
+  },
+  {
+    "CladEvent": "StuckOnEdgeLeftGetIn",
+    "AnimName": "ag_reacttocliff_stuckonedge_left_getin"
+  },
+  {
+    "CladEvent": "StuckOnEdgeLeftIdle",
+    "AnimName": "ag_reacttocliff_stuckonedge_left_01"
+  },
+  {
+    "CladEvent": "StuckOnEdgeRightGetIn",
+    "AnimName": "ag_reacttocliff_stuckonedge_right_getin"
+  },
+  {
+    "CladEvent": "StuckOnEdgeRightIdle",
+    "AnimName": "ag_reacttocliff_stuckonedge_right_01"
+  },
+  {
+    "CladEvent": "SuccessfulWheelie",
+    "AnimName": "ag_reacttocliff_wheelie_01"
+  },
+  {
+    "CladEvent": "ReactToCliffTurnLeft60",
+    "AnimName": "ag_reacttocliff_turnleft_60"
+  },
+  {
+    "CladEvent": "ReactToCliffTurnLeft120",
+    "AnimName": "ag_reacttocliff_turnleft_120"
+  },
+  {
+    "CladEvent": "ReactToCliffTurnLeft180",
+    "AnimName": "ag_reacttocliff_turnleft_180"
+  },
+  {
+    "CladEvent": "ReactToCliffTurnRight60",
+    "AnimName": "ag_reacttocliff_turnright_60"
+  },
+  {
+    "CladEvent": "ReactToCliffTurnRight120",
+    "AnimName": "ag_reacttocliff_turnright_120"
+  },
+  {
+    "CladEvent": "ReactToCliffTurnRight180",
+    "AnimName": "ag_reacttocliff_turnright_180"
+  },
+  {
+    "CladEvent": "TakeAPictureFocusing",
+    "AnimName": "ag_takepicture_focusing"
+  },
+  {
+    "CladEvent": "TakeAPictureCapture",
+    "AnimName": "ag_takepicture_capture"
+  },
+
+  {
+    "CladEvent": "TextToSpeechGetIn",
+    "AnimName": "ag_texttospeech_getin_01"
+  },
+  {
+    "CladEvent": "TextToSpeechGetLoop",
+    "AnimName": "ag_texttospeech_loop_01"
+  },
+  {
+    "CladEvent": "TextToSpeechGetOut",
+    "AnimName": "ag_texttospeech_getout_01"
+  },
+  {
+    "CladEvent": "TimerCancelGetIn",
+    "AnimName": "ag_timer_timecancel_getin"
+  },
+  {
+    "CladEvent": "TimerCancelTimer",
+    "AnimName": "ag_timer_timecancel"
+  },
+  {
+    "CladEvent": "TimerCheckTimeGetIn",
+    "AnimName": "ag_timer_left_getin"
+  },
+  {
+    "CladEvent": "TimerCheckTimeGetOut",
+    "AnimName": "ag_timer_left_getout"
+  },
+  {
+    "CladEvent": "TimerSetGetIn",
+    "AnimName": "ag_timer_set_getin"
+  },
+  {
+    "CladEvent": "TimerSetGetOut",
+    "AnimName": "ag_timer_set_getout"
+  },
+  {
+    "CladEvent": "TimerRingGetIn",
+    "AnimName": "ag_timer_big_beep"
+  },
+  {
+    "CladEvent": "TimerRing",
+    "AnimName": "ag_timer_beep"
+  },
+  {
+    "CladEvent": "TimerRingGetOut",
+    "AnimName": "ag_timer_is_up_getout"
+  },
+  {
+    "CladEvent": "UnitTestAnim",
+    "AnimName": "ag_askforblock"
+  },
+  {
+    "CladEvent": "VC_ListeningGetIn",
+    "AnimName": "ag_vc_listening"
+  },
+  {
+    "CladEvent": "VC_ListeningLoop",
+    "AnimName": "ag_vc_listening_loop"
+  },
+  {
+    "CladEvent": "VC_ListeningGetOut",
+    "AnimName": "ag_vc_listening_getout"
+  },
+  {
+    "CladEvent": "VC_IntentNeutral",
+    "AnimName": "ag_vc_wakeword_idk"
+  },
+  {
+    "CladEvent": "PokeObjectGetIn",
+    "AnimName": "ag_slowpoke_getin"
+  },
+  {
+    "CladEvent": "PokeObjectDriveLoop",
+    "AnimName": "ag_slowpoke_loop"
+  },
+  {
+    "CladEvent": "PokeObjectGetOut",
+    "AnimName": "ag_slowpoke_getout"
+  },
+  {
+    "CladEvent": "WakeupGetout",
+    "AnimName": "ag_gotosleep_wakeup"
+  },
+  {
+    "CladEvent": "ObservingLookUp",
+    "AnimName": "ag_generic_look_up_01"
+  },
+  {
+    "CladEvent": "ObservingLookStraight",
+    "AnimName": "ag_generic_look_stright_01"
+  },
+  {
+    "CladEvent": "ObservingIdleEyesOnly",
+    "AnimName": "ag_keepalive_eyesonly_loop_01"
+  },
+  {
+    "CladEvent": "ObservingIdleWithHeadLookingUp",
+    "AnimName": "ag_generic_look_up_idle"
+  },
+  {
+    "CladEvent": "ObservingIdleWithHeadLookingStraight",
+    "AnimName": "ag_observe_oncharger_observing"
+  },
+  {
+    "CladEvent": "DEPRECATED_LookDownForLaser",
+    "AnimName": "ag_vc_laser_lookdown"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_Ambient",
+    "AnimName": "ag_rtsound_offcharger_asleep_ambient"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_Front",
+    "AnimName": "ag_rtsound_offcharger_asleep_front"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_30Left",
+    "AnimName": "ag_rtsound_offcharger_asleep_30left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_30Right",
+    "AnimName": "ag_rtsound_offcharger_asleep_30right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_60Left",
+    "AnimName": "ag_rtsound_offcharger_asleep_60left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_60Right",
+    "AnimName": "ag_rtsound_offcharger_asleep_60right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_Left",
+    "AnimName": "ag_rtsound_offcharger_asleep_left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_Right",
+    "AnimName": "ag_rtsound_offcharger_asleep_right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_120Left",
+    "AnimName": "ag_rtsound_offcharger_asleep_120left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_120Right",
+    "AnimName": "ag_rtsound_offcharger_asleep_120right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_150Left",
+    "AnimName": "ag_rtsound_offcharger_asleep_150left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_150Right",
+    "AnimName": "ag_rtsound_offcharger_asleep_150right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Sleep_Back",
+    "AnimName": "ag_rtsound_offcharger_asleep_behind"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_Ambient",
+    "AnimName": "ag_rtsound_offcharger_observe_ambient"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_Front",
+    "AnimName": "ag_rtsound_offcharger_observe_front"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_30Left",
+    "AnimName": "ag_rtsound_offcharger_observe_30left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_30Right",
+    "AnimName": "ag_rtsound_offcharger_observe_30right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_60Left",
+    "AnimName": "ag_rtsound_offcharger_observe_60left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_60Right",
+    "AnimName": "ag_rtsound_offcharger_observe_60right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_Left",
+    "AnimName": "ag_rtsound_offcharger_observe_left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_Right",
+    "AnimName": "ag_rtsound_offcharger_observe_right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_120Left",
+    "AnimName": "ag_rtsound_offcharger_observe_120left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_120Right",
+    "AnimName": "ag_rtsound_offcharger_observe_120right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_150Left",
+    "AnimName": "ag_rtsound_offcharger_observe_150left"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_150Right",
+    "AnimName": "ag_rtsound_offcharger_observe_150right"
+  },
+  {
+    "CladEvent": "RTS_OffCharger_Awake_Back",
+    "AnimName": "ag_rtsound_offcharger_observe_behind"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_Ambient",
+    "AnimName": "ag_rtsound_oncharger_asleep_front"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_Front",
+    "AnimName": "ag_rtsound_oncharger_asleep_front"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_30Left",
+    "AnimName": "ag_rtsound_oncharger_asleep_30left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_30Right",
+    "AnimName": "ag_rtsound_oncharger_asleep_30right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_60Left",
+    "AnimName": "ag_rtsound_oncharger_asleep_60left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_60Right",
+    "AnimName": "ag_rtsound_oncharger_asleep_60right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_Left",
+    "AnimName": "ag_rtsound_oncharger_asleep_left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_Right",
+    "AnimName": "ag_rtsound_oncharger_asleep_right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_120Left",
+    "AnimName": "ag_rtsound_oncharger_asleep_120left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_120Right",
+    "AnimName": "ag_rtsound_oncharger_asleep_120right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_150Left",
+    "AnimName": "ag_rtsound_oncharger_asleep_150left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_150Right",
+    "AnimName": "ag_rtsound_oncharger_asleep_150right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Sleep_Back",
+    "AnimName": "ag_rtsound_oncharger_asleep_behind"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_Ambient",
+    "AnimName": "ag_rtsound_oncharger_observe_front"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_Front",
+    "AnimName": "ag_rtsound_oncharger_observe_front"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_30Left",
+    "AnimName": "ag_rtsound_oncharger_observe_30left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_30Right",
+    "AnimName": "ag_rtsound_oncharger_observe_30right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_60Left",
+    "AnimName": "ag_rtsound_oncharger_observe_60left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_60Right",
+    "AnimName": "ag_rtsound_oncharger_observe_60right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_Left",
+    "AnimName": "ag_rtsound_oncharger_observe_left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_Right",
+    "AnimName": "ag_rtsound_oncharger_observe_right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_120Left",
+    "AnimName": "ag_rtsound_oncharger_observe_120left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_120Right",
+    "AnimName": "ag_rtsound_oncharger_observe_120right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_150Left",
+    "AnimName": "ag_rtsound_oncharger_observe_150left"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_150Right",
+    "AnimName": "ag_rtsound_oncharger_observe_150right"
+  },
+  {
+    "CladEvent": "RTS_OnCharger_Awake_Back",
+    "AnimName": "ag_rtsound_oncharger_observe_behind"
+  },
+  {
+    "CladEvent": "ReactToTriggerWordOffChargerFrontLeft",
+    "AnimName": "ag_vc_wakeword_turnleft_45degrees"
+  },
+  {
+    "CladEvent": "ReactToTriggerWordOffChargerFrontRight",
+    "AnimName": "ag_vc_wakeword_turnright_45degrees"
+  },
+  {
+    "CladEvent": "ReactToTriggerWordOffChargerLeft",
+    "AnimName": "ag_vc_wakeword_turnleft"
+  },
+  {
+    "CladEvent": "ReactToTriggerWordOffChargerRight",
+    "AnimName": "ag_vc_wakeword_turnright"
+  },
+  {
+    "CladEvent": "ReactToTriggerWordOffChargerBehind",
+    "AnimName": "ag_vc_wakeword_turn_behind_left"
+  },
+  {
+    "CladEvent": "ReactToTriggerWordOffChargerBehindLeft",
+    "AnimName": "ag_vc_wakeword_turnleft_135degrees"
+  },
+  {
+    "CladEvent": "ReactToTriggerWordOffChargerBehindRight",
+    "AnimName": "ag_vc_wakeword_turnright_135degrees"
+  },
+  {
+    "CladEvent": "ReactToUnclaimedIntent",
+    "AnimName": "ag_communication_cantdothat"
+  },
+  {
+    "CladEvent": "ReactToUnclaimedIntentInAir",
+    "AnimName": "ag_communication_pickup_cantdothat"
+  },
+  {
+    "CladEvent": "Feedback_GoodRobot",
+    "AnimName": "ag_feedback_goodrobot"
+  },
+  {
+    "CladEvent": "Feedback_BadRobot",
+    "AnimName": "ag_feedback_badrobot"
+  },
+  {
+    "CladEvent": "Feedback_ShutUp",
+    "AnimName": "ag_feedback_shutup"
+  },
+  {
+    "CladEvent": "Feedback_BeQuiet",
+    "AnimName": "ag_feedback_bequiet"
+  },
+
+  {
+    "CladEvent": "Feedback_Apology",
+    "AnimName": "ag_feedback_apology"
+  },
+  {
+    "CladEvent": "Feedback_ILoveYou",
+    "AnimName": "ag_feedback_iloveyou"
+  },
+  {
+    "CladEvent": "Feedback_MeanWords",
+    "AnimName": "ag_feedback_meanwords"
+  },
+
+  {
+    "CladEvent": "ReactToGoodBye",
+    "AnimName": "ag_greeting_goodbye"
+  },
+  {
+    "CladEvent": "ReactToGoodMorning",
+    "AnimName": "ag_greeting_goodmorning"
+  },
+  {
+    "CladEvent": "ReactToGoodNight",
+    "AnimName": "ag_greeting_goodnight"
+  },
+  {
+    "CladEvent": "ReactToGreeting",
+    "AnimName": "ag_greeting_hello"
+  },
+  {
+    "CladEvent": "ReactToHabitat",
+    "AnimName": "ag_reacttohabitat_subtle_01"
+  },
+  {
+    "CladEvent": "ReactToTouchInitial",
+    "AnimName": "ag_petting_reacttotouch_01"
+  },
+  {
+    "CladEvent": "ReactToMotionRightGetout",
+    "AnimName": "ag_rtmotion_right_getout"
+  },
+  {
+    "CladEvent": "ReactToMotionLeftGetout",
+    "AnimName": "ag_rtmotion_left_getout"
+  },
+  {
+    "CladEvent": "ReactToMotionUpGetout",
+    "AnimName": "ag_rtmotion_up_getout"
+  },
+  {
+    "CladEvent": "ReactToMotionRight",
+    "AnimName": "ag_rtmotion_lookright"
+  },
+  {
+    "CladEvent": "ReactToMotionLeft",
+    "AnimName": "ag_rtmotion_lookleft"
+  },
+  {
+    "CladEvent": "ReactToMotionUp",
+    "AnimName": "ag_rtmotion_lookup"
+  },
+  {
+    "CladEvent": "ReactToMotionTurnRight",
+    "AnimName": "ag_rtmotion_turn45right"
+  },
+  {
+    "CladEvent": "ReactToMotionTurnLeft",
+    "AnimName": "ag_rtmotion_turn45left"
+  },
+  {
+    "CladEvent": "ReactToMotionTurnUp",
+    "AnimName": "ag_rtmotion_forwardup"
+  },
+  {
+    "CladEvent": "ObservingOnChargerGetIn",
+    "AnimName": "ag_observe_oncharger_getin"
+  },
+  {
+    "CladEvent": "ObservingOnChargerGetOut",
+    "AnimName": "ag_observe_oncharger_getout"
+  },
+  {
+    "CladEvent": "ObservingOnCharger",
+    "AnimName": "ag_observe_oncharger_observing"
+  },
+  {
+    "CladEvent": "ReactToCubeTapCubeTappedLvl1",
+    "AnimName": "ag_cubetapping_reacttocubetap"
+  },
+  {
+    "CladEvent": "ReactToCubeTapCubeTappedLvl2",
+    "AnimName": "ag_cubetapping_reacttocubetap_lvl2"
+  },
+  {
+    "CladEvent": "ReactToCubeTapCubeTappedLvl3",
+    "AnimName": "ag_cubetapping_reacttocubetap_lvl3"
+  },
+  {
+    "CladEvent": "ReactToCubeSearchForCubeLvl1",
+    "AnimName": "ag_cubetapping_searchforcube"
+  },
+  {
+    "CladEvent": "ReactToCubeSearchForCubeLvl2",
+    "AnimName": "ag_cubetapping_searchforcube_lvl2"
+  },
+  {
+    "CladEvent": "ReactToCubeSearchForCubeLvl3",
+    "AnimName": "ag_cubetapping_searchforcube_lvl3"
+  },
+  {
+    "CladEvent": "ReactToCubeTapCubeFound",
+    "AnimName": "ag_cubetapping_reacttofoundcube"
+  },
+  {
+    "CladEvent": "ReactToCubeTapCubeNotFound",
+    "AnimName": "ag_cubetapping_reacttofoundcube"
+  },
+  {
+    "CladEvent": "ReactToCubeTapInteractionLoop",
+    "AnimName": "ag_cubetapping_idleloop"
+  },
+  {
+    "CladEvent": "ReactToCubeTapInteractionGetOut",
+    "AnimName": "ag_cubetapping_getout"
+  },
+  {
+    "CladEvent": "MessagingMessageGetIn",
+    "AnimName": "ag_message_getin"
+  },
+  {
+    "CladEvent": "MessagingMessageLoop",
+    "AnimName": "ag_message_loop"
+  },
+  {
+    "CladEvent": "MessagingMessageGetOut",
+    "AnimName": "ag_message_getout"
+  },
+  {
+    "CladEvent": "MessagingMessageRecordReaction",
+    "AnimName": "ag_message_record_reaction"
+  },
+  {
+    "CladEvent": "MessagingMessageDeletedShort",
+    "AnimName": "ag_message_messages_deleted_short"
+  },
+  {
+    "CladEvent": "MessagingMessageRewind",
+    "AnimName": "ag_message_rewind"
+  },
+  {
+    "CladEvent": "KnowledgeGraphGetIn",
+    "AnimName": "ag_knowledgegraph_getin_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphListening",
+    "AnimName": "ag_knowledgegraph_listening_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphSearchingGetIn",
+    "AnimName": "ag_knowledgegraph_searching_getin_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphSearching",
+    "AnimName": "ag_knowledgegraph_searching_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphSearchingGetOutSuccess",
+    "AnimName": "ag_knowledgegraph_searching_getout_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphSearchingFail",
+    "AnimName": "ag_knowledgegraph_fail_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphSearchingFailGetOut",
+    "AnimName": "ag_knowledgegraph_fail_getout_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphAnswer",
+    "AnimName": "ag_knowledgegraph_answer_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphGetOut",
+    "AnimName": "ag_knowledgegraph_getout_01"
+  },
+  {
+    "CladEvent": "KnowledgeGraphSuccessReaction",
+    "AnimName": "ag_knowledgegraph_success_01"
+  },
+  {
+    "CladEvent": "NoCloudGetIn",
+    "AnimName": "ag_nowifi_getin"
+  },
+  {
+    "CladEvent": "NoCloudIcon",
+    "AnimName": "ag_nocloud_icon"
+  },
+  {
+    "CladEvent": "NoWifiGetIn",
+    "AnimName": "ag_nowifi_getin"
+  },
+  {
+    "CladEvent": "NoWifiSearching",
+    "AnimName": "ag_nowifi_signal"
+  },
+  {
+    "CladEvent": "NoWifiIcon",
+    "AnimName": "ag_nowifi_icon"
+  },
+  {
+    "CladEvent": "GazingLookAtFacesGetInLeft",
+    "AnimName" : "ag_gazing_lookatfaces_getin_left"
+  },
+  {
+    "CladEvent": "GazingLookAtFacesGetInRight",
+    "AnimName" : "ag_gazing_lookatfaces_getin_right"
+  },
+  {
+    "CladEvent": "GazingLookAtFacesTurnLeft",
+    "AnimName" : "ag_gazing_lookatfaces_turn_left"
+  },
+  {
+    "CladEvent": "GazingLookAtFacesTurnRight",
+    "AnimName" : "ag_gazing_lookatfaces_turn_right"
+  },
+  {
+    "CladEvent": "GazingLookAtSurfacesGetInLeft",
+    "AnimName" : "ag_gazing_lookatsurfaces_getin_left"
+  },
+  {
+    "CladEvent": "GazingLookAtSurfacesGetInRight",
+    "AnimName" : "ag_gazing_lookatsurfaces_getin_right"
+  },
+  {
+    "CladEvent": "GazingLookAtSurfaceReaction",
+    "AnimName" : "ag_gazing_lookatsurface_reaction"
+  },
+  {
+    "CladEvent": "GazingLookAtSurfaceTurnLeft",
+    "AnimName" : "ag_gazing_lookatsurface_turn_left"
+  },
+  {
+    "CladEvent": "GazingLookAtSurfacesTurnRight",
+    "AnimName" : "ag_gazing_lookatsurfaces_turn_right"
+  },
+  {
+    "CladEvent": "GazingLookAtVectorReaction",
+    "AnimName" : "ag_gazing_lookatvector_reaction"
+  },
+  {
+    "CladEvent": "GreetAfterLongTime",
+    "AnimName" : "ag_greeting_imhome"
+  },
+  {
+    "CladEvent": "ComeHereStart",
+    "AnimName": "ag_movement_comehere_first_reaction"
+  },
+  {
+    "CladEvent": "ComeHereSuccess",
+    "AnimName": "ag_comehere_greeting"
+  },
+  {
+    "CladEvent": "PRDemoGreeting",
+    "AnimName": "ag_greeting_imhome"
+  },
+  {
+    "CladEvent": "VC_SleepingToListeningGetIn",
+    "AnimName": "ag_wakeword_groggyeyes_getin"
+  },
+  {
+    "CladEvent": "VC_SleepingToListeningLoop",
+    "AnimName": "ag_wakeword_groggyeyes_listenloop"
+  },
+  {
+    "CladEvent": "VC_SleepingToListeningGetOut",
+    "AnimName": "ag_wakeword_groggyeyes_getout"
+  },
+  {
+    "CladEvent": "VolumeLevel1",
+    "AnimName": "ag_volume_stage_01"
+  },
+  {
+    "CladEvent": "VolumeLevel2",
+    "AnimName": "ag_volume_stage_02"
+  },
+  {
+    "CladEvent": "VolumeLevel3",
+    "AnimName": "ag_volume_stage_03"
+  },
+  {
+    "CladEvent": "VolumeLevel4",
+    "AnimName": "ag_volume_stage_04"
+  },
+  {
+    "CladEvent": "VolumeLevel5",
+    "AnimName": "ag_volume_stage_05"
+  },
+  {
+    "CladEvent": "MovementDriveBackward",
+    "AnimName": "ag_movement_backward_01"
+  },
+  {
+    "CladEvent": "MovementDriveForward",
+    "AnimName": "ag_movement_forward_01"
+  },
+  {
+    "CladEvent": "MovementTurnLeft",
+    "AnimName": "ag_movement_left_01"
+  },
+  {
+    "CladEvent": "MovementTurnRight",
+    "AnimName": "ag_movement_right_01"
+  },
+  {
+    "CladEvent": "MovementTurnAround",
+    "AnimName": "ag_movement_turnaround_01"
+  },
+  {
+    "CladEvent": "SeasonalHappyHolidays",
+    "AnimName": "ag_holiday_hh_lights"
+  },
+  {
+    "CladEvent": "SeasonalHappyNewYear",
+    "AnimName": "ag_holiday_hny"
+  },
+  {
+    "CladEvent": "HeldOnPalmEdgeNervous",
+    "AnimName": "ag_heldonpalm_edge_nervous"
+  },
+  {
+    "CladEvent": "HeldOnPalmEdgeRelaxed",
+    "AnimName": "ag_heldonpalm_edge_relaxed"
+  },
+  {
+    "CladEvent": "HeldOnPalmGetInNervous",
+    "AnimName": "ag_heldonpalm_getin_nervous"
+  },
+  {
+    "CladEvent": "HeldOnPalmGetInRelaxed",
+    "AnimName": "ag_heldonpalm_getin_relaxed"
+  },
+  {
+    "CladEvent": "HeldOnPalmLookingNervous",
+    "AnimName": "ag_heldonpalm_looking_nervous"
+  },
+  {
+    "CladEvent": "HeldOnPalmNestling",
+    "AnimName": "ag_heldonpalm_nestling"
+  },
+  {
+    "CladEvent": "HeldOnPalmPickupNervous",
+    "AnimName": "ag_heldonpalm_pickup_nervous"
+  },
+  {
+    "CladEvent": "HeldOnPalmPickupRelaxed",
+    "AnimName": "ag_heldonpalm_pickup_relaxed"
+  },
+  {
+    "CladEvent": "HeldOnPalmPutDownNervous",
+    "AnimName": "ag_heldonpalm_putdown_nervous"
+  },
+  {
+    "CladEvent": "HeldOnPalmPutDownRelaxed",
+    "AnimName": "ag_heldonpalm_putdown_relaxed"
+  },
+  {
+    "CladEvent": "HeldOnPalmReactToJolt",
+    "AnimName": "ag_heldonpalm_jolt"
+  },
+  {
+    "CladEvent": "HeldOnPalmRollOff",
+    "AnimName": "ag_heldonpalm_rolloff"
+  },
+  {
+    "CladEvent": "HeldOnPalmTransitionToRelaxed",
+    "AnimName": "ag_heldonpalm_transition2relaxed"
+  },
+  {
+    "CladEvent": "LowlightChargerSearchGetin",
+    "AnimName": "ag_lowlightcharger_search_getin"
+  },
+  {
+    "CladEvent": "LowlightChargerSearchLoop",
+    "AnimName": "ag_lowlightcharger_search_loop"
+  },
+  {
+    "CladEvent": "LowlightChargerSearchGetout",
+    "AnimName": "ag_lowlightcharger_search_getout"
+  }
+]

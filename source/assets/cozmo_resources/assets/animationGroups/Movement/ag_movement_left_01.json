@@ -1,0 +1,16 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_movement_left_01",
+      "Weight": 2.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_movement_left_02",
+      "Weight": 50.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

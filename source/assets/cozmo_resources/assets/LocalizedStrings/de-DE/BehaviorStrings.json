@@ -1,0 +1,15 @@
+{
+  "smartling" : {
+    "translate_paths" : ["*/translation"],
+    "variants_enabled" : true,
+    "translate_mode" : "custom",
+    "placeholder_format_custom" : ["%%[^%]+?%%", "%[^%]+?%", "##[^#]+?##", "__[^_]+?__", "[$]\\{[^\\}\\{]+?\\}", "\\{\\{[^\\}\\{]+?\\}\\}", "(?<!\\{)\\{[^\\}\\{]+?\\}(?!\\})"],
+    "source_key_paths" : ["/{*}"]
+  },
+  "behavior.DevTest1": {
+    "translation": "Ich bin Vector"
+  },
+  "behavior.DevTest2": {
+    "translation": "Ich bin {0}"
+  }
+}

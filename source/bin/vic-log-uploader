@@ -1,0 +1,96 @@
+#!/bin/bash
+#
+# platform/config/bin/vic-log-uploader
+#
+# Victor Log Uploader
+#
+# This script runs as a background to periodically check for outgoing files
+# and attempt to upload them by calling 'vic-log-upload'. Outgoing files will be
+# deleted after successful upload.
+#
+# File names ending with '~' are ignored as temporary files.
+# Only regular files will be uploaded. Directories and special files will be ignored.
+#
+# Default configuration values may be overridden by environment.
+# When run from vic-log-uploader.service, environment values may
+# be set in /anki/etc/vic-log-uploader.env.
+#
+
+: ${VIC_LOG_UPLOADER_FOLDER:="/data/data/com.anki.victor/cache/outgoing"}
+: ${VIC_LOG_UPLOADER_SLEEP_SEC:=30}
+: ${VIC_LOG_UPLOADER_QUOTA_MB:=10}
+: ${VERBOSE:=0}
+
+# Helper programs
+LOGGER="/bin/logger -t vic-log-uploader"
+UPLOADER="/anki/bin/vic-log-upload"
+
+#
+# Log helpers
+#
+
+function log () {
+  ${LOGGER} -p user.info -- "$*"
+}
+
+function loge () {
+  ${LOGGER} -p user.err -- "$*"
+}
+
+function logv () {
+  if [ ${VERBOSE} -eq 1 ]; then
+    ${LOGGER} -p user.debug -- "$*"
+  fi
+}
+
+#
+# Return usage of given folder, counted in MB
+#
+function get_usage_mb () {
+    usage_mb=$(/bin/du -m "$1")
+    usage_mb=${usage_mb/[^0-9]*/}
+    echo "${usage_mb}"
+}
+
+/bin/mkdir -p ${VIC_LOG_UPLOADER_FOLDER}
+
+while :
+do
+  # Go through all the files we haven't uploaded
+  shopt -s nullglob
+  for i in "${VIC_LOG_UPLOADER_FOLDER}"/*
+  do
+    if [[ "${i}" == *~ ]] ; then
+      logv "Ignore temporary file ${i}"
+    elif [ ! -f "${i}" ] ; then
+      logv "Ignore special file ${i}"
+    else
+      # Upload anything else
+      log "${UPLOADER} ${i}"
+      ${UPLOADER} "${i}"
+      if [ $? -eq 0 ] ; then
+        log "/bin/rm -f ${i}"
+        /bin/rm -f "${i}"
+      fi
+    fi
+  done
+  shopt -u nullglob
+
+  #
+  # Remove oldest files to stay within disk quota.
+  # Temporary files are counted against quota and may be removed to free space.
+  # Directories and special files are counted against quota and may be removed to free space.
+  #
+  usage_mb=$(get_usage_mb ${VIC_LOG_UPLOADER_FOLDER})
+  while [ ${usage_mb} -gt ${VIC_LOG_UPLOADER_QUOTA_MB} ]; do
+    log "Usage ${usage_mb} MB is over quota ${VIC_LOG_UPLOADER_QUOTA_MB} MB"
+    oldest=$(/bin/ls -1tr ${VIC_LOG_UPLOADER_FOLDER} | /bin/head -1)
+    log "/bin/rm -rf ${oldest}"
+    /bin/rm -rf "${oldest}"
+    usage_mb=$(get_usage_mb ${VIC_LOG_UPLOADER_FOLDER})
+  done
+
+  logv "sleep ${VIC_LOG_UPLOADER_SLEEP_SEC}"
+  sleep ${VIC_LOG_UPLOADER_SLEEP_SEC}
+
+done

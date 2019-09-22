@@ -1,0 +1,47 @@
+[
+  {  
+    "layerName" : "Weather_Temperature",
+    "spriteBoxLayout" : [
+      {
+        "spriteBoxName": "TemperatureNegativeIndicator",
+        "spriteRenderMethod" : "CustomHue",
+        "x": -9,
+        "y": 27,
+        "width": 29,
+        "height": 69
+      },
+      {
+        "spriteBoxName": "TemperatureHundredsDigit",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 20,
+        "y": 27,
+        "width": 45,
+        "height": 69
+      },
+      {
+        "spriteBoxName": "TemperatureTensDigit",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 65,
+        "y": 27,
+        "width": 45,
+        "height": 69
+      },
+      {
+        "spriteBoxName": "TemperatureOnesDigit",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 110,
+        "y": 27,
+        "width": 45,
+        "height": 69
+      },
+      {
+        "spriteBoxName": "TemperatureDegreeIndicator",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 155,
+        "y": 27,
+        "width": 29,
+        "height": 69
+      }
+    ]
+  }
+]

@@ -1,0 +1,2 @@
+/bin/chrt
+/usr/lib/busybox/bin/chrt 50

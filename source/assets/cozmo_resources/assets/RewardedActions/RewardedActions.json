@@ -1,0 +1,1022 @@
+{
+  "RewardedActions": [
+    {
+      "Id": 42,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 3,
+          "compareType": "GREATER_INCLUSIVE"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.QuickTap.PlayMP"
+      }
+    },
+    {
+      "Id": 20,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "QuickTapAccuracy",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeAccuracyCondition, Assembly-CSharp",
+          "TargetAcc": 0.75,
+          "compareType": "GREATER"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.QuickTap.Accuracy.75"
+      }
+    },
+    {
+      "Id": 19,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "ExplorerModeTime",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeTimePlayedCondition, Assembly-CSharp",
+          "TargetTime": 300.0,
+          "compareType": "GREATER_INCLUSIVE"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "DroneModeGame"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.Explorer.Time.5"
+      }
+    },
+    {
+      "Id": 14,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "QuickTapGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 3
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 20,
+        "DescriptionKey": "reward.description.QuickTap.WinGame.FourColor"
+      }
+    },
+    {
+      "Id": 13,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "QuickTapGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 2
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 15,
+        "DescriptionKey": "reward.description.QuickTap.WinGame.ThreeColor"
+      }
+    },
+    {
+      "Id": 12,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "QuickTapGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 1
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.QuickTap.WinGame.TwoColor"
+      }
+    },
+    {
+      "Id": 11,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "QuickTapGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 0
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 8,
+        "DescriptionKey": "reward.description.QuickTap.WinGame.OneColor"
+      }
+    },
+    {
+      "Id": 10,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "QuickTapGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.QuickTap.Played"
+      }
+    },
+    {
+      "Id": 9,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "KeepawayTieBreaker",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "CubePounceGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": false,
+          "TargetScore": 4,
+          "compareType": "EQUAL"
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 8,
+        "DescriptionKey": "reward.description.Keepaway.TieBreaker"
+      }
+    },
+    {
+      "Id": 7,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "KeepawayGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "CubePounceGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 8,
+        "DescriptionKey": "reward.description.Keepaway.Won"
+      }
+    },
+    {
+      "Id": 6,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "KeepawayGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "CubePounceGame"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.Keepaway.Played"
+      }
+    },
+    {
+      "Id": 22,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "QuickTapAccuracy",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeAccuracyCondition, Assembly-CSharp",
+          "TargetAcc": 0.5,
+          "compareType": "GREATER_INCLUSIVE"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.QuickTap.Accuracy.50"
+      }
+    },
+    {
+      "Id": 23,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "QuickTapAccuracy",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeAccuracyCondition, Assembly-CSharp",
+          "TargetAcc": 1.0,
+          "compareType": "GREATER_INCLUSIVE"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 15,
+        "DescriptionKey": "reward.description.QuickTap.Accuracy.100"
+      }
+    },
+    {
+      "Id": 24,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "ExplorerModeTime",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeTimePlayedCondition, Assembly-CSharp",
+          "TargetTime": 600.0,
+          "compareType": "GREATER_INCLUSIVE"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "DroneModeGame"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.Explorer.Time.10"
+      }
+    },
+    {
+      "Id": 25,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "ExplorerModeTime",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeTimePlayedCondition, Assembly-CSharp",
+          "TargetTime": 900.0,
+          "compareType": "GREATER_INCLUSIVE"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "DroneModeGame"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 15,
+        "DescriptionKey": "reward.description.Explorer.Time.15"
+      }
+    },
+    {
+      "Id": 26,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "ExplorerModeTime",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeTimePlayedCondition, Assembly-CSharp",
+          "TargetTime": 1200.0,
+          "compareType": "GREATER_INCLUSIVE"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "DroneModeGame"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 20,
+        "DescriptionKey": "reward.description.Explorer.Time.20"
+      }
+    },
+    {
+      "Id": 32,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 1
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.MemoryMatch.Played.Solo"
+      }
+    },
+    {
+      "Id": 33,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 0
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.MemoryMatch.Played.Vs"
+      }
+    },
+    {
+      "Id": 34,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchGameResult",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 0
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.MemoryMatch.WinGame.Vs"
+      }
+    },
+    {
+      "Id": 35,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchPatternLength",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": true,
+          "TargetScore": 5,
+          "compareType": "GREATER"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.MemoryMatch.PatternLength.Five"
+      }
+    },
+    {
+      "Id": 36,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchPatternLength",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": true,
+          "TargetScore": 10,
+          "compareType": "GREATER"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 15,
+        "DescriptionKey": "reward.description.MemoryMatch.PatternLength.Ten"
+      }
+    },
+    {
+      "Id": 44,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchPatternLength",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": true,
+          "TargetScore": 15,
+          "compareType": "GREATER"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 20,
+        "DescriptionKey": "reward.description.MemoryMatch.PatternLength.Fifteen"
+      }
+    },
+    {
+      "Id": 37,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchPatternLength",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": true,
+          "TargetScore": 20,
+          "compareType": "GREATER"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 30,
+        "DescriptionKey": "reward.description.MemoryMatch.PatternLength.Twenty"
+      }
+    },
+    {
+      "Id": 45,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchPatternLength",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": true,
+          "TargetScore": 25,
+          "compareType": "GREATER"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 40,
+        "DescriptionKey": "reward.description.MemoryMatch.PatternLength.TwentyFive"
+      }
+    },
+    {
+      "Id": 46,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchPatternLength",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": true,
+          "TargetScore": 30,
+          "compareType": "GREATER"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 50,
+        "DescriptionKey": "reward.description.MemoryMatch.PatternLength.Thirty"
+      }
+    },
+    {
+      "Id": 39,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchGameLives",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeSpecificGameCondition, Assembly-CSharp",
+          "TargetValue": 1.0,
+          "ConditionKey": "human_lives",
+          "compareType": "EQUAL"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 0
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.MemoryMatch.Lives.OneLeft"
+      }
+    },
+    {
+      "Id": 40,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchGameLives",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeSpecificGameCondition, Assembly-CSharp",
+          "TargetValue": 2.0,
+          "ConditionKey": "human_lives",
+          "compareType": "EQUAL"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 0
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.MemoryMatch.Lives.TwoLeft"
+      }
+    },
+    {
+      "Id": 41,
+      "RewardEvent": {
+        "Value": "OnChallengeComplete"
+      },
+      "Tag": "MemoryMatchGameLives",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeSpecificGameCondition, Assembly-CSharp",
+          "TargetValue": 3.0,
+          "ConditionKey": "human_lives",
+          "compareType": "EQUAL"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 0
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 15,
+        "DescriptionKey": "reward.description.MemoryMatch.Lives.ThreeLeft"
+      }
+    },
+    {
+      "Id": 38,
+      "RewardEvent": {
+        "Value": "OnNewHighScore"
+      },
+      "Tag": "HighScore",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "MemoryMatchGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeDifficultyCondition, Assembly-CSharp",
+          "Difficulty": 1
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 20,
+        "DescriptionKey": "reward.description.MemoryMatch.HighScore.Solo"
+      }
+    },
+    {
+      "Id": 27,
+      "RewardEvent": {
+        "Value": "OnFreeplayBehaviorSuccess"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.FreeplayBehaviorCondition, Assembly-CSharp",
+          "Behavior": "PoppedWheelie"
+        },
+        {
+          "$type": "Anki.Cozmo.CurrentInventoryCondition, Assembly-CSharp",
+          "ItemType": "treat",
+          "ItemCount": 30
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 2,
+        "DescriptionKey": "reward.description.Freeplay.CompleteBehavior.PopWheelie"
+      }
+    },
+    {
+      "Id": 28,
+      "RewardEvent": {
+        "Value": "OnFreeplayBehaviorSuccess"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.FreeplayBehaviorCondition, Assembly-CSharp",
+          "Behavior": "PouncedAndCaught"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 1,
+        "DescriptionKey": "reward.description.Freeplay.CompleteBehavior.Pounce"
+      }
+    },
+    {
+      "Id": 29,
+      "RewardEvent": {
+        "Value": "OnFreeplayBehaviorSuccess"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.FreeplayBehaviorCondition, Assembly-CSharp",
+          "Behavior": "PoppedWheelie"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 3,
+        "DescriptionKey": "reward.description.Freeplay.CompleteBehavior.PopWheelie"
+      }
+    },
+    {
+      "Id": 30,
+      "RewardEvent": {
+        "Value": "OnFreeplayBehaviorSuccess"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.FreeplayBehaviorCondition, Assembly-CSharp",
+          "Behavior": "BuiltPyramid"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.Freeplay.CompleteBehavior.Pyramid"
+      }
+    },
+    {
+      "Id": 31,
+      "RewardEvent": {
+        "Value": "OnFreeplayBehaviorSuccess"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.FreeplayBehaviorCondition, Assembly-CSharp",
+          "Behavior": "StackedBlock"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 3,
+        "DescriptionKey": "reward.description.Freeplay.CompleteBehavior.Stack"
+      }
+    },
+    {
+      "Id": 43,
+      "RewardEvent": {
+        "Value": "OnFreeplayBehaviorSuccess"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.FreeplayBehaviorCondition, Assembly-CSharp",
+          "Behavior": "FistBumpSuccess"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 1,
+        "DescriptionKey": "reward.description.Freeplay.CompleteBehavior.FistBump"
+      }
+    },
+    {
+      "Id": 21,
+      "RewardEvent": {
+        "Value": "OnUnlockableSparked"
+      },
+      "Tag": "NONE",
+      "EventConditions": [],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.Freeplay.Spark"
+      }
+    },
+    {
+      "Id": 16,
+      "RewardEvent": {
+        "Value": "OnChallengeRoundEnd"
+      },
+      "Tag": "QuickTapTieBreaker",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": false,
+          "TargetScore": 4,
+          "compareType": "EQUAL"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.QuickTap.TieBreaker.OneRound"
+      }
+    },
+    {
+      "Id": 15,
+      "RewardEvent": {
+        "Value": "OnChallengeRoundEnd"
+      },
+      "Tag": "QuickTapShutOut",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": false,
+          "TargetScore": 1,
+          "compareType": "LESS"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "SpeedTapGame"
+        },
+        {
+          "$type": "Anki.Cozmo.NumberOfPlayersCondition, Assembly-CSharp",
+          "NumPlayers": 2,
+          "compareType": "LESS_INCLUSIVE"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.QuickTap.Shutout.SingleRound"
+      }
+    },
+    {
+      "Id": 8,
+      "RewardEvent": {
+        "Value": "OnChallengeRoundEnd"
+      },
+      "Tag": "KeepawayShutOut",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.ChallengeIDCondition, Assembly-CSharp",
+          "ChallengeID": "CubePounceGame"
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeWinnerCondition, Assembly-CSharp",
+          "PlayerWin": true
+        },
+        {
+          "$type": "Anki.Cozmo.ChallengeScoreCondition, Assembly-CSharp",
+          "IsPlayer": false,
+          "TargetScore": 1,
+          "compareType": "LESS"
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.Keepaway.Shutout"
+      }
+    },
+    {
+      "Id": 5,
+      "RewardEvent": {
+        "Value": "OnNewDayStarted"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.CurrentDailyStreakCondition, Assembly-CSharp",
+          "UseMinSession": true,
+          "MinSession": 2,
+          "UseMaxSession": false,
+          "MaxSession": 0
+        }
+      ],
+      "Reward": {
+        "ItemID": "treat",
+        "Amount": 2,
+        "DescriptionKey": "reward.description.StartNewDay"
+      }
+    },
+    {
+      "Id": 4,
+      "RewardEvent": {
+        "Value": "OnNewDayStarted"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.CurrentDailyStreakCondition, Assembly-CSharp",
+          "UseMinSession": true,
+          "MinSession": 2,
+          "UseMaxSession": false,
+          "MaxSession": 0
+        }
+      ],
+      "Reward": {
+        "ItemID": "experience",
+        "Amount": 10,
+        "DescriptionKey": "reward.description.StartNewDay"
+      }
+    },
+    {
+      "Id": 17,
+      "RewardEvent": {
+        "Value": "OnNewDayStarted"
+      },
+      "Tag": "",
+      "EventConditions": [
+        {
+          "$type": "Anki.Cozmo.CurrentDailyStreakCondition, Assembly-CSharp",
+          "UseMinSession": true,
+          "MinSession": 2,
+          "UseMaxSession": false,
+          "MaxSession": 0
+        }
+      ],
+      "Reward": {
+        "ItemID": "TestHexItem0",
+        "Amount": 5,
+        "DescriptionKey": "reward.description.StartNewDay"
+      }
+    }
+  ]
+}

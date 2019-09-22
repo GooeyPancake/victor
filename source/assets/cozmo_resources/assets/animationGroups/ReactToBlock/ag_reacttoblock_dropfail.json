@@ -1,0 +1,16 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_reacttoblock_dropfail_01",
+      "Weight": 0.8,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_reacttoblock_dropfail_02",
+      "Weight": 0.2,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}

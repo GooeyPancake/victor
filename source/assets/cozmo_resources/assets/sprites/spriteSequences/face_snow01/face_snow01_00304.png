@@ -1,0 +1,355 @@
+#!/bin/sh
+#
+# Copyright (c) 2013, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived from
+#       this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT ARE DISCLAIMED.  IN NO
+# EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+# INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Enable or disable debug messages in USB related files.
+# this script allows the user to chose the files in which should enable or disable debug messages
+# and also allows the user to save the debug configuration for the next reboot
+# This in order to allow early boot debug information.
+
+DBG_FILE="/sbin/usb/debuger/debugFiles"
+DEFAULT_FILE="/sbin/usb/debuger/default_debug"
+HELP="/sbin/usb/debuger/help"
+statusFile="/sbin/usb/debuger/statusFile"
+
+legal_fileName(){
+	file_list=`cat $DBG_FILE| cut -f 2| grep -v ___`
+	for c in $file_list
+	do
+		if [ "$1" = "$c" ]; then
+			echo "1"
+			exit
+		fi
+	done
+	echo "0"
+}
+
+legal_fid() {
+	local id_list=`cat $DBG_FILE| cut -f 1| grep -v ___`
+	for num in $id_list
+	do
+		if [ "$1" = "$num" ]; then
+			echo "1"
+			exit
+		fi
+	done
+	echo "0"
+}
+
+legal_fileNames(){
+	local  i=1
+	for j in "$@"
+	do
+		if [ $i -gt $1 ]; then
+			if [ `legal_fileName $j` = "0" ]; then
+			echo "0"
+			exit
+			fi
+		fi
+		let i+=1
+	done
+	echo "1"
+}
+
+get_fileList(){
+	local  i=1
+	local list=""
+	for j in "$@"
+	do
+		if [ $i -gt $1 ]; then
+			list="$list$j   "
+		fi
+		let i+=1
+	done
+	echo $list
+}
+
+read_fid() {
+# this func gets the file id and returns the file names of the chosen files
+	local flag="1"
+	local tmp_fid="0"
+	local files=""
+	read  -p "fid number : " tmp_fid
+	while [ true ];
+	do
+		for num in $tmp_fid
+		do
+			if [ `legal_fid $num` = "0" ]; then
+				flag="0"
+				break
+			else
+				files="$files `cat $DBG_FILE|grep -w $num|grep -v ___|cut -f 2`      "
+			fi
+		done
+		if [ $flag = "0" ]; then
+			flag="1"
+			files=""
+			read -p "Illegal Fid number, try again : " tmp_fid
+		else
+			echo "$files"
+			exit
+		fi
+        done
+}
+
+read_persistent() {
+	local tmp_persistent='0'
+	read -p "Would you like it to be the default file\s for debug ? (y/n) " tmp_persistent
+	while [ true ]; do
+		if [ $tmp_persistent = "y" ] || [ $tmp_persistent = "n" ]; then
+			echo "$tmp_persistent"
+			exit
+		fi
+		read -p "Only 'y' or 'n' are allowed, try again : " tmp_persistent
+	done
+}
+read_operation() {
+	local tmp_op='0'
+	read -p "Would you like to enable or disable the debug messages ? (on/off) " tmp_op
+	while [ true ]; do
+		if [ $tmp_op = "on" ] || [ $tmp_op = "off" ]; then
+			echo "$tmp_op"
+			exit
+		fi
+		read -p "Only 'on' or 'off' are allowed, try again : " tmp_op
+	done
+}
+
+add_toStatus() {
+	if [ -f $statusFile ]; then
+		if [ `cat $statusFile |grep -c $1` = 0 ]; then
+			echo $1 >> $statusFile
+		fi
+	else
+		echo $1 >> $statusFile
+	fi
+}
+
+rm_fromStatus() {
+        if [ -f $statusFile ]; then
+                sed -i '/^'$1'$/d' $statusFile
+        fi
+
+}
+
+#===============================================================================================#
+#===============================================================================================#
+if [ ! -f $DBG_FILE ]; then
+	echo "ERROR: debugFiles is missing"
+	exit
+fi
+
+if [ "$#" -eq 0 ]; then
+	cat $DBG_FILE
+	echo "    "
+	echo "Choose files by id: "
+	file=`read_fid`
+	flag="-l"
+	operation=`read_operation`
+	persistent=`read_persistent`
+elif [ "$#" -eq 1 ]; then
+	if [ $1 == "status" ]; then
+		if [ -f $statusFile ]; then
+			cat $statusFile
+			exit 1
+		fi
+		echo ""
+		exit 1
+	elif [ $1 == "-h" ] || [ $1 == "help" ]; then
+		cat $HELP
+		exit 1
+	else
+		echo "Usage: usb_debug -h" >&2
+		echo "Usage: usb_debug status" >&2
+		echo "Usage: usb_debug [-l] [OPERATION] [PERSISTENT] [LIST]" >&2
+		echo "Usage: usb_debug [-f] [OPERATION] [PERSISTENT] [PATH]" >&2
+		echo "Usage: usb_debug [all][OPERATION] [PERSISTENT]" >&2
+		exit 1
+	fi
+elif [ "$#" -eq 2 ]; then
+		if [ $1 != "all" ]; then
+			echo "Usage: usb_debug [-l] [OPERATION] [PERSISTENT] [LIST]" >&2
+			echo "Usage: usb_debug [-f] [OPERATION] [PERSISTENT] [PATH]" >&2
+			echo "Usage: usb_debug [all][OPERATION] [PERSISTENT]" >&2
+			exit 1
+		fi
+		if [ $2 != "on" ] && [ $2 != "off" ]; then
+			echo "Illegal operation choice (must be 'on' or 'off')."
+			exit 2
+		fi
+		if [ $2 = "on" ]; then
+			flag=$1
+			operation=$2
+			file=`cat $DBG_FILE| cut -f 2| grep -v ___`
+			persistent=`read_persistent`
+		else
+			flag=$1
+			operation=$2
+			file=`cat $DBG_FILE| cut -f 2| grep -v ___`
+			persistent="y"
+		fi
+elif [ "$#" -ge 3 ]; then
+	if [ $1 != "-l" ] && [ $1 != "-f" ] && [ $1 != "all" ]; then
+		echo "Usage: usb_debug [-l] [OPERATION] [PERSISTENT] [LIST]" >&2
+		echo "Usage: usb_debug [-f] [OPERATION] [PERSISTENT] [PATH]" >&2
+		echo "Usage: usb_debug [all][OPERATION] [PERSISTENT]" >&2
+		exit 1
+	fi
+	if [ $2 != "on" ] && [ $2 != "off" ]; then
+		echo "Illegal operation choice (must be 'on' or 'off')."
+		exit 2
+	fi
+	if [ $1 = "-l" ]; then
+		if [ `legal_fileName $3` = "1" ]; then
+			if [ "$#" -ge 4 ]; then
+			#handle more then one file - default presistance=n
+			if [ `legal_fileNames 3 "$@"` = "0" ]; then
+				echo "Illegal file name."
+				exit 4
+			fi
+				flag=$1
+				operation=$2
+				persistent="n"
+				file=`get_fileList 3 "$@"`
+			else
+			#case just one file name
+				flag=$1
+				operation=$2
+				persistent="n"
+				file=$3
+			fi
+		elif [ $3 = "y" ] || [ $3 = "n" ]; then
+			if [ `legal_fileName $4` = "0" ]; then
+				echo "Illegal file name."
+				exit 4
+			fi
+			if [ "$#" -ge 5 ]; then
+				#handle more then one file -  presistance=$3
+				if [ `legal_fileNames 4 "$@"` = "0" ]; then
+					echo "Illegal file name."
+					exit 5
+				fi
+				flag=$1
+				operation=$2
+				persistent=$3
+				file=`get_fileList 4 "$@"`
+			else
+				#just one file
+				flag=$1
+				operation=$2
+				persistent=$3
+				file=$4
+			fi
+		else
+			echo "Illegal file name or persistent choice (persistent must be 'y' or 'n')."
+			exit 4
+		fi
+	elif [ $1 = "-f" ]; then
+		if [ -f $3 ]; then
+			flag=$1
+			operation=$2
+			persistent="n"
+			file=`cat $3`
+			if [ `legal_fileNames 1 $file` = 0 ]; then
+				echo "Illegal file name (in the input file)"
+				exit 3
+			fi
+		elif [ $3 = "y" ] || [ $3 = "n" ]; then
+			if [ "$#" -eq 3 ]; then
+				echo "Usage: usb_debug [-f] [OPERATION] [PERSISTENT] [PATH]" >&2
+				exit 3
+			fi
+			if [ -f $4 ]; then
+				flag=$1
+				operation=$2
+				persistent=$3
+				file=`cat $4`
+				if [ `legal_fileNames 1 "$file"` = 0 ]; then
+					echo "Illegal file name (in the input file)"
+					exit 4
+				fi
+			else
+				echo "Illegal input file."
+			exit 4
+			fi
+		else
+			echo "Illegal file or persistent choice (persistent must be 'y' or 'n')."
+			exit 3
+		fi
+	else
+	# $1=all
+		if [ $3 != "y" ] && [ $3 != "n" ]; then
+			echo "Illegal persistent choice (persistent must be 'y' or 'n')."
+			exit 3
+		fi
+		flag=$1
+		operation=$2
+		file=`cat $DBG_FILE| cut -f 2| grep -v ___`
+		persistent=$3
+	fi
+else
+	echo "Usage: usb_debug [-l] [OPERATION] [PERSISTENT] [LIST]" >&2
+	echo "Usage: usb_debug [-f] [OPERATION][PERSISTENT] [PATH]" >&2
+	echo "Usage: usb_debug [all][OPERATION] [PERSISTENT]" >&2
+	exit 1
+fi
+
+#===============================================================================================
+#===============================================================================================
+
+# mount debugfs just one time
+if [ `mount | grep -c debugfs` = 0 ]; then
+	mkdir /data/dbg
+	mount -t debugfs none /data/dbg
+fi
+
+if [ $persistent = "y" ]; then
+	if [ $operation = "off" ]; then
+		if [  $flag = "all" ]; then
+			rm -f $DEFAULT_FILE
+		else
+			echo "Change will have no effect on default file- Illegal combination of persistent and disable debug messages"
+		fi
+	else
+		rm -f $DEFAULT_FILE
+		echo $file > $DEFAULT_FILE
+	fi
+fi
+
+if [ $operation = "on" ]; then
+	for f in $file
+	do
+		`add_toStatus $f`
+		f="$f.c"
+		echo -n 'file $f +p' > /data/dbg/dynamic_debug/control
+	done
+else
+	for f in $file
+	do
+		`rm_fromStatus $f`
+		f="$f.c"
+		echo -n 'file $f -p' > /data/dbg/dynamic_debug/control
+	done
+fi

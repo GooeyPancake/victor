@@ -1,0 +1,294 @@
+#!/bin/sh
+#
+# Copyright (c) 2012, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived from
+#       this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT ARE DISCLAIMED.  IN NO
+# EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+# INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Switch to a chosen USB composition.
+
+COMP_DIR="/sbin/usb/compositions"
+symlink_hsusb="/data/usb/boot_hsusb_composition"
+symlink_hsic="/data/usb/boot_hsic_composition"
+
+legal_composition() {
+	for c in $( ls $COMP_DIR ); do
+		if [ "$1" = "$c" ]; then
+			echo "1"
+			exit
+		fi
+	done
+	echo "0"
+}
+
+read_pid() {
+	local tmp_pid='0'
+	read -p "Pid number : " tmp_pid
+	while [ true ]; do
+		if [ `legal_composition $tmp_pid` = "1" ]; then
+			echo "$tmp_pid"
+			exit
+		fi
+		read -p "Illegal Pid number, try again : " tmp_pid
+	done
+}
+
+read_hsic() {
+	local tmp_hsic='0'
+	read -p "Choose core: y - hsic, n - hsusb  ? (y/n)" tmp_hsic
+	while [ true ]; do
+		if [ $tmp_hsic = "y" ] || [ $tmp_hsic = "n" ]; then
+			echo "$tmp_hsic"
+			exit
+		fi
+		read -p "Only 'y' or 'n' are allowed, try again : " tmp_hsic
+	done
+}
+
+read_persistent() {
+	local tmp_persistent='0'
+	read -p "Would you like it to be the default composition ? (y/n)" tmp_persistent
+	while [ true ]; do
+		if [ $tmp_persistent = "y" ] || [ $tmp_persistent = "n" ]; then
+			echo "$tmp_persistent"
+			exit
+		fi
+		read -p "Only 'y' or 'n' are allowed, try again : " tmp_persistent
+	done
+}
+
+read_immediate() {
+	local tmp_immediate='0'
+	read -p "Would you like the composition to change immediately? (y/n)" tmp_immediate
+	while [ true ]; do
+		if [ $tmp_immediate = "y" ] || [ $tmp_immediate = "n" ]; then
+			echo "$tmp_immediate"
+			exit
+		fi
+		read -p "Only 'y' or 'n' are allowed, try again : " tmp_immediate
+	done
+}
+
+read_from_adb() {
+	local tmp_adbd='0'
+	read -p "Are you performing the composition switch from adbd? (y/n)" tmp_adbd
+	while [ true ]; do
+		if [ $tmp_adbd = "y" ] || [ $tmp_adbd = "n" ]; then
+			echo "$tmp_adbd"
+			exit
+		fi
+		read -p "Only 'y' or 'n' are allowed, try again : " tmp_adbd
+	done
+}
+
+common_functions() {
+	if [ "$1" = "empty" ] || [ "$2" = "empty" ]; then
+		echo "0"
+		exit
+	fi
+	func_list_1=`grep functions $COMP_DIR/$1 | sed 's/echo //' | sed 's/>.*$//' | tr , '\n' | tr : '\n'`
+	func_list_2=`grep functions $COMP_DIR/$2 | sed 's/echo //' | sed 's/>.*$//' | tr , '\n' | tr : '\n'`
+	for func_1 in $func_list_1
+	do
+		for func_2 in $func_list_2
+		do
+		if [ "$func_1" = "$func_2" ]; then
+			echo $func_1
+			exit
+		fi
+		done
+	done
+	echo "0"
+}
+
+hsusb_comp=`readlink $symlink_hsusb | xargs basename`
+hsic_comp=`readlink $symlink_hsic | xargs basename`
+
+if [ "$#" -ge 6 ]; then
+	echo "Usage: usb_composition [Pid] [HSIC] [PERSISTENT] [IMMEDIATE] [FROM_ADBD]" >&2
+	exit 7
+
+elif [ "$#" -eq 5 ]; then
+
+	if [ `legal_composition $1` = "0" ]; then
+		echo "Illegal pid"
+		exit 1
+	fi
+	if [ $2 != "y" ] && [ $2 != "n" ]; then
+		echo "Illegal hsic choice (must be 'y' or 'n')."
+		exit 2
+	fi
+	if [ $3 != "y" ] && [ $3 != "n" ]; then
+		echo "Illegal persistent choice (must be 'y' or 'n')."
+		exit 3
+	fi
+	if [ $4 != "y" ] && [ $4 != "n" ]; then
+		echo "Illegal immediate choice (must be 'y' or 'n')."
+		exit 4
+	fi
+	if [ $5 != "y" ] && [ $5 != "n" ]; then
+		echo "Illegal from adbd (must be 'y' or 'n')."
+		exit 5
+	fi
+	pid=$1
+	hsic=$2
+	persistent=$3
+	immediate=$4
+	from_adb=$5
+
+elif [ "$#" -eq 4 ]; then
+
+	if [ `legal_composition $1` = "0" ]; then
+		echo "Illegal pid"
+		exit 1
+	fi
+	if [ $2 != "y" ] && [ $2 != "n" ]; then
+		echo "Illegal hsic choice (must be 'y' or 'n')."
+		exit 2
+	fi
+	if [ $3 != "y" ] && [ $3 != "n" ]; then
+		echo "Illegal persistent choice (must be 'y' or 'n')."
+		exit 3
+	fi
+	if [ $4 != "y" ] && [ $4 != "n" ]; then
+		echo "Illegal immediate choice (must be 'y' or 'n')."
+		exit 4
+	fi
+	pid=$1
+	hsic=$2
+	persistent=$3
+	immediate=$4
+	from_adb="n"
+
+elif [ "$#" -eq 3 ]; then
+
+	if [ `legal_composition $1` = "0" ]; then
+		echo "Illegal pid"
+		exit 1
+	fi
+	if [ $2 != "y" ] && [ $2 != "n" ]; then
+		echo "Illegal hsic choice (must be 'y' or 'n')."
+		exit 2
+	fi
+	if [ $3 != "y" ] && [ $3 != "n" ]; then
+		echo "Illegal persistent choice (must be 'y' or 'n')."
+		exit 3
+	fi
+	pid=$1
+	hsic=$2
+	persistent=$3
+	immediate="y"
+	from_adb="n"
+
+elif [ "$#" -eq 2 ]; then
+
+	if [ `legal_composition $1` = "0" ]; then
+		echo "Illegal pid"
+		exit 1
+	fi
+	if [ $2 != "y" ] && [ $2 != "n" ]; then
+		echo "Illegal hsic choice (must be 'y' or 'n')."
+		exit 2
+	fi
+	pid=$1
+	hsic=$2
+	persistent="n"
+	immediate="y"
+	from_adb="n"
+
+elif [ "$#" -eq 1 ]; then
+
+	if [ `legal_composition $1` = "0" ]; then
+		echo "Illegal pid"
+		exit 1
+	fi
+	pid=$1
+	hsic="n"
+	persistent="n"
+	immediate="y"
+	from_adb="n"
+
+elif [ "$#" -eq 0 ]; then
+
+	echo "boot hsusb composition: $hsusb_comp"
+	echo "boot hsic composition: $hsic_comp"
+	echo "Choose Composition by Pid:"
+	for i in $( ls $COMP_DIR ); do
+		desc=`grep DESCRIPTION: $COMP_DIR/$i | sed 's/.*DESCRIPTION: *//g'`
+		echo "   $i -	$desc"
+	done
+	pid=`read_pid`
+	hsic=`read_hsic`
+        persistent=`read_persistent`
+	immediate=`read_immediate`
+	from_adb=`read_from_adb`
+
+fi
+
+if [ $persistent = "n" ]; then
+	if [ $immediate = "n" ]; then
+		echo "Change will have no effect - Illegal combination of not persistent and not immediate"
+		exit 6
+	fi
+fi
+
+if [ $hsic = "y" ]; then
+	other=$hsusb_comp
+else
+	other=$hsic_comp
+fi
+
+common=`common_functions $other $pid`
+if [ $common != "0" ]; then
+	echo "******************************************************************************"
+	echo "*                        !!!WARNING!!!                                       *"
+	echo "* Due to this composition change, HSIC and USB have the potential to use the *"
+	echo "* same usb function : $common.                                               *"
+	echo "* Please take care to not use the same function on both ports as this is not *"
+	echo "* properly supported.                                                        *"
+	echo "*                                                                            *"
+	echo "******************************************************************************"
+fi
+
+if [ $persistent = "y" ]; then
+	if [ $hsic = "y" ]; then
+		rm $symlink_hsic
+		ln -s $COMP_DIR/$pid $symlink_hsic
+		rm /data/usb/hsic_next
+		echo "$pid" > /data/usb/hsic_next
+	else
+		rm $symlink_hsusb
+		ln -s $COMP_DIR/$pid $symlink_hsusb
+		rm /data/usb/hsusb_next
+		echo "$pid" > /data/usb/hsusb_next
+	fi
+fi
+
+if [ $hsic = "n" ]; then
+	if [ $immediate = "y" ]; then
+		$COMP_DIR/$pid n 0.2 $from_adb
+	fi
+else
+	echo "Please reboot device for HSIC composition to take effect"
+fi
+
+

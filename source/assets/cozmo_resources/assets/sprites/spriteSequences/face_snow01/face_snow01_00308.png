@@ -1,0 +1,3 @@
+/bin/systemctl stop connman
+/bin/rm -rf /data/lib/connman/wifi*
+/bin/systemctl restart wpa_supplicant connman

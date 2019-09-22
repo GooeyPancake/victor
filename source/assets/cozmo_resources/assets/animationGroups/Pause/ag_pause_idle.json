@@ -1,0 +1,184 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_eyecontact_lookloop_01",
+      "Weight": 2.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -10.0,
+      "HeadAngleMax_Deg": 10.0
+    },
+    {
+      "Name": "anim_eyecontact_lookloop_01_head_angle_-20",
+      "Weight": 2.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -25.0,
+      "HeadAngleMax_Deg": -10.0
+    },
+    {
+      "Name": "anim_eyecontact_lookloop_01_head_angle_20",
+      "Weight": 2.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 10.0,
+      "HeadAngleMax_Deg": 30.0
+    },
+    {
+      "Name": "anim_eyecontact_lookloop_01_head_angle_40",
+      "Weight": 2.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 30.0,
+      "HeadAngleMax_Deg": 45.0
+    },
+    {
+      "Name": "anim_eyecontact_lookloop_02",
+      "Weight": 3.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -10.0,
+      "HeadAngleMax_Deg": 10.0
+    },
+    {
+      "Name": "anim_eyecontact_lookloop_02_head_angle_-20",
+      "Weight": 3.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -25.0,
+      "HeadAngleMax_Deg": -10.0
+    },
+    {
+      "Name": "anim_eyecontact_lookloop_02_head_angle_20",
+      "Weight": 3.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 10.0,
+      "HeadAngleMax_Deg": 30.0
+    },
+    {
+      "Name": "anim_eyecontact_lookloop_02_head_angle_40",
+      "Weight": 3.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 30.0,
+      "HeadAngleMax_Deg": 45.0
+    },
+    {
+      "Name": "anim_eyecontact_giggle_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -10.0,
+      "HeadAngleMax_Deg": 10.0
+    },
+    {
+      "Name": "anim_eyecontact_giggle_01_head_angle_-20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -25.0,
+      "HeadAngleMax_Deg": -10.0
+    },
+    {
+      "Name": "anim_eyecontact_giggle_01_head_angle_20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 10.0,
+      "HeadAngleMax_Deg": 30.0
+    },
+    {
+      "Name": "anim_eyecontact_giggle_01_head_angle_40",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 30.0,
+      "HeadAngleMax_Deg": 45.0
+    },
+    {
+      "Name": "anim_eyecontact_squint_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -10.0,
+      "HeadAngleMax_Deg": 10.0
+    },
+    {
+      "Name": "anim_eyecontact_squint_01_head_angle_-20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -25.0,
+      "HeadAngleMax_Deg": -10.0
+    },
+    {
+      "Name": "anim_eyecontact_squint_01_head_angle_20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 10.0,
+      "HeadAngleMax_Deg": 30.0
+    },
+    {
+      "Name": "anim_eyecontact_squint_01_head_angle_40",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 30.0,
+      "HeadAngleMax_Deg": 45.0
+    },
+    {
+      "Name": "anim_eyecontact_smile_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -10.0,
+      "HeadAngleMax_Deg": 10.0
+    },
+    {
+      "Name": "anim_eyecontact_smile_01_head_angle_-20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -25.0,
+      "HeadAngleMax_Deg": -10.0
+    },
+    {
+      "Name": "anim_eyecontact_smile_01_head_angle_20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 10.0,
+      "HeadAngleMax_Deg": 30.0
+    },
+    {
+      "Name": "anim_eyecontact_smile_01_head_angle_40",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 30.0,
+      "HeadAngleMax_Deg": 45.0
+    }
+  ]
+}

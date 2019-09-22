@@ -1,0 +1,66 @@
+[
+  {
+    "CladEvent": "TemperatureDoubleDig",
+    "LayoutName": "doubleDigit"
+  },
+  {
+    "CladEvent": "TemperatureNegDoubleDig",
+    "LayoutName": "doubleDigitNegative"
+  },
+  {
+    "CladEvent": "TemperatureSingleDig",
+    "LayoutName": "singleDigit"
+  },
+  {
+    "CladEvent": "TemperatureNegSingleDig",
+    "LayoutName": "singleDigitNegative"
+  },
+  {
+    "CladEvent": "TemperatureTripleDig",
+    "LayoutName": "tripleDigit"
+  },
+  {
+    "CladEvent": "TemperatureNegTripleDig",
+    "LayoutName": "tripleDigitNegative"
+  },
+  {
+    "CladEvent": "WeatherCondCloudy_01",
+    "LayoutName": "cloudy_01"
+  },
+  {
+    "CladEvent": "WeatherCondColdClear_01",
+    "LayoutName": "cold_clear_01"
+  },
+  {
+    "CladEvent": "WeatherCondRain_01",
+    "LayoutName": "rain_01"
+  },
+  {
+    "CladEvent": "WeatherCondSnow_01",
+    "LayoutName": "snow_01"
+  },
+  {
+    "CladEvent": "WeatherCondStars_01",
+    "LayoutName": "stars_01"
+  },
+  {
+    "CladEvent": "WeatherCondSunny_01",
+    "LayoutName": "sunny_01"
+  },
+  {
+    "CladEvent": "WeatherCondThunderstorms_01",
+    "LayoutName": "thunderstorms_01"
+  },
+  {
+    "CladEvent": "WeatherCondWindy_01",
+    "LayoutName": "windy_01"
+  },
+  {
+    "CladEvent": "PlayerCardLayout",
+    "LayoutName": "player_card_layout"
+  },
+  {
+    "CladEvent": "DealerCardLayout",
+    "LayoutName": "dealer_card_layout"
+  }
+]

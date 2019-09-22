@@ -1,0 +1,28 @@
+usb_debug:
+	Bash script for enable or disable debug message from usb related files.
+Usage:
+	usb_debug [status]
+	usb_debug [flag] [Operation] [As Default?] [Arg....]
+status:
+	show list of the active files (enable debug messaged)
+flag:
+	-l, 	read files name from argument list. here Arg is file name (without suffix ".c")
+	-f, 	read filenames from Arg, here Arg is path to a file that contain list of filenames
+		(each name without suffix ".c")
+	all,	enable or disable debug messages from all the files in debugFiles
+		(the files that the script support)
+Operation:
+	on,	 enable debug message
+	off,	 disable debug message
+As Default:
+	y/n	enable debug messages from these files also in next power cycle?
+		- set these files as default debug configuration?
+
+*** important notes ***
+1) You can always use the manual interface. Just usb_debug with no param.
+2) Each default setting is overrides the previous one.
+3) To insert or delete files, you have to edit debugFiles manually,
+   add a new line with number(Fid) and file name (without suffix ".c").
+4) debugFiles path: on target  	usr/bin/usb/debuger/debugFiles
+		    GIT		system/core/usb/debuger/debugFiles
+5)TIP: to set the files that active now as defult use: usb_debug -f on y usr/bin/usb/debuger/statusFile

@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# platform/config/bin/vic-log-cat
+#
+# Helper script to collate recent log messages into stdout
+#
+set -eu
+
+if [ -f /var/log/messages.1.gz ]; then
+  /bin/zcat /var/log/messages.1.gz
+fi
+
+/bin/cat /var/log/messages

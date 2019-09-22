@@ -1,0 +1,40 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_gazing_lookatfaces_getin_right_01",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -10.0,
+      "HeadAngleMax_Deg": 10.0
+    },
+    {
+      "Name": "anim_gazing_lookatfaces_getin_right_01_head_angle_-20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": -25.0,
+      "HeadAngleMax_Deg": -10.0
+    },
+    {
+      "Name": "anim_gazing_lookatfaces_getin_right_01_head_angle_20",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 10.0,
+      "HeadAngleMax_Deg": 30.0
+    },
+    {
+      "Name": "anim_gazing_lookatfaces_getin_right_01_head_angle_40",
+      "Weight": 1.0,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default",
+      "UseHeadAngle": true,
+      "HeadAngleMin_Deg": 30.0,
+      "HeadAngleMax_Deg": 45.0
+    }
+  ]
+}

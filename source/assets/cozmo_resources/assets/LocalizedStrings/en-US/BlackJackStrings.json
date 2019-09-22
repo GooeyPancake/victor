@@ -1,0 +1,63 @@
+{
+  "smartling": {
+    "translate_paths": [
+      "*/translation"
+    ],
+    "variants_enabled": true,
+    "translate_mode": "custom",
+    "placeholder_format_custom": [
+      "%%[^%]+?%%",
+      "%[^%]+?%",
+      "##[^#]+?##",
+      "__[^_]+?__",
+      "[$]\\{[^\\}\\{]+?\\}",
+      "\\{\\{[^\\}\\{]+?\\}\\}",
+      "(?<!\\{)\\{[^\\}\\{]+?\\}(?!\\})"
+    ],
+    "source_key_paths": [
+      "/{*}"
+    ]
+  },
+  "BlackJack.DealerGoodLuck": {
+    "translation": "Good luck!"
+  },
+  "BlackJack.DealerScore": {
+    "translation": "{0}"
+  },
+  "BlackJack.DealerScoreBusted": {
+    "translation": "{0}. Dealer busted."
+  },
+  "BlackJack.DealerScorePush": {
+    "translation": "{0}. Push."
+  },
+  "BlackJack.DealerScoreDealerWins": {
+    "translation": "{0}. Dealer wins!"
+  },
+  "BlackJack.DealerScorePlayerWins": {
+    "translation": "{0}. You win!"
+  },
+  "BlackJack.DealerTwentyOne": {
+    "translation": "21!"
+  },
+  "BlackJack.DealerTurn": {
+    "translation": "Dealer's turn!"
+  },
+  "BlackJack.PlayerScore": {
+    "translation": "{0}"
+  },
+  "BlackJack.PlayerScoreBusted": {
+    "translation": "{0}. You busted!"
+  },
+  "BlackJack.PlayerTwentyOne": {
+    "translation": "21!"
+  },
+  "BlackJack.PlayerWinsBlackJack": {
+    "translation": "BlackJack, you win!"
+  },
+  "BlackJack.PlayerWinsNaturalBlackJack": {
+    "translation": "BlackJack!"
+  },
+  "BlackJack.PlayerWinsFiveCardCharlie": {
+    "translation": "5 Card Charlie! You win!"
+  }
+}

@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# platform/config/bin/vic-crashuploader-init
+#
+# Victor crash file uploader initialization
+#
+# This script moves existing crash files for upload and removes empty crash
+# files.
+#
+: ${VIC_CRASH_FOLDER:="/data/data/com.anki.victor/cache/crashDumps"}
+
+# Remove empty crash files else rename
+for i in $VIC_CRASH_FOLDER/*.dmp~
+do
+    if [[ -s ${i} ]]; then
+        echo "Found crash $i renaming"
+        /bin/mv ${i} ${i%?}
+    else
+        /bin/echo "Removing empty crash file $i"
+        /bin/rm -f ${i}
+    fi
+done

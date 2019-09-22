@@ -1,0 +1,65 @@
+#!/bin/sh
+#
+# platform/config/bin/vic-on-exit
+#
+# Called by systemd after a service has stopped for any reason.
+# This script is intended to be called from the `ExecStopPost` option. By the time this
+# runs, the service's process has been terminated.
+#
+# Default values may be overridden by service environment.
+#
+set -u
+
+# Environment variables passed to us by systemd
+
+# $SERVICE_RESULT   # result code of the service
+# $EXIT_CODE        # exit code of main process
+# $EXIT_STATUS      # exit status of main process
+
+
+# If set to a non-zero value, will trigger a fault-code with the specified value
+: ${VIC_ONFAILURE_FAULTCODE:="0"}
+
+: ${DEBUG:=0}
+
+if [ $DEBUG -eq 1 ]; then
+    echo "SERVICE_RESULT=${SERVICE_RESULT}"
+    echo "EXIT_CODE=${EXIT_CODE}"
+    echo "EXIT_STATUS=${EXIT_STATUS}"
+fi
+
+function exit_clean ()
+{
+    exit 0
+}
+
+function exit_error ()
+{
+    if [ "${VIC_ONFAILURE_FAULTCODE}" != "0" ]; then
+        if [ ! -e /run/fault_code.pending ]; then
+            echo ${VIC_ONFAILURE_FAULTCODE} > /run/fault_code
+        fi
+    fi
+}
+
+
+# Available SERVICE_RESULT values in systemd
+# see: https://www.freedesktop.org/software/systemd/man/systemd.exec.html#%24SERVICE_RESULT
+# success
+# protocol
+# timeout
+# exit-code
+# signal
+# core-dump
+# watchdog
+# start-limit-hit
+# resources
+
+case "${SERVICE_RESULT}" in
+success)
+    exit_clean
+    ;;
+*)
+    exit_error 
+    ;;
+esac

@@ -1,0 +1,50 @@
+#!/bin/bash
+
+PATH=$PATH:/usr/sbin:/sbin
+LOG="/var/log/messages"
+LOG_GZ="/var/log/messages.1.gz"
+DIAG="/data/diagnostics"
+DIAG_TAR="$DIAG/logs.tar.bz2"
+DIAG_LOGS="$DIAG/logs"
+
+SYSLOGS=("/data/boot.log" "/factory/log0" "/factory/log1" "/run/update-engine/error")
+
+delete_output () {
+    rm -rf $DIAG_TAR
+    rm -rf $DIAG_LOGS
+}
+
+collect_logs () {
+    mkdir -m 0760 -p $DIAG_LOGS
+
+    ps | grep anki > $DIAG_LOGS/ps.txt
+    zcat $LOG_GZ >  $DIAG_LOGS/log.txt
+    cat $LOG >> $DIAG_LOGS/log.txt
+    ifconfig wlan0 > $DIAG_LOGS/ifconfig.txt
+    iwconfig wlan0 > $DIAG_LOGS/iwconfig.txt
+    netstat -ptlnu > $DIAG_LOGS/netstat-ptlnu.txt
+    dmesg > $DIAG_LOGS/dmesg.txt
+    top -n 1 > $DIAG_LOGS/top.txt
+    gateway=$(netstat -rn | grep UG | tr -s " " | cut -d" " -f2) && ping -c 4 "$gateway" > $DIAG_LOGS/ping-gateway.txt
+    ping -c 4 anki.com > $DIAG_LOGS/ping-anki.txt
+    connmanctl services > $DIAG_LOGS/connman-services.txt
+}
+
+compress () {
+    TARFILES=()
+    for f in ${SYSLOGS[*]}
+    do
+        if [ -f "$f" ]
+        then
+           TARFILES+=("$f")
+        fi
+    done
+
+    tar -cvjf $DIAG_TAR $DIAG_LOGS ${TARFILES[*]}
+}
+
+delete_output
+collect_logs
+compress
+chown -R net:anki $DIAG
+chmod -R 0760 $DIAG

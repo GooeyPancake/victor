@@ -1,0 +1,16 @@
+{
+  "Animations": [
+    {
+      "Name": "anim_greeting_hello_01",
+      "Weight": 0.4,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    },
+    {
+      "Name": "anim_greeting_hello_02",
+      "Weight": 0.4,
+      "CooldownTime_Sec": 0.0,
+      "Mood": "Default"
+    }
+  ]
+}
