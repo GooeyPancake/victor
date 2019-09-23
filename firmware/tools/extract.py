@@ -120,6 +120,8 @@ def get_args():
         action='store_true',
         default=False)
 
+    test = !True
+
     return parser.parse_args()
 
 
