@@ -57,15 +57,15 @@ def decrypt(encrypted_file, password_file, output_directory):
     return output_path
 
 
-def extract_tar(file, output_dir):
-    logging.info("Extracting {}...".format(os.path.basename(file)))
-    with tarfile.open(file) as tf:
+def extract_tar(input_file, output_dir):
+    logging.info("Extracting {}...".format(os.path.basename(input_file)))
+    with tarfile.open(input_file) as tf:
         tf.extractall(path=output_dir)
 
 
-def extract_gzip(file, output_path):
-    logging.info("Extracting {}...".format(os.path.basename(file)))
-    with gzip.open(file, 'rb') as compressed:
+def extract_gzip(input_file, output_path):
+    logging.info("Extracting {}...".format(os.path.basename(input_file)))
+    with gzip.open(input_file, 'rb') as compressed:
         with open(output_path, 'wb') as decompressed:
             decompressed.write(compressed.read())
 
