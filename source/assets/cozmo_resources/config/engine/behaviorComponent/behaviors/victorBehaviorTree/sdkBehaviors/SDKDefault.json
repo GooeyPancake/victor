@@ -1,0 +1,12 @@
+{
+  "behaviorClass": "SDKInterface",
+  "behaviorID": "SDKDefault",
+
+  "associatedActiveFeature": "SDK",
+
+  "behaviorControlLevel": 20,
+  "disableCliffDetection": false,
+
+  "driveOffChargerBehavior": "DriveOffChargerStraight",
+  "findAndGoToHomeBehavior": "FindAndGoToHome"
+}

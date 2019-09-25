@@ -1,0 +1,7 @@
+{
+  "behaviorClass" : "EyeColor",
+  "behaviorID"    : "ChangeEyeColor",
+
+  "associatedActiveFeature" : "NoFeature",
+  "postBehaviorSuggestion"  : "Nothing"
+}

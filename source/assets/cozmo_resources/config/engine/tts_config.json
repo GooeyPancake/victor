@@ -1,0 +1,81 @@
+//
+// resources/config/engine/tts_config.json
+//
+// Cozmo text-to-speech configuration params
+//
+// Top-level object contains a nested object for each supported platform.
+// Each platform object contains a nested object for each supported language.
+//
+// Note that Acapela TTS SDK does not support pitch setting on all platforms.
+// Pitch values are included here for documentation but pitch adjustment
+// is actually performed by audio layer.
+//
+// These parameters determine the "base voice" used for each locale,
+// regardless of how a specific utterance will be used.  See
+//   resources/config/engine/sayTextintentConfig.json
+// for additional parameters that may be applied to a specific utterance.
+//
+{
+  "osx":
+  {
+    "en":
+    {
+      "voice": "colibri-ben_enu",
+      "speed": 80,
+      "speedTraits": [
+        { "textLengthMin": 0, "textLengthMax": 10, "rangeMin": 68, "rangeMax": 68},
+        { "textLengthMin": 10, "textLengthMax": 9999, "rangeMin": 83, "rangeMax": 83}
+      ],
+      "pitch": 100,
+      "shaping": 130
+    },
+    "fr":
+    {
+      "voice": "Bruno22k_CO",
+      "speed": 82
+    },
+    "de":
+    {
+      "voice": "Klaus22k_CO",
+      "speed": 79
+    },
+    "ja":
+    {
+      "voice": "Sakura22k_CO",
+      "speed": 30,
+      "pitch": 100,
+      "shaping": 115
+    }
+  },
+  "vicos":
+  {
+    "en":
+    {
+      "voice": "co-USEnglish-Bendnn-22khz/enu/enu_bendnn_22k_co.fl.ini",
+      "speed": 80,
+      "speedTraits": [
+        { "textLengthMin": 0, "textLengthMax": 10, "rangeMin": 68, "rangeMax": 68},
+        { "textLengthMin": 10, "textLengthMax": 9999, "rangeMin": 83, "rangeMax": 83}
+      ],
+      "pitch": 100,
+      "shaping": 130
+    },
+    "fr":
+    {
+      "voice": "co-French-Bruno-22khz/frf/frf_bruno_22k_co.fl.ini",
+      "speed": 82
+    },
+    "de":
+    {
+      "voice": "co-German-Klaus-22khz/ged/ged_klaus_22k_co.fl.ini",
+      "speed": 79
+    },
+    "ja":
+    {
+      "voice": "co-Japanese-Sakura-22khz/ja_jp/ja_jp_sakura_22k_co.fl.ini",
+      "speed": 30,
+      "pitch": 100,
+      "shaping": 115
+    }
+  }
+}

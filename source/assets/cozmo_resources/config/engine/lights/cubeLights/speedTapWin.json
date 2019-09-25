@@ -1,0 +1,30 @@
+[
+  {
+    "pattern" : {
+        "onColors"                 : [[255, 255, 255, 255], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "offColors"                : [[255, 255, 255, 255], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+        "onPeriod_ms"              : [70, 70, 70, 70],
+        "offPeriod_ms"             : [0, 0, 0, 0],
+        "transitionOnPeriod_ms"    : [0, 0, 0, 0],
+        "transitionOffPeriod_ms"   : [0, 0, 0, 0],
+        "offset"                   : [0, 0, 0, 0],
+        "rotate"                   : true
+    },
+    "duration_ms" : 770,
+    "patternDebugName" : "speedTapWin_spin"
+  },
+  {
+    "pattern" : {
+        "onColors"                 : [[255, 255, 255, 255], [255, 255, 255, 255], [255, 255, 255, 255], [255, 255, 255, 255]],
+        "offColors"                : [[0, 0, 0, 0],         [0, 0, 0, 0],         [0, 0, 0, 0],         [0, 0, 0, 0]],
+        "onPeriod_ms"              : [125,125,125,125],
+        "offPeriod_ms"             : [125,125,125,125],
+        "transitionOnPeriod_ms"    : [0,0,0,0],
+        "transitionOffPeriod_ms"   : [0,0,0,0],
+        "offset"                   : [0,0,0,0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 500,
+    "patternDebugName" : "speedTapWin_flash"
+  }
+]

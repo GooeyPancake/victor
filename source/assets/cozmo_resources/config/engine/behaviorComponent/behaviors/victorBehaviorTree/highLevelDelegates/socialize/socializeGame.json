@@ -1,0 +1,17 @@
+{
+  "behaviorID" : "SocializeGame",
+  "behaviorClass" : "DispatcherRandom",
+
+  "behaviors" : [
+    {
+      "behavior": "FistBump",
+      "cooldown_s": 300.0,
+      "weight": 0.4
+    },
+    {
+      "behavior": "FindCubeAndPlayKeepaway",
+      "cooldown_s": 500.0,
+      "weight": 0.4
+    }
+  ]
+}

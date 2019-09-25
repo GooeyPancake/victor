@@ -1,0 +1,7 @@
+{
+  "behaviorClass": "AnimSequence",
+  "behaviorID": "InitialPickupAnimation",
+  
+  "animTriggers": ["ReactToPickupInitial"]
+
+}

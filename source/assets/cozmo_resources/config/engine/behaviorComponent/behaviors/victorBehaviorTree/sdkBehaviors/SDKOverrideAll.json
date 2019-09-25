@@ -1,0 +1,12 @@
+{
+  "behaviorClass": "SDKInterface",
+  "behaviorID": "SDKOverrideAll",
+
+  "associatedActiveFeature": "SDK",
+
+  "behaviorControlLevel": 10,
+  "disableCliffDetection": true,
+  
+  "driveOffChargerBehavior": "DriveOffChargerStraight",
+  "findAndGoToHomeBehavior": "FindAndGoToHome"
+}

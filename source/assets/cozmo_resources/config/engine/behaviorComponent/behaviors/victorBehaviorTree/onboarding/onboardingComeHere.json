@@ -1,0 +1,29 @@
+{
+  "behaviorID": "OnboardingComeHere",
+  "behaviorClass" : "DriveToFace",
+
+  "animTooClose": "AlreadyAtFace",
+  "animDriveOverride": "OnboardingComeHere",
+
+  "trackFaceOnceKnown": false,
+  "minDriveToFaceDistanceKey_mm": 200,
+
+  "findFaceBehavior": "FindFaceInternal",
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "FindFaceInternal",
+      "behaviorClass": "FindFaceAndThen",
+       "alwaysDetectFaces": true,
+      "timeUntilCancelFaceLooking_s": 2.0,
+      "timeUntilCancelFaceSearch_s": 10.0,
+      "searchForFaceBehavior": "LookInPlaceHeadUp",
+      "shouldLeaveChargerFirst": true, // should already been off the charger at this point
+      "driveOffChargerBehavior": "DriveOffChargerStraight",
+       "exitOnceFound": true,
+       "useBodyDetector": true,
+      "additionalLookTimeIfSawBody_s": 3.0,
+      "additionalSearchTimeIfSawBody_s": 3.0
+    }
+  ]
+}

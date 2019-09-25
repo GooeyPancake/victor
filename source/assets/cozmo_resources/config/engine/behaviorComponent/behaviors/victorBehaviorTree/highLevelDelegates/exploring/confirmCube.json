@@ -1,0 +1,5 @@
+{
+  "behaviorID": "ConfirmCube",
+  "behaviorClass": "ConfirmObject",
+  "objectTypes": ["Block_LIGHTCUBE1", "Block_LIGHTCUBE2", "Block_LIGHTCUBE3"]
+}

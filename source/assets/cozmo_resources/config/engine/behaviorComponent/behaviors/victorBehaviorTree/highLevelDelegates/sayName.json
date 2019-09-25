@@ -1,0 +1,18 @@
+{
+  "behaviorID": "SayName",
+  "behaviorClass": "SayName",
+  
+  "associatedActiveFeature": "WhatsMyName",
+  
+  // The animation to use while saying name. Must have special TTS keyframe!
+  "knowNameAnimation" : "MeetVictorSayNameAgain",
+  
+  // The animation to use to indicate name is not known. Should NOT have TTS keyframe!
+  "dontKnowNameAnimation" : "MeetVictorSawWrongFace",
+  
+  // Text to speak *after* playing dontKnowNameAnimation (empty for none)
+  "dontKnowText": "eye dont know",
+  
+  // Max time to wait for recognition to complete on an observed face before giving up and triggering "don't know"
+  "waitForRecognitionMaxTime_sec": 2.0
+}

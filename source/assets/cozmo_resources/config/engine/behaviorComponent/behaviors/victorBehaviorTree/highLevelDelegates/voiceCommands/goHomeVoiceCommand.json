@@ -1,0 +1,31 @@
+{
+  "behaviorID" : "GoHomeVoiceCommand",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "respondToUserIntents" : [
+    { "type" : "system_charger" }
+  ],
+
+  "associatedActiveFeature": "GoHome",
+
+  "interruptActiveBehavior" : false,
+  "actAsSelector" : true,
+
+  "behaviors": [
+    "FindAndGoToHome",
+    "AlreadyHomeInternal"
+  ],
+  
+  "anonymousBehaviors": [
+  {
+    "wantsToBeActivatedCondition" : {
+      "conditionType": "OnCharger"
+    },
+
+    "behaviorClass": "AnimSequence",
+    "behaviorName": "AlreadyHomeInternal",
+    "animTriggers": ["ChargerDockingAlreadyHere"]
+  }
+  ]
+
+}

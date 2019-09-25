@@ -1,0 +1,44 @@
+{
+  "behaviorID" : "EmergencyModeTriggerWord",
+  "behaviorClass": "DispatcherQueue",
+ 
+  "wantsToBeActivatedCondition": {
+    "conditionType": "TriggerWordPending"
+  },
+  
+  "behaviors" : [
+    "EmergencyModeTriggerWordInternal",
+    "EmergencyModeAnimDispatcher"
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "EmergencyModeTriggerWordInternal",
+      "behaviorClass": "ReactToVoiceCommand",
+
+      "behaviorStatToIncrement": "ReactedToTriggerWord",
+
+      "notifyOnWifiErrors": {
+        "recentOccurrence": {
+          // trigger error notification immediately
+          "numberOfTimes": 1
+          // seconds don't matter with numberOfTimes = 1
+          // "amountOfSeconds": 300.0
+        }
+      },
+
+      "notifyOnCloudErrors": {
+        "recentOccurrence": {
+          // trigger error notification immediately
+          "numberOfTimes": 2,
+          "amountOfSeconds": 60.0
+        }
+      },
+
+      "behaviorOnIntent": "ReactToTriggerDirectionAwake",
+      "backpackLights": false,
+      "exitAfterListeningIfNotStreaming" : true,
+      "pushResponse": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "behaviorClass" : "DispatcherQueue",
+  "behaviorID": "EmergencyModeInAir",
+  
+  "associatedActiveFeature": "InTheAir",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "OffTreadsState",
+    "targetState": "InAir"  
+  },
+
+  "wantsToCancelSelfCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OffTreadsState",
+          "targetState": "InAir"
+        }
+      },
+      {
+        "conditionType": "BeingHeld",
+        "shouldBeHeld": false
+      }
+    ]
+  },
+
+  "behaviors": [
+    "EmergencyModePickupAnim",
+    "Wait"
+  ],
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "EmergencyModePickupAnim",
+      "behaviorClass": "AnimSequence",
+      "animTriggers" : [
+        "ChargerDockingRequestPickup"
+      ]
+    }
+  ]
+
+}

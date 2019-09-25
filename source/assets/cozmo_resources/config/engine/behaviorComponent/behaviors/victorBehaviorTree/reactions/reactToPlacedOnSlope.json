@@ -1,0 +1,18 @@
+{
+  "behaviorClass": "ReactToPlacedOnSlope",
+  "behaviorID": "ReactToPlacedOnSlope",
+  "associatedActiveFeature": "NoFeature",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType": "RobotPlacedOnSlope"
+      },
+      {
+        "conditionType": "BeingHeld",
+        "shouldBeHeld": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "behaviorClass": "RequestToGoHome",
+  "behaviorID": "RequestHomeBecauseStuck",
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "OnCharger"
+  },
+  
+  "normal" : {
+    "numRequests"         : 0,
+    "requestAnimTrigger"  : "ChargerDockingRequest",
+    "getoutAnimTrigger"   : "ChargerDockingRequestGetout",
+    "waitLoopAnimTrigger" : "ChargerDockingRequestWaitLoop",
+    "idleWaitTime_sec"    : 30.0
+  }, 
+  "severe" : {
+    "numRequests"         : 3,
+    "requestAnimTrigger"  : "ChargerDockingSevereRequest",
+    "getoutAnimTrigger"   : "ChargerDockingSevereRequestGetout",
+    "waitLoopAnimTrigger" : "ChargerDockingRequestWaitLoop",
+    "idleWaitTime_sec"    : 15.0
+  },
+  
+  "pickupAnimTrigger" : "ChargerDockingRequestPickup",
+  
+  "maxFaceAge_sec"    : 120.0
+}

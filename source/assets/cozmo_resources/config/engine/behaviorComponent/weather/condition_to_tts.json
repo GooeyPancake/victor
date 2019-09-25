@@ -1,0 +1,35 @@
+// Defines how each weather condition should be spoken aloud
+[
+  {
+    "Condition" : "Cloudy",
+    "Say"       : "and Cloudy"
+  },
+  {
+    "Condition" : "Cold",
+    "Say"       : "and Cold"
+  },
+  {
+    "Condition" : "Rain",
+    "Say"       : "and Raining"
+  },
+  {
+    "Condition" : "Snow",
+    "Say"       : "and Snowing"
+  },
+  {
+    "Condition" : "Stars",
+    "Say"       : "and Clear"
+  },
+  {
+    "Condition" : "Sunny",
+    "Say"       : "and Sunny"
+  },
+  {
+    "Condition" : "Thunderstorms",
+    "Say"       : "with Thunderstorms"
+  },
+  {
+    "Condition" : "Windy",
+    "Say"       : "and Windy"
+  }
+]

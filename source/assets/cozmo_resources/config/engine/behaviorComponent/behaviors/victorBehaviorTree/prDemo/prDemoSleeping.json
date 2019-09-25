@@ -1,0 +1,17 @@
+{
+  "behaviorID": "PRDemoSleeping",
+  "behaviorClass": "Sleeping",
+  "enablePowerSave": false,
+
+  "associatedActiveFeature": "Sleeping",
+
+  // todo: generalize this override
+  "canActivateOffTreads": true,
+
+  // pr demo handles wake up
+  "shouldPlayEmergencyGetOut": false,
+
+  "wantsToCancelSelfCondition": {
+    "conditionType": "TriggerWordPending"
+  }
+}

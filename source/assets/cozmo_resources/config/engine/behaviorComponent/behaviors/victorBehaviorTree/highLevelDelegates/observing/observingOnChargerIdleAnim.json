@@ -1,0 +1,10 @@
+{
+  "behaviorID"       : "ObservingOnChargerIdleAnim",
+  "behaviorClass"    : "AnimGetInLoop",
+  "getIn"            : "ObservingOnChargerGetIn",
+  "loopAnimation"    : "ObservingOnCharger",
+  "getOut"           : "ObservingOnChargerGetOut",
+  "emergencyGetOut"  : "ObservingOnChargerGetOut",
+  "shouldCheckEndCondDuringAnim": false,
+  "lockTreads"       : true
+}

@@ -1,0 +1,14 @@
+{
+  "behaviorID" : "FindYourCubeVoiceCommand",
+  "behaviorClass" : "FindCubeAndThen",
+  "associatedActiveFeature" : "FindCube",
+
+  "respondToUserIntents" : [
+    { "type" : "imperative_findcube" }
+  ],
+
+  "followUpBehaviorID" : "InteractWithStaticCube",
+  "skipConnectToCubeBehavior" : false,
+
+  "postBehaviorSuggestion" : "Socialize"
+}

@@ -1,0 +1,33 @@
+{
+  "behaviorClass": "DevTurnInPlaceTest",
+  "behaviorID": "DevTurnInPlaceTest",
+  "loopForever": false,
+  "gapBetweenTests_s": 1.0,
+  "nRunsPerTest": 1,
+  "tests": [
+    {
+      "angle_deg" : 90,
+      "speed_deg_per_sec" : 150,
+      "accel_deg_per_sec2" : 300,
+      "tol_deg"   : 2
+    },
+    {
+      "angle_deg" : -90,
+      "speed_deg_per_sec" : 150,
+      "accel_deg_per_sec2" : 300,
+      "tol_deg"   : 2
+    },
+    {
+      "angle_deg" : 180,
+      "speed_deg_per_sec" : 150,
+      "accel_deg_per_sec2" : 300,
+      "tol_deg"   : 2
+    },
+    {
+      "angle_deg" : -180,
+      "speed_deg_per_sec" : 150,
+      "accel_deg_per_sec2" : 300,
+      "tol_deg"   : 2
+    }
+  ]
+}

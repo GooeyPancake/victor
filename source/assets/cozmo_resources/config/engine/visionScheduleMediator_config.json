@@ -1,0 +1,256 @@
+{
+  "VisionModeSettings" :
+  [
+    // Frequency settings indicate update period in frames for each mode e.g. "1" runs every frame "4" every fourth etc.
+    // Settings other than relativeCost must be Powers Of Two to simplify schedule construction.
+    // "relativeCost" is an heuristic weighting to drive separation of heavy-weight tasks between frames where 1 should
+    // indicate our lowest cost process e.g. "DetectingMarkers" is ~16x as resource intensive as "CheckingQuality"
+    {
+      "mode"         : "DetectingMarkers",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 2,
+      "relativeCost" : 16
+    },
+    
+    // TODO: Remove with VIC-6838
+    {
+      "mode"         : "DisableMarkerDetection",
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },    
+    {
+      "mode"         : "FullFrameMarkerDetection",
+      // Only a schedule of "1" makes sense because this mode modifier piggybacks on DetectingMarkers's schedule
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "FullHeightMarkerDetection",
+      // Only a schedule of "1" makes sense because this mode modifier piggybacks on DetectingMarkers's schedule
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "FullWidthMarkerDetection",
+      // Only a schedule of "1" makes sense because this mode modifier piggybacks on DetectingMarkers's schedule
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "MarkerDetectionWhileRotatingFast",
+      // Only a schedule of "1" makes sense because this mode modifier piggybacks on DetectingMarkers's schedule
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "DetectingFaces",
+      // todo VIC-3774: Revert this back to (4,2,1,2) This is a temp solution to deal with the fact that when DetectingFaces is
+      // not High, weird stuff can happen with face timestamps and poses.
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 16
+    },
+    {
+      "mode"         : "CroppedFaceDetection",
+      // Only a schedule of "1" makes sense because this mode modifier piggybacks on DetectingFaces' schedule
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 16
+    },
+    {
+      "mode"         : "DetectingPets",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 16
+    },
+    {
+      "mode"         : "DetectingMotion",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 2,
+      "relativeCost" : 4
+    },
+    {
+      "mode"         : "DetectingBrightColors",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 2,
+      "relativeCost" : 4
+    },
+    {
+      "mode"         : "DetectingOverheadEdges",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 2,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "EstimatingFacialExpression",
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "DetectingSmileAmount",
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "DetectingGaze",
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "DetectingBlinkAmount",
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "DetectingLaserPoints",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 2,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "ComputingStatistics",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 2,
+      "relativeCost" : 1
+    },
+    
+    // TODO: Restore once we solve VisionModes and put this vision mode back
+    //    {
+    //      "mode"         : "BuildingOverheadMap",
+    //      "low"          : 4,
+    //      "med"          : 2,
+    //      "high"         : 1,
+    //      "standard"     : 2,
+    //      "relativeCost" : 1
+    //    },
+    
+    {
+      "mode"         : "SavingImages",
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "DetectingIllumination",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "DetectingPeople",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 4 // right now people detection is not too high, change when things are different
+    },
+    {
+      "mode"         : "DetectingHands",
+      "low"          : 4,
+      "med"          : 2,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 16 
+    },
+    {
+      "mode"         : "CyclingExposure",
+      // Only a schedule of "1" makes sense because this mode piggybacks on AutoExposure's schedule
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1 // Basically "free"
+    },
+    {
+      "mode"         : "MeteringFromChargerOnly",
+      // Only a schedule of "1" makes sense because this mode piggybacks on AutoExposure's schedule
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1 // Basically "free"
+    },
+    {
+      "mode"         : "MinGainAutoExposure",
+      // Only a schedule of "1" makes sense because this mode piggybacks on AutoExposure's schedule
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1 // Basically "free"
+    },
+    {
+      "mode"         : "MirrorMode",
+      "low"          : 16,
+      "med"          : 8,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "ImageViz",
+      "low"          : 16,
+      "med"          : 8,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    },
+    {
+      "mode"         : "CompositingImages",
+      "low"          : 1,
+      "med"          : 1,
+      "high"         : 1,
+      "standard"     : 1,
+      "relativeCost" : 1
+    }
+  ]
+}

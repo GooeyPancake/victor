@@ -1,0 +1,12 @@
+{
+  "behaviorClass": "DisplayWeather",
+  "behaviorID" : "WeatherThunderstormsGeneric",
+
+  "animationName" : "anim_weather_thunderstorm_01",
+  "imageLayouts" : [
+    "WeatherCondThunderstorms_01"
+  ],
+  "imageMaps" : [
+    "WeatherCondThunderstorms_01"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "behaviorID": "NormalWakeUp",
+  "behaviorClass": "AnimSequence",
+
+  "associatedActiveFeature": "NoFeature",
+
+  // don't play for overnight automatic reboots
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType": "Compound",
+      "and": [
+        {
+          "conditionType": "IsMaintenanceReboot"
+        },
+        {
+          "conditionType": "IsNightTime"
+        }
+      ]
+    }
+  },
+
+  // if an alexa interaction is pending, skip the wakeup
+  "wantsToCancelSelfCondition": {
+    "conditionType": "AlexaInteractionActive"
+  },
+
+  "animTriggers": ["InitialWakeUp"]
+}

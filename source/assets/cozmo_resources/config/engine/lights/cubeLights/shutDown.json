@@ -1,0 +1,31 @@
+[
+  {
+    "pattern" : {
+        "onColors"                 : [[215, 255, 185, 255], [215, 255, 185, 255], [215, 255, 185, 255], [215, 255, 185, 255]],
+        "offColors"                : [[0, 0, 0, 255],   [0, 0, 0, 255],   [0, 0, 0, 255],   [0, 0, 0, 255]],
+        "onPeriod_ms"              : [0, 0, 0, 0],
+        "offPeriod_ms"             : [250, 250, 250, 250],
+        "transitionOnPeriod_ms"    : [250, 250, 250, 250],
+        "transitionOffPeriod_ms"   : [250, 250, 250, 250],
+        "offset"                   : [0, 0, 0, 0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 3000,
+    "patternDebugName" : "shutDown_spin"
+  },
+  {
+    "pattern" : {
+        "onColors"                 : [[215, 255, 185, 255], [215, 255, 185, 255], [215, 255, 185, 255], [215, 255, 185, 255]],
+        "offColors"                : [[0, 0, 0, 255],   [0, 0, 0, 255],   [0, 0, 0, 255],   [0, 0, 0, 255]],
+        "onPeriod_ms"              : [0,0,0,0],
+        "offPeriod_ms"             : [0,0,0,0],
+        "transitionOnPeriod_ms"    : [250,250,250,250],
+        "transitionOffPeriod_ms"   : [1750,1750,1750,1750],
+        "offset"                   : [0,0,0,0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 2000,
+    "canBeOverridden" : false,
+    "patternDebugName" : "shutDown_fadeOut"
+  }
+]

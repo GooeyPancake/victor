@@ -1149,7 +1149,7 @@
   },
   {
     "CladEvent": "ReactToObstacle",
-    "AnimName": "ag_sudden_object_react"
+    "AnimName": "ag_rtobstacle_react_01"
   },
   {
     "CladEvent": "ReactToOnLeftSideGetIn",
@@ -2065,17 +2065,5 @@
   {
     "CladEvent": "HeldOnPalmTransitionToRelaxed",
     "AnimName": "ag_heldonpalm_transition2relaxed"
-  },
-  {
-    "CladEvent": "LowlightChargerSearchGetin",
-    "AnimName": "ag_lowlightcharger_search_getin"
-  },
-  {
-    "CladEvent": "LowlightChargerSearchLoop",
-    "AnimName": "ag_lowlightcharger_search_loop"
-  },
-  {
-    "CladEvent": "LowlightChargerSearchGetout",
-    "AnimName": "ag_lowlightcharger_search_getout"
   }
 ]

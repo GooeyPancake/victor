@@ -1,0 +1,15 @@
+{
+  "behaviorID": "FindFacesPhoto",
+  "behaviorClass": "FindFaceAndThen",
+  "startsWithMicDirection": false,
+  "timeUntilCancelFaceLooking_s": 3.0,
+  "timeUntilCancelFaceSearch_s": 8.0,
+  "searchForFaceBehavior": "ActiveLookForFaces",
+  "shouldLeaveChargerFirst": false,
+  "exitOnceFound": true,
+  "animWhenSeesFace": "FoundFace",
+
+  "useBodyDetector": true,
+  "additionalLookTimeIfSawBody_s": 2.0,
+  "additionalSearchTimeIfSawBody_s": 3.0
+}

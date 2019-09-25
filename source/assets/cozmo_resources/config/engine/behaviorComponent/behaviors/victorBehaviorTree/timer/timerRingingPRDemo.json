@@ -1,0 +1,20 @@
+{
+  "behaviorID"       : "TimerRingingPRDemo",
+  "behaviorClass"    : "DispatcherQueue",
+
+  "associatedActiveFeature": "TimerRinging",
+
+  "behaviors": [
+    "TurnTowardsLastFace",
+    "SingletonTimerRinging"
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "TurnTowardsLastFace",
+      "behaviorClass" : "TurnToFace",
+      "associatedActiveFeature": "NoFeature"
+    }
+  ]
+
+}

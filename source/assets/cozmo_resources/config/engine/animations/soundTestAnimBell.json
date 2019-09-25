@@ -1,0 +1,17 @@
+{
+  "soundTestAnimBell": [
+    {
+      "audioName": [
+        "Play__Robot_Sfx__Scan_Stop_Bell"
+      ],
+      "Name": "RobotAudioKeyFrame",
+      "volume": 1.0,
+      "audioEventId": [
+        2818178987
+      ],
+      "probability": 1.0,
+      "hasAlts": false,
+      "triggerTime_ms": 0
+    }
+  ]
+}

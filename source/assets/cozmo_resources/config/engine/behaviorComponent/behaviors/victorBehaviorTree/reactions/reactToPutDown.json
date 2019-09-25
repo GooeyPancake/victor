@@ -1,0 +1,65 @@
+{
+  "behaviorClass": "ReactToPutDown",
+  "behaviorID": "ReactToPutDown",
+
+  "associatedActiveFeature": "NoFeature",
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType": "OffTreadsState",
+        "targetState": "OnTreads",
+        "maxTimeSinceChange_ms": 1000
+      },
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OnChargerPlatform"
+        }
+      },
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "CliffDetected"
+        }
+      }
+    ]
+  },
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType": "OffTreadsState",
+      "targetState": "OnTreads"
+    }
+  },
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "PutDownWaitInternal",
+      "behaviorClass": "AnimSequence",
+
+      "animTriggers": ["ObservingIdleWithHeadLookingUp"],
+      "num_loops": 100,
+      "tracksToLock": ["BODY_TRACK"],
+
+      "wantsToCancelSelfCondition": {
+        "conditionType": "Compound",
+        "and": [
+          {
+            // Stable off charger
+            "conditionType": "OffTreadsState",
+            "targetState": "OnTreads",
+            "minTimeSinceChange_ms": 3000
+          },
+          {
+            // Wait anim has been playing for > 3 seconds (don't cound the time from the put down reaction)
+            "conditionType": "TimerInRange",
+            "begin_s": 3.0
+          }
+        ]
+      }
+    }
+  ]
+}

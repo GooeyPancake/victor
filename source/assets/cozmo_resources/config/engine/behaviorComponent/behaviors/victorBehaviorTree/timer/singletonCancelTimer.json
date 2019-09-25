@@ -1,0 +1,75 @@
+{
+  "behaviorClass" : "AdvanceClock",
+  "behaviorID" : "SingletonCancelTimer",
+
+  "associatedActiveFeature": "TimerCanceled",
+
+  "getInAnimTrigger" : "TimerCancelGetIn",
+  "getOutAnimTrigger" : "TimerCancelTimer",
+  "displayClockFor_s" : 3,
+  "shouldPlayAudioOnClockUpdates" : false,
+
+  "clockLayout" : [{
+    "layerName" : "Clock_Display",
+    "spriteBoxLayout" : [
+      {
+        "spriteBoxName": "TensLeftOfColon",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 27,
+        "y": 26,
+        "width": 29,
+        "height": 43
+      },
+      {
+        "spriteBoxName": "OnesLeftOfColon",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 57,
+        "y": 26,
+        "width": 29,
+        "height": 43
+      },
+      {
+        "spriteBoxName": "Colon",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 87,
+        "y": 27,
+        "width": 10,
+        "height": 43
+      },
+      {
+        "spriteBoxName": "TensRightOfColon",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 98,
+        "y": 26,
+        "width": 29,
+        "height": 43
+      },
+      {
+        "spriteBoxName": "OnesRightOfColon",
+        "spriteRenderMethod" : "CustomHue",
+        "x": 128,
+        "y": 26,
+        "width": 29,
+        "height": 43
+      }
+    ]
+  }],
+  // allows template elements which have a static image to be specified once
+  "staticElements":
+  {
+    "Colon": "clock_colon"
+  },
+
+  "digitImageMap": [
+    "clock_00",
+    "clock_01",
+    "clock_02",
+    "clock_03",
+    "clock_04",
+    "clock_05",
+    "clock_06",
+    "clock_07",
+    "clock_08",
+    "clock_09"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+"LinearClassifier" :
+{
+  "Weights" : [-6.84785793e+01, -1.04428115e+00, -1.02889806e+00, -9.58538345e-01,
+    -1.24456239e+02,  2.62453830e+00,  2.51606274e+00, -8.95924119e-02,
+    7.34682414e+01,  1.62367060e+01,  1.13068289e+01,  7.88135939e+00],
+  "Offset" : -7.59742786
+},
+"FeatureWindowLength"        : 3,                     // Number of consecutive frames to stack into feature
+"FeaturePercentiles"         : [0, 0.33, 0.66, 1.0]  // Intensity percentiles to compute for features
+}

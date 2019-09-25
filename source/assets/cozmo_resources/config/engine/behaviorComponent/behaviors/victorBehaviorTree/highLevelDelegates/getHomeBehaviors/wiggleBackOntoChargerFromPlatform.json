@@ -1,0 +1,10 @@
+{
+  "behaviorClass" : "WiggleOntoChargerContacts",
+  "behaviorID" : "WiggleBackOntoChargerFromPlatform",
+
+  "associatedActiveFeature": "NoFeature",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "OnChargerPlatform"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "behaviorClass": "DisplayWeather",
+  "behaviorID" : "WeatherColdClearGeneric",
+
+  "animationName" : "anim_weather_cold_01",
+  "imageLayouts" : [
+    "WeatherCondColdClear_01"
+  ],
+  "imageMaps" : [
+    "WeatherCondColdClear_01"
+  ]
+}

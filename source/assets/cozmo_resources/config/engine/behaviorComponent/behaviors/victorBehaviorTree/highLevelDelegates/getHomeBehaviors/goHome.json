@@ -1,0 +1,17 @@
+{
+  "behaviorClass": "GoHome",
+  "behaviorID": "GoHome",
+  
+  "useCliffSensorCorrection" : true,
+  "leftTurnAnimTrigger"      : "ChargerDockingLeftTurn",
+  "rightTurnAnimTrigger"     : "ChargerDockingRightTurn",
+  "drivingStartAnimTrigger"  : "ChargerDockingDrivingStart",
+  "drivingEndAnimTrigger"    : "ChargerDockingDrivingEnd",
+  "drivingLoopAnimTrigger"   : "ChargerDockingDrivingLoop",
+  "raiseLiftAnimTrigger"     : "ChargerDockingRaiseLift",
+  "nuzzleAnimTrigger"        : "ChargerDockingSettle",
+  
+  "driveToRetryCount"        : 3,
+  "turnToDockRetryCount"     : 1,
+  "mountChargerRetryCount"   : 2
+}

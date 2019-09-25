@@ -1,0 +1,28 @@
+{
+  "behaviorClass" : "CoordinateInHabitat",
+  "behaviorID" : "CoordinateInHabitat",
+
+  "delegateID" : "HabitatMutedDispatcher",
+
+  "suppressedBehaviors" : [
+    "VectorPlaysCubeSpinner",
+    "PlayRollBlock",
+    "PutDownBlock",
+    "PlayWithCube",
+    "InvestigateHeldCube",
+
+    "SingletonPounceApproachWithProx",
+    "SingletonPounceDispatcher",
+    "SingletonPounceTurnLeft",
+    "SingletonPounceTurnRight",
+    "SingletonPounceWithProx",
+
+    "Exploring",
+    "ExploringBumpObject",
+    "ExploringExamineObstacle",
+    "ExploringGetIn",
+    "ExploringReferenceHuman",
+
+    "Keepaway"
+  ]
+}

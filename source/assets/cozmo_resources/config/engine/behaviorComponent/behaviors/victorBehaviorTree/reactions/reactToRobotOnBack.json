@@ -1,0 +1,19 @@
+{
+  "behaviorClass": "ReactToRobotOnBack",
+  "behaviorID": "ReactToRobotOnBack",
+  "associatedActiveFeature": "NoFeature",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "Compound",
+    "and" : [
+      {
+        "conditionType" : "BeingHeld",
+        "shouldBeHeld" : false
+      },
+      {
+        "conditionType": "OffTreadsState",
+        "targetState": "OnBack"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "behaviorID" : "BlackJack",
+  "behaviorClass" : "BlackJack",
+
+  "associatedActiveFeature": "Blackjack"
+}

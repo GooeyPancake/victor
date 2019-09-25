@@ -1,0 +1,24 @@
+{
+  "behaviorID" : "FindCubeAndPlayKeepaway",
+  "behaviorClass" : "FindCubeAndThen",
+  "associatedActiveFeature" : "FindCube",
+
+  "followUpBehaviorID" : "Keepaway",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType": "FeatureGate",
+        "feature": "Keepaway"
+      },
+      {
+        "conditionType": "ObjectKnown",
+        "objectTypes": ["Block_LIGHTCUBE1","Block_LIGHTCUBE2","Block_LIGHTCUBE3"],
+        "maxAge_ms" : 600000 // 10 minutes
+      }
+    ]
+  },
+
+  "postBehaviorSuggestion" : "Socialize"
+}

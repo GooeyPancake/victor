@@ -1,0 +1,40 @@
+{
+  "behaviorClass": "ProxGetToDistance",
+  "behaviorID": "SingletonPounceApproachWithProx",
+  "goalDistance_mm" : 45,
+  "tolerence_mm" : 10,
+  "endWhenGoalReached" : true,
+  // x = distance reading from prox sensor in mm
+  // y = speed to travel (magnitude only) towards goal in mm/s
+  "distMM_speedMM_Graph" : {
+    "nodes": [
+      {
+        "x": 0.0,
+        "y": 300.0
+      },
+      {
+        "x": 120.0,
+        "y": 300.0
+      },
+      {
+        "x": 200.0,
+        "y": 100.0
+      },
+      {
+        "x": 250.0,
+        "y": 300.0
+      }
+    ]
+  },
+
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType"       : "ProxInRange",
+      "invalidSensorReturn" : true,
+      "minProxDist_mm"      : 44.0,
+      "maxProxDist_mm"      : 46.0
+    }
+  }
+} 

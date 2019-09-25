@@ -1,0 +1,17 @@
+{
+  "behaviorID" : "ModeSelector",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "interruptActiveBehavior": true,
+
+  "behaviors": [
+    "SingletonPoweringRobotOff",
+    "AlexaSignInOut",
+    "Alexa",
+    "SDKOverrideAll",
+    "EmergencyMode",
+    "ShutUpMode",
+    "QuietMode",
+    "SleepCycle"
+  ]
+}

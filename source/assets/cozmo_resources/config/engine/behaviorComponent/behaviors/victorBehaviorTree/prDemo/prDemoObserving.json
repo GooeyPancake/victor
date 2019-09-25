@@ -1,0 +1,34 @@
+{
+  "behaviorID": "PRDemoObserving",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "interruptActiveBehavior": true,
+
+  // just go to the correct observing
+  "behaviors": [
+    "PRDemoObservingOnCharger",
+    "Observing"
+  ],
+
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "PRDemoObservingOnCharger",
+      "behaviorClass": "DispatcherPassThrough",
+
+      "wantsToBeActivatedCondition": {
+        "conditionType": "Compound",
+        "or": [
+          {
+            "conditionType": "OnChargerPlatform"
+          },
+          {
+            "conditionType": "OnCharger"
+          }
+        ]
+      },
+      
+      "delegateID": "ObservingOnCharger"
+    }
+  ]
+}

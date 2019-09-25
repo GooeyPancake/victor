@@ -1,0 +1,8 @@
+{
+  "behaviorID" : "Asleep",
+  "behaviorClass" : "Sleeping",
+  "associatedActiveFeature": "Sleeping",
+  "shouldPlayEmergencyGetOut": false,
+  "canActivateOffTreads": true,
+  "emotionEventOnActivated": "Asleep"
+}

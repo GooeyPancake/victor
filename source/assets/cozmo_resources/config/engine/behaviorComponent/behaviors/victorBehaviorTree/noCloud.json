@@ -1,0 +1,30 @@
+{
+  "behaviorID": "NoCloud",
+  "behaviorClass": "DispatcherQueue",
+
+  "behaviors": [
+    "NoCloudAnim",
+    "NoCloudAttention"
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "NoCloudAnim",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": [
+        "NoCloudGetIn",
+        "NoCloudIcon"
+      ]
+    },
+    {
+      "behaviorName": "NoCloudAttention",
+      "behaviorClass": "AttentionTransferIfNeeded",
+
+      "attentionTransferReason": "NoCloudConnection",
+      "recentOccurrence": {
+        "numberOfTimes": 2,
+        "amountOfSeconds": 300.0
+      }
+    }
+  ]  
+}

@@ -1,0 +1,31 @@
+{
+  "behaviorID": "DevBaseBehavior",
+  "behaviorClass": "DispatcherQueue",
+
+  "behaviors": [
+    "EyesInternal",  // make sure normal eyes are used
+    "DevBaseBehaviorInternal"
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "EyesInternal",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": ["NeutralFace"]
+    },
+    {
+      "behaviorName" : "DevBaseBehaviorInternal",
+      "behaviorClass": "DispatchAfterShake",
+
+      // after the robot is shaken and put down, the first behavior will be dispatched to.
+      // if you shake the robot, pause, and shake it again, then put it down, the second behavior
+      // will be dispatched to, and so on, for each behavior in the list.
+      // alternatively, if the console var DevDispatchAfterShake := n > 0, then the (n-1)-th
+      // element in this list is dispatched to, e.g., setting DevDispatchAfterShake=1 dispatches
+      // to the first behavior in the list, 2 to the second, etc.
+      "behaviors": [
+        "ModeSelector"
+      ]
+    }
+  ]
+}

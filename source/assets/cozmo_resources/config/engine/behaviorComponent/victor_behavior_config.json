@@ -1,0 +1,10 @@
+{
+  "onboardingBehavior"     : "Onboarding",
+  "normalBaseBehavior"     : "InitNormalOperation",
+  "devBaseBehavior"        : "DevBaseBehavior",
+  "postOnboardingBehavior" : "ModeSelector"
+  // PR demo is hardcoded
+  // factory behavior is hardcoded
+  // acoustic testing behavior is hardcoded
+}
+

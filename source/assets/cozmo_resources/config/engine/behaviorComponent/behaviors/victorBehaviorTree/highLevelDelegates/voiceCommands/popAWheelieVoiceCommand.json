@@ -1,0 +1,22 @@
+{
+  "behaviorID" : "PopAWheelieVoiceCommand",
+  "behaviorClass" : "FindCubeAndThen",
+  "associatedActiveFeature": "PopAWheelie",
+
+  "respondToUserIntents" : [
+    {
+      "type" : "play_specific",
+      "entity_behavior": "pop_a_wheelie"
+    }
+  ],
+
+   "wantsToBeActivatedCondition": {
+    "conditionType": "FeatureGate",
+    "feature": "PopAWheelie"
+  }, 
+
+  "followUpBehaviorID" : "PopAWheelie",
+  "skipConnectToCubeBehavior" : false,
+
+  "postBehaviorSuggestion": "Nothing"
+}

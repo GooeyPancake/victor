@@ -1,0 +1,10 @@
+[
+  {
+    "deactivate": "Stop__Robot_Vic_Sfx__Snowglobe_All_Loop_Stop", 
+    "path": "ReactToRobotShakenSnowGlobe"
+  }, 
+  {
+    "deactivate": "Stop__Robot_Vic_Sfx__How_Old_Loop_Stop", 
+    "path": "HowOldAreYou"
+  }
+]

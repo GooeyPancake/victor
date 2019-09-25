@@ -1,0 +1,27 @@
+{
+  "behaviorID": "TrackFaceTest",
+  "behaviorClass" : "TrackFace",
+
+  "faceSelectionPenalties": [
+    {
+      "factor": "TrackingOnly",
+      "multiplier": 100.0
+    },
+    {
+      "factor": "TimeSinceSeen_s",
+      "multiplier": 50.0
+    },
+    {
+      "factor": "Distance_m",
+      "multiplier": 2.0
+    },
+    {
+      "factor": "RelativeBodyAngleRadians",
+      "multiplier": 3.0
+    },
+    {
+      "factor": "RelativeHeadAngleRadians",
+      "multiplier": 1.0
+    }
+  ]
+}

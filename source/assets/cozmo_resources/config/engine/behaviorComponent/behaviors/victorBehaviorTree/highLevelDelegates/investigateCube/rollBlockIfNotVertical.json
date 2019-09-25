@@ -1,0 +1,13 @@
+{
+  "behaviorClass": "RollBlock",
+  "behaviorID": "RollBlockIfNotVertical",
+
+  "associatedActiveFeature": "RollBlock",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "FeatureGate",
+    "feature": "RollCube"
+  },
+
+  "isBlockRotationImportant" : true
+}

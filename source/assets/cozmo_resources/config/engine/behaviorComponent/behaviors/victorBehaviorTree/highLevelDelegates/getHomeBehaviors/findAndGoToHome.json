@@ -1,0 +1,41 @@
+{
+  "behaviorClass" : "DispatcherStrictPriorityWithCooldown",
+  "behaviorID" : "FindAndGoToHome",
+
+  "associatedActiveFeature": "GoHome",
+
+  "interruptActiveBehavior" : true,
+  "linkScope": true,
+
+  "wantsToBeActivatedCondition" : {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType": "OnCharger"
+    }
+  },
+
+  "wantsToCancelSelfCondition": {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType": "OffTreadsState",
+      "targetState": "OnTreads"
+    }
+  },
+
+  "behaviors" : [
+    {
+      "behavior" : "AcknowledgeCharger",
+      "cooldown_s" : 60.0,
+      "ignoreFastForward": true,
+      "cooldown_random_factor" : 0.0
+    },
+    {
+      "behavior" : "GoHome",
+      "cooldown_s" : 0.0
+    },
+    {
+      "behavior" : "FindHome",
+      "cooldown_s" : 0.0
+    }
+  ]
+}

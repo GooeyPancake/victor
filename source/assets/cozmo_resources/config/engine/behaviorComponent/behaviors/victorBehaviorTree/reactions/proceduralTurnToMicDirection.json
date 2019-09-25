@@ -1,0 +1,21 @@
+{
+  "behaviorClass" : "ReactToMicDirection",
+  "behaviorID" : "ProceduralTurnToMicDirection",
+
+  "reaction_list" :
+  {
+    // empty list defaults to procedural turn
+
+    // no turning on the charger
+    "OnCharger" :
+    {
+      "enabled" : false
+    },
+
+    // disable reactions when picked up
+    "OffTreads" :
+    {
+      "enabled" : false
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  // TODO(GB): Create behavior for this, add wantsToBeActivatedCondition
+  // for checking prox sensor and/or using hand detector
+  "behaviorID"  : "ReactToPalmTilt",
+  "behaviorClass" : "AnimGetInLoop",
+  
+  
+  "getIn"            : "ReactToObstacle",
+  // TODO(GB): Switch to using HeldOnPalm anim for driving off palm
+  "loopAnimation"    : "HeldOnPalmRollOff",
+  "getOut"           : "ReactToPutDown",
+  "emergencyGetOut"  : "ReactToPickupInitial",
+  "loopEndCondition" : {
+    "conditionType": "Compound",
+    "or": [
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "RobotPitchInRange",
+          "minPitchThreshold_deg": -80.0,
+          "maxPitchThreshold_deg": -30.0
+        }
+      },
+      {
+        "conditionType": "OffTreadsState",
+        "targetState": "OnTreads"
+      }
+    ]
+  },
+  
+  "shouldCheckEndCondDuringAnim": true,
+  "lockTreads"       : false,
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "CliffDetected",
+    "numCliffDetectionsToTrigger": 3
+  },
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "RobotPitchInRange",
+    "minPitchThreshold_deg": -80.0,
+    "maxPitchThreshold_deg": -30.0
+  }
+  
+  // TODO(GB): In the behavior, add cancellation conditions to have the behavior
+  // cancel when it drives off the user's palm onto solid ground, or when it
+  // drives onto another palm and the user does not continue prompting the robot
+  // to keep driving by continuing to tilt the robot.
+}

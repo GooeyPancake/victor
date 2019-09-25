@@ -1,0 +1,29 @@
+{
+  // onboarding death stare when on charger. basically just plays an 
+  // animation, but the head will track you as well
+
+  "behaviorID": "OnboardingLookAtUserOnCharger",
+  "behaviorClass": "FindFaceAndThen",
+
+  "startsWithMicDirection": false,
+  "timeUntilCancelFaceLooking_s": 99999.0,
+
+  "behavior": "LookAtMeInternal",
+  "timeUntilCancelFollowup_s": 999999.0, // never end once found a face
+
+  "useBodyDetector": false,
+  
+  "animWhileSearching": "OnboardingLookAtUser",
+
+  "shouldLeaveChargerFirst": false,
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "LookAtMeInternal",
+      "behaviorClass" : "LookAtMe",
+
+      "animLoop": "OnboardingLookAtUser"
+    }
+  ]
+}
+

@@ -1,0 +1,14 @@
+{
+  "behaviorID": "FindFacesFetchCube",
+  "behaviorClass": "FindFaceAndThen",
+  "startsWithMicDirection": true,
+  "timeUntilCancelFaceLooking_s": 2.0,
+  "timeUntilCancelFaceSearch_s": 4.0,
+  "searchForFaceBehavior": "ObservingFindFaces",
+  "shouldLeaveChargerFirst": false,
+  "exitOnceFound": true,
+
+  "useBodyDetector": true,
+  "additionalLookTimeIfSawBody_s": 2.0,
+  "additionalSearchTimeIfSawBody_s": 3.0
+}

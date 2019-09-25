@@ -1,0 +1,42 @@
+{
+  "behaviorID" : "DevCubeSpinnerConsole",
+  "behaviorClass": "DispatcherQueue",
+
+  "behaviors" : [
+    "FindCube",
+    "cubeSpinnerConsole"
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "cubeSpinnerConsole",
+      "behaviorClass": "DevCubeSpinnerConsole",
+    
+      "gameConfig" : {
+        "getInLength_ms" : 3000,
+        "timePerLED_ms" : 750,
+        // A float representing the relative speed per round
+        "speedMultipliers" : [
+          1.0,
+          1.5,
+          2.0,
+          3.0
+        ],
+        // minimum number of wrong colors before the right color shows up
+        "minWrongColorsBeetweenTargetPerRound" : [
+          1,
+          0,
+          0,
+          3
+        ],
+        // minimum number of wrong colors before the right color shows up
+        "maxWrongColorsBeetweenTargetPerRound" : [
+          3,
+          5,
+          5,
+          10
+        ]
+      } 
+    }
+  ]
+}

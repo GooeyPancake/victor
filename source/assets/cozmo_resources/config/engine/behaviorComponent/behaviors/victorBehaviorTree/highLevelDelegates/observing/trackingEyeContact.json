@@ -1,0 +1,13 @@
+{
+  "behaviorClass": "DispatcherQueue",
+  "behaviorID": "TrackingEyeContact",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "EyeContact"
+  },
+
+  "behaviors" : [
+    "ObservingEyeContact",
+    "InteractWithFaces"
+  ]
+}

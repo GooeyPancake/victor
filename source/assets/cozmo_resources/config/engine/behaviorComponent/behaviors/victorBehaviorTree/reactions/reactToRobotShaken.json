@@ -1,0 +1,40 @@
+{
+  "behaviorClass": "ReactToRobotShaken",
+  "behaviorID": "ReactToRobotShaken",
+
+  "associatedActiveFeature": "RobotShaken",
+  "emotionEventOnActivated": "RobotShaken",
+
+  "renderInEyeHue" : true,
+  "getInAnimation" : "ReactToShake_GetIn",
+  "shakeAnimations" :
+  [
+    {
+      "threshold" : 13000,
+      "looping"   : "ReactToShake_Lvl1Loop",
+      "waiting"   : "ReactToShake_Lvl1Waiting",
+      "inHand"    : "ReactToShake_Lvl1InHand",
+      "onGround"  : "ReactToShake_Lvl1OnGround"
+    },
+    {
+      "threshold" : 19000,
+      "looping"   : "ReactToShake_Lvl2Loop",
+      "waiting"   : "ReactToShake_Lvl2Waiting",
+      "inHand"    : "ReactToShake_Lvl2InHand",
+      "onGround"  : "ReactToShake_Lvl2OnGround"
+    },
+    {
+      "threshold" : 22000,
+      "looping"   : "ReactToShake_Lvl3Loop",
+      "waiting"   : "ReactToShake_Lvl3Waiting",
+      "inHand"    : "ReactToShake_Lvl3InHand",
+      "onGround"  : "ReactToShake_Lvl3OnGround"
+    }
+  ],
+
+  "wantsToBeActivatedCondition":
+  {
+    "conditionType" : "RobotShaken",
+    "minAccelMagnitudeThreshold" : 16000
+  }
+}

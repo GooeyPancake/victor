@@ -1,0 +1,9 @@
+{
+  "onColors"                : [[0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 1, 1]],
+  "offColors"               : [[0, 1, 1, 1], [0, 1, 1, 1], [0, 1, 1, 1]],
+  "onPeriod_ms"             : [1000,1000,1000],
+  "offPeriod_ms"            : [1000,1000,1000],
+  "transitionOnPeriod_ms"   : [0,0,0],
+  "transitionOffPeriod_ms"  : [0,0,0],
+  "offset"                  : [0,0,0]
+}

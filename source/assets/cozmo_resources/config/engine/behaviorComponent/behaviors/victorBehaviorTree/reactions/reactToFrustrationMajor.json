@@ -1,0 +1,13 @@
+{
+  "behaviorClass": "ReactToFrustration",
+  "behaviorID": "ReactToFrustrationMajor",
+
+  "associatedActiveFeature": "Frustrated",
+
+  "anim": "FrustratedByFailureMajor",
+  "finalEmotionEvent": "FinishedMajorFrustration",
+  "randomDriveMinDist_mm": 150.0,
+  "randomDriveMaxDist_mm": 400.0,
+  "randomDriveMinAngle_deg": 80.0,
+  "randomDriveMaxAngle_deg": 180.0
+}

@@ -1,0 +1,14 @@
+{
+  "behaviorClass" : "GreetAfterLongTime",
+  "behaviorID"    : "GreetAfterLongTime",
+
+  // TODO:(bn) add new active feature once we can release an app update for this
+  // For now, rather than "nothing", use "VC_Greeting"
+  "associatedActiveFeature": "VC_Greeting",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "FeatureGate",
+    "feature" : "GreetAfterLongTime"
+  }
+
+}

@@ -1,0 +1,19 @@
+{
+  "behaviorID": "ReactToAbuse",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "ReactToAbuse",
+
+  "respondToUserIntents":
+  [
+    {
+      "type": "imperative_abuse"
+    }
+  ],
+
+  "animTriggers":
+  [
+    "Feedback_MeanWords"
+  ]
+}

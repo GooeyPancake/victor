@@ -1,0 +1,50 @@
+{
+  "behaviorID": "ReactToObstacle",
+  "behaviorClass": "DispatcherQueue",
+  
+  "behaviors": [
+    "ReactToObstacleInternal",
+    "CheckForAndReactToHand"
+  ],
+
+  "emotionEventOnActivated": "ReactToObstacle",
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        // The `ReactToPutDown` behavior forces a calibration of the head motor,
+        // and a wait animation to allow the robot to have a calm period where the trigger
+        // word can be detected, so time spent on our treads should be at least a few seconds
+        "conditionType": "OffTreadsState",
+        "targetState": "OnTreads",
+        "minTimeSinceChange_ms": 4000
+      },
+      {
+        "conditionType": "ObstacleDetected"
+      }
+    ]
+  },
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType": "OffTreadsState",
+      "targetState": "OnTreads"
+    }
+  },
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "ReactToObstacleInternal",
+      "behaviorClass": "AnimSequence",
+
+      "associatedActiveFeature": "NoFeature",
+      
+      "animTriggers": ["ReactToObstacle"]
+    }
+  ]
+}
+
+
+

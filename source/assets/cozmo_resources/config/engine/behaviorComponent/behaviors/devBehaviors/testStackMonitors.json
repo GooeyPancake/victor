@@ -1,0 +1,23 @@
+// a mal-formed behavior that should trigger stack monitor(s)
+{
+  "behaviorID" : "TestStackMonitors",
+  "behaviorClass": "DispatcherStrictPriority",
+
+  "interruptActiveBehavior": true,
+  
+  "behaviors" : [
+    "ActivatesButCancelsSameTickInternal"
+  ],
+
+  
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "ActivatesButCancelsSameTickInternal",
+      "behaviorClass": "Wait",
+      "wantsToCancelSelfCondition": {
+        "conditionType": "TrueCondition"
+      }
+    }
+  ]
+}

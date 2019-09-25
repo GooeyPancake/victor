@@ -1,0 +1,23 @@
+{
+  "behaviorID"    : "ReactToDarkness",
+  "behaviorClass" : "ReactToDarkness",
+  
+  "reactionEmotion"        : "ReactToDark",
+  "associatedActiveFeature": "NoFeature",
+
+  "lookHeadAngleMin_deg" : 0,
+  "lookHeadAngleMax_deg" : 45,
+  "lookTurnAngleMax_deg" : 80,
+  "lookTurnAngleMin_deg" : 30,
+  "lookWaitTime_s"       : 2.0,
+  "lookMinImages"        : 4,
+  "numOffChargerLooks"   : 2,
+  "numOnChargerLooks"    : 2,
+  "sleepInPlace"         : true,
+
+  "wantsToBeActivatedCondition": {
+    "conditionType"      : "BehaviorTimer",
+    "timerName"          : "ReactToIllumination",
+    "cooldown_s"         : 30.0
+  }
+}

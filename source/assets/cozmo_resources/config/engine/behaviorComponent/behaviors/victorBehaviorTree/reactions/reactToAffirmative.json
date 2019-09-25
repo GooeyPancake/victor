@@ -1,0 +1,22 @@
+{
+  "behaviorID": "ReactToAffirmative",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "ReactToAffirmative",
+
+  "respondToUserIntents":
+  [
+    {
+      "type": "imperative_affirmative"
+    },
+    {
+      "type": "imperative_praise"
+    }
+  ],
+
+  "animTriggers":
+  [
+    "Feedback_GoodRobot"
+  ]
+}

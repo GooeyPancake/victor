@@ -1,0 +1,15 @@
+{
+  "behaviorClass" : "CoordinateWhileHeldInPalm",
+  "behaviorID" : "CoordinateWhileHeldInPalm",
+
+  "delegateID": "CoordinateWhileInAir",
+  
+  "suppressingBehaviors": [
+    "BlackJack",
+    "ReactToTouchPetting",
+    "TakeAPhotoCoordinator",
+    "WeatherResponses",
+    "ShowWallTime",
+    "TimerUtilityCoordinator"
+  ]
+}

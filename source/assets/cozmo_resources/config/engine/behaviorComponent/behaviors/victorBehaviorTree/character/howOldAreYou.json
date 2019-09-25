@@ -1,0 +1,13 @@
+{
+  "behaviorID": "HowOldAreYou",
+  "behaviorClass": "HowOldAreYou",
+  "associatedActiveFeature": "HowOldAreYou",
+  "respondToUserIntents": [
+    { "type": "character_age"}
+  ],
+  "wantsToBeActivatedCondition":  {
+    "conditionType": "FeatureGate",
+    "feature": "HowOldAreYou",
+    "expected": true
+  }
+}

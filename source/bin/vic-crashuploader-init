@@ -5,7 +5,7 @@
 # Victor crash file uploader initialization
 #
 # This script moves existing crash files for upload and removes empty crash
-# files.
+  files.
 #
 : ${VIC_CRASH_FOLDER:="/data/data/com.anki.victor/cache/crashDumps"}
 

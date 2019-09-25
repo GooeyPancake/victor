@@ -1,0 +1,13 @@
+{
+  "behaviorID" : "FetchCubeVoiceCommand",
+  "behaviorClass" : "FetchCube",
+  "associatedActiveFeature" : "FetchCube",
+
+  "skipConnectToCubeBehavior" : false,
+
+  "respondToUserIntents" : [
+    { "type" : "imperative_fetchcube" }
+  ],
+
+  "postBehaviorSuggestion" : "Socialize"
+}

@@ -1,0 +1,6 @@
+{
+  "behaviorID" : "OnboardingTeachWakeWord",
+  "behaviorClass" : "OnboardingTeachWakeWord",
+
+  "simulatedStreamingDuration_ms" : 750
+}

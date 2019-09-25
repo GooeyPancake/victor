@@ -1,0 +1,26 @@
+{
+  "behaviorID": "StayOnChargerUntilCharged",
+  "behaviorClass": "StayOnChargerUntilCharged",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "FeatureGate",
+    "feature" : "StayOnChargerUntilCharged",
+    "expected" : true
+  },
+
+  "delegate": "StayOnChargerDelegate",
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "StayOnChargerDelegate",
+      "behaviorClass": "DispatcherStrictPriority",
+
+      "interruptActiveBehavior": true,
+
+      "behaviors": [
+        "ReactToSoundAwake",
+        "ObservingOnCharger"
+      ]
+    }
+  ]
+}

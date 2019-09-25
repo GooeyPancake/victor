@@ -1,0 +1,17 @@
+{
+  "behaviorClass" : "AlexaSignInOut",
+  "behaviorID" : "AlexaSignInOut",
+
+  "associatedActiveFeature": "Alexa",
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "LookAtFaceOrUpInternal",  
+      "behaviorClass": "LookAtFaceInFront",
+      "confirmFace": false
+    }
+  ],
+
+  
+  "postBehaviorSuggestion": "Nothing"
+}

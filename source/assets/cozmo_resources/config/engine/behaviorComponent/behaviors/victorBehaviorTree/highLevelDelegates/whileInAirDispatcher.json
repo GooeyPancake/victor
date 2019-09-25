@@ -1,0 +1,43 @@
+{
+  "behaviorClass" : "DispatcherQueue",
+  "behaviorID": "WhileInAirDispatcher",
+  
+  "associatedActiveFeature": "InTheAir",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType": "BeingHeld",
+        "shouldBeHeld": true
+      },
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OnCharger"
+        }
+      }
+    ]
+  },
+
+  "wantsToCancelSelfCondition": {
+    "conditionType": "Compound",
+    "or": [
+      {
+        "conditionType": "BeingHeld",
+        "shouldBeHeld": false
+      },
+      {
+        "conditionType": "OnCharger"
+      }
+    ]
+    
+  },
+
+  "behaviors": [
+    "InitialPickupAnimation",
+    "WhileInAirResponses",
+    "WhileInAirResponsesPRDemo"
+  ]
+
+}

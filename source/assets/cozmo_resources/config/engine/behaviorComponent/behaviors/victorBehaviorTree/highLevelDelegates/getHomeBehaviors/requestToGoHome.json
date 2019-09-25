@@ -1,0 +1,36 @@
+{
+  "behaviorClass": "RequestToGoHome",
+  "behaviorID": "RequestToGoHome",
+  "associatedActiveFeature": "RequestCharger",
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType": "ObjectKnown",
+      "objectTypes": ["Charger_Basic"]
+    }
+  },
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "OnCharger"
+  },
+  
+  "normal" : {
+    "numRequests"         : 1,
+    "requestAnimTrigger"  : "ChargerDockingRequest",
+    "getoutAnimTrigger"   : "ChargerDockingRequestGetout",
+    "waitLoopAnimTrigger" : "ChargerDockingRequestWaitLoop",
+    "idleWaitTime_sec"    : 15.0
+  }, 
+  "severe" : {
+    "numRequests"         : 1,
+    "requestAnimTrigger"  : "ChargerDockingSevereRequest",
+    "getoutAnimTrigger"   : "ChargerDockingSevereRequestGetout",
+    "waitLoopAnimTrigger" : "ChargerDockingRequestWaitLoop",
+    "idleWaitTime_sec"    : 15.0
+  },
+  
+  "pickupAnimTrigger" : "ChargerDockingRequestPickup",
+  
+  "maxFaceAge_sec"    : 120.0
+}

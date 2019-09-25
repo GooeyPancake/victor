@@ -1,0 +1,11 @@
+{
+  "behaviorClass": "PopAWheelie",
+  "behaviorID": "PopAWheelie",
+  "associatedActiveFeature": "PopAWheelie",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "FeatureGate",
+    "feature" : "PopAWheelie"
+  }
+
+}

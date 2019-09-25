@@ -1,0 +1,82 @@
+{
+  "startGameCubeLights"   : "SpinnerStartGame",
+  "playerErrorCubeLights" : "SpinnerPlayerError",
+  "lightMap" :
+    [
+      {
+        "debugColorName" : "blue",
+        "backpackLights" : {
+          "celebration"  : "SpinnerBlueCelebration",
+          "holdTarget"   : "SpinnerBlueHoldTarget",
+          "selectTarget" : "SpinnerBlueSelectTarget"
+        },
+        "cubeLights" : {
+          "celebration" : "SpinnerBlueCelebration",
+          "cycle"       : "SpinnerBlueCycle",
+          "lockIn"      : "SpinnerBlueLockIn", 
+          "lockedPulse" : "SpinnerBlueLockedPulse", 
+          "locked"      : "SpinnerBlueLocked"
+        }
+      },
+      {
+        "debugColorName" : "green",
+        "backpackLights" : {
+          "celebration"  : "SpinnerGreenCelebration",
+          "holdTarget"   : "SpinnerGreenHoldTarget",
+          "selectTarget" : "SpinnerGreenSelectTarget"
+        },
+        "cubeLights" : {
+          "celebration" : "SpinnerGreenCelebration",
+          "cycle"       : "SpinnerGreenCycle",
+          "lockIn"      : "SpinnerGreenLockIn", 
+          "lockedPulse" : "SpinnerGreenLockedPulse", 
+          "locked"      : "SpinnerGreenLocked"
+        }
+      },
+      {
+        "debugColorName" : "purple",
+        "backpackLights" : {
+          "celebration"  : "SpinnerPurpleCelebration",
+          "holdTarget"   : "SpinnerPurpleHoldTarget",
+          "selectTarget" : "SpinnerPurpleSelectTarget"
+        },
+        "cubeLights" : {
+          "celebration" : "SpinnerPurpleCelebration",
+          "cycle"       : "SpinnerPurpleCycle",
+          "lockIn"      : "SpinnerPurpleLockIn", 
+          "lockedPulse" : "SpinnerPurpleLockedPulse", 
+          "locked"      : "SpinnerPurpleLocked"
+        }
+      },
+      {
+        "debugColorName" : "red",
+        "backpackLights" : {
+          "celebration"  : "SpinnerRedCelebration",
+          "holdTarget"   : "SpinnerRedHoldTarget",
+          "selectTarget" : "SpinnerRedSelectTarget"
+        },
+        "cubeLights" : {
+          "celebration" : "SpinnerRedCelebration",
+          "cycle"       : "SpinnerRedCycle",
+          "lockIn"      : "SpinnerRedLockIn", 
+          "lockedPulse" : "SpinnerRedLockedPulse", 
+          "locked"      : "SpinnerRedLocked"
+        }
+      },
+      {
+        "debugColorName" : "yellow",
+        "backpackLights" : {
+          "celebration"  : "SpinnerYellowCelebration",
+          "holdTarget"   : "SpinnerYellowHoldTarget",
+          "selectTarget" : "SpinnerYellowSelectTarget"
+        },
+        "cubeLights" : {
+          "celebration" : "SpinnerYellowCelebration",
+          "cycle"       : "SpinnerYellowCycle",
+          "lockIn"      : "SpinnerYellowLockIn", 
+          "lockedPulse" : "SpinnerYellowLockedPulse", 
+          "locked"      : "SpinnerYellowLocked"
+        }
+      }
+    ]
+}

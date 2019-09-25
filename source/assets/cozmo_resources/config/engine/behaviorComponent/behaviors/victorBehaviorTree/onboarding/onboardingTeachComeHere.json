@@ -1,0 +1,69 @@
+{
+  "behaviorID" : "OnboardingTeachComeHere",
+  "behaviorClass" : "DispatcherStrictPriorityWithCooldown",
+
+  "interruptActiveBehavior": true,
+  "linkScope" : false,
+
+  "behaviors" : [
+    {
+      "behavior" : "MandatoryPhysicalReactions",
+      "cooldown_s" : 0.0
+    },
+    {
+      "behavior" : "OnboardingComeHereTriggerWordDetected",
+      "cooldown_s" : 0.0
+    },
+    {
+      "behavior" : "OnboardingComeHere",
+      // -1.0 cooldown is FLT_MAX, meaning only run once.
+      "cooldown_s" : -1.0
+    },
+    {
+      "behavior" : "ComeHereVoiceCommand",
+      "cooldown_s" : 0.0
+    },
+    {
+      "behavior" : "OnboardingLookAtUser",
+      "cooldown_s" : 0.0
+    }
+  ],
+
+  "anonymousBehaviors" : [
+    {
+      "behaviorName" : "OnboardingComeHereTriggerWordDetected",
+      "behaviorClass" : "ReactToVoiceCommand",
+
+      "notifyOnWifiErrors": {
+        "recentOccurrence": {
+          // trigger error notification immediately
+          "numberOfTimes": 1
+          // seconds don't matter with numberOfTimes = 1
+          // "amountOfSeconds": 300.0
+        }
+      },
+      
+      "notifyOnCloudErrors": {
+        "recentOccurrence": {
+          // trigger error notification immediately
+          "numberOfTimes": 2,
+          "amountOfSeconds": 60.0
+        }
+      },
+
+      "earConAudioEventBegin"   : "Play__Robot_Vic_Sfx__Wake_Word_On",
+      "earConAudioEventSuccess" : "Play__Robot_Vic_Sfx__Wake_Word_Success",
+      "backpackLights"          : false,
+
+      "behaviorOnIntent"        : "ReactToTriggerDirectionAwake",
+      
+      "exitAfterListeningIfNotStreaming" : true,
+
+      "whiteListedIntents" : [
+        {
+          "type" : "imperative_come"
+        }
+      ]
+    }
+  ]
+}

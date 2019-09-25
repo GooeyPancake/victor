@@ -1,0 +1,13 @@
+{
+  "behaviorID" : "FindCubeAndThen",
+  "behaviorClass" : "FindCubeAndThen",
+  "associatedActiveFeature" : "FindCube",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "FeatureGate",
+    "feature" : "FindCube",
+    "expected" : true
+  },
+
+  "postBehaviorSuggestion" : "Socialize"
+}

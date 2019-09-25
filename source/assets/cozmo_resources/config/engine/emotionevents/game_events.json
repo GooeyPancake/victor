@@ -1,0 +1,55 @@
+{
+  "emotionEvents" : [
+    {
+      // note this may trigger when the robot decides on it's own to do keep away
+      "name" : "KeepawayStarted",
+      "emotionAffectors" : [										  
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.05
+        }
+      ]
+    },
+    {
+      "name" : "KeepawayPounce",
+      "emotionAffectors" : [										  
+        {
+          "emotionType" : "Happy",
+          "value" : 0.1
+        },{
+          "emotionType" : "Stimulated",
+          "value" : 0.2
+        },
+        {
+          "emotionType" : "Social",
+          "value" : 0.2
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 0.5
+          },
+          {
+            "x" : 5.0,
+            "y" : 0.5
+          },
+          {
+            "x" : 20.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name" : "CubeSpinner",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.05
+        }
+      ]
+    }
+  ]
+}

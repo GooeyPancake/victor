@@ -1,0 +1,31 @@
+{
+    "meta": {
+        "project_id": "cozmo",
+        "version": 2,
+        "revision": 1
+    },
+    "experiments": [
+        {
+            "key": "report_test_auto",
+            "version": 0,
+            "activation_mode": "automatic",
+            "start_time_utc_iso8601": "",
+            "stop_time_utc_iso8601": "",
+            "pause_time_utc_iso8601": "",
+            "resume_time_utc_iso8601": "",
+            "pop_frac_pct": 50,
+            "variations": [
+                {
+                    "key": "control",
+                    "pop_frac_pct": 50
+                },
+                {
+                    "key": "treatment",
+                    "pop_frac_pct": 50
+                }
+            ],
+            "audience_tags": [],
+            "forced_variations": []
+        }
+    ]
+}

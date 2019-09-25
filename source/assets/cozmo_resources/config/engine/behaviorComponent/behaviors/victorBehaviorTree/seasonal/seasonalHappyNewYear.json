@@ -1,0 +1,17 @@
+{
+  "behaviorID": "SeasonalHappyNewYear",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "SeasonalHappyNewYear",
+
+  "renderInEyeHue": false,
+  
+  "respondToUserIntents": [
+    { "type": "seasonal_happynewyear" }
+  ],
+
+  "animTriggers": [
+    "SeasonalHappyNewYear"
+  ]
+}

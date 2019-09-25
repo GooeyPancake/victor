@@ -1,0 +1,23 @@
+{
+  "behaviorID"       : "BeQuietAnims",
+  "behaviorClass"    : "DispatcherQueue",
+
+  "behaviors": [
+    "QuietGetInInternal",
+    "PutHeadDownInternal",
+    "BeQuietLoop"
+  ],
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName"     : "QuietGetInInternal",
+      "behaviorClass"    : "AnimSequence",
+      "animTriggers"     : ["Feedback_BeQuiet"]
+    },
+    {
+      "behaviorName"     : "PutHeadDownInternal",
+      "behaviorClass"    : "MoveHeadToAngle",
+      "headAngle_deg"    : -22.0
+    }
+  ]
+}

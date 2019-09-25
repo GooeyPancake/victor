@@ -1,0 +1,58 @@
+{
+  "behaviorClass" : "Alexa",
+  "behaviorID" : "Alexa",
+
+  "associatedActiveFeature": "Alexa",
+  "behaviorStatToIncrement": "AVS",
+  
+  "responseData": {
+    
+    // fromIdle info is sent to anim process to play when UX state changes from Idle to anything else.
+    // loop and transitions are animations played in engine based on the UX state
+    
+    "Listening": {
+      "fromIdle": {
+        "animTrigger": "AlexaIdle2Listen"
+      },
+      "loop": "AlexaListenLoop",
+      "transitions": {
+        "Idle":     "AlexaListen2Idle",
+        "Thinking": "AlexaListen2Think",
+        "Speaking": "AlexaListen2Speak",
+        "Error":    "AlexaListen2Error"
+      }
+    },
+    "Thinking": {
+      // no from-idle animation
+      "loop": "AlexaThinkLoop",
+      "transitions": {
+        "Idle":     "AlexaThink2Idle",
+        "Speaking": "AlexaThink2Speak",
+        "Error":    "AlexaThink2Error"
+      }
+    },
+    "Speaking": {
+      "fromIdle": {
+        "animTrigger": "AlexaIdle2Speak"
+      },
+      "loop": "AlexaSpeakLoop",
+      "transitions": {
+        "Idle":      "AlexaSpeak2Idle",
+        "Listening": "AlexaSpeak2Listen",
+        "Error":     "AlexaSpeak2Error"
+      }
+    },
+    "Error": {
+      "fromIdle": {
+        "animTrigger": "AlexaIdle2Error"
+        // anim process will play the error audio clip based on the error
+      },
+      "loop": "AlexaErrorLoop",
+      "transitions": {
+        "Idle":      "AlexaError2Idle"
+      }
+    }
+  },
+  
+  "postBehaviorSuggestion": "Socialize"
+}

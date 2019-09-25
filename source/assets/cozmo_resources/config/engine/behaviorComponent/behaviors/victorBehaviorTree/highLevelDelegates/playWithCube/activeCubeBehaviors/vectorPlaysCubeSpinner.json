@@ -1,0 +1,61 @@
+{
+  "behaviorClass": "VectorPlaysCubeSpinner",
+  "behaviorID": "VectorPlaysCubeSpinner",
+
+  "associatedActiveFeature": "CubeSpinner",
+  "emotionEventOnActivated": "CubeSpinner",
+  
+  "minRoundsToPlay" : 2,
+  "maxRoundsToPlay" : 5,
+  "maxTimeSearchForCube_ms" : 10000, // ten seconds
+
+  "vectorPlayerConfig" : {
+    // 0-1 scale
+    "oddsOfMissingPattern" : [
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    // 0-1 scale
+    "oddsOfTappingAfterCorrectPattern" : [
+      0.2,
+      0.4,
+      0.5,
+      0.7
+    ],
+    // 0-1 scale
+    "oddsOfTappingCorrectPatternOnLock" : [
+      0.3,
+      0.3,
+      0.4,
+      0.6
+    ]
+  }, 
+
+  "gameConfig" : {
+    "getInLength_ms" : 3000,
+    "timePerLED_ms" : 750,
+    // A float representing the relative speed per round
+    "speedMultipliers" : [
+      1.0,
+      1.25,
+      1.5,
+      1.75
+    ],
+    // minimum number of wrong colors before the right color shows up
+    "minWrongColorsBeetweenTargetPerRound" : [
+      1,
+      0,
+      0,
+      3
+    ],
+    // minimum number of wrong colors before the right color shows up
+    "maxWrongColorsBeetweenTargetPerRound" : [
+      3,
+      5,
+      5,
+      10
+    ]
+  }
+}

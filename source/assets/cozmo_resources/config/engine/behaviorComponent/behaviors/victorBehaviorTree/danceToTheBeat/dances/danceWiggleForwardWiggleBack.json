@@ -1,0 +1,218 @@
+{
+  "behaviorClass": "DanceToTheBeat",
+  "behaviorID": "DanceWiggleForwardWiggleBack",
+  
+  "useBackpackLights" : true,
+  
+  "backpackAnim" : "DanceToTheBeat",
+  
+  "eyeHoldAnim"   : "DanceBeatEyeHold",
+  "getOutAnim"    : "DanceBeatGetOut",
+  
+  // Dance session configuration:
+  //
+  // A dance session is made up of one or more "dance phrases".
+  //
+  // A DancePhrase is made up of one or more possible dance animations
+  // that can be strung together and played on sequential musical beats.
+  // DancePhraseConfig specifies the rules by which dance phrases are
+  // generated when the behavior is run.
+  //
+  // When the behavior begins, animations are randomly drawn from the
+  // list in accordance with the min/max beats. The number of animations
+  // that make up the phrase is random, but is always between 'minBeats'
+  // and 'maxBeats', and is always a multiple of 'multipleOf'.
+  
+  "danceSessions" : [
+    {
+      "canListenForBeats" : false,
+      "playGetoutIfInterrupted": true,
+      "dancePhrases" : [
+        {
+          "minBeats"    : 4,
+          "maxBeats"    : 6,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_headnod_down_01"
+          ]
+        },
+        {
+          "minBeats"    : 2,
+          "maxBeats"    : 4,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_headnod_01",
+            "anim_dancebeat_headlift_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_pivot_left_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_pivot_right_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_pivot_left_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_pivot_right_01"
+          ]
+        },
+                {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_scoot_left_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_scoot_right_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_scoot_left_01"
+          ]
+        },
+        {
+          "minBeats"    : 2,
+          "maxBeats"    : 2,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_scoot_right_01"
+          ]
+        }
+      ]
+    },
+  
+    {
+      "canListenForBeats" : true,
+      "playGetoutIfInterrupted": true,
+      "dancePhrases" : [
+        {
+          "minBeats"    : 14,
+          "maxBeats"    : 20,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_eyebeat_01",
+            "anim_dancebeat_eyebeat_right_01"
+          ]
+        }
+      ]
+    },
+    {
+      "canListenForBeats" : false,
+      "playGetoutIfInterrupted": true,
+      "dancePhrases" : [
+        {
+          "minBeats"    : 4,
+          "maxBeats"    : 6,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_headnod_down_01"
+          ]
+        },
+        {
+          "minBeats"    : 2,
+          "maxBeats"    : 4,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_headnod_01",
+            "anim_dancebeat_headlift_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_scoot_left_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_scoot_right_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_scoot_left_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_scoot_right_01"
+          ]
+        },
+          {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_pivot_left_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_pivot_right_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_pivot_left_01"
+          ]
+        },
+        {
+          "minBeats"    : 1,
+          "maxBeats"    : 1,
+          "multipleOf"  : 1,
+          "anims" : [
+            "anim_dancebeat_pivot_right_01"
+          ]
+        }
+      ]
+    }
+  ]
+}

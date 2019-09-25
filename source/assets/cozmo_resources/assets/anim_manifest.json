@@ -4,16 +4,16 @@
     "length_ms": 1485
   },
   {
-    "name": "anim_movement_lookinplaceforfaces_medium",
-    "length_ms": 990
+    "name": "anim_eyepose_hurt",
+    "length_ms": 957
   },
   {
     "name": "anim_eyepose_furious",
     "length_ms": 957
   },
   {
-    "name": "anim_freeplay_reacttoface_sayname_03_head_angle_20",
-    "length_ms": 1485
+    "name": "anim_rtsound_offcharger_observe_60right_01",
+    "length_ms": 2244
   },
   {
     "name": "anim_movement_alreadyhere_01",
@@ -36,6 +36,10 @@
     "length_ms": 7260
   },
   {
+    "name": "anim_eyepose_awe",
+    "length_ms": 0
+  },
+  {
     "name": "anim_gotosleep_sleeping_01",
     "length_ms": 14850
   },
@@ -44,8 +48,8 @@
     "length_ms": 3333
   },
   {
-    "name": "anim_gotosleep_sleeping_03",
-    "length_ms": 9900
+    "name": "anim_generic_look_up_idle_01",
+    "length_ms": 726
   },
   {
     "name": "anim_gotosleep_sleeping_02",
@@ -60,24 +64,28 @@
     "length_ms": 3861
   },
   {
-    "name": "anim_eyepose_hurt",
-    "length_ms": 957
+    "name": "anim_codelab_getin_01",
+    "length_ms": 4208
   },
   {
     "name": "anim_eyecolorreact_idle_01",
     "length_ms": 5280
   },
   {
-    "name": "anim_rtsound_offcharger_observe_60right_01",
-    "length_ms": 2244
+    "name": "anim_keepaway_getout_exit_01",
+    "length_ms": 2409
   },
   {
-    "name": "anim_rtsound_offcharger_asleep_120right_01",
-    "length_ms": 2277
+    "name": "anim_timercancel_01",
+    "length_ms": 2665
   },
   {
-    "name": "anim_referencing_giggle_01_head_angle_40",
-    "length_ms": 2970
+    "name": "anim_heldonpalm_pickup_nervous_01",
+    "length_ms": 4752
+  },
+  {
+    "name": "anim_rtsound_oncharger_asleep_30left_01",
+    "length_ms": 2475
   },
   {
     "name": "anim_sdk_speak_01",
@@ -108,8 +116,8 @@
     "length_ms": 2310
   },
   {
-    "name": "anim_reacttocliff_turnright_60_01",
-    "length_ms": 957
+    "name": "anim_rtpickup_loop_10",
+    "length_ms": 4950
   },
   {
     "name": "anim_rtsound_offcharger_asleep_30left_01",
@@ -124,12 +132,8 @@
     "length_ms": 1100
   },
   {
-    "name": "anim_petting_getin_01",
-    "length_ms": 3993
-  },
-  {
-    "name": "anim_snowglobe_pregetout_01",
-    "length_ms": 3069
+    "name": "anim_handdetection_getout_01",
+    "length_ms": 3333
   },
   {
     "name": "anim_explorer_idle_01_head_angle_-20",
@@ -140,8 +144,12 @@
     "length_ms": 5940
   },
   {
-    "name": "anim_chargerdocking_searchforcharger_01",
-    "length_ms": 11550
+    "name": "anim_explorer_lookaround_01",
+    "length_ms": 2310
+  },
+  {
+    "name": "anim_reacttocliff_stuckonedge_alert_01",
+    "length_ms": 1980
   },
   {
     "name": "anim_snowglobe_rtonground_01",
@@ -160,24 +168,28 @@
     "length_ms": 0
   },
   {
-    "name": "anim_keepaway_backup_01",
-    "length_ms": 726
+    "name": "anim_reacttoface_unidentified_01_head_angle_40",
+    "length_ms": 4818
+  },
+  {
+    "name": "anim_heldonpalm_edge_relaxed_01",
+    "length_ms": 3960
   },
   {
     "name": "anim_slowpoke_getin_04",
     "length_ms": 3597
   },
   {
-    "name": "anim_eyepose_bliss",
-    "length_ms": 957
+    "name": "anim_slowpoke_getin_03",
+    "length_ms": 2244
   },
   {
     "name": "anim_slowpoke_getin_02",
     "length_ms": 2772
   },
   {
-    "name": "anim_reacttocliff_turnright_180_01",
-    "length_ms": 1815
+    "name": "anim_slowpoke_getin_01",
+    "length_ms": 2475
   },
   {
     "name": "anim_feedback_goodrobot_01",
@@ -192,8 +204,12 @@
     "length_ms": 1254
   },
   {
-    "name": "anim_qa_sync_5_10_50",
-    "length_ms": 9900
+    "name": "anim_heldonpalm_rolloff_01",
+    "length_ms": 5346
+  },
+  {
+    "name": "anim_blackjack_deal_01",
+    "length_ms": 462
   },
   {
     "name": "anim_weather_cold_01",
@@ -216,24 +232,20 @@
     "length_ms": 3300
   },
   {
+    "name": "anim_rtpickup_putdown_04",
+    "length_ms": 3432
+  },
+  {
     "name": "anim_dancebeat_headliftbody_right_large_01",
     "length_ms": 330
-  },
-  {
-    "name": "anim_greeting_imhome_01",
-    "length_ms": 5214
-  },
-  {
-    "name": "anim_eyepose_all_faces",
-    "length_ms": 39600
   },
   {
     "name": "anim_hiking_lookaround_03",
     "length_ms": 5115
   },
   {
-    "name": "anim_codelab_getin_01",
-    "length_ms": 4208
+    "name": "anim_hiking_lookaround_02",
+    "length_ms": 2937
   },
   {
     "name": "anim_hiking_lookaround_01",
@@ -244,28 +256,32 @@
     "length_ms": 1980
   },
   {
-    "name": "anim_gazing_lookatsurfaces_getin_left_01",
-    "length_ms": 1919
+    "name": "anim_eyepose_bothered",
+    "length_ms": 957
   },
   {
-    "name": "anim_cubeconnection_loop_02",
-    "length_ms": 1353
+    "name": "anim_cube_drive_loop_01",
+    "length_ms": 462
+  },
+  {
+    "name": "anim_avs_notification_loop_01",
+    "length_ms": 1980
   },
   {
     "name": "anim_referencing_giggle_01_head_angle_20",
     "length_ms": 2970
   },
   {
-    "name": "anim_nowifi_icon_01",
-    "length_ms": 3465
+    "name": "anim_cubeconnection_loop_03",
+    "length_ms": 1353
   },
   {
     "name": "anim_qa_reset_to_neutral",
     "length_ms": 99
   },
   {
-    "name": "anim_movement_lookinplaceforfaces_medium_head_angle_40",
-    "length_ms": 990
+    "name": "anim_rtmotion_lookleft_01",
+    "length_ms": 2640
   },
   {
     "name": "anim_onboarding_reacttoface_happy_01_head_angle_-20",
@@ -274,10 +290,6 @@
   {
     "name": "anim_volume_stage_max",
     "length_ms": 2508
-  },
-  {
-    "name": "anim_meetvictor_lookface_loop_01",
-    "length_ms": 3234
   },
   {
     "name": "anim_heldonpalm_putdown_nervous_01",
@@ -304,12 +316,8 @@
     "length_ms": 1089
   },
   {
-    "name": "anim_keepaway_getout_satisfied_01",
-    "length_ms": 3300
-  },
-  {
-    "name": "anim_inspectheldcube_loop_04",
-    "length_ms": 462
+    "name": "anim_feedback_meanwords_01",
+    "length_ms": 4323
   },
   {
     "name": "anim_inspectheldcube_loop_05",
@@ -320,16 +328,16 @@
     "length_ms": 3333
   },
   {
-    "name": "anim_slowpoke_getout_04",
-    "length_ms": 3498
+    "name": "anim_feedback_meanwords_02",
+    "length_ms": 3762
   },
   {
     "name": "anim_movement_lookinplaceforfaces_short_head_angle_20",
     "length_ms": 330
   },
   {
-    "name": "anim_slowpoke_getout_02",
-    "length_ms": 2772
+    "name": "anim_inspectheldcube_loop_01",
+    "length_ms": 462
   },
   {
     "name": "anim_inspectheldcube_loop_02",
@@ -352,8 +360,8 @@
     "length_ms": 2145
   },
   {
-    "name": "anim_petting_lvl1_getout_01",
-    "length_ms": 3960
+    "name": "anim_hiking_driving_loop_02",
+    "length_ms": 2475
   },
   {
     "name": "anim_pounce_01",
@@ -380,8 +388,8 @@
     "length_ms": 5280
   },
   {
-    "name": "anim_wakeword_turn_right_01",
-    "length_ms": 429
+    "name": "anim_onboarding_eyecontact_loop_getout_01",
+    "length_ms": 528
   },
   {
     "name": "anim_qa_lift_updown_alt",
@@ -396,8 +404,8 @@
     "length_ms": 957
   },
   {
-    "name": "anim_dizzy_reaction_hard_01",
-    "length_ms": 12408
+    "name": "anim_rtsound_offcharger_observe_120right_01",
+    "length_ms": 2475
   },
   {
     "name": "anim_keepaway_idleliftdown_02",
@@ -408,8 +416,8 @@
     "length_ms": 3795
   },
   {
-    "name": "anim_powersavemode_temperature_01",
-    "length_ms": 4950
+    "name": "anim_avs_listen2timer_03",
+    "length_ms": 891
   },
   {
     "name": "anim_movement_lookinplaceforfaces_long_head_angle_-20",
@@ -424,8 +432,8 @@
     "length_ms": 429
   },
   {
-    "name": "anim_cube_psychic_01",
-    "length_ms": 5379
+    "name": "anim_petting_bliss_getout_02",
+    "length_ms": 6270
   },
   {
     "name": "anim_petting_bliss_getout_01",
@@ -456,11 +464,11 @@
     "length_ms": 6600
   },
   {
-    "name": "anim_blackjack_deal_01",
-    "length_ms": 462
+    "name": "anim_avs_suddenspeak_03",
+    "length_ms": 363
   },
   {
-    "name": "anim_vc_laser_lookdown_01",
+    "name": "anim_timercancel_getin_01",
     "length_ms": 693
   },
   {
@@ -472,8 +480,12 @@
     "length_ms": 990
   },
   {
-    "name": "anim_referencing_squint_02_head_angle_-20",
-    "length_ms": 3630
+    "name": "anim_timer_emote_01",
+    "length_ms": 1221
+  },
+  {
+    "name": "anim_launch_wakeup_drivingloop_01",
+    "length_ms": 1881
   },
   {
     "name": "anim_nowifi_trouble_icon_01",
@@ -496,12 +508,12 @@
     "length_ms": 2574
   },
   {
-    "name": "anim_chargerdocking_searchforchargerturns_default_01",
-    "length_ms": 1980
+    "name": "anim_getout_tts_02",
+    "length_ms": 132
   },
   {
-    "name": "anim_observing_self_absorbed_01",
-    "length_ms": 5049
+    "name": "anim_keepaway_driving_loop_02",
+    "length_ms": 3267
   },
   {
     "name": "anim_movement_forward_01",
@@ -512,7 +524,7 @@
     "length_ms": 2970
   },
   {
-    "name": "anim_gotosleep_getin_01",
+    "name": "anim_rtmotion_forwardup_01",
     "length_ms": 3300
   },
   {
@@ -528,16 +540,12 @@
     "length_ms": 2805
   },
   {
-    "name": "anim_explorer_idle_03_head_angle_-20",
-    "length_ms": 3300
+    "name": "anim_rtsound_oncharger_asleep_behind_right_01",
+    "length_ms": 2343
   },
   {
     "name": "anim_rtshake_lv1loop_01",
     "length_ms": 2871
-  },
-  {
-    "name": "anim_getin_tts_01",
-    "length_ms": 990
   },
   {
     "name": "anim_blackjack_speech_01",
@@ -560,6 +568,14 @@
     "length_ms": 2541
   },
   {
+    "name": "anim_keepaway_driving_loop_03",
+    "length_ms": 3795
+  },
+  {
+    "name": "anim_vc_listening_01",
+    "length_ms": 462
+  },
+  {
     "name": "anim_onboarding_eyecontact_loop_01",
     "length_ms": 11550
   },
@@ -580,16 +596,16 @@
     "length_ms": 1919
   },
   {
-    "name": "anim_petting_bliss_getout_02",
-    "length_ms": 6270
+    "name": "anim_movement_left_02",
+    "length_ms": 1551
   },
   {
     "name": "anim_lookinplaceforfaces_keepalive_long_02_head_angle_40",
     "length_ms": 2970
   },
   {
-    "name": "anim_chargerdocking_comeoff_left_01",
-    "length_ms": 4257
+    "name": "anim_explorer_idle_01_head_angle_-10",
+    "length_ms": 1815
   },
   {
     "name": "anim_referencing_curious_01_head_angle_40",
@@ -632,8 +648,8 @@
     "length_ms": 1980
   },
   {
-    "name": "anim_reacttocliff_stuckleftside_getin_01",
-    "length_ms": 3135
+    "name": "anim_reacttocliff_faceplantroll_armup_02",
+    "length_ms": 6930
   },
   {
     "name": "anim_explorer_idle_01_head_angle_40",
@@ -664,12 +680,12 @@
     "length_ms": 2211
   },
   {
-    "name": "anim_rtsound_oncharger_asleep_30left_01",
-    "length_ms": 2475
+    "name": "anim_referencing_giggle_01_head_angle_40",
+    "length_ms": 2970
   },
   {
-    "name": "anim_explorer_idle_01_head_angle_-10",
-    "length_ms": 1815
+    "name": "anim_chargerdocking_comeoff_left_01",
+    "length_ms": 4257
   },
   {
     "name": "anim_explorer_center_right_01",
@@ -700,6 +716,10 @@
     "length_ms": 2475
   },
   {
+    "name": "anim_qa_lift_updown",
+    "length_ms": 7656
+  },
+  {
     "name": "anim_rtsound_oncharger_asleep_120left_01",
     "length_ms": 2277
   },
@@ -712,8 +732,8 @@
     "length_ms": 3828
   },
   {
-    "name": "anim_petting_blissloop_03",
-    "length_ms": 3300
+    "name": "anim_lookinplaceforfaces_keepalive_medium_head_angle_-20",
+    "length_ms": 990
   },
   {
     "name": "anim_rtpickup_reaction_01",
@@ -736,20 +756,24 @@
     "length_ms": 3795
   },
   {
-    "name": "anim_qa_head_updown",
-    "length_ms": 7986
+    "name": "anim_referencing_smile_01_head_angle_40",
+    "length_ms": 2772
   },
   {
     "name": "anim_chargerdocking_requestwait_01",
     "length_ms": 5775
   },
   {
+    "name": "anim_rtsound_oncharger_observe_right_01",
+    "length_ms": 2475
+  },
+  {
     "name": "anim_meetvictor_getin_01_head_angle_-20",
     "length_ms": 1254
   },
   {
-    "name": "anim_avs_notification_getin_01",
-    "length_ms": 660
+    "name": "anim_eyecontact_giggle_01_head_angle_-20",
+    "length_ms": 3234
   },
   {
     "name": "anim_rtsound_oncharger_observe_30left_01",
@@ -760,24 +784,20 @@
     "length_ms": 330
   },
   {
-    "name": "anim_photo_shutter_01",
-    "length_ms": 2937
+    "name": "anim_rtp_blackjack_idle_01",
+    "length_ms": 6270
   },
   {
-    "name": "anim_blackjack_spread_01",
-    "length_ms": 462
+    "name": "anim_rtsound_offcharger_observe_150right_01",
+    "length_ms": 2475
   },
   {
     "name": "anim_rtsound_oncharger_observe_front_01",
     "length_ms": 2145
   },
   {
-    "name": "anim_pounce_long_01",
-    "length_ms": 792
-  },
-  {
-    "name": "anim_reacttocliff_stuckrightside_getin_01",
-    "length_ms": 3135
+    "name": "anim_reacttocliff_stuckonedge_alert_right_01",
+    "length_ms": 2970
   },
   {
     "name": "anim_knowledgegraph_fail_getout_01",
@@ -828,12 +848,12 @@
     "length_ms": 896
   },
   {
-    "name": "anim_rtpickup_loop_10",
-    "length_ms": 4950
+    "name": "anim_rtsound_oncharger_asleep_right_01",
+    "length_ms": 2541
   },
   {
-    "name": "anim_cube_drive_loop_01",
-    "length_ms": 462
+    "name": "anim_weather_thunderstorm_01",
+    "length_ms": 14817
   },
   {
     "name": "anim_rtshake_lv3pregetout_01",
@@ -848,8 +868,8 @@
     "length_ms": 3894
   },
   {
-    "name": "anim_explorer_planning_idle_01",
-    "length_ms": 2112
+    "name": "anim_dancebeat_listening_01",
+    "length_ms": 4488
   },
   {
     "name": "anim_timerset_getout_01",
@@ -864,20 +884,24 @@
     "length_ms": 726
   },
   {
-    "name": "anim_rtp_blackjack_playerno_01",
-    "length_ms": 2640
+    "name": "anim_wakeword_idk_02",
+    "length_ms": 2409
   },
   {
-    "name": "anim_wakeword_idk_03",
-    "length_ms": 4686
+    "name": "anim_weather_cloud_01",
+    "length_ms": 14850
   },
   {
     "name": "anim_wakeword_idk_04",
-    "length_ms": 3333
+    "length_ms": 3300
   },
   {
     "name": "anim_rtsound_offcharger_asleep_front_01",
     "length_ms": 2475
+  },
+  {
+    "name": "anim_observing_nearby_area_01",
+    "length_ms": 6138
   },
   {
     "name": "anim_gazing_lookatsurfaces_getin_left_01_head_angle_40",
@@ -896,44 +920,48 @@
     "length_ms": 3036
   },
   {
-    "name": "anim_hiking_react_02",
-    "length_ms": 5841
+    "name": "anim_eyepose_all_faces",
+    "length_ms": 39600
   },
   {
-    "name": "anim_chargerdocking_rightturn_all",
-    "length_ms": 924
+    "name": "anim_hiking_react_05",
+    "length_ms": 1485
   },
   {
     "name": "anim_hiking_react_04",
     "length_ms": 1320
   },
   {
-    "name": "anim_hiking_react_07",
-    "length_ms": 1551
+    "name": "anim_heldonpalm_getin_relaxed_01",
+    "length_ms": 7623
   },
   {
-    "name": "anim_hiking_react_06",
-    "length_ms": 2805
+    "name": "anim_chargerdocking_request1_01",
+    "length_ms": 1782
   },
   {
     "name": "anim_eyecontact_lookloop_01_head_angle_40",
     "length_ms": 11550
   },
   {
-    "name": "anim_vc_alrighty_01",
-    "length_ms": 1452
+    "name": "anim_gotosleep_sleeploop_01",
+    "length_ms": 14652
   },
   {
-    "name": "anim_dancebeat_headliftbody_left_large_01",
-    "length_ms": 330
+    "name": "anim_explorer_center_left_01",
+    "length_ms": 990
   },
   {
     "name": "anim_freeplay_reacttoface_sayname_01_head_angle_-20",
     "length_ms": 3036
   },
   {
-    "name": "anim_avs_notification2speak_01",
-    "length_ms": 99
+    "name": "anim_qa_head_updown",
+    "length_ms": 7986
+  },
+  {
+    "name": "anim_wakeword_turn_left_45degrees_01",
+    "length_ms": 495
   },
   {
     "name": "anim_rtsound_offcharger_observe_ambient_01",
@@ -946,10 +974,6 @@
   {
     "name": "anim_communication_pickup_cantdothat_01",
     "length_ms": 6600
-  },
-  {
-    "name": "anim_launch_startdriving_01",
-    "length_ms": 924
   },
   {
     "name": "anim_freeplay_reacttoface_sayname_02",
@@ -978,6 +1002,10 @@
   {
     "name": "anim_slowbump_getinbackward_01",
     "length_ms": 1023
+  },
+  {
+    "name": "anim_reacttocliff_turtleroll_01",
+    "length_ms": 7260
   },
   {
     "name": "anim_reacttoblock_frustrated_01",
@@ -1036,23 +1064,23 @@
     "length_ms": 1254
   },
   {
-    "name": "anim_eyepose_awe",
-    "length_ms": 0
+    "name": "anim_greeting_imhome_01",
+    "length_ms": 5214
   },
   {
     "name": "anim_rtmotion_right_getout_01",
     "length_ms": 594
   },
   {
-    "name": "anim_reacttocliff_stuckonedge_alert_01",
-    "length_ms": 1980
+    "name": "anim_chargerdocking_searchforcharger_01",
+    "length_ms": 11550
   },
   {
     "name": "anim_dancebeat_eyebeat_right_01",
     "length_ms": 231
   },
   {
-    "name": "anim_movement_lookinplaceforfaces_medium_head_angle_-20",
+    "name": "anim_movement_lookinplaceforfaces_medium",
     "length_ms": 990
   },
   {
@@ -1064,10 +1092,6 @@
     "length_ms": 0
   },
   {
-    "name": "anim_rtsound_oncharger_asleep_behind_right_01",
-    "length_ms": 2343
-  },
-  {
     "name": "anim_sudden_obstacle_react_01",
     "length_ms": 1122
   },
@@ -1076,16 +1100,16 @@
     "length_ms": 825
   },
   {
-    "name": "anim_rtsound_offcharger_observe_30right_01",
-    "length_ms": 2244
+    "name": "anim_wakeword_turn_right_01",
+    "length_ms": 429
   },
   {
     "name": "anim_sudden_obstacle_react_02",
     "length_ms": 1320
   },
   {
-    "name": "anim_dancebeat_scoot_left_01",
-    "length_ms": 330
+    "name": "anim_eyepose_focused",
+    "length_ms": 957
   },
   {
     "name": "anim_movement_reacttoface_01_head_angle_20",
@@ -1104,28 +1128,20 @@
     "length_ms": 660
   },
   {
-    "name": "anim_rtsound_offcharger_observe_150right_01",
-    "length_ms": 2475
+    "name": "anim_blackjack_spread_01",
+    "length_ms": 462
   },
   {
-    "name": "anim_heldonpalm_edge_nervous_01",
-    "length_ms": 5973
+    "name": "anim_reacttoblock_react_short_02",
+    "length_ms": 1122
   },
   {
     "name": "anim_rtsound_offcharger_observe_behind_left_01",
     "length_ms": 2310
   },
   {
-    "name": "anim_wakeword_turn_behind_right_01",
-    "length_ms": 693
-  },
-  {
     "name": "anim_turn_left_01",
     "length_ms": 4950
-  },
-  {
-    "name": "anim_weather_thunderstorm_01",
-    "length_ms": 14817
   },
   {
     "name": "anim_freeplay_reacttoface_sayname_01_head_angle_20",
@@ -1152,10 +1168,6 @@
     "length_ms": 2409
   },
   {
-    "name": "anim_dancebeat_listening_02",
-    "length_ms": 4158
-  },
-  {
     "name": "anim_meetvictor_sayname_01",
     "length_ms": 3333
   },
@@ -1164,12 +1176,12 @@
     "length_ms": 1980
   },
   {
-    "name": "anim_reacttocliff_stuckonedge_alert_right_01",
-    "length_ms": 2970
+    "name": "anim_meetvictor_sayname_03",
+    "length_ms": 2112
   },
   {
-    "name": "anim_avs_listen2weather_03",
-    "length_ms": 429
+    "name": "anim_meetvictor_sayname_04",
+    "length_ms": 2673
   },
   {
     "name": "anim_launch_reacttocubepickup",
@@ -1204,20 +1216,20 @@
     "length_ms": 0
   },
   {
-    "name": "anim_avs_listen_timeout_03",
-    "length_ms": 2640
+    "name": "anim_avs_l_loop_03",
+    "length_ms": 0
   },
   {
-    "name": "anim_qa_lift_updown",
-    "length_ms": 7656
+    "name": "anim_dancebeat_cantdothat_01",
+    "length_ms": 6006
   },
   {
     "name": "anim_codelab_getout_01",
     "length_ms": 2046
   },
   {
-    "name": "anim_onboarding_reacttoface_happy_01",
-    "length_ms": 1485
+    "name": "anim_rtp_blackjack_playerno_01",
+    "length_ms": 2640
   },
   {
     "name": "anim_cubeconnection_connectionfailure_01",
@@ -1228,6 +1240,10 @@
     "length_ms": 1650
   },
   {
+    "name": "anim_observing_self_absorbed_01",
+    "length_ms": 5049
+  },
+  {
     "name": "anim_movement_comehere_greeting_02",
     "length_ms": 2706
   },
@@ -1236,12 +1252,12 @@
     "length_ms": 2640
   },
   {
-    "name": "anim_meetvictor_getin_01_head_angle_20",
-    "length_ms": 1254
+    "name": "anim_lookatphone_getout_01",
+    "length_ms": 924
   },
   {
-    "name": "anim_heldonpalm_edge_relaxed_01",
-    "length_ms": 3960
+    "name": "anim_reacttocliff_turnright_60_01",
+    "length_ms": 957
   },
   {
     "name": "anim_onboarding_cube_drive_getout_01",
@@ -1256,16 +1272,20 @@
     "length_ms": 2277
   },
   {
-    "name": "anim_eyecolorreact_getout_01",
-    "length_ms": 995
+    "name": "anim_chargerdocking_comeoff_straight_02",
+    "length_ms": 5115
   },
   {
     "name": "anim_meetvictor_getin_01_head_angle_40",
     "length_ms": 1254
   },
   {
-    "name": "anim_timercancel_01",
-    "length_ms": 2665
+    "name": "anim_rtsound_offcharger_asleep_120right_01",
+    "length_ms": 2277
+  },
+  {
+    "name": "anim_vc_reaction_nofaceheardyou_01",
+    "length_ms": 9504
   },
   {
     "name": "anim_rtsound_oncharger_observe_120left_01",
@@ -1280,8 +1300,8 @@
     "length_ms": 2970
   },
   {
-    "name": "anim_slowpoke_getin_03",
-    "length_ms": 2244
+    "name": "anim_eyepose_bliss",
+    "length_ms": 957
   },
   {
     "name": "anim_knowledgegraph_searching_getout_01",
@@ -1292,12 +1312,12 @@
     "length_ms": 4620
   },
   {
-    "name": "anim_heldonpalm_rolloff_01",
-    "length_ms": 5346
+    "name": "anim_hiking_react_02",
+    "length_ms": 5841
   },
   {
-    "name": "anim_reacttocliff_stuckonedge_right_01",
-    "length_ms": 5280
+    "name": "anim_gazing_lookatfaces_getin_right_01_head_angle_40",
+    "length_ms": 1589
   },
   {
     "name": "anim_eyecontact_lookloop_02_head_angle_40",
@@ -1308,12 +1328,8 @@
     "length_ms": 3498
   },
   {
-    "name": "anim_slowpoke_getin_01",
-    "length_ms": 2475
-  },
-  {
-    "name": "anim_lookatphone_getout_01",
-    "length_ms": 924
+    "name": "anim_reacttocliff_turnright_180_01",
+    "length_ms": 1815
   },
   {
     "name": "anim_hiking_driving_loop_05",
@@ -1340,8 +1356,8 @@
     "length_ms": 3300
   },
   {
-    "name": "anim_hiking_driving_loop_02",
-    "length_ms": 2475
+    "name": "anim_petting_lvl1_getout_01",
+    "length_ms": 3960
   },
   {
     "name": "anim_dizzy_pickup_02",
@@ -1356,20 +1372,20 @@
     "length_ms": 2607
   },
   {
-    "name": "anim_launch_drivingloop_03",
-    "length_ms": 3630
+    "name": "anim_explorer_planning_getout_02",
+    "length_ms": 1551
   },
   {
     "name": "anim_explorer_idle_01_head_angle_10",
     "length_ms": 1815
   },
   {
-    "name": "anim_dancebeat_headliftbody_left_med_01",
-    "length_ms": 330
+    "name": "anim_reacttoblock_stuckonblock_01",
+    "length_ms": 5049
   },
   {
-    "name": "anim_hiking_react_05",
-    "length_ms": 1485
+    "name": "anim_powersavemode_temperature_01",
+    "length_ms": 4950
   },
   {
     "name": "anim_lookinplaceforfaces_keepalive_long_03_head_angle_40",
@@ -1408,12 +1424,8 @@
     "length_ms": 3300
   },
   {
-    "name": "anim_eyepose_blink_bd_r",
-    "length_ms": 957
-  },
-  {
-    "name": "anim_rtsound_oncharger_asleep_right_01",
-    "length_ms": 2541
+    "name": "anim_reacttocliff_stuckrightside_getin_01",
+    "length_ms": 3135
   },
   {
     "name": "anim_keepaway_bored_idle_02",
@@ -1460,8 +1472,8 @@
     "length_ms": 594
   },
   {
-    "name": "anim_launch_wakeup_drivingloop_01",
-    "length_ms": 1881
+    "name": "anim_movement_alreadyhere_01_head_angle_-20",
+    "length_ms": 3795
   },
   {
     "name": "anim_onboarding_cube_success_getout_01",
@@ -1472,12 +1484,12 @@
     "length_ms": 957
   },
   {
-    "name": "anim_explorer_scan_right_01",
-    "length_ms": 3630
+    "name": "anim_cubeconnection_connectionlost_01",
+    "length_ms": 5412
   },
   {
-    "name": "anim_gazing_lookatfaces_getin_right_01_head_angle_40",
-    "length_ms": 1589
+    "name": "anim_wakeword_turn_behind_right_01",
+    "length_ms": 693
   },
   {
     "name": "anim_gazing_lookatfaces_getin_right_01_head_angle_-20",
@@ -1512,8 +1524,8 @@
     "length_ms": 17391
   },
   {
-    "name": "anim_timer_emote_01",
-    "length_ms": 1221
+    "name": "anim_dancebeat_listening_02",
+    "length_ms": 4158
   },
   {
     "name": "anim_weather_sunny_01",
@@ -1524,8 +1536,8 @@
     "length_ms": 4455
   },
   {
-    "name": "anim_dancebeat_listening_01",
-    "length_ms": 4488
+    "name": "anim_explorer_planning_idle_01",
+    "length_ms": 2112
   },
   {
     "name": "anim_rtsound_offcharger_asleep_right_01",
@@ -1544,12 +1556,12 @@
     "length_ms": 3300
   },
   {
-    "name": "anim_avs_listen2timer_03",
-    "length_ms": 891
+    "name": "anim_rtp_blackjack_playeryes_01",
+    "length_ms": 1320
   },
   {
-    "name": "anim_movement_alreadyhere_01_head_angle_-20",
-    "length_ms": 3795
+    "name": "anim_movement_getout_01",
+    "length_ms": 396
   },
   {
     "name": "anim_reacttoface_unidentified_01_head_angle_20",
@@ -1568,32 +1580,32 @@
     "length_ms": 3300
   },
   {
-    "name": "anim_explorer_idle_01",
-    "length_ms": 1815
+    "name": "anim_wakeword_idk_01",
+    "length_ms": 1023
   },
   {
-    "name": "anim_eyepose_focused",
-    "length_ms": 957
+    "name": "anim_eyecolorreact_getout_01",
+    "length_ms": 995
   },
   {
     "name": "anim_micstate_micon_01",
     "length_ms": 6336
   },
   {
-    "name": "anim_weather_snow_01",
-    "length_ms": 14025
+    "name": "anim_lookinplaceforfaces_keepalive_medium_head_angle_40",
+    "length_ms": 990
   },
   {
     "name": "anim_lookinplaceforfaces_keepalive_long_head_angle_40",
     "length_ms": 1980
   },
   {
-    "name": "anim_movement_lookinplaceforfaces_medium_head_angle_20",
-    "length_ms": 990
+    "name": "anim_pounce_long_01",
+    "length_ms": 792
   },
   {
-    "name": "anim_weather_cloud_01",
-    "length_ms": 14850
+    "name": "anim_turn_to_motion_pounce_left_01",
+    "length_ms": 1155
   },
   {
     "name": "anim_feedback_bequiet_02",
@@ -1608,28 +1620,24 @@
     "length_ms": 3597
   },
   {
-    "name": "anim_onboarding_wakeword_getout_01",
-    "length_ms": 759
+    "name": "anim_feedback_bequiet_01",
+    "length_ms": 2310
   },
   {
-    "name": "anim_petting_lvl2_01",
-    "length_ms": 3828
+    "name": "anim_petting_getin_01",
+    "length_ms": 3993
   },
   {
-    "name": "anim_rtpickup_putdown_04",
-    "length_ms": 3432
+    "name": "anim_lookinplaceforfaces_keepalive_long_02_head_angle_20",
+    "length_ms": 2970
   },
   {
-    "name": "anim_referencing_smile_01_head_angle_40",
-    "length_ms": 2772
+    "name": "anim_rtpickup_putdown_01",
+    "length_ms": 2178
   },
   {
-    "name": "anim_gazing_lookatfaces_getin_left_01_head_angle_40",
-    "length_ms": 1919
-  },
-  {
-    "name": "anim_eyepose_joy",
-    "length_ms": 957
+    "name": "anim_timerset_getin_01",
+    "length_ms": 1353
   },
   {
     "name": "anim_timerset_getin_02",
@@ -1652,8 +1660,8 @@
     "length_ms": 1650
   },
   {
-    "name": "anim_rtmotion_left_getout_01",
-    "length_ms": 594
+    "name": "anim_meetvictor_youarebob_01",
+    "length_ms": 4851
   },
   {
     "name": "anim_driving_upset_loop_03",
@@ -1662,10 +1670,6 @@
   {
     "name": "anim_driving_upset_loop_02",
     "length_ms": 1650
-  },
-  {
-    "name": "anim_hiking_lookaround_02",
-    "length_ms": 2937
   },
   {
     "name": "anim_dizzy_reaction_medium_01",
@@ -1720,10 +1724,6 @@
     "length_ms": 3300
   },
   {
-    "name": "anim_movement_getout_01",
-    "length_ms": 396
-  },
-  {
     "name": "anim_knowledgegraph_getin_01",
     "length_ms": 825
   },
@@ -1736,8 +1736,8 @@
     "length_ms": 1089
   },
   {
-    "name": "anim_rtsound_offcharger_observe_120left_01",
-    "length_ms": 2475
+    "name": "anim_movement_lookinplaceforfaces_long_head_angle_40",
+    "length_ms": 1980
   },
   {
     "name": "anim_wakeword_turn_right_135degrees_01",
@@ -1768,8 +1768,8 @@
     "length_ms": 1353
   },
   {
-    "name": "anim_movement_lookinplaceforfaces_long_head_angle_40",
-    "length_ms": 1980
+    "name": "anim_dancebeat_headliftbody_left_large_01",
+    "length_ms": 330
   },
   {
     "name": "anim_observing_around_subtle_02",
@@ -1784,10 +1784,6 @@
     "length_ms": 3894
   },
   {
-    "name": "anim_lowlightcharger_search_getin_01",
-    "length_ms": 2013
-  },
-  {
     "name": "anim_eyepose_normal_l",
     "length_ms": 957
   },
@@ -1796,12 +1792,16 @@
     "length_ms": 726
   },
   {
-    "name": "anim_observing_far_subtle_01",
-    "length_ms": 8250
+    "name": "anim_explorer_idle_01",
+    "length_ms": 1815
   },
   {
-    "name": "anim_rtp_blackjack_timeout_01",
-    "length_ms": 990
+    "name": "anim_reacttoblock_happydetermined_02",
+    "length_ms": 1914
+  },
+  {
+    "name": "anim_avs_speak_loop_03",
+    "length_ms": 561
   },
   {
     "name": "anim_cubeconnection_connectionsuccess_01",
@@ -1812,16 +1812,16 @@
     "length_ms": 3630
   },
   {
-    "name": "anim_wakeword_idk_01",
-    "length_ms": 1023
+    "name": "anim_rtsound_oncharger_asleep_120right_01",
+    "length_ms": 2277
+  },
+  {
+    "name": "anim_slowpoke_getout_03",
+    "length_ms": 3465
   },
   {
     "name": "anim_eyepose_normal_r",
     "length_ms": 957
-  },
-  {
-    "name": "anim_meetvictor_youarebob_01",
-    "length_ms": 4851
   },
   {
     "name": "anim_rtsound_oncharger_asleep_30right_01",
@@ -1896,10 +1896,6 @@
     "length_ms": 7590
   },
   {
-    "name": "anim_wakeword_idk_02",
-    "length_ms": 2409
-  },
-  {
     "name": "anim_pounce_lookgetout_01",
     "length_ms": 495
   },
@@ -1920,7 +1916,7 @@
     "length_ms": 1000
   },
   {
-    "name": "anim_eyepose_suspicious",
+    "name": "anim_timerleft_getin_01",
     "length_ms": 957
   },
   {
@@ -1944,24 +1940,24 @@
     "length_ms": 3795
   },
   {
-    "name": "anim_eyepose_bothered",
-    "length_ms": 957
+    "name": "anim_gazing_lookatsurfaces_getin_left_01",
+    "length_ms": 1919
   },
   {
     "name": "anim_freeplay_reacttoface_sayname_02_head_angle_-20",
     "length_ms": 2442
   },
   {
-    "name": "anim_meetvictor_sayname02_01",
-    "length_ms": 4686
+    "name": "anim_movement_lookinplaceforfaces_medium_head_angle_20",
+    "length_ms": 990
   },
   {
     "name": "anim_reacttoblock_lifteffortplacehigh_01",
     "length_ms": 924
   },
   {
-    "name": "anim_turn_to_motion_pounce_left_01",
-    "length_ms": 1155
+    "name": "anim_wakeword_idk_03",
+    "length_ms": 4620
   },
   {
     "name": "anim_freeplay_reacttoface_sayname_02_head_angle_40",
@@ -1972,12 +1968,12 @@
     "length_ms": 3300
   },
   {
-    "name": "anim_turn_to_motion_pounce_right_01",
-    "length_ms": 1155
+    "name": "anim_rtsound_offcharger_asleep_60right_01",
+    "length_ms": 2475
   },
   {
-    "name": "anim_explorer_lookaround_01",
-    "length_ms": 2310
+    "name": "anim_hiking_react_07",
+    "length_ms": 1551
   },
   {
     "name": "anim_slowpoke_loop_03",
@@ -1988,12 +1984,12 @@
     "length_ms": 759
   },
   {
-    "name": "anim_rtmotion_lookleft_01",
-    "length_ms": 2640
+    "name": "anim_slowpoke_loop_01",
+    "length_ms": 3795
   },
   {
-    "name": "anim_reacttoface_unidentified_02_head_angle_40",
-    "length_ms": 1848
+    "name": "anim_hiking_react_06",
+    "length_ms": 2805
   },
   {
     "name": "anim_feedback_iloveyou_02",
@@ -2004,28 +2000,24 @@
     "length_ms": 3564
   },
   {
-    "name": "anim_handdetection_lift_01",
-    "length_ms": 726
+    "name": "anim_reacttoface_unidentified_03_head_angle_40",
+    "length_ms": 3465
   },
   {
     "name": "anim_launch_wakeup_05",
     "length_ms": 3135
   },
   {
-    "name": "anim_feedback_bequiet_01",
-    "length_ms": 2310
-  },
-  {
-    "name": "anim_rtillumination_lightonwakeup_01",
-    "length_ms": 4059
+    "name": "anim_onboarding_wakeup_01",
+    "length_ms": 11220
   },
   {
     "name": "anim_cube_drive_getin_01",
     "length_ms": 561
   },
   {
-    "name": "anim_onboarding_eyecontact_loop_getout_01",
-    "length_ms": 528
+    "name": "anim_dancebeat_headliftbody_right_small_01",
+    "length_ms": 330
   },
   {
     "name": "anim_launch_wakeup_04",
@@ -2056,12 +2048,12 @@
     "length_ms": 1320
   },
   {
-    "name": "anim_avs_notification_loop_01",
-    "length_ms": 1980
+    "name": "anim_cubeconnection_loop_02",
+    "length_ms": 1353
   },
   {
-    "name": "anim_cubeconnection_loop_03",
-    "length_ms": 1353
+    "name": "anim_nowifi_icon_01",
+    "length_ms": 3465
   },
   {
     "name": "anim_cubeconnection_loop_01",
@@ -2072,8 +2064,8 @@
     "length_ms": 4950
   },
   {
-    "name": "anim_lowlightcharger_search_loop_01",
-    "length_ms": 3036
+    "name": "anim_reacttocliff_turtlerollfail_03",
+    "length_ms": 5511
   },
   {
     "name": "anim_onboarding_wakeword_getin_01",
@@ -2084,24 +2076,20 @@
     "length_ms": 2343
   },
   {
-    "name": "anim_rtpickup_putdown_01",
-    "length_ms": 2178
+    "name": "anim_gazing_lookatfaces_getin_left_01_head_angle_40",
+    "length_ms": 1919
   },
   {
     "name": "anim_eyepose_sad_up",
     "length_ms": 957
   },
   {
-    "name": "anim_lowlightcharger_search_getout_01",
-    "length_ms": 1353
+    "name": "anim_eyepose_joy",
+    "length_ms": 957
   },
   {
-    "name": "anim_timerset_getin_01",
-    "length_ms": 1353
-  },
-  {
-    "name": "anim_observing_nearby_area_01",
-    "length_ms": 6138
+    "name": "anim_rtpickup_loop_05",
+    "length_ms": 4026
   },
   {
     "name": "anim_eyepose_squint",
@@ -2120,6 +2108,10 @@
     "length_ms": 825
   },
   {
+    "name": "anim_knowledgegraph_searching_01",
+    "length_ms": 1188
+  },
+  {
     "name": "anim_rtsound_offcharger_asleep_behind_right_01",
     "length_ms": 2343
   },
@@ -2136,8 +2128,8 @@
     "length_ms": 528
   },
   {
-    "name": "anim_rtpickup_loop_06",
-    "length_ms": 4026
+    "name": "anim_observing_nearby_area_02",
+    "length_ms": 8250
   },
   {
     "name": "anim_petting_lvl1_01",
@@ -2148,28 +2140,12 @@
     "length_ms": 2937
   },
   {
-    "name": "anim_generic_look_up_idle_01",
-    "length_ms": 726
-  },
-  {
     "name": "anim_greeting_goodbye_01",
     "length_ms": 4422
   },
   {
-    "name": "anim_reacttocliff_edge_02",
-    "length_ms": 4356
-  },
-  {
-    "name": "anim_wakeword_turn_left_45degrees_01",
-    "length_ms": 495
-  },
-  {
-    "name": "anim_fastbump_getout_01",
-    "length_ms": 726
-  },
-  {
-    "name": "anim_dancebeat_eyebeat_left_01",
-    "length_ms": 231
+    "name": "anim_turn_right_01",
+    "length_ms": 4950
   },
   {
     "name": "anim_reacttocliff_edge_03",
@@ -2188,16 +2164,16 @@
     "length_ms": 1320
   },
   {
-    "name": "anim_reacttocliff_turtleroll_02",
-    "length_ms": 7095
+    "name": "anim_getin_tts_01",
+    "length_ms": 990
   },
   {
     "name": "anim_reacttocliff_turtleroll_03",
     "length_ms": 7590
   },
   {
-    "name": "anim_reacttocliff_turtleroll_01",
-    "length_ms": 7260
+    "name": "anim_blackjack_victorbjackwin_01",
+    "length_ms": 4059
   },
   {
     "name": "anim_reacttocliff_turtleroll_06",
@@ -2220,6 +2196,10 @@
     "length_ms": 1485
   },
   {
+    "name": "anim_dancebeat_getin_01",
+    "length_ms": 1221
+  },
+  {
     "name": "anim_knowledgegraph_fail_01",
     "length_ms": 3696
   },
@@ -2232,8 +2212,8 @@
     "length_ms": 726
   },
   {
-    "name": "anim_reacttocliff_sidestuck_effort_02",
-    "length_ms": 6600
+    "name": "anim_rtsound_offcharger_observe_60left_01",
+    "length_ms": 2244
   },
   {
     "name": "anim_fistbump_fail_01",
@@ -2260,10 +2240,6 @@
     "length_ms": 1782
   },
   {
-    "name": "anim_dancebeat_headliftbody_right_small_01",
-    "length_ms": 330
-  },
-  {
     "name": "anim_freeplay_reacttoface_identified_01",
     "length_ms": 1155
   },
@@ -2272,8 +2248,8 @@
     "length_ms": 5610
   },
   {
-    "name": "anim_explorer_planning_getout_02",
-    "length_ms": 1551
+    "name": "anim_launch_drivingloop_03",
+    "length_ms": 3630
   },
   {
     "name": "anim_explorer_planning_getout_01",
@@ -2288,8 +2264,8 @@
     "length_ms": 1155
   },
   {
-    "name": "anim_reacttoblock_happydetermined_02",
-    "length_ms": 1914
+    "name": "anim_eyepose_blink_bd_r",
+    "length_ms": 957
   },
   {
     "name": "anim_loco_driving01_start_02",
@@ -2304,8 +2280,8 @@
     "length_ms": 2772
   },
   {
-    "name": "anim_fistbump_requestoncelong_01",
-    "length_ms": 3399
+    "name": "anim_reacttocliff_faceplantroll_02",
+    "length_ms": 6996
   },
   {
     "name": "anim_slowbump_getin_01",
@@ -2328,12 +2304,16 @@
     "length_ms": 330
   },
   {
+    "name": "anim_referencing_curious_01_head_angle_20",
+    "length_ms": 2244
+  },
+  {
     "name": "anim_reacttocliff_reaction_back_01",
     "length_ms": 1320
   },
   {
-    "name": "anim_heldonpalm_pickup_nervous_01",
-    "length_ms": 4752
+    "name": "anim_keepaway_getin_focus_01",
+    "length_ms": 825
   },
   {
     "name": "anim_freeplay_reacttoface_sayname_02_head_angle_20",
@@ -2372,8 +2352,8 @@
     "length_ms": 4323
   },
   {
-    "name": "anim_feedback_meanwords_01",
-    "length_ms": 4323
+    "name": "anim_inspectheldcube_loop_04",
+    "length_ms": 462
   },
   {
     "name": "anim_neutral_eyes_01",
@@ -2388,16 +2368,12 @@
     "length_ms": 4554
   },
   {
-    "name": "anim_dancebeat_getout_02",
-    "length_ms": 3168
+    "name": "anim_wakeword_loop_02",
+    "length_ms": 4290
   },
   {
-    "name": "anim_lowlightcharger_search_loop_02",
-    "length_ms": 2706
-  },
-  {
-    "name": "anim_movement_left_02",
-    "length_ms": 1551
+    "name": "anim_explorer_scan_right_01",
+    "length_ms": 3630
   },
   {
     "name": "anim_gazing_lookatsurfaces_turn_right_01",
@@ -2424,8 +2400,8 @@
     "length_ms": 3795
   },
   {
-    "name": "anim_feedback_meanwords_02",
-    "length_ms": 3762
+    "name": "anim_slowpoke_getout_04",
+    "length_ms": 3498
   },
   {
     "name": "anim_reacttoface_unidentified_03_head_angle_20",
@@ -2440,20 +2416,20 @@
     "length_ms": 1254
   },
   {
-    "name": "anim_slowpoke_getout_03",
-    "length_ms": 3465
+    "name": "anim_movement_comehere_01",
+    "length_ms": 2871
   },
   {
     "name": "anim_avs_notification2listen_01",
     "length_ms": 0
   },
   {
-    "name": "anim_blackjack_swipe_01",
-    "length_ms": 1650
+    "name": "anim_petting_lvl2_01",
+    "length_ms": 3828
   },
   {
-    "name": "anim_inspectheldcube_loop_01",
-    "length_ms": 462
+    "name": "anim_slowpoke_getout_02",
+    "length_ms": 2772
   },
   {
     "name": "anim_avs_listen2think_01",
@@ -2462,6 +2438,10 @@
   {
     "name": "anim_launch_enddriving_01",
     "length_ms": 1650
+  },
+  {
+    "name": "anim_reacttoface_unidentified_02",
+    "length_ms": 1848
   },
   {
     "name": "anim_slowpoke_getout_01",
@@ -2480,12 +2460,16 @@
     "length_ms": 3036
   },
   {
-    "name": "anim_avs_listen2error_01",
-    "length_ms": 0
+    "name": "anim_rtmotion_lookright_01",
+    "length_ms": 2640
   },
   {
     "name": "anim_inspectheldcube_loop_03",
     "length_ms": 462
+  },
+  {
+    "name": "anim_chargerdocking_rightturn_all",
+    "length_ms": 924
   },
   {
     "name": "anim_nowifi_getin_02",
@@ -2504,20 +2488,20 @@
     "length_ms": 0
   },
   {
-    "name": "anim_keepaway_getin_focus_01",
-    "length_ms": 825
+    "name": "anim_qa_sync_lift",
+    "length_ms": 6600
   },
   {
-    "name": "anim_lookinplaceforfaces_keepalive_medium",
-    "length_ms": 990
+    "name": "anim_launch_startdriving_01",
+    "length_ms": 924
   },
   {
     "name": "anim_eyepose_blink_low",
     "length_ms": 990
   },
   {
-    "name": "anim_reacttoblock_dropfail_01",
-    "length_ms": 5181
+    "name": "anim_eyepose_asleep",
+    "length_ms": 957
   },
   {
     "name": "anim_dancebeat_getin_02",
@@ -2528,12 +2512,20 @@
     "length_ms": 1320
   },
   {
+    "name": "anim_rtmotion_left_getout_01",
+    "length_ms": 594
+  },
+  {
     "name": "anim_avs_listen2notification_01",
     "length_ms": 264
   },
   {
     "name": "anim_knowledgegraph_success_01",
     "length_ms": 3168
+  },
+  {
+    "name": "anim_rtp_blackjack_timeout_01",
+    "length_ms": 990
   },
   {
     "name": "anim_blackjack_goodluck_01",
@@ -2544,6 +2536,10 @@
     "length_ms": 4026
   },
   {
+    "name": "anim_weather_snow_01",
+    "length_ms": 14025
+  },
+  {
     "name": "anim_onboarding_cube_drive_getin_01",
     "length_ms": 660
   },
@@ -2552,8 +2548,8 @@
     "length_ms": 1980
   },
   {
-    "name": "anim_lookinplaceforfaces_keepalive_long_02_head_angle_20",
-    "length_ms": 2970
+    "name": "anim_eyepose_captivated",
+    "length_ms": 957
   },
   {
     "name": "anim_greeting_goodmorning_02",
@@ -2572,12 +2568,12 @@
     "length_ms": 2211
   },
   {
-    "name": "anim_wakeword_loop_02",
-    "length_ms": 4290
+    "name": "anim_chargerdocking_searchforchargerturns_01",
+    "length_ms": 891
   },
   {
-    "name": "anim_wakeword_loop_01",
-    "length_ms": 6600
+    "name": "anim_chargerdocking_searchforchargerturns_02",
+    "length_ms": 2277
   },
   {
     "name": "anim_chargerdocking_searchforchargerturns_03",
@@ -2628,10 +2624,6 @@
     "length_ms": 990
   },
   {
-    "name": "anim_movement_comehere_01",
-    "length_ms": 2871
-  },
-  {
     "name": "anim_chargerdocking_searchforchargerturns_default_loop_01",
     "length_ms": 990
   },
@@ -2676,12 +2668,16 @@
     "length_ms": 6897
   },
   {
-    "name": "anim_keepaway_driving_loop_02",
-    "length_ms": 3267
+    "name": "anim_cube_psychic_01",
+    "length_ms": 5379
   },
   {
-    "name": "anim_keepaway_driving_loop_03",
-    "length_ms": 3795
+    "name": "anim_gazing_lookatsurface_reaction_02",
+    "length_ms": 4158
+  },
+  {
+    "name": "anim_turn_to_motion_pounce_right_01",
+    "length_ms": 1155
   },
   {
     "name": "anim_gazing_lookatsurface_reaction_01",
@@ -2732,8 +2728,8 @@
     "length_ms": 4554
   },
   {
-    "name": "anim_movement_reacttoface_01_head_angle_-20",
-    "length_ms": 1485
+    "name": "anim_weather_rain_01",
+    "length_ms": 13200
   },
   {
     "name": "anim_pounce_success_01",
@@ -2753,7 +2749,7 @@
   },
   {
     "name": "anim_timerleft_getout_01",
-    "length_ms": 1155
+    "length_ms": 1122
   },
   {
     "name": "anim_feedback_goodrobot_02",
@@ -2780,52 +2776,48 @@
     "length_ms": 3300
   },
   {
-    "name": "anim_cubeconnection_connectionlost_01",
-    "length_ms": 5412
+    "name": "anim_reacttocliff_sidestuck_effort_02",
+    "length_ms": 6600
   },
   {
-    "name": "anim_blackjack_victorbjackwin_01",
-    "length_ms": 4059
+    "name": "anim_eyepose_suspicious",
+    "length_ms": 957
   },
   {
-    "name": "anim_heldonpalm_getin_relaxed_01",
-    "length_ms": 7623
+    "name": "anim_qa_sync_5_10_50",
+    "length_ms": 9900
   },
   {
     "name": "anim_eyecontact_squint_01_head_angle_40",
     "length_ms": 1980
   },
   {
-    "name": "anim_qa_sync_lift",
-    "length_ms": 6600
-  },
-  {
-    "name": "playpenFailAnim",
-    "length_ms": 0
+    "name": "anim_keepaway_backup_01",
+    "length_ms": 726
   },
   {
     "name": "anim_wakeword_turn_left_01",
     "length_ms": 396
   },
   {
-    "name": "anim_rtp_blackjack_playeryes_01",
-    "length_ms": 1320
+    "name": "anim_lookinplaceforfaces_keepalive_medium",
+    "length_ms": 990
   },
   {
     "name": "anim_rtsound_offcharger_asleep_ambient_01",
     "length_ms": 2706
   },
   {
-    "name": "anim_reacttocliff_faceplantroll_armup_02",
-    "length_ms": 6930
+    "name": "anim_reacttocliff_stuckleftside_getin_01",
+    "length_ms": 3135
   },
   {
     "name": "anim_reacttocliff_faceplantroll_armup_01",
     "length_ms": 6006
   },
   {
-    "name": "anim_reacttocliff_stuckonedge_02",
-    "length_ms": 660
+    "name": "anim_reacttocliff_wheely_01",
+    "length_ms": 6600
   },
   {
     "name": "anim_meetvictor_lookface_loop_03",
@@ -2836,16 +2828,16 @@
     "length_ms": 3234
   },
   {
-    "name": "anim_rtp_blackjack_idle_01",
-    "length_ms": 6270
+    "name": "anim_meetvictor_lookface_loop_01",
+    "length_ms": 3234
   },
   {
     "name": "anim_freeplay_reacttoface_sayname_03_head_angle_40",
     "length_ms": 1485
   },
   {
-    "name": "anim_dancebeat_getin_01",
-    "length_ms": 1221
+    "name": "anim_dancebeat_eyebeat_left_01",
+    "length_ms": 231
   },
   {
     "name": "anim_meetvictor_lookface_interrupted_01",
@@ -2860,8 +2852,8 @@
     "length_ms": 0
   },
   {
-    "name": "anim_reacttocliff_wheely_02",
-    "length_ms": 3366
+    "name": "anim_vc_alrighty_01",
+    "length_ms": 1452
   },
   {
     "name": "anim_referencing_smile_01_head_angle_20",
@@ -2870,10 +2862,6 @@
   {
     "name": "anim_eyepose_normal_l_push",
     "length_ms": 957
-  },
-  {
-    "name": "anim_slowpoke_loop_01",
-    "length_ms": 3795
   },
   {
     "name": "anim_avs_listen2speak_03",
@@ -2888,16 +2876,16 @@
     "length_ms": 4290
   },
   {
-    "name": "anim_rtsound_offcharger_observe_120right_01",
-    "length_ms": 2475
+    "name": "anim_dizzy_reaction_hard_01",
+    "length_ms": 12408
   },
   {
     "name": "anim_look_left_01",
     "length_ms": 4950
   },
   {
-    "name": "anim_onboarding_wakeup_01",
-    "length_ms": 11220
+    "name": "anim_movement_lookinplaceforfaces_medium_head_angle_-20",
+    "length_ms": 990
   },
   {
     "name": "anim_keepaway_idle_side_02",
@@ -2924,16 +2912,16 @@
     "length_ms": 8250
   },
   {
-    "name": "anim_avs_l_loop_03",
-    "length_ms": 0
+    "name": "anim_avs_listen_timeout_03",
+    "length_ms": 2640
   },
   {
     "name": "anim_reacttocliff_edgeliftup_01",
     "length_ms": 1980
   },
   {
-    "name": "anim_chargerdocking_comeoff_straight_02",
-    "length_ms": 5115
+    "name": "anim_petting_blissloop_03",
+    "length_ms": 3300
   },
   {
     "name": "anim_chargerdocking_comeoff_straight_03",
@@ -2948,12 +2936,24 @@
     "length_ms": 3531
   },
   {
-    "name": "anim_wakeword_groggyeyes_getout_01",
-    "length_ms": 297
+    "name": "anim_onboarding_wakeword_getout_01",
+    "length_ms": 759
+  },
+  {
+    "name": "anim_dancebeat_headliftbody_left_med_01",
+    "length_ms": 330
   },
   {
     "name": "anim_spinner_tap_01",
     "length_ms": 198
+  },
+  {
+    "name": "anim_rtsound_offcharger_observe_30right_01",
+    "length_ms": 2244
+  },
+  {
+    "name": "anim_freeplay_reacttoface_sayname_03_head_angle_20",
+    "length_ms": 1485
   },
   {
     "name": "anim_reacttocliff_pickup_06",
@@ -2978,6 +2978,10 @@
   {
     "name": "anim_reacttocliff_pickup_01",
     "length_ms": 2607
+  },
+  {
+    "name": "anim_dancebeat_scoot_left_01",
+    "length_ms": 330
   },
   {
     "name": "anim_knowledgegraph_answer_01",
@@ -3044,8 +3048,12 @@
     "length_ms": 3630
   },
   {
-    "name": "anim_weather_stars_01",
-    "length_ms": 14520
+    "name": "anim_rtillumination_lightonwakeup_01",
+    "length_ms": 4059
+  },
+  {
+    "name": "anim_observing_far_subtle_01",
+    "length_ms": 8250
   },
   {
     "name": "anim_explorer_idle_02_head_angle_20",
@@ -3060,8 +3068,8 @@
     "length_ms": 1980
   },
   {
-    "name": "anim_rtpickup_loop_05",
-    "length_ms": 4026
+    "name": "anim_meetvictor_getin_01_head_angle_20",
+    "length_ms": 1254
   },
   {
     "name": "anim_rtpickup_loop_04",
@@ -3072,8 +3080,8 @@
     "length_ms": 3960
   },
   {
-    "name": "anim_observing_nearby_area_02",
-    "length_ms": 8250
+    "name": "anim_rtpickup_loop_06",
+    "length_ms": 4026
   },
   {
     "name": "anim_rtpickup_loop_01",
@@ -3100,28 +3108,20 @@
     "length_ms": 2310
   },
   {
-    "name": "anim_avs_notification_getout_01",
-    "length_ms": 2640
+    "name": "anim_fistbump_requestoncelong_01",
+    "length_ms": 3399
   },
   {
-    "name": "anim_reacttocliff_faceplantroll_02",
-    "length_ms": 6996
-  },
-  {
-    "name": "anim_observe_oncharger_getout_01",
+    "name": "anim_wakeword_getin_01",
     "length_ms": 462
-  },
-  {
-    "name": "anim_gotosleep_getout_04",
-    "length_ms": 2904
   },
   {
     "name": "anim_avs_think2error_01",
     "length_ms": 0
   },
   {
-    "name": "anim_reacttoblock_putdown2nd_01",
-    "length_ms": 2805
+    "name": "anim_avs_notification_quick_01",
+    "length_ms": 5181
   },
   {
     "name": "anim_hiking_driving_end_01",
@@ -3140,8 +3140,8 @@
     "length_ms": 726
   },
   {
-    "name": "anim_eyepose_asleep",
-    "length_ms": 957
+    "name": "anim_reacttoblock_dropfail_01",
+    "length_ms": 5181
   },
   {
     "name": "anim_gotosleep_getout_02",
@@ -3160,12 +3160,8 @@
     "length_ms": 5115
   },
   {
-    "name": "anim_gotosleep_getout_03",
-    "length_ms": 3366
-  },
-  {
-    "name": "anim_rtsound_oncharger_asleep_120right_01",
-    "length_ms": 2277
+    "name": "anim_reacttocliff_turtleroll_02",
+    "length_ms": 7095
   },
   {
     "name": "anim_referencing_smile_01",
@@ -3180,8 +3176,8 @@
     "length_ms": 12144
   },
   {
-    "name": "anim_weather_rain_01",
-    "length_ms": 13200
+    "name": "anim_movement_reacttoface_01_head_angle_-20",
+    "length_ms": 1485
   },
   {
     "name": "anim_qa_sync_5sec",
@@ -3192,8 +3188,8 @@
     "length_ms": 6270
   },
   {
-    "name": "anim_reacttocliff_wheely_01",
-    "length_ms": 6600
+    "name": "anim_reacttocliff_stuckonedge_02",
+    "length_ms": 660
   },
   {
     "name": "anim_reacttocliff_wheely_03",
@@ -3208,8 +3204,8 @@
     "length_ms": 3300
   },
   {
-    "name": "anim_gotosleep_sleeploop_01",
-    "length_ms": 14652
+    "name": "anim_dancebeat_getout_02",
+    "length_ms": 3168
   },
   {
     "name": "anim_reacttoface_unidentified_02_head_angle_20",
@@ -3232,16 +3228,16 @@
     "length_ms": 1320
   },
   {
-    "name": "anim_wakeword_getin_01",
-    "length_ms": 462
+    "name": "anim_gotosleep_getout_04",
+    "length_ms": 2904
   },
   {
     "name": "anim_handdetection_reaction_01",
     "length_ms": 2838
   },
   {
-    "name": "anim_rtsound_oncharger_observe_right_01",
-    "length_ms": 2475
+    "name": "anim_gotosleep_getout_03",
+    "length_ms": 3366
   },
   {
     "name": "anim_handdetection_reaction_02",
@@ -3292,8 +3288,8 @@
     "length_ms": 3432
   },
   {
-    "name": "anim_rtmotion_lookright_01",
-    "length_ms": 2640
+    "name": "anim_avs_listen2error_01",
+    "length_ms": 0
   },
   {
     "name": "anim_lookinplaceforfaces_keepalive_short_head_angle_20",
@@ -3312,8 +3308,8 @@
     "length_ms": 957
   },
   {
-    "name": "anim_reacttocliff_turtlerollfail_03",
-    "length_ms": 5511
+    "name": "anim_handdetection_getin_01",
+    "length_ms": 2706
   },
   {
     "name": "anim_power_offon_04",
@@ -3324,32 +3320,20 @@
     "length_ms": 1848
   },
   {
-    "name": "anim_avs_suddenspeak_03",
-    "length_ms": 363
+    "name": "anim_cubeconnection_getin_01",
+    "length_ms": 1056
   },
   {
-    "name": "anim_power_offon_01",
-    "length_ms": 2970
-  },
-  {
-    "name": "anim_eyecontact_lookloop_01_head_angle_20",
-    "length_ms": 11550
+    "name": "anim_power_offon_02",
+    "length_ms": 3300
   },
   {
     "name": "anim_power_offon_03",
     "length_ms": 7722
   },
   {
-    "name": "anim_turn_right_01",
-    "length_ms": 4950
-  },
-  {
-    "name": "anim_meetvictor_sayname02_02",
-    "length_ms": 6539
-  },
-  {
-    "name": "anim_eyepose_captivated",
-    "length_ms": 957
+    "name": "anim_referencing_squint_01_head_angle_40",
+    "length_ms": 1848
   },
   {
     "name": "anim_gazing_lookatsurfaces_getin_right_01",
@@ -3368,8 +3352,8 @@
     "length_ms": 6600
   },
   {
-    "name": "anim_dizzy_reaction_medium_03",
-    "length_ms": 9042
+    "name": "anim_howold_getin_even_01",
+    "length_ms": 1221
   },
   {
     "name": "anim_gazing_lookatfaces_getin_right_01_head_angle_20",
@@ -3380,12 +3364,12 @@
     "length_ms": 891
   },
   {
-    "name": "anim_reacttoblock_react_short_02",
-    "length_ms": 1122
+    "name": "anim_rtshake_getin_01",
+    "length_ms": 462
   },
   {
-    "name": "anim_reacttoblock_react_short_01",
-    "length_ms": 1122
+    "name": "anim_findcube_searchforcubesturns_03",
+    "length_ms": 1320
   },
   {
     "name": "anim_findcube_searchforcubesturns_02",
@@ -3408,10 +3392,6 @@
     "length_ms": 957
   },
   {
-    "name": "anim_keepaway_getout_exit_01",
-    "length_ms": 2409
-  },
-  {
     "name": "anim_pounce_lookloop_01",
     "length_ms": 1155
   },
@@ -3428,8 +3408,8 @@
     "length_ms": 2409
   },
   {
-    "name": "anim_chargerdocking_searchforchargerturns_01",
-    "length_ms": 891
+    "name": "anim_dizzy_reaction_medium_03",
+    "length_ms": 9042
   },
   {
     "name": "anim_chargerdocking_searchforcharger_canthelp",
@@ -3448,12 +3428,12 @@
     "length_ms": 4257
   },
   {
-    "name": "anim_chargerdocking_searchforchargerturns_02",
-    "length_ms": 2277
+    "name": "anim_wakeword_loop_01",
+    "length_ms": 6600
   },
   {
-    "name": "anim_dancebeat_cantdothat_01",
-    "length_ms": 6006
+    "name": "anim_keepaway_getout_satisfied_01",
+    "length_ms": 3300
   },
   {
     "name": "anim_chargerdocking_comeoff_right_02",
@@ -3464,8 +3444,8 @@
     "length_ms": 6600
   },
   {
-    "name": "anim_handdetection_getout_01",
-    "length_ms": 3333
+    "name": "anim_snowglobe_pregetout_01",
+    "length_ms": 3069
   },
   {
     "name": "anim_volume_stage_min",
@@ -3488,12 +3468,16 @@
     "length_ms": 429
   },
   {
-    "name": "anim_reacttoface_unidentified_01_head_angle_40",
-    "length_ms": 4818
+    "name": "anim_movement_lookinplaceforfaces_medium_head_angle_40",
+    "length_ms": 990
   },
   {
     "name": "anim_heldonpalm_transition2relaxed_01",
     "length_ms": 4950
+  },
+  {
+    "name": "anim_avs_notification2speak_01",
+    "length_ms": 99
   },
   {
     "name": "anim_keepalive_eyes_01_right",
@@ -3502,10 +3486,6 @@
   {
     "name": "anim_dancebeat_pivot_right_01",
     "length_ms": 330
-  },
-  {
-    "name": "anim_lookinplaceforfaces_keepalive_medium_head_angle_40",
-    "length_ms": 990
   },
   {
     "name": "anim_referencing_giggle_01_head_angle_-20",
@@ -3532,8 +3512,12 @@
     "length_ms": 3597
   },
   {
-    "name": "anim_vc_listening_01",
-    "length_ms": 462
+    "name": "anim_rtsound_offcharger_observe_120left_01",
+    "length_ms": 2475
+  },
+  {
+    "name": "anim_vc_laser_lookdown_01",
+    "length_ms": 693
   },
   {
     "name": "anim_reacttoblock_placeblock_01",
@@ -3544,24 +3528,20 @@
     "length_ms": 3465
   },
   {
-    "name": "anim_reacttoface_unidentified_02",
-    "length_ms": 1848
+    "name": "anim_lookinplaceforfaces_keepalive_long_04_head_angle_40",
+    "length_ms": 1980
   },
   {
     "name": "anim_reacttoface_unidentified_01",
     "length_ms": 4818
   },
   {
-    "name": "anim_meetvictor_sayname_04",
-    "length_ms": 2673
+    "name": "anim_avs_listen2weather_03",
+    "length_ms": 429
   },
   {
-    "name": "anim_chargerdocking_request1_01",
-    "length_ms": 1782
-  },
-  {
-    "name": "anim_getout_tts_02",
-    "length_ms": 132
+    "name": "anim_chargerdocking_searchforchargerturns_default_01",
+    "length_ms": 1980
   },
   {
     "name": "anim_knowledgegraph_listening_01",
@@ -3588,10 +3568,6 @@
     "length_ms": 2970
   },
   {
-    "name": "anim_handdetection_getin_01",
-    "length_ms": 2706
-  },
-  {
     "name": "anim_eyepose_sad",
     "length_ms": 957
   },
@@ -3604,7 +3580,7 @@
     "length_ms": 2475
   },
   {
-    "name": "anim_rtmotion_forwardup_01",
+    "name": "anim_gotosleep_getin_01",
     "length_ms": 3300
   },
   {
@@ -3612,12 +3588,12 @@
     "length_ms": 2475
   },
   {
-    "name": "anim_lookinplaceforfaces_keepalive_long_04_head_angle_40",
-    "length_ms": 1980
+    "name": "anim_fastbump_getout_01",
+    "length_ms": 726
   },
   {
-    "name": "anim_referencing_curious_01_head_angle_20",
-    "length_ms": 2244
+    "name": "anim_avs_notification_getout_01",
+    "length_ms": 2640
   },
   {
     "name": "anim_movement_comehere_greeting_01",
@@ -3640,20 +3616,20 @@
     "length_ms": 660
   },
   {
-    "name": "anim_cubeconnection_getin_01",
-    "length_ms": 1056
+    "name": "anim_power_offon_01",
+    "length_ms": 2970
   },
   {
-    "name": "anim_lookinplaceforfaces_keepalive_medium_head_angle_-20",
-    "length_ms": 990
+    "name": "anim_heldonpalm_edge_nervous_01",
+    "length_ms": 5973
   },
   {
     "name": "anim_movement_right_01",
     "length_ms": 1584
   },
   {
-    "name": "anim_power_offon_02",
-    "length_ms": 3300
+    "name": "anim_eyecontact_lookloop_01_head_angle_20",
+    "length_ms": 11550
   },
   {
     "name": "anim_gazing_lookatfaces_getin_left_01_head_angle_-20",
@@ -3672,8 +3648,8 @@
     "length_ms": 1617
   },
   {
-    "name": "anim_rtsound_offcharger_observe_60left_01",
-    "length_ms": 2244
+    "name": "anim_explorer_idle_03_head_angle_-20",
+    "length_ms": 3300
   },
   {
     "name": "anim_wakeword_turn_right_45degrees_01",
@@ -3684,16 +3660,8 @@
     "length_ms": 330
   },
   {
-    "name": "anim_eyecontact_giggle_01_head_angle_-20",
-    "length_ms": 3234
-  },
-  {
     "name": "anim_avs_error_getout_01",
     "length_ms": 2640
-  },
-  {
-    "name": "anim_explorer_center_left_01",
-    "length_ms": 990
   },
   {
     "name": "anim_heldonpalm_relaxed_idle_01",
@@ -3708,14 +3676,6 @@
     "length_ms": 2970
   },
   {
-    "name": "anim_referencing_squint_01_head_angle_40",
-    "length_ms": 1848
-  },
-  {
-    "name": "anim_movement_lookinplaceforfaces_short",
-    "length_ms": 330
-  },
-  {
     "name": "anim_cubedocking_drive_getout_01",
     "length_ms": 561
   },
@@ -3724,20 +3684,24 @@
     "length_ms": 1848
   },
   {
-    "name": "anim_timerleft_getin_01",
-    "length_ms": 990
+    "name": "anim_weather_stars_01",
+    "length_ms": 14520
   },
   {
     "name": "anim_chargerdocking_severerequest_01",
     "length_ms": 7194
   },
   {
+    "name": "anim_blackjack_swipe_01",
+    "length_ms": 1650
+  },
+  {
     "name": "anim_dancebeat_headliftbody_back_01",
     "length_ms": 330
   },
   {
-    "name": "anim_reacttoface_unidentified_03_head_angle_40",
-    "length_ms": 3465
+    "name": "anim_handdetection_lift_01",
+    "length_ms": 726
   },
   {
     "name": "anim_movement_alreadyhere_01_head_angle_20",
@@ -3756,8 +3720,8 @@
     "length_ms": 1386
   },
   {
-    "name": "anim_knowledgegraph_searching_01",
-    "length_ms": 1188
+    "name": "anim_reacttocliff_stuckonedge_right_01",
+    "length_ms": 5280
   },
   {
     "name": "anim_rtsound_offcharger_asleep_60left_01",
@@ -3768,8 +3732,8 @@
     "length_ms": 1320
   },
   {
-    "name": "anim_timercancel_getin_01",
-    "length_ms": 693
+    "name": "anim_reacttocliff_edge_02",
+    "length_ms": 4356
   },
   {
     "name": "anim_freeplay_reacttoface_sayname_03_head_angle_-20",
@@ -3816,6 +3780,14 @@
     "length_ms": 3795
   },
   {
+    "name": "anim_avs_notification_getin_01",
+    "length_ms": 660
+  },
+  {
+    "name": "anim_onboarding_reacttoface_happy_01",
+    "length_ms": 1485
+  },
+  {
     "name": "anim_avs_error_loop_01",
     "length_ms": 0
   },
@@ -3844,32 +3816,44 @@
     "length_ms": 957
   },
   {
+    "name": "playpenFailAnim",
+    "length_ms": 0
+  },
+  {
     "name": "anim_reacttoblock_ask_01_0",
     "length_ms": 2343
+  },
+  {
+    "name": "anim_gotosleep_sleeping_03",
+    "length_ms": 9900
   },
   {
     "name": "anim_reacttocliff_turnright_120_01",
     "length_ms": 1320
   },
   {
-    "name": "anim_avs_speak_loop_03",
-    "length_ms": 561
+    "name": "anim_meetvictor_sayname02_01",
+    "length_ms": 4686
   },
   {
     "name": "anim_snowglobe_loop_01",
     "length_ms": 2409
   },
   {
-    "name": "anim_howold_getin_even_01",
-    "length_ms": 1221
+    "name": "anim_meetvictor_sayname02_02",
+    "length_ms": 6539
   },
   {
     "name": "anim_rtsound_oncharger_observe_ambient_01",
     "length_ms": 2442
   },
   {
-    "name": "anim_gazing_lookatsurface_reaction_02",
-    "length_ms": 4158
+    "name": "anim_movement_lookinplaceforfaces_short",
+    "length_ms": 330
+  },
+  {
+    "name": "anim_referencing_squint_02_head_angle_-20",
+    "length_ms": 3630
   },
   {
     "name": "anim_launch_reacttocube",
@@ -3900,12 +3884,12 @@
     "length_ms": 3894
   },
   {
-    "name": "anim_rtshake_getin_01",
+    "name": "anim_observe_oncharger_getout_01",
     "length_ms": 462
   },
   {
-    "name": "anim_avs_notification_quick_01",
-    "length_ms": 5181
+    "name": "anim_reacttoblock_putdown2nd_01",
+    "length_ms": 2805
   },
   {
     "name": "anim_reacttocliff_turnleft_60_01",
@@ -3916,36 +3900,32 @@
     "length_ms": 1980
   },
   {
-    "name": "anim_findcube_searchforcubesturns_03",
-    "length_ms": 1320
+    "name": "anim_reacttoblock_react_short_01",
+    "length_ms": 1122
   },
   {
-    "name": "anim_vc_reaction_nofaceheardyou_01",
-    "length_ms": 9504
+    "name": "anim_photo_shutter_01",
+    "length_ms": 2937
   },
   {
     "name": "anim_blackjack_victorbust_01",
     "length_ms": 5379
   },
   {
-    "name": "anim_rtsound_offcharger_asleep_60right_01",
-    "length_ms": 2475
-  },
-  {
     "name": "anim_reacttoblock_react_01_head_angle_40",
     "length_ms": 1848
-  },
-  {
-    "name": "anim_meetvictor_sayname_03",
-    "length_ms": 2112
   },
   {
     "name": "anim_movement_reacttoface_01_head_angle_40",
     "length_ms": 1485
   },
   {
-    "name": "anim_reacttoblock_stuckonblock_01",
-    "length_ms": 5049
+    "name": "anim_wakeword_groggyeyes_getout_01",
+    "length_ms": 297
+  },
+  {
+    "name": "anim_reacttocliff_wheely_02",
+    "length_ms": 3366
   },
   {
     "name": "anim_rtshake_drive_getin_01",
@@ -4002,6 +3982,10 @@
   {
     "name": "anim_lookinplaceforfaces_keepalive_long_02",
     "length_ms": 2970
+  },
+  {
+    "name": "anim_reacttoface_unidentified_02_head_angle_40",
+    "length_ms": 1848
   },
   {
     "name": "anim_lookinplaceforfaces_keepalive_long_04",

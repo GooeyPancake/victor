@@ -1,0 +1,12 @@
+{
+  "behaviorClass": "DisplayWeather",
+  "behaviorID" : "WeatherSunnyGeneric",
+
+  "animationName" : "anim_weather_sunny_01",
+  "imageLayouts" : [
+    "WeatherCondSunny_01"
+  ],
+  "imageMaps" : [
+    "WeatherCondSunny_01"
+  ]
+}

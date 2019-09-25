@@ -1,0 +1,39 @@
+{
+  "behaviorClass": "AnimSequenceWithFace",
+  "behaviorID": "ObservingEyeContact",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "EyeContact"
+  },
+
+  "animTriggers" : ["EyeContactLookLoop"],
+
+  "faceSelectionPenalties": [
+    {
+      "factor": "TrackingOnly",
+      "multiplier": 10000.0
+    },
+    {
+      "factor": "NotMakingEyeContact",
+      "multiplier": 1000.0
+    },
+    {
+      "factor": "TimeSinceSeen_s",
+      "multiplier": 100.0
+    },
+    {
+      "factor": "UnnamedFace",
+      "multiplier": 10.0
+    },
+    {
+      "factor": "RelativeBodyAngleRadians",
+      "multiplier": 3.0
+    },
+    {
+      "factor": "RelativeHeadAngleRadians",
+      "multiplier": 1.0
+    }
+  ],
+  
+  "emotionEventOnActivated": "EyeContactReaction"
+}

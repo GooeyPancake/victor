@@ -1,0 +1,14 @@
+{
+  "behaviorID" : "EmergencyModeOffCharger",
+  "behaviorClass": "DispatcherStrictPriority",
+  
+  "interruptActiveBehavior" : true,
+  
+  "behaviors" : [
+    "MandatoryPhysicalReactions",
+    "EmergencyModeTriggerWord",
+    "EmergencyModeInAir",
+    "EmergencyModeFindAndGoToHome"
+  ]
+  
+}

@@ -1,0 +1,14 @@
+// This serves to define the account settings stored on the robot,
+// as well as their default values and possibly other information.
+{
+  "DATA_COLLECTION" :
+  {
+    "defaultValue": true,
+    "updateCloudOnChange" : true
+  },
+  "APP_LOCALE" :
+  {
+    "defaultValue" : "en-US",
+    "updateCloudOnChange" : true
+  }
+}

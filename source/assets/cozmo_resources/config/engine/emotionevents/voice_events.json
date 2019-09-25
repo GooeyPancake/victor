@@ -1,0 +1,105 @@
+{
+  "emotionEvents" : [
+    {
+      "name" : "ReactToTriggerWord",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Stimulated",
+          "value" : 1.0
+        },
+        {
+          "emotionType" : "Social",
+          "value" : 0.5
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name" : "RespondToShortVoiceCommand",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.1
+        },
+        {
+          "emotionType" : "Social",
+          "value" : 0.2
+        },
+        {
+          "emotionType" : "Happy",
+          "value" : 0.15
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name" : "BeQuietVoiceCommand",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Stimulated",
+          "value" : -1.0
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name" : "NoValidVoiceIntent",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Stimulated",
+          "value" : -0.6
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name" : "RespondToGoodNight",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Stimulated",
+          "value" : -0.7
+        },
+        {
+          "emotionType" : "Happy",
+          "value" : 0.4
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "behaviorID": "SingletonPounceDispatcher",  
+  "behaviorClass" : "DispatcherStrictPriority",
+  "interruptActiveBehavior": true,
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "TimerInRange",
+    "begin_s": 30.0
+  },
+
+  "behaviors": [
+    "SingletonPounceTurnLeft",        // Ground motion on the side causes a quick, inaccurate, pounce
+    "SingletonPounceTurnRight",       // Ground motion on the side causes a quick, inaccurate, pounce
+    "SingletonPounceWithProx",         // Use the prox sensor to approach/pounce on a verified object 
+    "SingletonPounceApproachWithProx", 
+    "Wait"
+  ]
+}

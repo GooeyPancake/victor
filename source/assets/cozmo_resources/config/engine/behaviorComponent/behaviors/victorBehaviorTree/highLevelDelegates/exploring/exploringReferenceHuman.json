@@ -1,0 +1,27 @@
+{
+  "behaviorID": "ExploringReferenceHuman",
+  "behaviorClass": "AnimSequenceWithFace",
+
+  "requireFaceForActivation": true,
+  "requireFaceConfirmation": false,
+  "returnToOriginalPose": false,
+
+  "setFastTurn": true,
+
+  "animTriggers" : ["ExploringLookAtHuman"],
+
+  "faceSelectionPenalties": [
+    {
+      "factor": "TrackingOnly",
+      "multiplier": 10000.0
+    },
+    {
+      "factor": "TimeSinceSeen_s",
+      "multiplier": 100.0
+    },
+    {
+      "factor": "UnnamedFace",
+      "multiplier": 10.0
+    }
+  ]
+}

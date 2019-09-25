@@ -1,0 +1,7 @@
+{
+  "behaviorID" : "InvestigateCubeConnectionGate",
+  "behaviorClass" : "ConnectToCube",
+
+  "delegateBehaviorID" : "InteractWithStaticCube",
+  "delegateOnFailedConnection" : true
+}

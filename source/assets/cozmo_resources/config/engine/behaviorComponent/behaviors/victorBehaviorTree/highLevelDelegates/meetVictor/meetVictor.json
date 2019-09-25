@@ -1,0 +1,43 @@
+{
+  "behaviorClass": "EnrollFace",
+  "behaviorID": "MeetVictor",
+
+  "associatedActiveFeature": "MeetVictor",
+
+  "showActiveIntentFeedback" : true,
+
+  "maxFacesVisible": 10,  // Error state thrown if enrollment is attempted while more than this many faces visible
+  "tooManyFacesTimeout_sec": 1.5, // Set to zero to error immediately upon seeing multiple faces
+  "tooManyFacesRecentTime_sec": 0.5, // Seeing more maxFaces different IDs within this recent time window is "too many"
+  
+  "faceSelectionPenalties": [
+    {
+      "factor": "TrackingOnly",
+      "multiplier": 10000.0
+    },
+    {
+      "factor": "NotMakingEyeContact",
+      "multiplier": 1.0
+    },
+    {
+      "factor": "TimeSinceSeen_s",
+      "multiplier": 10.0
+    },
+    {
+      "factor": "UnnamedFace",
+      "multiplier": -10000.0
+    },
+    {
+      "factor": "RelativeBodyAngleRadians",
+      "multiplier": 5.0
+    },
+    {
+      "factor": "RelativeHeadAngleRadians",
+      "multiplier": 1.0
+    },
+    {
+      "factor": "Distance_m",
+      "multiplier": 100.0
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "behaviorID": "QuietMode",
+  "behaviorClass": "QuietModeCoordinator",
+
+  "associatedActiveFeature": "BeQuiet",
+
+  "respondToUserIntents": [
+    { "type": "imperative_quiet" }
+  ],
+
+  "autoShutOffIntentFeedback": true,
+
+  "emotionEventOnActivated": "BeQuietVoiceCommand",
+
+  "activeTime_s": 1800.0,
+  
+  "timeToPowerSave_s": 15.0,
+
+  "behaviors": [
+    {
+      "behavior": "QuietModeEmergencyModeGoHome",
+      "audioAllowed": false
+    },
+    {
+      "behavior": "TriggerWordDetected",
+      "audioAllowed": true
+    },
+    {
+      "behavior": "TimerUtilityCoordinator",
+      "audioAllowed": true
+    },
+    {
+      "behavior": "BeQuietAnims",
+      "audioAllowed": false
+    }
+  ]
+}

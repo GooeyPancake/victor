@@ -1,0 +1,13 @@
+{
+  "behaviorID": "DriveOffChargerCube",
+  "behaviorClass": "DriveOffCharger",
+
+  "associatedActiveFeature": "NoFeature",
+
+  // first try cube, and if none is known, drive straight (this is motivated by the use case
+  // of someone putting a cube in front of the charger and doing a cube voice command, but
+  // the cube hasn't been seen yet)
+  "driveDirectionCues": ["cube", "straight"],
+
+  "maxCubeAge_s": 600
+}

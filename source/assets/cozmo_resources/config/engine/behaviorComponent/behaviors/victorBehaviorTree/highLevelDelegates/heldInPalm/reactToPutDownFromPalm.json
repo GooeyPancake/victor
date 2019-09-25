@@ -1,0 +1,28 @@
+{
+  "behaviorID": "ReactToPutDownFromPalm",
+  "behaviorClass": "FindFaceAndThen",
+  "behavior": "AskForPalmRelaxedAnimInternal",
+  "startsWithMicDirection": false,
+  "timeUntilCancelFaceLooking_s": 3.0,
+  "timeUntilCancelFaceSearch_s": 5.0,
+  "searchForFaceBehavior": "ActiveLookForFaces",
+  "shouldLeaveChargerFirst": false,
+  
+  "useBodyDetector": true,
+  "additionalLookTimeIfSawBody_s": 2.0,
+  "additionalSearchTimeIfSawBody_s": 3.0,
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "OffTreadsState",
+    "targetState": "OnTreads"
+  },
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "AskForPalmRelaxedAnimInternal",
+      "behaviorClass": "AnimSequence",
+      
+      "animTriggers": ["HeldOnPalmPutDownRelaxed"]
+    }
+  ]
+}

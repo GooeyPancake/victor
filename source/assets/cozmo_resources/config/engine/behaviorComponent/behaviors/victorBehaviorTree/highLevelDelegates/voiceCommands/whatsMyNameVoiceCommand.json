@@ -1,0 +1,25 @@
+{
+  "behaviorID": "WhatsMyNameVoiceCommand",
+  "behaviorClass": "FindFaceAndThen",
+
+  "associatedActiveFeature": "WhatsMyName",
+
+  "respondToUserIntents" : [
+    { "type": "names_ask" }
+  ],
+
+  "timeUntilCancelFaceLooking_s": 2.0,
+  "timeUntilCancelFaceSearch_s": 10.0,
+  "searchForFaceBehavior": "ActiveLookForFaces",
+  "shouldLeaveChargerFirst": false,
+
+  "useBodyDetector": true,
+  "additionalLookTimeIfSawBody_s": 3.0,
+  "additionalSearchTimeIfSawBody_s": 3.0,
+
+  "behavior": "SayName",
+
+  "animWhenSeesFace": "FoundFace",
+
+  "postBehaviorSuggestion": "Socialize"
+}

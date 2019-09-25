@@ -1,0 +1,40 @@
+// one to one mapping with weather conditions 
+[
+  // Duplicate of weather company map
+  //{
+  //  "APIValue" : "cloudy",
+  //  "CladType" : "Cloudy"
+  //},
+  {
+    "APIValue" : "cold",
+    "CladType" : "Cold"
+  },
+  // Duplicate of weather company map
+  //{
+  //  "APIValue" : "rain",
+  //  "CladType" : "Rain"
+  //},
+  // Duplicate of weather company map
+  //{
+  //  "APIValue" : "snow",
+  //  "CladType" : "Snow"
+  //},
+  // Duplicate of weather company map
+  //{
+  //  "APIValue" : "sunny",
+  //  "CladType" : "Sunny"
+  //},
+  {
+    "APIValue" : "windy",
+    "CladType" : "Windy"
+  },
+  {
+    "APIValue" : "stars",
+    "CladType" : "Stars"
+  }
+  // Duplicate of weather company map
+  //{
+  //  "APIValue" : "thunderstorms",
+  //  "CladType" : "Thunderstorms"
+  //}
+]

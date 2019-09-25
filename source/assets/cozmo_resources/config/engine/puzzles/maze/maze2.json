@@ -1,0 +1,19 @@
+{
+  // Ultimately these will be in seperate "puzzle configs"
+  "entryx": 0,
+  "entryy": 0,
+  "exitx": 6,
+  "exity": 4,
+  "grid": [
+           [7,1, 9, 3, 9, 3, 13],
+           [3, 12, 10, 10, 10, 2, 9 ],
+           [10, 7, 12, 10, 10, 14,  10 ],
+           [2, 5, 9, 10, 14, 3, 8],
+           [6, 13, 6, 4,  5, 12, 14]
+           ],
+  "maze_height": 5,
+  "maze_width": 7,
+  "rand_seed": 1510267468, 
+  "version": 0
+  //"requiredUnlockId": "BuildPyramid",    // No unlock requirement
+}

@@ -1,0 +1,174 @@
+{
+  "emotionEvents" : [
+    {
+      "name" : "FistBumpSuccess",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : 0.8
+        },{
+          "emotionType" : "Stimulated",
+          "value" : 0.9
+        },
+        {
+          "emotionType" : "Social",
+          "value" : 1.0
+        }
+      ]
+    },
+    {
+      "name" : "FistBumpLeftHanging",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : -0.8
+        },{
+          "emotionType" : "Stimulated",
+          "value" : -0.2
+        },
+        {
+          "emotionType" : "Social",
+          "value" : -0.3
+        }
+      ]
+    },
+    {
+      "name" : "PettingStarted",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : 0.1
+        },{
+          "emotionType" : "Stimulated",
+          "value" : 0.3
+        },
+        {
+          "emotionType" : "Social",
+          "value" : 0.2
+        }
+      ]
+    },
+    {
+      "name" : "PettingBlissLevelIncrease",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : 0.1
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : -0.08
+        },
+        {
+          "emotionType" : "Social",
+          "value" : 0.2
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name" : "PettingReachedMaxBliss",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : 1.0
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : -0.15
+        },
+        {
+          "emotionType" : "Social",
+          "value" : 1.0
+        }
+      ]
+    },
+    {
+      "name" : "ReactToPickedUp",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : 0.2
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.2
+        },
+        {
+          "emotionType" : "Social",
+          "value" : 1.0
+        }
+      ]
+    },
+    {
+    "name": "RobotShaken",
+    "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : -0.1
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.3
+        }
+      ]
+    },
+    {
+      "name" : "ExploringExamineObstacle",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : 0.1
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.1
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 0.0
+          },
+          {
+            "x" : 0.1,
+            "y" : 0.1
+          },
+          {
+            "x" : 10,
+            "y" : 0.2
+          },
+          {
+            "x" : 30,
+            "y" : 0.4
+          },
+          {
+            "x" : 60,
+            "y" : 1
+          }
+        ]
+      }
+    },
+    {
+      "name" : "DanceToTheBeat",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Happy",
+          "value" : 0.1
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.4
+        }
+      ]
+    }
+  ]
+}

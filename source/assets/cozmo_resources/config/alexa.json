@@ -1,0 +1,38 @@
+// This is the PRODUCTION config for Alexa
+// Note: this file has certain values replaced at runtime, denoted by angle brackets <>
+{
+  "cblAuthDelegate":{
+    "databaseFilePath":"<ALEXA_STORAGE_PATH>/cblAuthDelegate.db" // this path gets replaced at runtime
+  },
+  "deviceInfo":{
+    // Unique device serial number. e.g. 123456
+    "deviceSerialNumber":"<SERIAL_NUMBER>", // this serial number gets replaced at runtime
+    // The Client ID of the Product from developer.amazon.com
+    "clientId": "amzn1.application-oa2-client.8113d4b1309d4ba6bcffb4ee4e53bbeb",
+    // Product ID from developer.amazon.com
+    "productId": "vector_prod"
+  },
+  "capabilitiesDelegate":{},
+  "alertsCapabilityAgent":{
+    "databaseFilePath":"<ALEXA_STORAGE_PATH>/alerts.db"
+  },
+  "notifications":{
+    "databaseFilePath":"<ALEXA_STORAGE_PATH>/notifications.db"
+  },
+  "settings":{
+    "databaseFilePath":"<ALEXA_STORAGE_PATH>/settings.db",
+    "defaultAVSClientSettings":{
+      // See https://developer.amazon.com/docs/alexa-voice-service/settings.html#settingsupdated for valid values.
+      "locale":"<INITIAL_LOCALE>"
+    }
+  },
+  "miscDatabase": {
+    "databaseFilePath":"<ALEXA_STORAGE_PATH>/miscDatabase.db" // this path gets replaced at runtime
+  },
+  "certifiedSender":{
+    "databaseFilePath":"<ALEXA_STORAGE_PATH>/certifiedsender.db" // this path gets replaced at runtime
+  },
+  "logger":{
+    "logLevel":"INFO"
+  }
+}

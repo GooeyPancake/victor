@@ -1,0 +1,7 @@
+{
+  "behaviorClass": "AnimSequence",
+  "behaviorID": "ObservingOnChargerGetOut",
+
+  "animTriggers" : ["ObservingOnChargerGetOut"],
+  "associatedActiveFeature": "ObservingOnCharger"
+}

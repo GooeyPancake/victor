@@ -1,0 +1,32 @@
+// chosen directly by chooser
+{
+  "behaviorClass": "InteractWithFaces",
+  "behaviorID": "InteractWithFaces",
+
+  "associatedActiveFeature": "InteractWithFaces",
+  // This is the minimum time the robot will track
+  // if no eye contact is made at all
+  "minTimeToTrackFaceLowerBound_s": 12.0,
+  "minTimeToTrackFaceUpperBound_s": 15.0,
+
+  "minTrackingTiltAngle_deg": 4.0,
+  "minTrackingPanAngle_deg": 4.0,
+
+  // This is the max time the robot will track
+  // if eye contact is maintained the entire time
+  "maxTimeToTrackFaceLowerBound_s": 40.0,
+  "maxTimeToTrackFaceUpperBound_s": 60.0,
+
+  "noEyeContactTimeout_s": 15.0,
+  // This is how far back in time to look
+  // when we check for eye contact, ideally
+  // this should be non-zero to add some robustness
+  "eyeContactWithinLast_ms": 100,
+  "trackingTimeout_s": 2.5,
+
+  "clampSmallAngles": false
+
+  // ,
+  // "minClampPeriod_s": 0.2,
+  // "maxClampPeriod_s": 0.7
+}

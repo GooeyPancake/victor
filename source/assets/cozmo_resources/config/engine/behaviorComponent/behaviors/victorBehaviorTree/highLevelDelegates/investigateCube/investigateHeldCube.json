@@ -1,0 +1,13 @@
+{
+  "behaviorID" : "InvestigateHeldCube",
+  "behaviorClass" : "InspectCube",
+
+  "PlayWithCubeBehaviorID" : "InteractWithStaticCube",
+
+  "wantsToBeActivatedCondition" : {
+    "conditionType" : "FeatureGate",
+    "feature" : "ReactToHeldCube"
+  },
+
+  "postBehaviorSuggestion": "Socialize"
+}

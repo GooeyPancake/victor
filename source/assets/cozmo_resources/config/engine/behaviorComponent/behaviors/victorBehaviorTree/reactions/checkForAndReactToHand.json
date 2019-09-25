@@ -1,0 +1,26 @@
+{
+  "behaviorID" :   "CheckForAndReactToHand",
+  "behaviorClass": "CheckForAndReactToSalientPoint",
+
+  "visionMode" : "DetectingHands",
+  "numFrames" : 2,
+  
+  "reactions" : [
+    {
+      "salientPointType" : "Hand",
+      "behaviorID" : "ReactToHand"
+    }
+  ],
+  
+  "headAngle_deg" : -12,
+  
+  "cooldown_sec" : 6.0,
+
+  "wantsToBeActivatedCondition":  {
+    "conditionType": "FeatureGate",
+    "feature": "HandDetection",
+    "expected": true
+  }
+}
+
+

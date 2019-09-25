@@ -1,0 +1,51 @@
+{
+  "behaviorClass": "Keepaway",
+  "behaviorID": "Keepaway",
+
+  "associatedActiveFeature": "Keepaway",
+  
+  "minPouncesForSoloPlay":            1,
+  "maxPouncesForSoloPlay":            4,
+  "targetUnmovedGameEndTimeout_s":    10.0,  // Game will end with "Bored" if the cube is visibly unmoved for this long
+  "noVisibleTargetGameEndTimeout_s":  8.0,   // Game will end with "Bored" if the cube goes this long unseen
+  "outOfPlayGameEndTimeout_s":        5.0,   // Game will end with "Bored" if the cube is beyond inPlayDistance too long
+  "targetVisibleTimeout_s":           1.0,   // Timeout to allow brief target occlusion (e.g. finger on marker)
+  "globalOffsetDist_mm":              0.0,   // Tuneable value to compensate animations vs. physical distances
+  "inPlayDistance_mm":                190.0, // If the cube moves beyond here, victor goes to a standby posture
+  "outOfPlayDistance_mm":             210.0, // If the cube is closer than this, victor gets ready to strike
+  "targetUnmovedDistance_mm":         4.0,   // If the cube moves less than this in a frame, we consider it static
+  "targetUnmovedAngle_deg":           5.0,   // If the cube rotates less than this in a frame, we consider it static
+  "allowablePointingError_deg":       7.5,   // Victor will turn to face the target if the angle to it is larger
+  "targetUnmovedCreepTimeout_s":      2.0,   // Victor will creep up on a cube that hasn't moved in this long
+  "creepDistanceMin_mm":              10.0,
+  "creepDistanceMax_mm":              60.0,
+  "creepDelayTimeMin_s":              0.0,  // Min time victor will wait before creeping after the unmoved timeout
+  "creepDelayTimeMax_s":              0.5,  // Max time victor will wait before creeping after the unmoved timeout
+  "pounceDelayTimeMin_s":             0.1,  // Once primed, min time victor waits to pounce
+  "pounceDelayTimeMax_s":             1.0,  // Once primed, max time victor waits to pounce
+  "basePounceChance":                 0.8,  // Base probability that victor will pounce vs. fakeout
+  "pounceChanceIncrement":            0.15, // Amount by which probability of fakeout is reduced after each fakeout
+  "nominalPounceDistance_mm":         55.0, // Cube must be closer than this to pounce
+  "mousetrapPounceDistance_mm":       35.0, // If the cube is closer than this, pounce with zero delay
+  "probBackupInsteadOfMousetrap":     0.5,
+  "pounceSuccessPitchDiff_deg":       5.0,
+
+  // Excitement<->Frustration is a sliding param [0.0, 2.0] with 1.0 being neutral: 0% chance of exiting
+  // On the EXCITED side of the scale he will EXIT EXCITED on a HIT with probability = ExcFruVal - 1.0
+  // On the FRUSTRATED side of the scale he will EXIT FRUSTRATED on a MISS with probability = 1.0 - ExcFruVal
+  "excitementIncPerHit":              0.05, // How much should we shift toward excited per hit
+  "maxProbExitExcited":               0.5, // Max probability of exiting due to excitement
+  "frustrationIncPerMiss":            0.05,// How much should we shift toward frutstrated per hit
+  "maxProbExitFrustrated":            0.5, // Max probability of exiting due to frustration
+  "minProbToExit":                    0.15, // Exit probability < this will NEVER exit
+
+  // Probability of reacting to any given hit/miss can be adjusted. if he rando decides not to react,
+  // he'll increase the probability of reacting next time and then go back to idle directly. If he reacts,
+  // the probabilty of reacting next time is set back to "baseProbReact".
+  "baseProbReact":                    0.4, // Base Probability of reacting to a hit/miss. 1.0 always react
+  "minProbToReact":                   0.2, // React probability < this will NEVER react
+  "probReactIncrement":               0.2, // How much to increase probability of reacting per hit/miss
+  "probReactMax":                     1.0, // cap the probability of reacting at this value
+
+  "useProxForDistance":               true
+}

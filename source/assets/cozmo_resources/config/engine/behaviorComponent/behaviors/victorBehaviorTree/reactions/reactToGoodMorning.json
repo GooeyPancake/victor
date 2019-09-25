@@ -1,0 +1,15 @@
+{
+  "behaviorID": "ReactToGoodMorning",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "ReactToGoodMorning",
+
+  "respondToUserIntents": [
+    { "type": "greeting_goodmorning" }
+  ],
+
+  "animTriggers":[
+    "ReactToGoodMorning"
+  ]
+}

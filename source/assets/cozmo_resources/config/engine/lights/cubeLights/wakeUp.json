@@ -1,0 +1,77 @@
+[
+  {
+    "pattern" : {
+        "onColors"                 : [[255, 0, 0, 255], [0, 255, 0, 255], [0, 0, 255, 255], [255, 255, 0, 255]],
+        // "offColors"                : [[75, 0, 0, 255], [0, 75, 0, 255], [0, 0, 75, 255], [75, 75, 0, 255]],
+        "offColors"                : [[0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255]],
+        "onPeriod_ms"              : [0, 0, 0, 0],
+        "offPeriod_ms"             : [250, 250, 250, 250],
+        "transitionOnPeriod_ms"    : [250, 250, 250, 250],
+        "transitionOffPeriod_ms"   : [250, 250, 250, 250],
+        "offset"                   : [0, 0, 0, 0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 750,
+    "patternDebugName" : "wakeUp_spin_1"
+  },
+  {
+    "pattern" : {
+        "onColors"                 : [[0, 255, 0, 255], [0, 0, 255, 255], [255, 255, 0, 255], [255, 0, 0, 255]],
+        // "offColors"                : [[0, 150, 0, 255], [0, 0, 150, 255], [150, 150, 0, 255], [150, 0, 0, 255]],
+        "offColors"                : [[0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255]],
+        "onPeriod_ms"              : [0, 0, 0, 0],
+        "offPeriod_ms"             : [250, 250, 250, 250],
+        "transitionOnPeriod_ms"    : [250, 250, 250, 250],
+        "transitionOffPeriod_ms"   : [250, 250, 250, 250],
+        "offset"                   : [0, 0, 0, 0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 750,
+    "patternDebugName" : "wakeUp_spin_2"
+  },
+  {
+    "pattern" : {
+        "onColors"                 : [[0, 0, 255, 255], [255, 255, 0, 255], [255, 0, 0, 255], [0, 255, 0, 255]],
+        // "offColors"                : [[0, 0, 225, 255], [225, 225, 0, 255], [225, 0, 0, 255], [0, 225, 0, 255]],
+        "offColors"                : [[0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255]],
+        "onPeriod_ms"              : [0, 0, 0, 0],
+        "offPeriod_ms"             : [250, 250, 250, 250],
+        "transitionOnPeriod_ms"    : [250, 250, 250, 250],
+        "transitionOffPeriod_ms"   : [250, 250, 250, 250],
+        "offset"                   : [0, 0, 0, 0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 750,
+    "patternDebugName" : "wakeUp_spin_3"
+  },
+  {
+    "pattern" : {
+      "onColors"                 : [[255, 0, 0, 255], [0, 255, 0, 255], [0, 0, 255, 255], [255, 255, 0, 255]],
+      // "offColors"                : [[0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255]],
+      "offColors"                : [[0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255], [0, 0, 0, 255]],
+      "onPeriod_ms"              : [0, 0, 0, 0],
+      "offPeriod_ms"             : [250, 250, 250, 250],
+      "transitionOnPeriod_ms"    : [250, 250, 250, 250],
+      "transitionOffPeriod_ms"   : [250, 250, 250, 250],
+      "offset"                   : [0, 0, 0, 0],
+      "rotate"                   : false
+    },
+    "duration_ms" : 750,
+    "patternDebugName" : "wakeUp_spin_4"
+  },
+  {
+    "pattern" : {
+        "onColors"                 : [[215, 255, 185, 255], [215, 255, 185, 255], [215, 255, 185, 255], [215, 255, 185, 255]],
+        "offColors"                : [[85, 100, 73, 255],   [85, 100, 73, 255],   [85, 100, 73, 255],   [85, 100, 73, 255]],
+        "onPeriod_ms"              : [0,0,0,0],
+        "offPeriod_ms"             : [0,0,0,0],
+        "transitionOnPeriod_ms"    : [250,250,250,250],
+        "transitionOffPeriod_ms"   : [1750,1750,1750,1750],
+        "offset"                   : [0,0,0,0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 2000,
+    "canBeOverridden" : false,
+    "patternDebugName" : "wakeUp_fadeOut"
+  }
+]

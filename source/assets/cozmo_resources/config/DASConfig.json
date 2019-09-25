@@ -1,0 +1,13 @@
+{
+  "dasConfig" : {
+    "url": "https://sqs.us-west-2.amazonaws.com/792379844846/DasProd-dasprodSqs-1845FTIME3RHN",
+    "file_threshold_size": 100000,
+    "flush_interval": 600,
+    "storage_path": "/run/dasLogs",
+    "storage_quota": 5000000,
+    "backup_path": "/data/data/com.anki.victor/cache/dasLogs",
+    "backup_quota": 10000000,
+    "persistent_globals_path": "/data/data/com.anki.victor/persistent/dasGlobals.json",
+    "transient_globals_path": "/run/dasGlobals.json"
+  }
+}

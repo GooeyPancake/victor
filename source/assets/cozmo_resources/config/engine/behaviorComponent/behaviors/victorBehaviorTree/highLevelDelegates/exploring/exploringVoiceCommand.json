@@ -1,0 +1,31 @@
+{
+  "behaviorID": "ExploringVoiceCommand",
+  "behaviorClass": "DispatcherQueue",
+
+  "associatedActiveFeature": "Exploring",
+  "autoShutOffIntentFeedback": true,
+
+  "behaviors": 
+  [
+    "ExploringInternal"
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "ExploringInternal",
+      "behaviorClass": "Exploring",
+
+      "allowNoCharger": true,
+
+      "minSearchRadius_m": 0.0,
+      "maxSearchRadius_m": 0.5,
+      "maxChargerDistance_m": 2.0,
+      "pAcceptKnownAreas": 0.4,
+
+      "motionProfile": {
+        "speed_mmps": 120.0,
+        "isCustom": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "emotionEvents": [
+    {
+      "name": "DriveOffCharger",
+      "emotionAffectors": [										  
+        {
+          "emotionType": "Confident",
+          "value": 0.3
+        }
+      ]
+    },
+    {
+      "name": "PlacedOnCharger",
+      "emotionAffectors": [										  
+        {
+          "emotionType": "Stimulated",
+          "value": -0.5
+        }
+      ]
+    }
+  ]
+}

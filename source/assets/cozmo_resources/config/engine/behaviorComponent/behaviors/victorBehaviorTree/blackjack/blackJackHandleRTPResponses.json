@@ -1,0 +1,41 @@
+{
+  "behaviorID" : "BlackJackHandleRTPResponses",
+  "behaviorClass": "DispatcherStrictPriority",
+
+  "associatedActiveFeature": "Blackjack",
+
+  "interruptActiveBehavior" : false,
+  "actAsSelector" : true,
+
+  "behaviors" : [
+    "BlackJackFromPrompt",
+    "BlackJackQuit",
+    "BlackJackTimeOut"
+  ],
+
+  "anonymousBehaviors":[
+    {
+      "behaviorName" : "BlackJackFromPrompt",
+      "behaviorClass" : "BlackJack",
+
+      "respondToUserIntents" : [
+        { "type" : "imperative_affirmative" }
+      ]
+    },
+    {
+      "behaviorName" : "BlackJackQuit",
+      "behaviorClass": "AnimSequence",
+
+      "animTriggers" : ["BlackJack_RtpPlayerNo"],
+      "respondToUserIntents" : [
+        {"type" : "imperative_negative"}
+      ]
+    },
+    {
+      "behaviorName" : "BlackJackTimeOut",
+      "behaviorClass": "AnimSequence",
+
+      "animTriggers" : ["BlackJack_RtpTimeOut"]
+    }
+  ]
+}

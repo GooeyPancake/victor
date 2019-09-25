@@ -1,0 +1,34 @@
+{
+  "behaviorID" : "PRDemoBigGreeting",
+  "behaviorClass" : "FindFaceAndThen",
+
+  // not really a voice command, but we need some feature to associate here
+  "associatedActiveFeature": "BasicVoiceCommand",
+
+  "timeUntilCancelFaceLooking_s": 2.0,
+  "timeUntilCancelFaceSearch_s": 10.0,
+  "searchForFaceBehavior": "ObservingFindFaces",
+  "shouldLeaveChargerFirst": true,
+  "driveOffChargerBehavior": "BigGreetingDriveOffCharger",
+
+  "behavior": "BigGreetingInternal",
+  "callSetFaceOnBehavior": false,
+
+  "useBodyDetector": false,
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "BigGreetingInternal",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": ["PRDemoGreeting"]
+    },
+    {
+      "behaviorName": "BigGreetingDriveOffCharger",
+      "behaviorClass": "DriveOffCharger",
+
+      "driveDirectionCues": ["face", "straight"],
+
+      "maxFaceAge_s": 3
+    }
+  ]
+}

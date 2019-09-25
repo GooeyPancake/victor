@@ -1,0 +1,28 @@
+{
+  "behaviorClass" : "ReactToSound",
+  "behaviorID" : "ReactToSoundAsleep",
+
+  "wantsToBeActivatedCondition": {
+    // when the robot gets put down, the sound of being put down can trigger this reaction. 
+    // Check the last time our treads state changed to make sure we aren't triggering from
+    // the noise of our own put down (or flip down from back)
+    "conditionType": "OffTreadsState",
+    "targetState": "OnTreads",
+    "minTimeSinceChange_ms": 400
+  },
+
+  "associatedActiveFeature": "NoFeature",
+  "behaviorStatToIncrement": "ReactedToSound",
+
+  "emotionEventOnActivated": "ReactToSoundAsleep",
+
+  "micDirectionReactionBehavior" : "ReactToSoundDirectionAsleep",
+
+  // from sleep, only use absolute "loud" sound to wake up
+  "micAbsolutePowerThreshold": 3.10,
+
+  // impossibly high (this wont work during power save anyway)
+  "micMinPowerThreshold": 999.9,
+  "micConfidenceThresholdAtMinPower": 0
+
+}

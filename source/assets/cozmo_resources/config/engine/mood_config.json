@@ -1,0 +1,208 @@
+{
+  "decayGraphs" : [
+    {
+      "emotionType" : "default",
+      // x here is the time in seconds since the most recent event (which changed the emotion by more than
+      // some delta)      
+      // y is the ratio of the original value that should be reached by the given time
+      "graphType": "TimeRatio",
+      "nodes" : [
+        {
+          "x" : 0,
+          "y" : 1
+        },
+        {
+          "x" : 10,
+          "y" : 1
+        },
+        {
+          "x" : 30,
+          "y" : 0.9
+        },
+        {
+          "x" : 75,
+          "y" : 0.6
+        },
+        {
+          "x" : 150,
+          "y" : 0
+        }
+      ]
+    },
+    {
+      "emotionType": "Social",
+      "graphType": "TimeRatio",
+      "nodes": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 10,
+          "y": 1
+        },
+        {
+          "x": 20,
+          "y": 0.6
+        },
+        {
+          "x": 60,
+          "y": 0.2
+        },
+        {
+          "x": 100,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "emotionType": "Confident",
+      "graphType": "TimeRatio",
+      "nodes": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 30,
+          "y": 1
+        },
+        {
+          "x": 60,
+          "y": 0.5
+        },
+        {
+          "x": 70,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "emotionType": "Stimulated",
+      "graphType": "ValueSlope",
+      // x here is the emotion value
+      // y is the amount it decays (towards zero) per _minute_ as a fixed amount (not a ratio)
+      // The default here is 0 to impose no additional decay based on value
+      // Decay will never cross the value to "cross" 0
+      "nodes": [
+        {
+          "x": 0,
+          "y": 0.6
+        },
+        {
+          "x": 0.2,
+          "y": 0.12
+        },
+        {
+          "x": 0.8,
+          "y": 0.12
+        },
+        {
+          "x": 0.8,
+          "y": 0.4
+        }
+      ]
+    }
+  ],
+
+  "valueRanges": [
+    {
+      "emotionType": "Stimulated",
+      "min": 0.0,
+      "max": 1.0
+    }
+  ],
+  "eventMapper" : {
+    "emotionEvents" : [
+    ]
+  },
+
+  "audioParameterMap": {
+    // "Happy": "Robot_Vic_Happy",
+    // "Confident": "Robot_Vic_Confident",
+    // "Social": "Robot_Vic_Social",
+    "Stimulated": "Robot_Vic_Stimulation"
+  },
+
+  // If desired, we can uncomment this (and remove the above) to send values based on simple mood instead of
+  // the raw mood value itself
+  // "simpleMoodAudioParameters": {
+  //   "event": "Robot_Vic_Stimulation",
+  //   "values": {
+  //     "LowStim": -1.0,
+  //     "MedStim": 0.0,
+  //     "HighStim": 1.0,
+  //     "Frustrated": -2.0
+  //   }
+  // },
+
+  "defaultRepetitionPenalty" : {
+    "nodes" : [
+      {
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      {
+        "x" : 0.5,
+        "y" : 0.0
+      },
+      {
+        "x" : 10.0,
+        "y" : 1.0
+      }
+    ]
+  },
+  "actionResultEmotionEvents": {
+    "DRIVE_TO_POSE": {
+      "RETRY": "DrivingActionFailedWithRetry",
+      "ABORT": "DrivingActionFailedWithAbort"
+    },
+    "DRIVE_TO_OBJECT": {
+      "RETRY": "DrivingActionFailedWithRetry",
+      "ABORT": "DrivingActionFailedWithAbort"
+    },
+    "DRIVE_STRAIGHT": {
+      "RETRY": "DrivingActionFailedWithRetry",
+      "ABORT": "DrivingActionFailedWithAbort"
+    },
+    "DRIVE_TO_PLACE_CARRIED_OBJECT": {
+      "RETRY": "DrivingActionFailedWithRetry",
+      "ABORT": "DrivingActionFailedWithAbort"
+    },
+    "PICK_AND_PLACE_INCOMPLETE": {
+      "SUCCESS": "PickupSucceeded", // NOTE: this really shouldn't happen
+      "RETRY": "PickingOrPlacingActionFailedWithRetry",
+      "ABORT": "PickingOrPlacingActionFailedWithAbort"
+    },
+    "PICKUP_OBJECT_LOW": {
+      "SUCCESS": "PickupSucceeded",
+      "RETRY": "PickingOrPlacingActionFailedWithRetry",
+      "ABORT": "PickingOrPlacingActionFailedWithAbort"
+    },
+    "PICKUP_OBJECT_HIGH": {
+      "SUCCESS": "PickupSucceeded",
+      "RETRY": "PickingOrPlacingActionFailedWithRetry",
+      "ABORT": "PickingOrPlacingActionFailedWithAbort"
+    },
+    "ROLL_OBJECT_LOW": {
+      // No success anim here because the helper handles it manually
+      "RETRY": "PickingOrPlacingActionFailedWithRetry",
+      "ABORT": "PickingOrPlacingActionFailedWithAbort"
+    },
+    "POP_A_WHEELIE": {
+      "SUCCESS": "RollSucceeded",
+      "RETRY": "PickingOrPlacingActionFailedWithRetry",
+      "ABORT": "PickingOrPlacingActionFailedWithAbort"
+    },
+    "DRIVE_TO_FLIP_BLOCK_POSE": {
+      "RETRY": "DrivingActionFailedWithRetry",
+      "ABORT": "DrivingActionFailedWithAbort"
+    },
+    "MOUNT_CHARGER": {
+      "SUCCESS": "MountChargerSuccess",
+      "RETRY": "PickingOrPlacingActionFailedWithRetry",
+      "ABORT": "PickingOrPlacingActionFailedWithAbort"
+    }      
+  }
+}
+

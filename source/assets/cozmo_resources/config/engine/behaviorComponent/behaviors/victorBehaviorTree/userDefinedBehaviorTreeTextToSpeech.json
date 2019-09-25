@@ -1,0 +1,10 @@
+{
+  "behaviorID"      : "UserDefinedBehaviorTreeTextToSpeech",
+  "behaviorClass"   : "TextToSpeechLoop",
+
+  "associatedActiveFeature": "NoFeature",
+
+  // TODO: these animations are not particularly complicated - make a new trigger for them for this behavior
+  "getInAnimation"           : "BlackJack_SpeechGetIn",
+  "loopAnimation"            : "BlackJack_SpeechShortStatement"
+}

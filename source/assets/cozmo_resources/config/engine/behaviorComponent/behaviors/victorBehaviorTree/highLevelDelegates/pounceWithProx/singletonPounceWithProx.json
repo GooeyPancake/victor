@@ -1,0 +1,9 @@
+{
+  "behaviorClass": "PounceWithProx",
+  "behaviorID": "SingletonPounceWithProx",
+  "wantsToBeActivatedCondition": {
+    "conditionType"       : "ProxInRange",
+    "minProxDist_mm"      : 40.0,
+    "maxProxDist_mm"      : 60.0
+  }
+}

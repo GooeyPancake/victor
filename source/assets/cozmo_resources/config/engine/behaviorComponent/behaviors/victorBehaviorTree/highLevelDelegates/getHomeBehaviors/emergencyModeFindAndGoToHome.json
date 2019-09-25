@@ -1,0 +1,19 @@
+{
+  "behaviorClass" : "DispatcherPassThrough",
+  "behaviorID" : "EmergencyModeFindAndGoToHome",
+
+  "wantsToBeActivatedCondition" : {
+    "conditionType": "Compound",
+    "or" : [
+      {
+        "conditionType" : "BatteryLevel",
+        "targetBatteryLevel" : "Low"
+      },
+      {
+        "conditionType" : "HighTemperature"
+      }
+    ]
+  },
+
+  "delegateID" : "FindAndGoToHome"
+}

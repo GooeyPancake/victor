@@ -1,0 +1,16 @@
+{
+  "behaviorID" : "UserDefinedBehaviorTreeConfirmNewBehavior",
+  "behaviorClass" : "PromptUserForVoiceCommand",
+ 
+  "associatedActiveFeature": "NoFeature",
+
+  // TODO: change steam type so that this doesn't piggy back off of blackjack
+  "streamType"                     : "Blackjack",
+  "earConAudioEventSuccess"        : "Play__Robot_Vic_Sfx__Wake_Word_Success",
+  "earConAudioEventNeutral"        : "Play__Robot_Vic_Sfx__Wake_Word_Off",
+  "vocalPromptString"              : "Do you like this reaction?",
+  "maxNumberOfReprompts"           : 1,
+  "stopListeningOnIntents"         : true,
+  "playListeningGetIn"             : false,
+  "playListeningGetOut"            : false
+}

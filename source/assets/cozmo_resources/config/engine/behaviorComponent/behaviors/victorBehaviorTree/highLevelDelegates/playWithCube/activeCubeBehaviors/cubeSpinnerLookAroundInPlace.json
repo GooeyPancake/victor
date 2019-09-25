@@ -1,0 +1,63 @@
+//
+// CubeSpinnerLookAroundInPlace
+// This behavior runs in the general case of looking for cubes or edges, when we don't have anything interesting
+// at the moment that requires our attention. It's meant to scan the world to add edges, cubes and other info to
+// the memory map, so that other behaviors can trigger.
+//
+//
+{
+  "behaviorClass": "LookAroundInPlace",
+  "behaviorID": "CubeSpinnerLookAroundInPlace",
+
+  "params":
+  {
+    "behavior_ShouldResetTurnDirection": true,
+    "behavior_ResetBodyFacingOnStart": true,
+    "behavior_DistanceFromRecentLocationMin_mm": 300.0,
+    "behavior_ShouldLowerLift": true,
+    "behavior_CanCarryCube": false,
+    "behavior_RecentLocationsMax": 5,
+    "behavior_AngleOfFocus_deg": 0.0,
+    
+    "behavior_NumberOfScansBeforeStop":1,
+    "sx_BodyTurnSpeed_degPerSec": 120.0,
+    "sxt_HeadTurnSpeed_degPerSec": 45.0,
+    "sxh_HeadTurnSpeed_degPerSec": 60.0,
+    
+    "s0_MainTurnCWChance": 0.5,
+    
+    "s1_BodyAngleRangeMin_deg":  10.0,
+    "s1_BodyAngleRangeMax_deg":  30.0,
+    "s1_HeadAngleRangeMin_deg": -15.0,
+    "s1_HeadAngleRangeMax_deg":  -5.0,
+    
+    "s2_WaitMin_sec": 0.50,
+    "s2_WaitMax_sec": 1.25,
+    "s2_WaitAnimTrigger": "LookInPlaceForFacesBodyPause",
+    
+    "s3_BodyAngleRangeMin_deg":  5.0,
+    "s3_BodyAngleRangeMax_deg": 25.0,
+    "s3_HeadAngleRangeMin_deg": -5.0,
+    "s3_HeadAngleRangeMax_deg":  5.0,
+    
+    "s4_BodyAngleRelativeRangeMin_deg" : 5.0,
+    "s4_BodyAngleRelativeRangeMax_deg" : 5.0,
+    "s4_HeadAngleRangeMin_deg":  5.0,
+    "s4_HeadAngleRangeMax_deg": 20.0,
+    "s4_HeadAngleChangesMin":  2,
+    "s4_HeadAngleChangesMax":  4,
+    "s4_WaitBetweenChangesMin_sec" : 0.1,
+    "s4_WaitBetweenChangesMax_sec" : 0.5,
+    "s4_WaitAnimTrigger": "LookInPlaceForFacesHeadMovePause",
+    
+    "s5_BodyAngleRelativeRangeMin_deg" : 5.0,
+    "s5_BodyAngleRelativeRangeMax_deg" : 5.0,
+    "s5_HeadAngleRangeMin_deg": -5.0,
+    "s5_HeadAngleRangeMax_deg":  5.0,
+    
+    "s6_BodyAngleRangeMin_deg":  30.0,
+    "s6_BodyAngleRangeMax_deg":  65.0,
+    "s6_HeadAngleRangeMin_deg": -20.0,
+    "s6_HeadAngleRangeMax_deg": -15.0
+  }
+}

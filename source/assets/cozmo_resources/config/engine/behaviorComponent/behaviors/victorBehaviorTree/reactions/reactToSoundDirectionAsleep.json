@@ -1,0 +1,46 @@
+{
+  "behaviorClass" : "ReactToMicDirection",
+  "behaviorID" : "ReactToSoundDirectionAsleep",
+
+  "reaction_list" :
+  {
+    "OnSurface" :
+    {
+      "TwelveOClock"  : { "anim": "ReactToTriggerWordOffChargerFrontRight" },
+      "OneOClock"     : { "anim": "ReactToTriggerWordOffChargerFrontRight" },
+      "TwoOClock"     : { "anim": "ReactToTriggerWordOffChargerFrontRight" },
+      "ThreeOClock"   : { "anim": "ReactToTriggerWordOffChargerRight" },
+      "FourOClock"    : { "anim": "ReactToTriggerWordOffChargerBehindRight" },
+      "FiveOClock"    : { "anim": "ReactToTriggerWordOffChargerBehindRight" },
+      "SixOClock"     : { "anim": "ReactToTriggerWordOffChargerBehind" },
+      "SevenOClock"   : { "anim": "ReactToTriggerWordOffChargerBehindLeft" },
+      "EightOClock"   : { "anim": "ReactToTriggerWordOffChargerBehindLeft" },
+      "NineOClock"    : { "anim": "ReactToTriggerWordOffChargerLeft" },
+      "TenOClock"     : { "anim": "ReactToTriggerWordOffChargerFrontLeft" },
+      "ElevenOClock"  : { "anim": "ReactToTriggerWordOffChargerFrontLeft" },
+      "Ambient"       : { "anim": "ReactToTriggerWordOffChargerFrontLeft" }
+    },
+
+    "OnCharger" :
+    {
+      "TwelveOClock"  : { "anim": "RTS_OnCharger_Sleep_Front" },
+      "OneOClock"     : { "anim": "RTS_OnCharger_Sleep_30Right" },
+      "TwoOClock"     : { "anim": "RTS_OnCharger_Sleep_60Right" },
+      "ThreeOClock"   : { "anim": "RTS_OnCharger_Sleep_Right" },
+      "FourOClock"    : { "anim": "RTS_OnCharger_Sleep_120Right" },
+      "FiveOClock"    : { "anim": "RTS_OnCharger_Sleep_150Right" },
+      "SixOClock"     : { "anim": "RTS_OnCharger_Sleep_Back" },
+      "SevenOClock"   : { "anim": "RTS_OnCharger_Sleep_150Left" },
+      "EightOClock"   : { "anim": "RTS_OnCharger_Sleep_120Left" },
+      "NineOClock"    : { "anim": "RTS_OnCharger_Sleep_Left" },
+      "TenOClock"     : { "anim": "RTS_OnCharger_Sleep_60Left" },
+      "ElevenOClock"  : { "anim": "RTS_OnCharger_Sleep_30Left" },
+      "Ambient"       : { "anim": "RTS_OnCharger_Sleep_Ambient" }
+    },
+
+    "OffTreads" :
+    {
+      "enabled" : false
+    }
+  }
+}

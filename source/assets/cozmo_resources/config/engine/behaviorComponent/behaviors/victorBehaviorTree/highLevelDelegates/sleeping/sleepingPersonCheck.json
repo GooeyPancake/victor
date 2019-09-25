@@ -1,0 +1,15 @@
+{
+  "behaviorID": "SleepingPersonCheck",
+  "behaviorClass": "FindFaceAndThen",
+
+  "associatedActiveFeature": "Sleeping",
+
+  "timeUntilCancelFaceLooking_s": 2.0,
+  "shouldLeaveChargerFirst": false,
+
+  "useBodyDetector": true,
+  "additionalLookTimeIfSawBody_s": 3.0,
+  "additionalSearchTimeIfSawBody_s": 0.0,
+
+  "exitOnceFound": true
+}

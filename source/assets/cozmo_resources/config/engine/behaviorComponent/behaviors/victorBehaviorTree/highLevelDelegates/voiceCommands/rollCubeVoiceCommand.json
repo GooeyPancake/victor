@@ -1,0 +1,23 @@
+{
+  "behaviorID" : "RollCubeVoiceCommand",
+  "behaviorClass" : "FindCubeAndThen",
+
+  "associatedActiveFeature": "RollBlock",
+  
+  "respondToUserIntents" : [
+    {
+      "type": "play_specific",
+      "entity_behavior": "roll_cube"
+    }
+  ],
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "FeatureGate",
+    "feature": "RollCube"
+  },
+
+  "followUpBehaviorID" : "PlayRollBlock",
+  "skipConnectToCubeBehavior" : false,
+
+  "postBehaviorSuggestion": "Nothing"
+}

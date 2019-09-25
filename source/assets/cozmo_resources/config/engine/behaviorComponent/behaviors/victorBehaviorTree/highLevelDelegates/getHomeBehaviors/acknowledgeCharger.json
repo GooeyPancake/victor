@@ -1,0 +1,32 @@
+{
+  "behaviorClass": "AnimSequenceWithObject",
+  "behaviorID": "AcknowledgeCharger",
+
+  "objectType" : "Charger_Basic",
+  "animTriggers" : ["ChargerReaction"],
+  "num_loops" : 1,
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType" : "ObjectInitialDetection",
+        "objectTypes" : ["Charger_Basic"],
+        "firstTimeOnly" : true
+      },
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "CarryingCube"
+        }
+      },
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OnChargerPlatform"
+        }
+      }
+    ]
+  }
+
+}

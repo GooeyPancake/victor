@@ -1,0 +1,10 @@
+{
+  "behaviorID": "ReactToUncalibratedHeadAndLift",
+  "behaviorClass": "ReactToUncalibratedHeadAndLift",
+  "associatedActiveFeature": "NoFeature",
+  "wantsToBeActivatedCondition": {
+    "conditionType": "OffTreadsState",
+    "targetState": "OnTreads",
+    "minTimeSinceChange_ms": 15000
+  }
+}
