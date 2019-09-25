@@ -1,0 +1,27 @@
+{
+  "behaviorID" : "DoATrickVoiceCommand",
+  "behaviorClass" : "DispatcherRandom",
+
+  "respondToUserIntents": [
+    {
+      "type": "play_anytrick"
+    }
+  ],
+
+  "behaviors" : [
+    {
+      "behavior" : "FindCubeAndThenDoATrick",
+      "cooldown_s" : 300.0,
+      "weight" : 1.0
+    }
+  ],
+
+  "anonymousBehaviors" : [
+    {
+      "behaviorName" : "FindCubeAndThenDoATrick",
+      "behaviorClass" : "FindCubeAndThen",
+    
+      "followUpBehaviorID" : "CubeTrickDispatcher"
+    }
+  ]
+}

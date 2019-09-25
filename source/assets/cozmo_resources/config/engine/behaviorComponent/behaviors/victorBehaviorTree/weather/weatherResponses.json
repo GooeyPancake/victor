@@ -1,0 +1,40 @@
+{
+  "behaviorID" : "WeatherResponses",
+  "behaviorClass" : "CoordinateWeather",
+  "associatedActiveFeature": "Weather",
+
+  "responseMap" : [
+    {
+      "CladType"   : "Cloudy",
+      "BehaviorID" : "WeatherCloudyGeneric"
+    },
+    {
+      "CladType"   : "Cold",
+      "BehaviorID" : "WeatherColdClearGeneric"
+    },
+    {
+      "CladType"   : "Rain",
+      "BehaviorID" : "WeatherRainGeneric"
+    },
+    {
+      "CladType"   : "Snow",
+      "BehaviorID" : "WeatherSnowGeneric"
+    },
+    {
+      "CladType"   : "Stars",
+      "BehaviorID" : "WeatherStarsGeneric"
+    },
+    {
+      "CladType"   : "Sunny",
+      "BehaviorID" : "WeatherSunnyGeneric"
+    },
+    {
+      "CladType"   : "Thunderstorms",
+      "BehaviorID" : "WeatherThunderstormsGeneric"
+    },
+    {
+      "CladType"   : "Windy",
+      "BehaviorID" : "WeatherWindyGeneric"
+    }
+  ]
+}

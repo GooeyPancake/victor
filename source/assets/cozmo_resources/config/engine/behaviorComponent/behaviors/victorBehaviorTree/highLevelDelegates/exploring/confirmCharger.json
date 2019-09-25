@@ -1,0 +1,5 @@
+{
+  "behaviorID": "ConfirmCharger",
+  "behaviorClass": "ConfirmObject",
+  "objectTypes": ["Charger_Basic"]
+}

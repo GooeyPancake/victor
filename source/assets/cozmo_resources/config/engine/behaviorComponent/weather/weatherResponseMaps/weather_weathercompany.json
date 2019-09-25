@@ -1,0 +1,178 @@
+[
+    {
+        "APIValue": "Tornado", 
+        "CladType": "Windy"
+    }, 
+    {
+        "APIValue": "Tropical Storm", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Hurricane", 
+        "CladType": "Windy"
+    }, 
+    {
+        "APIValue": "Strong Storms", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Thunder and Hail", 
+        "CladType": "Thunderstorms"
+    }, 
+    {
+        "APIValue": "Rain to Snow Showers", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Rain / Sleet", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Wintry Mix Snow / Sleet", 
+        "CladType": "Snow"
+    }, 
+    {
+        "APIValue": "Freezing Drizzle", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Drizzle", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Freezing Rain", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Light Rain", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Rain", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Scattered Flurries", 
+        "CladType": "Snow"
+    }, 
+    {
+        "APIValue": "Light Snow", 
+        "CladType": "Snow"
+    }, 
+    {
+        "APIValue": "Blowing / Drifting Snow", 
+        "CladType": "Snow"
+    }, 
+    {
+        "APIValue": "Snow", 
+        "CladType": "Snow"
+    }, 
+    {
+        "APIValue": "Hail", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Sleet", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Blowing Dust / Sandstorm", 
+        "CladType": "Windy"
+    }, 
+    {
+        "APIValue": "Foggy", 
+        "CladType": "Cloudy"
+    }, 
+    {
+        "APIValue": "Haze / Windy", 
+        "CladType": "Windy"
+    }, 
+    {
+        "APIValue": "Smoke / Windy", 
+        "CladType": "Windy"
+    }, 
+    {
+        "APIValue": "Breezy", 
+        "CladType": "Windy"
+    }, 
+    {
+        "APIValue": "Blowing Spray / Windy", 
+        "CladType": "Windy"
+    }, 
+    {
+        "APIValue": "Frigid / Ice Crystals", 
+        "CladType": "Sunny"
+    }, 
+    {
+        "APIValue": "Cloudy", 
+        "CladType": "Cloudy"
+    }, 
+    {
+        "APIValue": "Mostly Cloudy", 
+        "CladType": "Cloudy"
+    }, 
+    {
+        "APIValue": "Partly Cloudy", 
+        "CladType": "Cloudy"
+    }, 
+    {
+        "APIValue": "Clear", 
+        "CladType": "Sunny"
+    }, 
+    {
+        "APIValue": "Sunny", 
+        "CladType": "Sunny"
+    }, 
+    {
+        "APIValue": "Fair / Mostly Clear", 
+        "CladType": "Sunny"
+    }, 
+    {
+        "APIValue": "Fair / Mostly Sunny", 
+        "CladType": "Sunny"
+    }, 
+    {
+        "APIValue": "Mixed Rain & Hail", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Hot", 
+        "CladType": "Sunny"
+    }, 
+    {
+        "APIValue": "Isolated Thunderstorms", 
+        "CladType": "Thunderstorms"
+    }, 
+    {
+        "APIValue": "Thunderstorms", 
+        "CladType": "Thunderstorms"
+    },
+    {
+        "APIValue": "Heavy Rain", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Heavy Snow", 
+        "CladType": "Snow"
+    }, 
+    {
+        "APIValue": "Blizzard", 
+        "CladType": "Snow"
+    }, 
+    {
+        "APIValue": "Not Available (N/A)", 
+        "CladType": "Count"
+    }, 
+    {
+        "APIValue": "Scattered Showers", 
+        "CladType": "Rain"
+    }, 
+    {
+        "APIValue": "Scattered Snow Showers", 
+        "CladType": "Snow"
+    }, 
+    {
+        "APIValue": "Scattered Thunderstorms", 
+        "CladType": "Thunderstorms"
+    }
+]

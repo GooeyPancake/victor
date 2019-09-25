@@ -1,0 +1,13 @@
+{
+  "behaviorClass": "DisplayWeather",
+  "behaviorID" : "WeatherStarsGeneric",
+
+  "animationName" : "anim_weather_stars_01",
+  "imageLayouts" : [
+    "WeatherCondStars_01"
+  ],
+  "imageMaps" : [
+    "WeatherCondStars_01"
+  ]
+}
+

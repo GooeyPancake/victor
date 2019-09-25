@@ -1,0 +1,17 @@
+{
+  "behaviorClass" : "KnowledgeGraphQuestion",
+  "behaviorID"    : "KnowledgeGraphQuestion",
+  
+  "associatedActiveFeature": "KnowledgeGraph",
+  
+  "respondToUserIntents" :
+  [
+    { "type": "knowledge_question" }
+  ],
+
+  "readyPromptText"         : "ready",
+  "streamingTimeout"        : 10.0,
+  "earConAudioEventEnd"     : "Play__Robot_Vic_Sfx__Wake_Word_Success",
+
+  "postBehaviorSuggestion": "Socialize"
+}

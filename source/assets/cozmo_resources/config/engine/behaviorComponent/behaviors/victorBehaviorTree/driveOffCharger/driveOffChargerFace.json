@@ -1,0 +1,13 @@
+{
+  "behaviorID": "DriveOffChargerFace",
+  "behaviorClass": "DriveOffCharger",
+
+  "associatedActiveFeature": "NoFeature",
+
+  // first try a face, and if none is known, try mic direction, and finally
+  // drive straight (the latter case is motivated by the use case of doing a
+  // voice command in front of the charger, but the face hasn't been seen yet)
+  "driveDirectionCues": ["face", "micDirection", "straight"],
+
+  "maxFaceAge_s": 600
+}

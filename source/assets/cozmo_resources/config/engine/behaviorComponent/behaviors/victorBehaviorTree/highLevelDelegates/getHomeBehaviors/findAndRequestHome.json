@@ -1,0 +1,20 @@
+{
+  "behaviorClass" : "DispatcherQueue",
+  "behaviorID" : "FindAndRequestHome",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType": "OnCharger"
+    }
+  },
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "OnCharger"
+  },
+
+  "behaviors": [
+    "FindHome",
+    "RequestToGoHome"
+  ]
+}

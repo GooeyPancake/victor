@@ -1,0 +1,8 @@
+{
+  "behaviorID": "DriveOffChargerRandomly",
+  "behaviorClass": "DriveOffCharger",
+
+  "associatedActiveFeature": "NoFeature",
+
+  "driveDirectionCues": ["randomly"]
+}

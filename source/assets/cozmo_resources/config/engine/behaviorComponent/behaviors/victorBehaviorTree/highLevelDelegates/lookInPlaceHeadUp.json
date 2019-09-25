@@ -1,0 +1,69 @@
+{
+  "behaviorClass": "LookAroundInPlace",
+  "behaviorID": "LookInPlaceHeadUp",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "OffTreadsState",
+    "targetState": "OnTreads"
+  },
+  
+  "params":
+  {
+    "behavior_ShouldResetTurnDirection": true,
+    "behavior_ResetBodyFacingOnStart": true,
+    "behavior_ShouldLowerLift": true,
+    "behavior_CanCarryCube": false,
+    "behavior_DistanceFromRecentLocationMin_mm": 0.0,
+    "behavior_RecentLocationsMax": 0,
+    "behavior_AngleOfFocus_deg": 0,
+    "behavior_NumberOfScansBeforeStop": 1,
+    
+    // shared speeds
+    "sx_BodyTurnSpeed_degPerSec": 150.0,   // turn speed
+    "sxt_HeadTurnSpeed_degPerSec": 60.0,  // head tilt speed while turning body
+    "sxh_HeadTurnSpeed_degPerSec": 90.0,  // head tilt speed for states that don't turn body
+    
+    // state 0 - initialization parameters (this happen once per behavior run)
+    "s0_MainTurnCWChance": 0.5,           // chance to CW vs CCW
+    
+    // state 1 - body turn in opposite direction
+    "s1_BodyAngleRangeMin_deg":  10.0,
+    "s1_BodyAngleRangeMax_deg":  35.0,
+    "s1_HeadAngleRangeMin_deg":  25.0,  // head min back turn
+    "s1_HeadAngleRangeMax_deg":  42.0,  // head max back turn
+    
+    // state 2 - wait at that location (times unused since we specify an anim trigger)
+    "s2_WaitMin_sec": 0.0,
+    "s2_WaitMax_sec": 0.0,
+    "s2_WaitAnimTrigger": "LookInPlaceForFacesBodyPause",
+    
+    // state 3 - body turn in fwd direction (#1/2)
+    "s3_BodyAngleRangeMin_deg": 10.0,
+    "s3_BodyAngleRangeMax_deg": 35.0,
+    "s3_HeadAngleRangeMin_deg": 30.0,   // head min fwd turn #1
+    "s3_HeadAngleRangeMax_deg": 42.0,   // head max fwd turn #1
+    
+    // state 4 - head angle changes in place (can have body mini-turn)
+    "s4_BodyAngleRelativeRangeMin_deg" :  1.0, // +- body mini-turn from [min,max]
+    "s4_BodyAngleRelativeRangeMax_deg" : 10.0, // +- body mini-turn from [min,max]
+    "s4_HeadAngleRangeMin_deg": 20.0,   // head min in place
+    "s4_HeadAngleRangeMax_deg": 45.0,   // head max in place
+    "s4_HeadAngleChangesMin":  2,
+    "s4_HeadAngleChangesMax":  2,
+    "s4_WaitBetweenChangesMin_sec" : 0.0, // (times unused since we specify an anim trigger)
+    "s4_WaitBetweenChangesMax_sec" : 0.0,
+    "s4_WaitAnimTrigger": "LookInPlaceForFacesHeadMovePause",
+    
+    // state 5 - head angle change (can have body mini-turn), here to undo what state 4 does randomly, resetting head angle before 6
+    "s5_BodyAngleRelativeRangeMin_deg" :  1.0, // +- body mini-turn from [min,max]
+    "s5_BodyAngleRelativeRangeMax_deg" :  5.0, // +- body mini-turn from [min,max]
+    "s5_HeadAngleRangeMin_deg": 20.0,   // head min
+    "s5_HeadAngleRangeMax_deg": 40.0,   // head max
+    
+    // state 6 - body turn in fwd direction (#2/2)
+    "s6_BodyAngleRangeMin_deg": 50.0,
+    "s6_BodyAngleRangeMax_deg": 90.0,
+    "s6_HeadAngleRangeMin_deg": 25.0,  // head min fwd turn #2
+    "s6_HeadAngleRangeMax_deg": 42.0   // head max fwd turn #2
+  }
+}

@@ -1,0 +1,606 @@
+{
+  "behaviorID" : "HighLevelAI",
+  "behaviorClass" : "HighLevelAI",
+
+  
+  "socializeKnownFaceCooldown_s": 1800.0,
+  "playWithCubeCooldown_s": 600.0,
+  "playWithCubeOnChargerCooldown_s": 2400.0,
+  "maxFaceDistanceToSocialize_mm": 1000.0,
+
+  "initialState": "ObservingOnCharger",
+
+  "resumeReplacements": {
+  },
+  // these are evaluated after resumeReplacements and override them
+  "postBehaviorSuggestionResumeOverrides": {
+    "Socialize": "Socializing",
+    "PlayWithCube": "PlayingWithCube",
+    "Nothing": "Observing",
+
+    // should be handled higher up the tree, but in case we get stuck down here with one of these, just go to
+    // observing
+    "Sleep": "Observing",
+    "SleepOnCharger": "ObservingOnCharger"
+  },
+
+  "states": [
+    {
+      "name": "ObservingOnCharger",
+      "behavior": "ObservingOnCharger"
+    },
+    {
+      "name": "ObservingOnChargerRecentlyPlaced",
+      "behavior": "ObservingOnCharger",
+      "getInBehavior": "ObservingOnChargerGetIn",
+      "resetBehaviorTimer": "ObservingOnCharger"
+    },
+    {
+      "name": "ObservingDriveOffCharger",
+      "behavior": "ObservingDriveOffCharger",
+      "getInBehavior": "ObservingOnChargerGetOut"
+    },
+    {
+      "name": "DriveOffChargerIntoSocializing",
+      "behavior": "DriveOffChargerIntoSocializing",
+      "getInBehavior": "ObservingOnChargerGetOut"
+    },    
+    {
+      "name": "Observing",
+      "behavior": "Observing",
+      "resetBehaviorTimer": "ObservingOffCharger"
+    },
+    {
+      "name": "Exploring",
+      "behavior": "Exploring",
+      "getInBehavior": "ExploringGetIn",
+      "ensureMinStimValue": 0.5 // will bring stim up to this value if it's below when this state starts
+    },
+    {
+      "name": "ExploringVoiceCommand",
+      "behavior": "ExploringVoiceCommand",
+      "getInBehavior": "ExploringGetIn",
+      "activateIntent": "explore_start"
+    },
+    {
+      "name": "InvestigateHeldCube",
+      "behavior": "InvestigateHeldCube"
+    },
+    {
+      "name": "Socializing",
+      "behavior": "Socialize"
+    },
+    {
+      "name": "PlayingWithCube",
+      "behavior": "PlayWithCube"
+    }
+  ],
+
+  "stateTimerConditions": [
+    {
+      "name": "BoredOfObserving",
+      "begin_s": 1100.0
+    },
+    {
+      "name": "BoredOfExploring",
+      "begin_s": 600.0
+    },
+    {
+      "name": "NoLongerRecentlyPlaced",
+      "begin_s": 150.0
+    }
+  ],
+
+  "transitionDefinitions": [
+    {
+      // TODO:(bn) split this up into multiple files?
+      
+      "from": "ObservingOnCharger",
+      "interruptingTransitions": [
+        {
+          "to": "Observing",
+          "condition": {
+            "conditionType": "Compound",
+            "not": {
+              "conditionType": "OnChargerPlatform"
+            }
+          }
+        },
+        {
+          "to": "DriveOffChargerIntoSocializing",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "customCondition": "CloseFaceForSocializing"
+              },
+              {
+                "conditionType": "Emotion",
+                "emotion": "Stimulated",
+                "min": 0.7
+              },
+              {
+                "conditionType": "Compound",
+                "not": {
+                  "conditionType": "EngineErrorCodeReceived",
+                  "engineErrorCode": "ImageQualityTooDark"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "to": "InvestigateHeldCube",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "conditionType": "UserIsHoldingCube"
+              },
+              {
+                "conditionType": "ObjectKnown",
+                "objectTypes": ["Block_LIGHTCUBE1","Block_LIGHTCUBE2","Block_LIGHTCUBE3"],
+                "maxAge_ms" : 1000
+              },
+              {
+                "conditionType": "FeatureGate",
+                "feature": "ReactToHeldCube"
+              },
+              {
+                "conditionType": "Compound",
+                "not":
+                {
+                  "conditionType": "BatteryLevel",
+                  "targetBatteryLevel" : "Low"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "nonInterruptingTransitions": [
+        {
+          "to": "ObservingDriveOffCharger",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "customCondition": "BoredOfObserving"
+              },
+              {
+                "conditionType": "SimpleMood",
+                "mood": "HighStim"
+              },
+              {
+                "conditionType": "Compound",
+                "not": {
+                  "conditionType": "EngineErrorCodeReceived",
+                  "engineErrorCode": "ImageQualityTooDark"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "to": "ObservingDriveOffCharger",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "customCondition": "WantsToLeaveChargerForPlay"
+              },
+              {
+                "conditionType": "SimpleMood",
+                "mood": "HighStim"
+              },
+              {
+                "conditionType": "Compound",
+                "not": {
+                  "conditionType": "EngineErrorCodeReceived",
+                  "engineErrorCode": "ImageQualityTooDark"
+                }
+              }
+            ]
+          }
+        }        
+      ],
+      "exitTransitions": [
+        {
+          "to": "Observing",
+          "condition": {
+            "conditionType": "Compound" ,
+            "not": {
+              "conditionType": "OnCharger"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "from": "ObservingOnChargerRecentlyPlaced",
+
+      "interruptingTransitions": [
+        {
+          "to": "Observing",
+          "condition": {
+            "conditionType": "Compound",
+            "not": {
+              "conditionType": "OnChargerPlatform"
+            }
+          }
+        },
+        {
+          "to": "InvestigateHeldCube",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "conditionType": "UserIsHoldingCube"
+              },
+              {
+                "conditionType": "ObjectKnown",
+                "objectTypes": ["Block_LIGHTCUBE1","Block_LIGHTCUBE2","Block_LIGHTCUBE3"],
+                "maxAge_ms" : 1000
+              },
+              {
+                "conditionType": "FeatureGate",
+                "feature": "ReactToHeldCube"
+              },
+              {
+                "conditionType": "Compound",
+                "not":
+                {
+                  "conditionType": "BatteryLevel",
+                  "targetBatteryLevel" : "Low"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "nonInterruptingTransitions": [
+        {
+          "to": "ObservingOnCharger",
+          "condition": {
+            "customCondition": "NoLongerRecentlyPlaced"
+          }
+        }
+      ],
+      "exitTransitions": [
+        {
+          "to": "Observing",
+          "condition": {
+            "conditionType": "Compound",
+            "not": {
+              "conditionType": "OnCharger"
+            }
+          }
+        }
+      ]
+    },
+
+    {
+      "from": [
+        "Observing",
+        "Socializing",
+        "DriveOffChargerIntoSocializing",
+        "PlayingWithCube",
+        "Exploring",
+        "InvestigateHeldCube"
+      ],
+      "interruptingTransitions": [
+        {
+          "to": "ObservingOnChargerRecentlyPlaced",
+          "condition": {
+            "conditionType": "OnCharger"
+          },
+          "emotionEvent": "PlacedOnCharger"
+        }
+      ]
+    },
+
+    {
+      "from": [
+        "ExploringVoiceCommand"
+      ],
+      "interruptingTransitions": [
+        {
+          "to": "ObservingOnChargerRecentlyPlaced",
+          "condition": {
+            "conditionType": "BecameTrueThisTick",
+            "subCondition": {
+              "conditionType": "OnCharger"
+            }
+          },
+          "emotionEvent": "PlacedOnCharger"
+        }
+      ]
+    },
+
+    {
+      "from": "Observing",
+      "interruptingTransitions": [
+        {
+          "to": "Socializing",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "customCondition": "CloseFaceForSocializing"
+              },
+              {
+                "conditionType": "Emotion",
+                "emotion": "Stimulated",
+                "min": 0.5
+              }
+            ]
+          }
+        },
+        {
+          "to": "PlayingWithCube",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "customCondition": "CloseCubeForPlaying"
+              },
+              {
+                "conditionType": "SimpleMood",
+                "mood": "HighStim"
+              },
+              {
+                "conditionType": "Compound",
+                "not": { "conditionType": "RobotInHabitat" }
+              }
+            ]
+          }
+        }
+      ],
+      "nonInterruptingTransitions": [
+        {
+          "to": "Exploring",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "conditionType": "FeatureGate",
+                "feature": "Exploring" 
+              },
+              {
+                "customCondition": "ExploringCooldownMet"
+              },
+              {
+                "conditionType": "Compound",
+                "not": { "conditionType": "RobotInHabitat" }
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "from": "Exploring",
+      "interruptingTransitions": [
+        {
+          "to": "Socializing",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "customCondition": "CloseFaceForSocializing"
+              },
+              {
+                "conditionType": "Emotion",
+                "emotion": "Stimulated",
+                "min": 0.7
+              }
+            ]
+          }
+        },
+        {
+          // recently put down (we can't consider picked up since an interruption handles that)
+          "to": "Observing",
+          "condition": {
+            "conditionType": "OffTreadsState",
+            "targetState": "OnTreads",
+            "maxTimeSinceChange_ms": 3100 // fragile: the put down behavior lasts 3000.
+          }
+        }
+      ],
+      "nonInterruptingTransitions": [
+        {
+          "to": "Observing",
+          "condition":
+          {
+            "conditionType": "SimpleMood",
+            "mood": "LowStim"
+          }
+        }
+      ]
+    },
+
+    {
+      "from": [
+        "ExploringVoiceCommand", 
+        "Exploring" // stimulation decay should happen before this, but just in case it's continually stimulated while exploring
+      ],
+      "nonInterruptingTransitions": [
+        {
+          "to": "Observing",
+          "condition": {
+            "customCondition": "BoredOfExploring"
+          }
+        }
+      ]
+    },
+
+    {
+      "from": [
+        "Observing",
+        "Socializing",
+        "PlayingWithCube",
+        "Exploring"
+      ],
+      "interruptingTransitions": [
+        {
+          "to": "InvestigateHeldCube",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "conditionType": "UserIsHoldingCube"
+              },
+              {
+                "conditionType": "ObjectKnown",
+                "objectTypes": ["Block_LIGHTCUBE1","Block_LIGHTCUBE2","Block_LIGHTCUBE3"],
+                "maxAge_ms" : 1000
+              },
+              {
+                "conditionType": "FeatureGate",
+                "feature": "ReactToHeldCube"
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      // same as above transitions into InvestigateHeldCube, but waits a little longer
+      // so that a cube doesn't pull it out of exploring for a minute
+      "from": "ExploringVoiceCommand",
+      "interruptingTransitions": [
+        {
+          "to": "InvestigateHeldCube",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "conditionType": "TimerInRange",
+                "begin_s": 60.0
+              },
+              {
+                "conditionType": "UserIsHoldingCube"
+              },
+              {
+                "conditionType": "ObjectKnown",
+                "objectTypes": ["Block_LIGHTCUBE1","Block_LIGHTCUBE2","Block_LIGHTCUBE3"],
+                "maxAge_ms" : 1000
+              },
+              {
+                "conditionType": "FeatureGate",
+                "feature": "ReactToHeldCube"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    
+    {
+      "from": [
+        "Socializing",
+        "PlayingWithCube",
+        "Exploring",
+        "ExploringVoiceCommand",
+        "InvestigateHeldCube"
+      ],
+      "exitTransitions": [
+        {
+          "to": "Observing",
+          "condition": {
+            "conditionType": "TrueCondition" 
+          }
+        }
+      ]
+    },
+
+    {
+      "from": "ObservingDriveOffCharger",
+      "exitTransitions": [
+        {
+          // even though we weren't planning to socialize, if we can now then we should (socializing is important)
+          "to": "Socializing",
+          "condition": {
+            "customCondition": "CloseFaceForSocializing"
+          }
+        },
+        {
+          "to": "PlayingWithCube",
+          "condition": {
+            "conditionType": "Compound",
+            "and": [
+              {
+                "customCondition": "CloseCubeForPlaying"
+              },
+              {
+                // NOTE: it's possible that stim dropped during the driving off of the charger, in this case we'll
+                // fall back to observing but any additional stim should quickly get us back into playing range
+                "conditionType": "SimpleMood",
+                "mood": "HighStim"
+              },
+              {
+                "conditionType": "Compound",
+                "not": { "conditionType": "RobotInHabitat" }
+              }
+            ]
+          }
+        },
+        {
+          "to": "Observing",
+          "condition": {
+            "conditionType": "TrueCondition"
+          }
+        }
+      ]
+    },
+
+    {
+      "from": "DriveOffChargerIntoSocializing",
+      "exitTransitions": [
+        {
+          "to": "Socializing",
+          "condition": {
+            "conditionType": "TrueCondition"
+          }
+        }
+      ]
+    },
+
+
+    //***************************
+    // VOICE COMMANDS   
+    //***************************
+
+    // explore voice command
+    {
+      "from": [
+        "DriveOffChargerIntoSocializing",
+        "ObservingDriveOffCharger",
+        "Observing",
+        "ObservingOnCharger",
+        "ObservingOnChargerRecentlyPlaced",
+        "Socializing",
+        "PlayingWithCube",
+        "Exploring",
+        "ExploringVoiceCommand",
+        "InvestigateHeldCube"
+      ],
+      "interruptingTransitions": [
+        {
+          "to": "ExploringVoiceCommand",
+          "condition": {
+            "conditionType": "UserIntentPending",
+            "list": [
+              {"type": "explore_start"}
+            ]
+          }
+        }
+      ]
+    }
+
+  ]
+
+}

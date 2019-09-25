@@ -1,0 +1,11 @@
+{
+  "behaviorClass" : "TextToSpeechLoop",
+  "behaviorID"    : "MessagingRecordTTS",
+  
+  "associatedActiveFeature": "RecordingMessage",
+  
+  "getInAnimation"           : "TextToSpeechGetIn",
+  "loopAnimation"            : "TextToSpeechGetLoop",
+  "getOutAnimation"          : "TextToSpeechGetOut",
+  "emergencyGetOutAnimation" : "TextToSpeechGetOut"
+}

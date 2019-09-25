@@ -1,0 +1,31 @@
+{
+  "behaviorID": "NoWifi",
+  "behaviorClass": "DispatcherQueue",
+
+  "behaviors": [
+    "NoWifiAnim",
+    "NoWifiAttention"
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "NoWifiAnim",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": [
+        "NoWifiGetIn",
+        "NoWifiSearching",
+        "NoWifiIcon"
+      ]
+    },
+    {
+      "behaviorName": "NoWifiAttention",
+      "behaviorClass": "AttentionTransferIfNeeded",
+
+      "attentionTransferReason": "NoWifi",
+      "recentOccurrence": {
+        "numberOfTimes": 2,
+        "amountOfSeconds": 300.0
+      }
+    }
+  ]  
+}

@@ -1,0 +1,13 @@
+{
+  "behaviorClass": "AnimSequence",
+  "behaviorID": "ObservingOnChargerEyeContact",
+
+  "animTriggers" : ["EyeContactLookLoop"],
+
+  "emotionEventOnActivated": "EyeContactReaction",
+  "behaviorStatToIncrement": "ReactedToEyeContact",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "EyeContact"
+  }
+}

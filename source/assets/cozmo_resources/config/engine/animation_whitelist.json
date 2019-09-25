@@ -1,0 +1,17 @@
+{
+  // NOTE: for now, see also InvalidateBannedTracks
+  
+  // animations which start on the charger and need to move the body
+  //
+  // Note: Any animation name that begins with or is equal to the provided string will be
+  // considered. E.g. if "anim_test_" appears in the list, it will match "anim_test_01",
+  // "anim_test_02", "anim_test_drive_01", etc.
+  "driveOffChargerAnims": [
+    "anim_chargerdocking_comeoff_",
+    "anim_chargerdocking_settle_",
+    "anim_movement_forward_",
+    "anim_onboarding_driveoff_charger_",
+    "anim_onboarding_wakeup_"
+  ]
+
+}

@@ -1,0 +1,15 @@
+{
+  "behaviorID": "MovementBackward",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "MovementBackward",
+
+  "respondToUserIntents": [
+    { "type": "movement_backward" }
+  ],
+
+  "animTriggers": [
+    "MovementDriveBackward"
+  ]
+}

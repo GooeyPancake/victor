@@ -1,0 +1,15 @@
+{
+  "behaviorID": "MovementForward",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "MovementForward",
+  
+  "respondToUserIntents": [
+    { "type": "movement_forward" }
+  ],
+
+  "animTriggers": [
+    "MovementDriveForward"
+  ]
+}

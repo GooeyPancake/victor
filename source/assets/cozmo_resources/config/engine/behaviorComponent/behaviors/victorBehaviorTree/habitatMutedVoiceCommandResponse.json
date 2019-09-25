@@ -1,0 +1,17 @@
+{
+  "behaviorClass" : "AnimSequence",
+  "behaviorID" : "HabitatMutedVoiceCommandResponse",
+  "associatedActiveFeature" : "CantDoThat",
+  "animTriggers": ["ICantDoThat"],
+
+  "respondToUserIntents" : [
+    { "type" : "imperative_come" },
+    { "type" : "imperative_findcube" },
+    { "type" : "explore_start" },
+    { "type" : "play_specific", "_lambda" : "habitat_play_specific_filter" }
+  ],
+
+  "wantsToBeActivatedCondition" : {
+    "conditionType" : "RobotInHabitat"
+  }
+}

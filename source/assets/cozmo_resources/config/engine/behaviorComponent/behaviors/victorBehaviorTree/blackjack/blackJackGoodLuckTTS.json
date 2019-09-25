@@ -1,0 +1,9 @@
+{
+  "behaviorID"      : "BlackJackGoodLuckTTS",
+  "behaviorClass"   : "TextToSpeechLoop",
+
+  "associatedActiveFeature": "Blackjack",
+
+  "getInAnimation"           : "BlackJack_GoodLuck",
+  "loopAnimation"            : "BlackJack_SpeechShortStatement"
+}

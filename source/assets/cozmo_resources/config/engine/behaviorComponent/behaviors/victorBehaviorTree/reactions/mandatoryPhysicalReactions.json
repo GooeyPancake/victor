@@ -1,0 +1,20 @@
+{
+  "behaviorID" : "MandatoryPhysicalReactions",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "linkScope": true,
+  "interruptActiveBehavior": true,
+
+  "behaviors": [
+    "StuckOnEdge",
+    "ReactToRobotOnBack",
+    "ReactToRobotOnFace",
+    "ReactToRobotOnSide",
+    "ReactToCliff",
+    "ReactToUncalibratedHeadAndLift",
+    "ReactToMotorCalibration",
+    "ReactToPlacedOnSlope",
+    "ReactToUnexpectedMovement",
+    "ReactToBatteryTooHotToCharge"
+  ]
+}

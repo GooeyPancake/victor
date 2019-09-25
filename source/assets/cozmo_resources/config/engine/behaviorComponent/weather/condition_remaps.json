@@ -1,0 +1,29 @@
+// Allows weather conditions (after translation from service response -> cladType mapping)
+// to be re-mapped based on considerations like time of day, temperature, etc
+// NOTE: These re-maps are evaluated in order, and only one re-map will happen,
+// so if the first re-map's conditions are satisfied, no other re-maps will be evaluated
+[
+  {
+    "InitialCladTypes" : ["Sunny", "Cold"],
+    "RemapConditions" : [
+      {
+        "conditionType"   : "time",
+        "operator"        : "or",
+        "LocalTimeBefore" : "07:00",
+        "LocalTimeAfter"  : "17:00"
+      }
+    ],
+
+    "OutputCondition" : "Stars"
+  },
+  {
+    "InitialCladTypes" : ["Sunny"],
+    "RemapConditions" : [
+      {
+        "conditionType"   : "temperature",
+        "TemperatureBelowFarenheit" : 40
+      }
+    ],
+    "OutputCondition" : "Cold"
+  }
+]

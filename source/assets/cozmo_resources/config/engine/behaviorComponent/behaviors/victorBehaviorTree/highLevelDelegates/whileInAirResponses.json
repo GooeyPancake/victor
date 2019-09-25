@@ -1,0 +1,27 @@
+{
+  "behaviorID" : "WhileInAirResponses",
+  "behaviorClass" : "DispatcherStrictPriority",
+  
+  "interruptActiveBehavior": true,
+
+  "behaviors": [
+    "HeldInPalmDispatcher",
+    "ReactToPickupAnimLoopInternal"
+  ],
+  
+  "wantsToBeActivatedCondition":  {
+    "conditionType": "FeatureGate",
+    "feature": "PRDemo",
+    "expected": false
+  },
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "ReactToPickupAnimLoopInternal",
+      "behaviorClass" : "AnimSequence",
+      
+      "animTriggers": ["ReactToPickupLoop"],
+      "num_loops": 0 // loop forever
+    }
+  ]
+}

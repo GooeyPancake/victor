@@ -1,0 +1,53 @@
+{
+  "anim_triple_backup": [
+    {
+      "$type": "AnimationTool.BodyMotionPointData, AnimationTool",
+      "radius_mm": "STRAIGHT",
+      "speed": -25.0,
+      "triggerTime_ms": 0,
+      "durationTime_ms": 500,
+      "Name": "BodyMotionKeyFrame"
+    },
+    {
+      "$type": "AnimationTool.BodyMotionPointData, AnimationTool",
+      "radius_mm": "STRAIGHT",
+      "speed": 0.0,
+      "triggerTime_ms": 500,
+      "durationTime_ms": 250,
+      "Name": "BodyMotionKeyFrame"
+    },
+    {
+      "$type": "AnimationTool.BodyMotionPointData, AnimationTool",
+      "radius_mm": "STRAIGHT",
+      "speed": -50.0,
+      "triggerTime_ms": 750,
+      "durationTime_ms": 250,
+      "Name": "BodyMotionKeyFrame"
+    },
+    {
+      "$type": "AnimationTool.BodyMotionPointData, AnimationTool",
+      "radius_mm": "STRAIGHT",
+      "speed": 0.0,
+      "triggerTime_ms": 1000,
+      "durationTime_ms": 250,
+      "Name": "BodyMotionKeyFrame"
+    },
+    {
+      "$type": "AnimationTool.BodyMotionPointData, AnimationTool",
+      "radius_mm": "STRAIGHT",
+      "speed": -100.0,
+      "triggerTime_ms": 1250,
+      "durationTime_ms": 200,
+      "Name": "BodyMotionKeyFrame"
+    },
+
+    {
+      "$type": "AnimationTool.BodyMotionPointData, AnimationTool",
+      "radius_mm": "STRAIGHT",
+      "speed": 0.0,
+      "triggerTime_ms": 1450,
+      "durationTime_ms": 30,
+      "Name": "BodyMotionKeyFrame"
+    }
+  ]
+}

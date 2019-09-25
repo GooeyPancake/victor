@@ -1,0 +1,37 @@
+{
+  "behaviorID": "ShutUpMode",
+  "behaviorClass": "QuietModeCoordinator",
+
+  "associatedActiveFeature": "ShutUp",
+
+  "respondToUserIntents": [
+    { "type": "imperative_shutup" }
+  ],
+
+  "autoShutOffIntentFeedback": true,
+
+  "emotionEventOnActivated": "BeQuietVoiceCommand",
+
+  "activeTime_s": 3600.0,
+  
+  "timeToPowerSave_s": 15.0,
+
+  "behaviors": [
+    {
+      "behavior": "QuietModeEmergencyModeGoHome",
+      "audioAllowed": false
+    },
+    {
+      "behavior": "TriggerWordDetected",
+      "audioAllowed": true
+    },
+    {
+      "behavior": "TimerUtilityCoordinator",
+      "audioAllowed": true
+    },
+    {
+      "behavior": "ShutUpAnims",
+      "audioAllowed": false
+    }
+  ]
+}

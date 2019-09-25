@@ -1,0 +1,16 @@
+{
+  "TIP_OVER_TEAL" :
+    { "Hue" : 0.42, "Saturation" : 1.00 },
+  "OVERFIT_ORANGE" :
+    { "Hue" : 0.05, "Saturation" : 0.95 },
+  "UNCANNY_YELLOW" :
+    { "Hue" : 0.11, "Saturation" : 1.00 },
+  "NON_LINEAR_LIME" :
+    { "Hue" : 0.21, "Saturation" : 1.00 },
+  "SINGULARITY_SAPPHIRE" :
+    { "Hue" : 0.57, "Saturation" : 1.00 },
+  "FALSE_POSITIVE_PURPLE" :
+    { "Hue" : 0.83, "Saturation" : 0.76 },
+  "CONFUSION_MATRIX_GREEN" :
+    { "Hue" : 0.30, "Saturation" : 1.00 }
+}

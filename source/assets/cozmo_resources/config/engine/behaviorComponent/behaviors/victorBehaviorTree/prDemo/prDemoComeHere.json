@@ -1,0 +1,49 @@
+{
+
+  "behaviorID": "PRDemoComeHere",
+  "behaviorClass" : "DriveToFace",
+
+  "associatedActiveFeature": "ComeHere",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "FeatureGate",
+    "feature" : "PRDemo",
+    "expected" : true
+  },
+
+  "animTooClose": "AlreadyAtFace",      
+  "timeUntilCancelFaceTrack_s": 5.0,
+  "minDriveToFaceDistanceKey_mm": 200,
+  "initialAnimation": "ComeHereStart",
+  "animationAfterDrive": "ComeHereSuccess",
+  "resumeAnimation": "ComeHereSuccess",
+
+  "maxNumResumes": 1,
+
+  "motionProfile": {
+    "speed_mmps": 130.0,
+    "accel_mmps2": 200.0,
+    "decel_mmps2": 100.0,
+    "isCustom": true
+  },
+
+  "findFaceBehavior": "FindFaceInternal",
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "FindFaceInternal",
+      "behaviorClass": "FindFaceAndThen",
+      "timeUntilCancelFaceLooking_s": 2.0,
+      "timeUntilCancelFaceSearch_s": 10.0,
+      "searchForFaceBehavior": "ObservingFindFaces",
+      "shouldLeaveChargerFirst": true,
+      "driveOffChargerBehavior": "DriveOffChargerFace",
+
+      "useBodyDetector": false,
+      
+      "exitOnceFound": true
+    }
+  ],
+
+  "postBehaviorSuggestion": "Socialize"
+}

@@ -1,0 +1,26 @@
+{
+  "behaviorClass": "DanceToTheBeatCoordinator",
+  "behaviorID": "DanceToTheBeatCoordinator",
+  
+  "associatedActiveFeature" : "ListeningForBeats",
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "Compound",
+    "and" : [
+      {
+        "conditionType": "BeatDetected",
+        "allowPotentialBeat" : true
+      },
+      {
+        "conditionType": "FeatureGate",
+        "feature" : "Dancing"
+      }
+    ]
+  },
+
+  "listeningBehavior"         : "ListenForBeats",
+  "longListeningBehavior"     : "ListenForBeatsLong",
+  "offChargerDancingBehavior" : "DanceToTheBeat",
+  "onChargerDancingBehavior"  : "DanceToTheBeat"
+  
+}

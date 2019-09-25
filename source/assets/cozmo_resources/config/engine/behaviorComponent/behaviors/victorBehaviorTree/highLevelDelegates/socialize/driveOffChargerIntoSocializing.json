@@ -1,0 +1,7 @@
+{
+  "behaviorClass": "DispatcherPassThrough",
+  "behaviorID": "DriveOffChargerIntoSocializing",
+  "associatedActiveFeature": "NoFeature",
+  "resetTimers": ["Socializing"],
+  "delegateID": "DriveOffChargerFace"
+}

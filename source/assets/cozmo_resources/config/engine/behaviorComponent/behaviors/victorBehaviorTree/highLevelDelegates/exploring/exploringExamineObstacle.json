@@ -1,0 +1,6 @@
+{
+  "behaviorID": "ExploringExamineObstacle",
+  "behaviorClass": "ExploringExamineObstacle",
+
+  "emotionEventOnActivated": "ExploringExamineObstacle"
+}

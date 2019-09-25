@@ -1,0 +1,13 @@
+{
+  "MaxSlots" : 20,
+  "RemoveDistortion" : true,
+  "SaveQuality" : 95,
+  "ThumbnailScale" : 0.125,
+  
+  // If > 0, enables a median filter before saving. Must be odd. 3 or 5 are reasonable values.
+  "MedianFilterSize" : 3,
+  
+  // Set to 0.0 to disable sharpening
+  "SharpeningAmount" : 0.0
+  
+}

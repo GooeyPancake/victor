@@ -1,0 +1,20 @@
+{
+  "behaviorClass": "ReactToCliff",
+  "behaviorID": "ReactToCliffDuringFetch",
+
+  "associatedActiveFeature": "ReactToCliff",
+  
+  "cliffBackupDistance_mm": 60.0,
+  "cliffBackupSpeed_mmps": 100.0,
+  "eventFlagTimeout_ms": 500,
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "OffTreadsState",
+    "targetState": "OnTreads",
+    "minTimeSinceChange_ms": 500
+  },
+
+  "wantsToCancelSelfCondition": {
+    "conditionType": "OnCharger"
+  }
+}

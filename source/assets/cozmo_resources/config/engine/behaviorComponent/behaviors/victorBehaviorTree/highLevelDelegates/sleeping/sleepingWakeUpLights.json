@@ -1,0 +1,10 @@
+{
+  "behaviorID" : "SleepingWakeUpLights",
+  "behaviorClass" : "AnimSequence",
+
+  "associatedActiveFeature": "Sleeping",
+  
+  "animTriggers": [
+    "ConnectWakeUpLights"
+  ]
+}

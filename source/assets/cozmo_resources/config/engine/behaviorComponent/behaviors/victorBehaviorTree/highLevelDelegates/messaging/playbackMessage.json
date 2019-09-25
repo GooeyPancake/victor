@@ -1,0 +1,18 @@
+{
+  "behaviorClass" : "PlaybackMessage",
+  "behaviorID"    : "PlaybackMessage",
+
+  "associatedActiveFeature": "PlayingMessage",
+  
+  "respondToUserIntents" :
+  [
+    { "type": "message_playback" }
+  ],
+
+  // text to speech lines
+
+  "announceSingle" : "One message for _name_",
+  "announcePlural" : "_num_ messages for _name_",
+  "noRecipient" : "I did not hear the name",
+  "noMessagesForRecipient" : "I have no messages for _name_"
+}

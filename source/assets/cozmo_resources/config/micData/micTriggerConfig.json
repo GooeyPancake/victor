@@ -1,0 +1,1322 @@
+{
+  "hey_vector_thf": [
+    {
+      "locale": "en-US",
+      "defaultModelType": "size_500kb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_anki_x_enUS_01s_hey_vector_sfs14_a326a14b",
+          "netFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_am.raw",
+          "defaultSearchFileIndex": 18,
+          "searchFileList": [
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery01s_search_18.raw",
+              "searchFileIndex": 18
+            }
+          ]
+        },
+        {
+          "modelType": "size_500kb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_anki_x_enUS_01s_hey_vector_sfs14_a35efdb2",
+          "netFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_am.raw",
+          "defaultSearchFileIndex": 18,
+          "searchFileList": [
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery01s_search_18.raw",
+              "searchFileIndex": 18
+            }
+          ]
+        },
+        {
+          "modelType": "size_250kb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_anki_x_enUS_01s_hey_vector_sfs14_a312c551",
+          "netFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_am.raw",
+          "defaultSearchFileIndex": 7,
+          "searchFileList": [
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_18.raw",
+              "searchFileIndex": 18
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_19.raw",
+              "searchFileIndex": 19
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery01s_search_20.raw",
+              "searchFileIndex": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "en-ZW",
+      "defaultModelType": "size_1mb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_anki_x_enUS_02s_hey_vector_sfs14_a326a14b",
+          "netFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_am.raw",
+          "defaultSearchFileIndex": 10,
+          "searchFileList": [
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a326a14b_delivery02s_search_18.raw",
+              "searchFileIndex": 18
+            }
+          ]
+        },
+        {
+          "modelType": "size_500kb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_anki_x_enUS_02s_hey_vector_sfs14_a35efdb2",
+          "netFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_am.raw",
+          "defaultSearchFileIndex": 10,
+          "searchFileList": [
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a35efdb2_delivery02s_search_18.raw",
+              "searchFileIndex": 18
+            }
+          ]
+        },
+        {
+          "modelType": "size_250kb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_anki_x_enUS_02s_hey_vector_sfs14_a312c551",
+          "netFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_am.raw",
+          "defaultSearchFileIndex": 10,
+          "searchFileList": [
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_18.raw",
+              "searchFileIndex": 18
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUS_sfs14_a312c551_delivery02s_search_19.raw",
+              "searchFileIndex": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "en-GB",
+      "defaultModelType": "size_500kb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_anki_x_enUK_01s_hey_vector_sfs14_a51d9f15",
+          "netFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_am.raw",
+          "defaultSearchFileIndex": 4,
+          "searchFileList": [
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a51d9f15_delivery01s_search_16.raw",
+              "searchFileIndex": 16
+            }
+          ]
+        },
+        {
+          "modelType": "size_500kb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_anki_x_enUK_02s_hey_vector_sfs14_a5497fd2",
+          "netFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_am.raw",
+          "defaultSearchFileIndex": 4,
+          "searchFileList": [
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "anki_x_hey_vector_enUK_sfs14_a5497fd2_delivery02s_search_17.raw",
+              "searchFileIndex": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "en-AU",
+      "defaultModelType": "size_500kb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_ai_x_enAU_01s_heyvector_sfs14_a51d9f15",
+          "netFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_am.raw",
+          "defaultSearchFileIndex": 5,
+          "searchFileList": [
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "ai_x_heyvector_enAU_sfs14_a51d9f15_delivery01s_search_17.raw",
+              "searchFileIndex": 17
+            }
+          ]
+        },
+        {
+          "modelType": "size_500kb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_ai_x_enAU_02s_vector_sfs14_a5dea60f",
+          "netFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_am.raw",
+          "defaultSearchFileIndex": 5,
+          "searchFileList": [
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_11.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_12.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_13.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_14.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_15.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_16.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_17.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_18.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_19.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_110.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_111.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_112.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_113.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_114.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_115.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "ai_x_vector_enAU_sfs14_a5dea60f_delivery02s_search_116.raw",
+              "searchFileIndex": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "defaultModelType": "size_1mb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_ai_x_fr_01s_heyvector_sfs14_a51d9f15",
+          "netFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_am.raw",
+          "defaultSearchFileIndex": 11,
+          "searchFileList": [
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "ai_x_heyvector_fr_sfs14_a51d9f15_delivery01s_search_18.raw",
+              "searchFileIndex": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "defaultModelType": "size_1mb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "sensorySpeechRecModels/hey_vector/trigger_ai_x_de_01s_heyvector_sfs14_a51d9f15",
+          "netFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_am.raw",
+          "defaultSearchFileIndex": 12,
+          "searchFileList": [
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "ai_x_heyvector_de_sfs14_a51d9f15_delivery01s_search_17.raw",
+              "searchFileIndex": 17
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "alexa_thf" :
+  [
+    {
+      "locale": "en-US",
+      "defaultModelType": "size_500kb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "sensorySpeechRecModels/alexa/thfft_alexa_a_enus_v3_1mb",
+          "netFileName": "thfft_alexa_a_enus_v3_1mb_am.raw",
+          "defaultSearchFileIndex": 17,
+          "searchFileList": [
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "thfft_alexa_a_enus_v3_1mb_search_18.raw",
+              "searchFileIndex": 18
+            }
+          ]
+        },
+        {
+          "modelType": "size_500kb",
+          "dataDirectory": "sensorySpeechRecModels/alexa/thfft_alexa_enus_v3_500kb",
+          "netFileName": "thfft_alexa_enus_v3_500kb_am.raw",
+          "defaultSearchFileIndex": 17,
+          "searchFileList": [
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_500kb_search_17.raw",
+              "searchFileIndex": 17
+            }
+          ]
+        },
+        {
+          "modelType": "size_250kb",
+          "dataDirectory": "sensorySpeechRecModels/alexa/thfft_alexa_enus_v3_250kb",
+          "netFileName": "thfft_alexa_enus_v3_250kb_am.raw",
+          "defaultSearchFileIndex": 17,
+          "searchFileList": [
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_1.raw",
+              "searchFileIndex": 1
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_2.raw",
+              "searchFileIndex": 2
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_3.raw",
+              "searchFileIndex": 3
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_4.raw",
+              "searchFileIndex": 4
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_5.raw",
+              "searchFileIndex": 5
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_6.raw",
+              "searchFileIndex": 6
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_7.raw",
+              "searchFileIndex": 7
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_8.raw",
+              "searchFileIndex": 8
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_9.raw",
+              "searchFileIndex": 9
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_10.raw",
+              "searchFileIndex": 10
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_11.raw",
+              "searchFileIndex": 11
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_12.raw",
+              "searchFileIndex": 12
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_13.raw",
+              "searchFileIndex": 13
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_14.raw",
+              "searchFileIndex": 14
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_15.raw",
+              "searchFileIndex": 15
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_16.raw",
+              "searchFileIndex": 16
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_17.raw",
+              "searchFileIndex": 17
+            },
+            {
+              "searchFileName": "thfft_alexa_enus_v3_250kb_search_18.raw",
+              "searchFileIndex": 18
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "alexa_pryon" :
+  [
+    {
+      "locale": "en-US",
+      "defaultModelType": "size_1mb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "pryonSpeechRecModels",
+          "netFileName": "D.en-US.alexa.bin",
+          "defaultSearchFileIndex": 1,
+          "searchFileList": [
+            {
+              "searchFileName": "NA",
+              "searchFileIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "en-GB",
+      "defaultModelType": "size_1mb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "pryonSpeechRecModels",
+          "netFileName": "U_250k.en-GB.alexa.bin",
+          "defaultSearchFileIndex": 1,
+          "searchFileList": [
+            {
+              "searchFileName": "NA",
+              "searchFileIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "en-AU",
+      "defaultModelType": "size_1mb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "pryonSpeechRecModels",
+          "netFileName": "U_250k.en-GB.alexa.bin",
+          "defaultSearchFileIndex": 1,
+          "searchFileList": [
+            {
+              "searchFileName": "NA",
+              "searchFileIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "defaultModelType": "size_1mb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "pryonSpeechRecModels",
+          "netFileName": "D.de-DE.alexa.bin",
+          "defaultSearchFileIndex": 1,
+          "searchFileList": [
+            {
+              "searchFileName": "NA",
+              "searchFileIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "defaultModelType": "size_1mb",
+      "modelList": [
+        {
+          "modelType": "size_1mb",
+          "dataDirectory": "pryonSpeechRecModels",
+          "netFileName": "D.fr-FR.alexa.bin",
+          "defaultSearchFileIndex": 1,
+          "searchFileList": [
+            {
+              "searchFileName": "NA",
+              "searchFileIndex": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

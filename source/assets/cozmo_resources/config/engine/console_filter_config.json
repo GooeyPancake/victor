@@ -1,0 +1,79 @@
+{
+  // Example: define the channel name and whether it's enabled or disabled. 'enabled=true' means its logs will print,
+  // while 'enabled=false' means they will be filtered out, and won't show up in the console.
+  //    {
+  //      "channel": "**",
+  //      "enabled": true/false
+  //    },
+
+  // ----------------------------------------------------------
+  //
+  // ----------------------------------------------------------
+  "osx":
+  {
+    "channels":
+    [
+      { "channel": "Actions",                           "enabled": true  },
+      { "channel": "AIWhiteboard",                      "enabled": true  },
+      { "channel": "Alexa",                             "enabled": true  },
+      { "channel": "Audio",                             "enabled": true  },
+      { "channel": "Behaviors",                         "enabled": true  },
+      { "channel": "BlockPool",                         "enabled": true  },
+      { "channel": "BlockWorld",                        "enabled": true  },
+      { "channel": "CpuProfiler",                       "enabled": true  },
+      { "channel": "FaceRecognizer",                    "enabled": true  },
+      { "channel": "FaceWorld",                         "enabled": true  },
+      { "channel": "JdocsManager",                      "enabled": true  },
+      { "channel": "Keyboard",                          "enabled": true  },
+      { "channel": "MessageProfiler",                   "enabled": true  },
+      { "channel": "Microphones",                       "enabled": false },
+      { "channel": "NeuralNets",                        "enabled": true  },
+      { "channel": "PerfMetric",                        "enabled": true  },
+      { "channel": "PoseConfirmer",                     "enabled": true  },
+      { "channel": "SpeechRecognizer",                  "enabled": false },
+      { "channel": "VisionComponent",                   "enabled": true  },
+      { "channel": "VisionSystem",                      "enabled": true  },
+      { "channel": "*",                                 "enabled": false } // must come last, no comma
+    ],
+    "levels":
+    [
+      { "level": "event", "enabled": true },
+      { "level": "debug", "enabled": false }
+    ]
+  },
+  
+  // ----------------------------------------------------------
+  //
+  // ----------------------------------------------------------
+  "vicos":
+  {
+    "channels":
+    [
+      { "channel": "Actions",                           "enabled": false },
+      { "channel": "AIWhiteboard",                      "enabled": false },
+      { "channel": "Alexa",                             "enabled": false },
+      { "channel": "Audio",                             "enabled": false },
+      { "channel": "Behaviors",                         "enabled": false },
+      { "channel": "BlockPool",                         "enabled": false },
+      { "channel": "BlockWorld",                        "enabled": false },
+      { "channel": "CpuProfiler",                       "enabled": true  },
+      { "channel": "FaceRecognizer",                    "enabled": false },
+      { "channel": "FaceWorld",                         "enabled": false },
+      { "channel": "JdocsManager",                      "enabled": true  },
+      { "channel": "MessageProfiler",                   "enabled": true  },
+      { "channel": "Microphones",                       "enabled": false },
+      { "channel": "NeuralNets",                        "enabled": false },
+      { "channel": "PerfMetric",                        "enabled": true  },
+      { "channel": "PoseConfirmer",                     "enabled": false },
+      { "channel": "SpeechRecognizer",                  "enabled": false },
+      { "channel": "VisionComponent",                   "enabled": false },
+      { "channel": "VisionSystem",                      "enabled": false },
+      { "channel": "*",                                 "enabled": false } // must come last, no comma
+    ],
+    "levels":
+    [
+      { "level": "event", "enabled": true },
+      { "level": "debug", "enabled": false }
+    ]
+  }
+}

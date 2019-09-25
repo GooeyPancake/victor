@@ -1,0 +1,13 @@
+{
+  "emotionEvents" : [
+    {
+      "name" : "TimerRinging",
+      "emotionAffectors" : [										  
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.3
+        }
+      ]
+    }
+  ]
+}

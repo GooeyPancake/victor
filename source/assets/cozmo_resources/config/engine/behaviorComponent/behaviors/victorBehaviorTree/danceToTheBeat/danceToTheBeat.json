@@ -1,0 +1,44 @@
+{
+  "behaviorClass": "DispatcherRandom",
+  "behaviorID": "DanceToTheBeat",
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "BeatDetected"
+  },
+  
+  "associatedActiveFeature" : "DanceToTheBeat",
+  "emotionEventOnActivated": "DanceToTheBeat",
+  
+  "behaviors" : [
+    {
+      "behavior": "DanceSwell",
+      "cooldown_s": 0.0,
+      "weight": 1.0
+    },
+    {
+      "behavior": "DanceSTwoways",
+      "cooldown_s": 0.0,
+      "weight": 1.0
+    },
+    {
+      "behavior": "DanceForwardBackFlower",
+      "cooldown_s": 0.0,
+      "weight": 1.0
+    },
+    {
+      "behavior": "DanceWiggleForwardWiggleBack",
+      "cooldown_s": 0.0,
+      "weight": 1.0
+    },
+    {
+      "behavior": "DanceFrontRightLeftPoint",
+      "cooldown_s": 0.0,
+      "weight": 1.0
+    },
+    {
+      "behavior": "DanceBig",
+      "cooldown_s": 300.0,
+      "weight": 0.0
+    }
+  ]
+}

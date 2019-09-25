@@ -1,0 +1,293 @@
+{
+  "user_intent_map": [
+    {
+      "cloud_intent": "intent_amazon_signin",
+      "user_intent": "amazon_signin"
+    },
+    {
+      "cloud_intent": "intent_amazon_signout",
+      "user_intent": "amazon_signout"
+    },
+    {
+      "cloud_intent": "intent_play_anytrick",
+      "user_intent": "play_anytrick"
+    },
+    {
+      "cloud_intent": "intent_play_anygame",
+      "user_intent": "play_anygame"
+    },
+    {
+      "cloud_intent": "intent_imperative_quiet",
+      "app_intent": "intent_imperative_quiet",
+      "user_intent": "imperative_quiet"
+    },
+    {
+      "cloud_intent": "intent_imperative_shutup",
+      "app_intent": "intent_imperative_shutup",
+      "user_intent": "imperative_shutup"
+    },
+    {
+      "cloud_intent": "intent_imperative_come",
+      "app_intent": "intent_imperative_come",
+      "user_intent": "imperative_come"
+    },
+    {
+      "cloud_intent": "intent_imperative_dance",
+      "app_intent": "intent_imperative_dance",
+      "user_intent": "imperative_dance"
+    },
+    {
+      "cloud_intent": "intent_imperative_affirmative",
+      "user_intent": "imperative_affirmative"
+    },
+    {
+      "cloud_intent": "intent_imperative_negative",
+      "user_intent": "imperative_negative"
+    },
+    {
+      "cloud_intent": "intent_imperative_praise",
+      "user_intent": "imperative_praise"
+    },
+    {
+      "cloud_intent": "intent_imperative_apologize",
+      "user_intent": "imperative_apology"
+    },
+    {
+      "cloud_intent": "intent_imperative_scold",
+      "user_intent": "imperative_scold"
+    },
+    {
+      "cloud_intent": "intent_imperative_love",
+      "user_intent": "imperative_love"
+    },
+    {
+      "cloud_intent": "intent_imperative_abuse",
+      "user_intent": "imperative_abuse"
+    },
+    {
+      "cloud_intent": "intent_global_stop_extend",
+      "user_intent": "global_stop",
+      "cloud_substitutions": {
+        "entity_behavior_stoppable": "what_to_stop"
+      }
+    },
+    {
+      "cloud_intent": "intent_global_delete_extend",
+      "user_intent": "global_delete",
+      "cloud_substitutions": {
+        "entity_behavior_deletable": "what_to_stop"
+      }
+    },
+    {
+      "cloud_intent": "intent_greeting_goodbye",
+      "user_intent": "greeting_goodbye"
+    },
+    {
+      "cloud_intent": "intent_greeting_goodmorning",
+      "user_intent": "greeting_goodmorning"
+    },
+    {
+      "cloud_intent": "intent_greeting_goodnight",
+      "user_intent": "greeting_goodnight"
+    },
+    {
+      "cloud_intent": "intent_greeting_hello",
+      "user_intent": "greeting_hello"
+    },
+    {
+      "cloud_intent": "intent_status_feeling",
+      "user_intent": "status_feeling",
+      "test_parsing": false
+    },
+    {
+      "cloud_intent": "intent_clock_checktimer",
+      "user_intent": "check_timer"
+    },
+    {
+      "cloud_intent" : "intent_clock_settimer_extend",
+      "app_intent" : "intent_clock_settimer",
+      "user_intent"  : "set_timer",
+      "cloud_substitutions": {
+        "timer_duration": "time_s"
+      },
+      "cloud_numerics": ["timer_duration"]
+    },
+    {
+      "cloud_intent": "intent_clock_time",
+      "user_intent": "show_clock"
+    },
+    {
+      "cloud_intent" : "intent_weather_extend",
+      "user_intent"  : "weather_response",
+      "cloud_substitutions": {
+        "speakable_location_string": "speakableLocationString",
+        "is_forecast": "isForecast",
+        "temperature_unit": "temperatureUnit",
+        "local_datetime": "localDateTime"
+      }
+    },
+    {
+      "cloud_intent" : "intent_photo_take_extend",
+      "user_intent"  : "take_a_photo",
+      "cloud_substitutions": {
+        "entity_photo_selfie": "empty_or_selfie"
+      }
+    },
+    {
+      "cloud_intent": "intent_system_charger",
+      "app_intent": "intent_system_charger",
+      "user_intent": "system_charger"
+    },
+    {
+      "cloud_intent": "intent_system_sleep",
+      "app_intent": "intent_system_sleep",
+      "user_intent": "system_sleep"
+    },
+    {
+      "cloud_intent": "intent_play_specific_extend",
+      "app_intent": "intent_play_specific",
+      "user_intent": "play_specific"
+    },
+    {
+      "user_intent": "meet_victor",
+      "cloud_intent": "intent_names_username_extend",
+      "app_intent": "intent_meet_victor",
+      "app_substitutions": {
+        "param": "username"
+      }
+    },
+    {
+      "user_intent": "message_record",
+      "cloud_intent": "intent_message_recordmessage_extend",
+      "app_intent": "intent_message_recordmessage",
+      "feature_gate": "Messaging"
+    },
+    {
+      "user_intent": "message_playback",
+      "cloud_intent": "intent_message_playmessage_extend",
+      "app_intent": "intent_message_playmessage",
+      "feature_gate": "Messaging"
+    },
+    {
+      "user_intent": "explore_start",
+      "cloud_intent": "intent_explore_start",
+      "app_intent": "explore_start",
+      "feature_gate": "Exploring"
+    },
+    {
+      "user_intent": "knowledge_question",
+      "cloud_intent": "intent_knowledge_promptquestion",
+      "app_intent": "knowledge_question",
+      "feature_gate": "KnowledgeGraph"
+    },
+    {
+      "user_intent": "knowledge_response",
+      "cloud_intent": "intent_knowledge_response_extend",
+      "app_intent": "knowledge_response",
+      "test_parsing": false,
+      "feature_gate": "KnowledgeGraph"
+    },
+    {
+      "user_intent": "knowledge_unknown",
+      "cloud_intent": "intent_knowledge_no_response",
+      "app_intent": "knowledge_unknown",
+      "test_parsing": false,
+      "feature_gate": "KnowledgeGraph"
+    },
+    {
+      "user_intent": "blackjack_hit",
+      "cloud_intent": "intent_blackjack_hit"
+    },
+    {
+      "user_intent": "blackjack_stand",
+      "cloud_intent": "intent_blackjack_stand"
+    },
+    {
+      "user_intent": "blackjack_playagain",
+      "cloud_intent": "intent_blackjack_playagain"
+    },
+    {
+      "user_intent": "imperative_lookatme",
+      "cloud_intent": "intent_imperative_lookatme",
+      "app_intent": "intent_imperative_lookatme"
+    },
+    {
+      "user_intent": "imperative_lookoverthere",
+      "cloud_intent": "intent_imperative_lookoverthere",
+      "app_intent": "intent_imperative_lookoverthere",
+      "feature_gate": "GazeDirection"
+    },
+    {
+      "user_intent": "imperative_fetchcube",
+      "cloud_intent": "intent_imperative_fetchcube",
+      "app_intent": "intent_imperative_fetchcube",
+      "feature_gate": "FetchCube"
+    },
+    {
+      "user_intent": "imperative_findcube",
+      "cloud_intent": "intent_imperative_findcube",
+      "app_intent": "intent_imperative_findcube",
+      "feature_gate": "FindCube"
+    },
+    {
+      "user_intent": "names_ask",
+      "cloud_intent": "intent_names_ask",
+      "app_intent": "intent_names_ask"
+    },
+    {
+      "user_intent": "silence",
+      "cloud_intent": "intent_system_noaudio",
+      "test_parsing": false
+    },
+    {
+      "user_intent": "imperative_volumelevel",
+      "cloud_intent": "intent_imperative_volumelevel_extend",
+      "feature_gate": "Volume"
+    },
+    {
+      "user_intent": "imperative_volumeup",
+      "cloud_intent": "intent_imperative_volumeup",
+      "feature_gate": "Volume"
+    },
+    {
+      "user_intent": "imperative_volumedown",
+      "cloud_intent": "intent_imperative_volumedown",
+      "feature_gate": "Volume"
+    },
+    {
+      "user_intent": "movement_forward",
+      "cloud_intent": "intent_imperative_forward"
+    },
+    {
+      "user_intent": "movement_backward",
+      "cloud_intent": "intent_imperative_backup"
+    },
+    {
+      "user_intent": "movement_turnleft",
+      "cloud_intent": "intent_imperative_turnleft"
+    },
+    {
+      "user_intent": "movement_turnright",
+      "cloud_intent": "intent_imperative_turnright"
+    },
+    {
+      "user_intent": "movement_turnaround",
+      "cloud_intent": "intent_imperative_turnaround"
+    },
+    {
+      "user_intent": "seasonal_happynewyear",
+      "cloud_intent": "intent_seasonal_happynewyear"
+    },
+    {
+      "user_intent": "seasonal_happyholidays",
+      "cloud_intent": "intent_seasonal_happyholidays"
+    },
+    {
+      "user_intent": "character_age",
+      "cloud_intent": "intent_character_age",
+      "feature_gate": "HowOldAreYou"
+    }
+  ],
+
+  "unmatched_intent": "unmatched_intent"
+}

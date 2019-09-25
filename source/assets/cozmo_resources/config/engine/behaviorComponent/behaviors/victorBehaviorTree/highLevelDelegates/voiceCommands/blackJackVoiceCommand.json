@@ -1,0 +1,21 @@
+{
+  "behaviorID" : "BlackJackVoiceCommand",
+  "behaviorClass" : "DispatcherQueue",
+
+  "respondToUserIntents" : [
+    {
+      "type" : "play_specific",
+      "entity_behavior" : "blackjack"
+    }
+  ],
+
+  "autoShutOffIntentFeedback": true,
+
+  "behaviors": [
+    "DriveOffChargerFace",
+    "BlackJack"
+  ],
+
+  "postBehaviorSuggestion": "Socialize"
+
+}

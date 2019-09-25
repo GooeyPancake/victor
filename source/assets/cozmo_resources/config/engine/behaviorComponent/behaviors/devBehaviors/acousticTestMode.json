@@ -1,0 +1,59 @@
+{
+  "behaviorID" : "AcousticTestMode",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "interruptActiveBehavior": true,
+  
+  "behaviors": [
+    // wakeword testing on charger
+    "OnChargerInternal",
+    // normal operation, off charger
+    "ModeSelector",
+    // backup
+    "Wait"
+  ],
+
+  "anonymousBehaviors": [
+    // a queue that moves the head up then does alexa behaviors and nothing else
+    {
+      "behaviorName" : "OnChargerInternal",
+      "behaviorClass" : "DispatcherQueue",
+      
+      "wantsToBeActivatedCondition": {
+        "conditionType" : "OnCharger"
+      },
+      "wantsToCancelSelfCondition": {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OnCharger"
+        }
+      },
+      
+      "behaviors": [
+        "WiggleBackOntoChargerFromPlatform",
+        "MoveHeadUpInternal",
+        "AlexaInternal"
+      ],
+      
+      "anonymousBehaviors": [
+        {
+          "behaviorName": "MoveHeadUpInternal",
+          "behaviorClass": "MoveHeadToAngle",
+          "headAngle_deg": 45.0
+        },
+        {
+          "behaviorName" : "AlexaInternal",
+          "behaviorClass" : "DispatcherStrictPriority",
+          
+          "interruptActiveBehavior": true,
+          
+          "behaviors": [
+            "AlexaSignInOut",
+            "Alexa",
+            "Wait"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "behaviorID" : "InterruptingVoiceReactions",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "linkScope": true,
+  "interruptActiveBehavior": true,
+
+  "behaviors": [
+    "DoATrickVoiceCommand",
+    "PlayAGameVoiceCommand",
+    "FindYourCubeVoiceCommand",
+    "FetchCubeVoiceCommand",
+    "PickUpCubeVoiceCommand",
+    "FistBumpVoiceCommand",
+    "GoHomeVoiceCommand",
+    "RollCubeVoiceCommand",
+    "PopAWheelieVoiceCommand",
+    "KeepawayVoiceCommand",
+    "BlackJackVoiceCommand",
+    "PRDemoComeHere",
+    "ComeHereVoiceCommand",
+    "LookAtMeVoiceCommand",
+    "LookOverThereVoiceCommand",
+    "WhatsMyNameVoiceCommand",
+    "HowOldAreYou",
+    "LeaveAMessage",
+    "PlaybackMessage",
+    "KnowledgeGraphQuestion",
+    "RespondToRenameFace", // not actually a voice command, but is paired with MeetVictor so I'm putting it here
+    "MeetVictor",
+    "ReactToAffirmative", // must come somewhere after blackjack or other behaviors which use the affirmative intent
+    "ReactToNegative", // must come somewhere after blackjack or other behaviors which use the negative intent
+    "DanceToTheBeatVoiceCommand"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "behaviorID" : "QuietModeEmergencyModeGoHome",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "linkScope": true,
+  "interruptActiveBehavior": true,
+
+  "wantsToBeActivatedCondition" : {
+    "conditionType": "Compound",
+    "or" : [
+    {
+      "conditionType" : "BatteryLevel",
+      "targetBatteryLevel" : "Low"
+    },
+    {
+      "conditionType" : "HighTemperature"
+    }
+    ]
+  },
+
+  "behaviors": [
+    "ReactToRobotOnBack",
+    "ReactToRobotOnFace",
+    // note: no "ReactToRobotOnSide",
+    "ReactToCliff",
+    "ReactToPlacedOnSlope",
+    "ReactToUnexpectedMovement",
+    "EmergencyModeFindAndGoToHome"
+  ]
+}

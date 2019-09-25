@@ -1,0 +1,12 @@
+{
+  "editModeTrigger": "RobotShaken",
+  "conditionToBehaviorMappingOptions": [
+    {
+      "conditionType": "CliffDetected",
+      "behaviorOptions": [
+        "ShowWallTime",
+        "GoToSleep"
+      ]
+    }
+  ]
+}

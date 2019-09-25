@@ -1,0 +1,12 @@
+{
+  "behaviorClass": "DisplayWeather",
+  "behaviorID" : "WeatherCloudyGeneric",
+
+  "animationName" : "anim_weather_cloud_01",
+  "imageLayouts" : [
+    "WeatherCondCloudy_01"
+  ],
+  "imageMaps" : [
+    "WeatherCondCloudy_01"
+  ]
+}

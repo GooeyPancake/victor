@@ -1,0 +1,45 @@
+{
+  "behaviorID" :   "ReactToBody",
+  "behaviorClass": "ReactToBody",
+
+  "driveOffChargerBehavior": "DriveOffChargerStraight",
+  "shouldDriveStraightIfNotOnCharger": true,
+  "drivingForwardDistance_mm": 50,
+  // only consider the top percentage of the salient point bound box when searching for a face
+  // e.g. if 0.5, only the top half of the bounding box will be searched
+  // the lower this number, the smaller the area to consider when searching for a face
+  "upperPortionLookUpPercent":  0.3,
+  "trackingTimeout_sec":  1.0, // how long before face tracking gives up
+
+  "faceSelectionPenalties": [
+    {
+      "factor": "TrackingOnly",
+      "multiplier": 0.0
+    },
+    {
+      "factor": "TimeSinceSeen_s",
+      "multiplier": 50.0
+    },
+    {
+      "factor": "Distance_m",
+      "multiplier": 50.0
+    },
+    {
+      "factor": "RelativeBodyAngleRadians",
+      "multiplier": 1000.0
+    },
+    {
+      "factor": "RelativeHeadAngleRadians",
+      "multiplier": 1000.0
+    }
+  ],
+
+  "wantsToBeActivatedCondition": {
+    "conditionType":      "TimedDedup",
+    "dedupInterval_ms":    5000,
+    "subCondition":        {
+      "conditionType": "SalientPointDetected",
+      "targetSalientPoint": "Person"
+    }
+  }
+}

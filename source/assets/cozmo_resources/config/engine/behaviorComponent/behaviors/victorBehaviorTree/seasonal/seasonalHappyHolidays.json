@@ -1,0 +1,17 @@
+{
+  "behaviorID": "SeasonalHappyHolidays",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "SeasonalHappyHolidays",
+
+  "renderInEyeHue": false,
+  
+  "respondToUserIntents": [
+    { "type": "seasonal_happyholidays" }
+  ],
+
+  "animTriggers": [
+    "SeasonalHappyHolidays"
+  ]
+}

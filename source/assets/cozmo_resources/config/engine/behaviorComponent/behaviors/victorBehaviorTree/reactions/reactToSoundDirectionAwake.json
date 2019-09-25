@@ -1,0 +1,46 @@
+{
+  "behaviorClass" : "ReactToMicDirection",
+  "behaviorID" : "ReactToSoundDirectionAwake",
+
+  "reaction_list" :
+  {
+    "OnSurface" :
+    {
+      "TwelveOClock"  : { "anim": "RTS_OffCharger_Awake_Front" },
+      "OneOClock"     : { "anim": "RTS_OffCharger_Awake_30Right" },
+      "TwoOClock"     : { "anim": "RTS_OffCharger_Awake_60Right" },
+      "ThreeOClock"   : { "anim": "RTS_OffCharger_Awake_Right" },
+      "FourOClock"    : { "anim": "RTS_OffCharger_Awake_120Right" },
+      "FiveOClock"    : { "anim": "RTS_OffCharger_Awake_150Right" },
+      "SixOClock"     : { "anim": "RTS_OffCharger_Awake_Back" },
+      "SevenOClock"   : { "anim": "RTS_OffCharger_Awake_150Left" },
+      "EightOClock"   : { "anim": "RTS_OffCharger_Awake_120Left" },
+      "NineOClock"    : { "anim": "RTS_OffCharger_Awake_Left" },
+      "TenOClock"     : { "anim": "RTS_OffCharger_Awake_60Left" },
+      "ElevenOClock"  : { "anim": "RTS_OffCharger_Awake_30Left" },
+      "Ambient"       : { "anim": "RTS_OffCharger_Awake_Ambient" }
+    },
+
+    "OnCharger" :
+    {
+      "TwelveOClock"  : { "anim": "RTS_OnCharger_Awake_Front" },
+      "OneOClock"     : { "anim": "RTS_OnCharger_Awake_30Right" },
+      "TwoOClock"     : { "anim": "RTS_OnCharger_Awake_60Right" },
+      "ThreeOClock"   : { "anim": "RTS_OnCharger_Awake_Right" },
+      "FourOClock"    : { "anim": "RTS_OnCharger_Awake_120Right" },
+      "FiveOClock"    : { "anim": "RTS_OnCharger_Awake_150Right" },
+      "SixOClock"     : { "anim": "RTS_OnCharger_Awake_Back" },
+      "SevenOClock"   : { "anim": "RTS_OnCharger_Awake_150Left" },
+      "EightOClock"   : { "anim": "RTS_OnCharger_Awake_120Left" },
+      "NineOClock"    : { "anim": "RTS_OnCharger_Awake_Left" },
+      "TenOClock"     : { "anim": "RTS_OnCharger_Awake_60Left" },
+      "ElevenOClock"  : { "anim": "RTS_OnCharger_Awake_30Left" },
+      "Ambient"       : { "anim": "RTS_OnCharger_Awake_Ambient" }
+    },
+
+    "OffTreads" :
+    {
+      "enabled" : false
+    }
+  }
+}

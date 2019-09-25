@@ -1,0 +1,119 @@
+[
+  {
+    "feature": "Invalid",
+    "enabled": false
+  },
+  {
+    "feature": "Laser",
+    "enabled": false
+  },
+  {
+    "feature": "Exploring",
+    "enabled": true
+  },
+  {
+    "feature": "FetchCube",
+    "enabled": true
+  },
+  {
+    "feature": "FindCube",
+    "enabled": true
+  },
+  {
+    "feature": "Keepaway",
+    "enabled": true
+  },
+  {
+    "feature": "MoveCube",
+    "enabled": true
+  },
+  {
+    "feature": "ReactToHeldCube",
+    "enabled": true
+  },
+  {
+    "feature": "RollCube",
+    "enabled": true
+  },
+  {
+    "feature": "Messaging",
+    "enabled": false
+  },
+  {
+    "feature": "KnowledgeGraph",
+    "enabled": true
+  },
+  {
+    "feature": "Dancing",
+    "enabled": true
+  },
+  {
+    "feature": "CubeSpinner",
+    "enabled": false
+  },
+  {
+    "feature": "GreetAfterLongTime",
+    "enabled": true
+  },
+  {
+    "feature": "AttentionTransfer",
+    "enabled": false
+  },
+  {
+    "feature": "PopAWheelie",
+    "enabled": true
+  },
+  {
+    "feature": "TestFeature",
+    "enabled": false
+  },
+  {
+    "feature": "Alexa",
+    "enabled": true
+  },
+  {
+    "feature": "Alexa_UK",
+    "enabled": true // this must match kAlexaEnabledInUK
+  },
+  {
+    "feature": "Alexa_AU",
+    "enabled": true // this must match kAlexaEnabledInAU
+  },
+  {
+    "feature": "HeldInPalm",
+    "enabled": false
+  },
+  {
+    "feature": "PRDemo",
+    "enabled": false
+  },
+  {
+    "feature": "ReactToIllumination",
+    "enabled": true
+  },
+  {
+    "feature": "ActiveIntentFeedback",
+    "enabled": true
+  },
+  {
+    "feature": "Volume",
+    "enabled": true
+  },
+  {
+    "feature": "HandDetection",
+    "enabled": true
+  },
+  {
+    "feature": "GazeDirection",
+    "enabled": false
+  },
+  {
+    "feature": "HowOldAreYou",
+    "enabled": true
+  },
+  {
+    "feature": "StayOnChargerUntilCharged",
+    "enabled": true
+  }
+]
+

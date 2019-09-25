@@ -1,0 +1,14 @@
+{
+  "behaviorClass" : "DevBatteryLogging",
+  "behaviorID"    : "DevBatteryLogging",
+
+  "wheelSpeed_mmps" : 220,
+  "liftSpeed_degps"  : 500,
+  "headSpeed_degps"  : 500,
+
+  "startMovingVoltage" : 3.0,
+  "stressCPU" : true,
+  "stressSpeaker" : true,
+
+  "driveOffChargerWhenFull" : true
+}

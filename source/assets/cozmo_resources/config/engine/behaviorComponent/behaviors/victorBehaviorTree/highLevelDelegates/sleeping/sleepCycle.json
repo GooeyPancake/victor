@@ -1,0 +1,100 @@
+{
+  "behaviorID": "SleepCycle",
+  "behaviorClass": "SleepCycle",
+
+  "delegateID": "CoordinateInHabitat",
+
+  "goToChargerBehavior": "FindHomeForSleeping",
+
+  // condition to hold in sleep in case e.g. the battery is too low
+  "emergencyCondition": {
+    // NOTE: copied from emergencyMode.json, would be nice to have a common conditon library or a way to reference it....
+    "conditionType": "Compound",
+    "or" : [
+      {
+        "conditionType" : "BatteryLevel",
+        "targetBatteryLevel" : "Low"
+      },
+      {
+        "conditionType" : "HighTemperature"
+      }
+    ]
+  },
+
+  // NOTE: power save mode turns off the camera, so any conditions relying on vision will likely not work here
+  // (but may fire before power save is enabled)
+  "wakeReasonConditions": [
+    {
+      "reason": "PickedUp",
+      "condition": {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OffTreadsState",
+          "targetState": "OnTreads"
+        }
+      }
+    },
+
+    {
+      "reason": "Touched",
+      "condition": {
+        "conditionType": "RobotTouched",
+        "minTouchTime": 0.1
+      }
+    },
+
+    {
+      "reason": "Poked",
+      "condition": {
+        "conditionType": "RobotPoked",
+        "wasPokedRecentlyTimeThreshold_sec": 0.2
+      }
+    },
+
+    {
+      // NOTE: in version 1.0, this doesn't really work because the camera is turned off in power save mode
+      // (during sleep). It is possible for it to trigger before the camera turns off, but very unlikely
+      "reason": "LightsOn",
+      "condition": {
+        "conditionType": "IlluminationDetected",
+        "preTriggerStates": ["Darkened"],
+        "preConfirmationTime": 1.0,
+        "preConfirmationMinNum": 3,
+        "postTriggerStates": ["Illuminated"],
+        "postConfirmationTime": 1.0,
+        "postConfirmationMinNum": 3,
+        "matchHoldTime": 5.0
+      }
+    }
+  ],
+
+  // wake from any state (except Awake....)
+  "alwaysWakeReasons": [
+    "SDK",
+    "TimerShouldRing",
+    "VoiceCommand"
+  ],
+
+  // in addition to the "always wakes" conditions
+  "wakeFromStates": [
+    // no addiitional wake reasons from emergency sleep or comatose sleep
+    {
+      "fromState": "DeepSleep",
+      "reasons": [
+        "PickedUp",
+        "Touched"
+      ]
+    },
+    {
+      "fromState": "LightSleep",
+      "reasons": [
+        "PickedUp",
+        "Touched",
+        "Poked",
+        "Sound",
+        "LightsOn"
+      ]
+    }
+  ]
+
+}

@@ -1,0 +1,32 @@
+//
+// This behavior does a short look up and down to find faces or cubes. It will stop if it sees any face
+//
+{
+  "behaviorClass": "LookForFaceAndCube",
+  "behaviorID": "ShortLookAroundForFaceAndCube",
+
+  "associatedActiveFeature": "NoFeature",
+
+  // behavior configuration
+  "bodyTurnSpeed_degPerSec": 180,
+  "headTurnSpeed_degPerSec": 120,
+  
+  "face_headAngleAbsRangeMin_deg": 30,
+  "face_headAngleAbsRangeMax_deg": 42,
+  "face_bodyAngleRelRangeMin_deg": 10,
+  "face_bodyAngleRelRangeMax_deg": 30,
+  "face_sidePicks": 2,
+  
+  "cube_headAngleAbsRangeMin_rad": -5,
+  "cube_headAngleAbsRangeMax_rad":  5,
+  "cube_bodyAngleRelRangeMin_rad": 10,
+  "cube_bodyAngleRelRangeMax_rad": 30,
+  "cube_sidePicks": 1,
+
+  // stop this behavior if a named face is seen (after turning towards it)
+  "verifySeenFaces": true,
+  "stopBehaviorOnAnyFace": true,
+  "stopBehaviorOnNamedFace": true,
+  
+  "lookInPlaceAnimTrigger": "LookAround"
+}

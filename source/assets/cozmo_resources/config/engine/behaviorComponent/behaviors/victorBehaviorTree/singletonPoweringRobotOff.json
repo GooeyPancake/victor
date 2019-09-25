@@ -1,0 +1,13 @@
+{
+  "behaviorClass": "PoweringRobotOff",
+  "behaviorID": "SingletonPoweringRobotOff",
+  "associatedActiveFeature": "NoFeature",
+
+  "wantsToCancelSelfCondition": {
+    "conditionType": "TriggerWordPending"
+  },
+
+  "powerButtonHeldToActivate_ms" : 250,
+  "powerOnAnimName" : "anim_power_offon_01",
+  "powerOffAnimName" : "anim_power_onoff_01"
+}

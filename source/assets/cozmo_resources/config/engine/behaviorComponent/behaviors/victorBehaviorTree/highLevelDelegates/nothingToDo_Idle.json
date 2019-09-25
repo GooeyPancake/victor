@@ -1,0 +1,13 @@
+//
+// NothingToDo_Idle
+// This behavior triggers when Cozmo has nothing to do. Play idle animations
+//
+//
+//
+{
+  "behaviorClass": "AnimSequence",
+  "behaviorID": "NothingToDo_Idle",
+
+  // anim
+  "animTriggers": [ "NothingToDoBoredIdle" ]
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "canBeOverridden" : false,
+        "duration_ms" : 0,
+        "pattern" : 
+        {
+            "offColors" : 
+            [
+                [ 100, 0, 0, 255 ],
+                [ 0, 0, 0, 255 ],
+                [ 0, 0, 0, 255 ],
+                [ 0, 0, 0, 255 ]
+            ],
+            "offPeriod_ms" : [ 3000, 0, 0, 0 ],
+            "offset" : [ 0, 0, 0, 0 ],
+            "onColors" : 
+            [
+                [ 255, 0, 0, 255 ],
+                [ 0, 0, 0, 255 ],
+                [ 0, 0, 0, 255 ],
+                [ 0, 0, 0, 255 ]
+            ],
+            "onPeriod_ms" : [ 1, 0, 0, 0 ],
+            "rotate" : false,
+            "transitionOffPeriod_ms" : [ 250, 0, 0, 0 ],
+            "transitionOnPeriod_ms" : [ 150, 0, 0, 0 ]
+        },
+        "patternDebugName" : ""
+    }
+]

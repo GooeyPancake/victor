@@ -1,0 +1,13 @@
+{
+  "behaviorID" :   "ReactToGazeDirectionSurface",
+  "behaviorClass": "ReactToGazeDirection",
+  "searchForFaces": false,
+
+  "wantsToBeActivatedCondition":  {
+    "conditionType": "FeatureGate",
+    "feature": "GazeDirection",
+    "expected": true
+  },
+
+  "associatedActiveFeature": "ReactToGazeDirection"
+}

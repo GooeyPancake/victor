@@ -1,0 +1,147 @@
+{
+  "behaviorID": "PRDemoStateMachine",
+  "behaviorClass": "PRDemo",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "FeatureGate",
+    "feature": "PRDemo"
+  },
+
+  "ignoreMissingTransitions": true,
+
+  "states": [
+    {
+      "name": "Init",
+      // special initial state to drive off the charger if needed
+      "behavior": "PRDemoObserving"
+    },
+    {
+      "name": "BigGreeting",
+      "behavior": "PRDemoBigGreeting"
+    },
+    {
+      "name": "Socialize",
+      // TODO:(bn) custom
+      "behavior": "Socialize"
+    },
+    {
+      "name": "Exploring",
+      // TODO:(bn) explore forever
+      "behavior": "PRDemoExploring",
+      "getInBehavior": "ExploringGetIn",
+      "activateIntent": "explore_start"
+    },
+    {
+      "name": "Observing",
+      "behavior": "PRDemoObserving"
+    },
+    {
+      "name": "ReturningToCharger",
+      "behavior": "FindAndGoToHome",
+      "activateIntent": "system_charger"
+    }
+  ],
+
+  "initialState": "Init",
+
+  "resumeReplacements": {
+  },
+
+  "transitionDefinitions": [
+
+    {
+      "from": "Init",
+      "interruptingTransitions": [
+        {
+          "to": "BigGreeting",
+          "condition": {
+            "conditionType": "FaceKnown"
+          }
+        }
+      ]
+    },
+
+    {
+      "from": "BigGreeting",
+      "exitTransitions": [
+        {
+          "to": "Socialize",
+          "condition": {
+            "conditionType": "TrueCondition"
+          }
+        }
+      ]
+    },
+
+    {
+      "from": [
+        "Init",
+        "BigGreeting",
+        "Socialize",
+        "Observing",
+        "ReturningToCharger"
+      ],
+      "interruptingTransitions": [
+        {
+          "to": "Exploring",
+          "condition": {
+            "conditionType": "UserIntentPending",
+            "list": [
+              {"type": "explore_start"}
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "from": [
+        "Socialize",
+        "Exploring"
+      ],
+      "interruptingTransitions": [
+        {
+          "to": "Observing",
+          "condition": {
+            "conditionType": "OnCharger"
+          }
+        }
+      ]
+    },
+
+
+    {
+      "from": [
+        "Init",
+        "BigGreeting",
+        "Socialize",
+        "Exploring",
+        "Observing",
+        "ReturningToCharger"
+      ],
+      "interruptingTransitions": [
+        {
+          "to": "ReturningToCharger",
+          "condition": {
+            "conditionType": "UserIntentPending",
+            "list": [
+              {"type": "system_charger"}
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "from": "ReturningToCharger",
+      "exitTransitions": [
+        {
+          "to": "Observing",
+          "condition": {
+            "conditionType": "TrueCondition"
+          }
+        }
+      ]
+    }
+  ]
+}

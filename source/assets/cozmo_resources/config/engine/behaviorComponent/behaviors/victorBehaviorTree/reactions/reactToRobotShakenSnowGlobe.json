@@ -1,0 +1,26 @@
+{
+  "behaviorClass": "ReactToRobotShaken",
+  "behaviorID": "ReactToRobotShakenSnowGlobe",
+
+  "associatedActiveFeature": "RobotShaken",
+  "emotionEventOnActivated": "RobotShaken",
+
+  "renderInEyeHue" : false,
+  "getInAnimation" : "ReactToShakeSnowGlobe_GetIn",
+  "shakeAnimations" :
+  [
+    {
+      "threshold" : 13000,
+      "looping"   : "ReactToShakeSnowGlobe_Lvl1Loop",
+      "waiting"   : "ReactToShakeSnowGlobe_Lvl1Waiting",
+      "inHand"    : "ReactToShakeSnowGlobe_Lvl1InHand",
+      "onGround"  : "ReactToShakeSnowGlobe_Lvl1OnGround"
+    }
+  ],
+
+  "wantsToBeActivatedCondition":
+  {
+    "conditionType" : "RobotShaken",
+    "minAccelMagnitudeThreshold" : 16000
+  }
+}

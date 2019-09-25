@@ -1,0 +1,20 @@
+{
+  "behaviorClass" : "TimerUtilityCoordinator",
+  "behaviorID"    : "DemoTimerUtilityCoordinator",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType" : "FeatureGate",
+    "feature" : "PRDemo",
+    "expected" : true
+  },
+
+  "touchTimeToCancelTimer_ms" : 200,
+
+  "minValidTimer_s" : 1,
+  "maxValidTimer_s" : 3600, // 1 hour
+  "anticConfig" : [
+  ],
+
+  "timerRingingBehaviorID" : "TimerRingingPRDemo"
+  
+}

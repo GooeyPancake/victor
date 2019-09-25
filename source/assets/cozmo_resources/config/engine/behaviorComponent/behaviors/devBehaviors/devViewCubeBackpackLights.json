@@ -1,0 +1,59 @@
+{
+  "behaviorID": "DevViewCubeBackpackLights",
+  "behaviorClass": "DevViewCubeBackpackLights",
+
+  "cubeTriggers" : [
+    "SpinnerStartGame",
+    "SpinnerPlayerError",
+    "SpinnerBlueCelebration",
+    "SpinnerBlueCycle",
+    "SpinnerBlueLockIn",
+    "SpinnerBlueLockedPulse",
+    "SpinnerBlueLocked",
+
+    "SpinnerGreenCelebration",
+    "SpinnerGreenCycle",
+    "SpinnerGreenLockIn",
+    "SpinnerGreenLockedPulse",
+    "SpinnerGreenLocked",
+
+
+    "SpinnerPurpleCelebration",
+    "SpinnerPurpleCycle",
+    "SpinnerPurpleLockIn",
+    "SpinnerPurpleLockedPulse",
+    "SpinnerPurpleLocked",
+
+    "SpinnerRedCelebration",
+    "SpinnerRedCycle",
+    "SpinnerRedLockIn",
+    "SpinnerRedLockedPulse",
+    "SpinnerRedLocked",
+
+    "SpinnerYellowCelebration",
+    "SpinnerYellowCycle",
+    "SpinnerYellowLockIn",
+    "SpinnerYellowLockedPulse",
+    "SpinnerYellowLocked"
+
+  ],
+
+  "backpackTriggers" : [
+    "SpinnerBlueCelebration",
+    "SpinnerBlueHoldTarget",
+    "SpinnerBlueSelectTarget",
+    "SpinnerGreenCelebration",
+    "SpinnerGreenHoldTarget",
+    "SpinnerGreenSelectTarget",
+    "SpinnerPurpleCelebration",
+    "SpinnerPurpleHoldTarget",
+    "SpinnerPurpleSelectTarget",
+    "SpinnerRedCelebration",
+    "SpinnerRedHoldTarget",
+    "SpinnerRedSelectTarget",
+    "SpinnerYellowCelebration",
+    "SpinnerYellowHoldTarget",
+    "SpinnerYellowSelectTarget"
+
+  ]
+}

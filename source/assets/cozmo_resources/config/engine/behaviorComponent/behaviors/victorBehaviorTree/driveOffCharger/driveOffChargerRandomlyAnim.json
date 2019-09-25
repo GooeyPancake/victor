@@ -1,0 +1,45 @@
+// DONT delegate to this one directly. Use DriveOffChargerRandomly, which has extra casing for 
+// off treads + on charger. This is not enforced anywhere for now
+{
+  "behaviorID": "DriveOffChargerRandomlyAnim",
+  "behaviorClass": "DispatcherRandom",
+  
+  "behaviors" : [
+    {
+      "behavior": "DriveOffChargerLeftInternal",
+      "cooldown_s": 300.0,
+      "weight": 1.0
+    },
+    {
+      "behavior": "DriveOffChargerStraightInternal",
+      "cooldown_s": 300.0,
+      "weight": 1.0
+    },
+    {
+      "behavior": "DriveOffChargerRightInternal",
+      "cooldown_s": 300.0,
+      "weight": 1.0
+    }
+  ],
+
+  // TODO:(bn) emotion event?
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "DriveOffChargerLeftInternal",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": ["DriveOffChargerLeft"]
+    },
+    {
+      "behaviorName": "DriveOffChargerStraightInternal",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": ["DriveOffChargerStraight"]
+    },
+    {
+      "behaviorName": "DriveOffChargerRightInternal",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": ["DriveOffChargerRight"]
+    }
+  ]
+
+}

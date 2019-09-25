@@ -1,0 +1,117 @@
+{
+  "minCloudGetPeriod_s" : 7200,
+  "managedJdocs" :
+  {
+    "ROBOT_SETTINGS" : {
+      "docName" : "vic.RobotSettings",
+      "diskSavePeriod_s" : 0,
+      "warnOnCloudVersionLater" : true,
+      "errorOnCloudVersionLater" : false,
+      "cloudSavePeriod_s" : 0,
+      "cloudAbuseRules" : [
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 5,
+            "amountOfSeconds": 10
+          },
+          "cloudAbuseSavePeriod_s" : 10
+        },
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 11,
+            "amountOfSeconds": 30
+          },
+          "cloudAbuseSavePeriod_s" : 30
+        },
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 15,
+            "amountOfSeconds": 60
+          },
+          "cloudAbuseSavePeriod_s" : 120
+        }
+      ],
+      "resolveMethod" : "PULL_FROM_CLOUD",
+      "jdocFormatVersion" : 1,
+      "bodyOwnedByJdocManager" : false
+    },
+    "ROBOT_LIFETIME_STATS" : {
+      "docName" : "vic.RobotLifetimeStats",
+      "diskSavePeriod_s" : 600,
+      "warnOnCloudVersionLater" : false,
+      "errorOnCloudVersionLater" : true,
+      "cloudSavePeriod_s" : 86400,
+      "cloudAbuseRules" : [
+      ],
+      "resolveMethod" : "PUSH_TO_CLOUD",
+      "jdocFormatVersion" : 1,
+      "bodyOwnedByJdocManager" : true
+    },
+    "ACCOUNT_SETTINGS" : {
+      "docName" : "vic.AccountSettings",
+      "diskSavePeriod_s" : 0,
+      "warnOnCloudVersionLater" : false,
+      "errorOnCloudVersionLater" : false,
+      "cloudSavePeriod_s" : 0,
+      "cloudAbuseRules" : [
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 5,
+            "amountOfSeconds": 10
+          },
+          "cloudAbuseSavePeriod_s" : 10
+        },
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 11,
+            "amountOfSeconds": 30
+          },
+          "cloudAbuseSavePeriod_s" : 60
+        },
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 15,
+            "amountOfSeconds": 60
+          },
+          "cloudAbuseSavePeriod_s" : 300
+        }
+      ],
+      "resolveMethod" : "PULL_FROM_CLOUD",
+      "jdocFormatVersion" : 1,
+      "bodyOwnedByJdocManager" : false
+    },
+    "USER_ENTITLEMENTS" : {
+      "docName" : "vic.UserEntitlements",
+      "diskSavePeriod_s" : 0,
+      "warnOnCloudVersionLater" : false,
+      "errorOnCloudVersionLater" : false,
+      "cloudSavePeriod_s" : 0,
+      "cloudAbuseRules" : [
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 3,
+            "amountOfSeconds": 10
+          },
+          "cloudAbuseSavePeriod_s" : 10
+        },
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 7,
+            "amountOfSeconds": 30
+          },
+          "cloudAbuseSavePeriod_s" : 60
+        },
+        {
+          "recentOccurrence" : {
+            "numberOfTimes" : 15,
+            "amountOfSeconds": 60
+          },
+          "cloudAbuseSavePeriod_s" : 300
+        }
+      ],
+      "resolveMethod" : "PULL_FROM_CLOUD",
+      "jdocFormatVersion" : 1,
+      "bodyOwnedByJdocManager" : false
+    }
+  }
+}

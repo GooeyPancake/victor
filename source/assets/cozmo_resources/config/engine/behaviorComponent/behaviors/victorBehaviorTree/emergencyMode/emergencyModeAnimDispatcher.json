@@ -1,0 +1,31 @@
+{
+  "behaviorID" : "EmergencyModeAnimDispatcher",
+  "behaviorClass" : "DispatcherQueue",
+
+  "behaviors" : [
+    "EmergencyModeAnimInternal",
+    "CriticalTemperatureAnimInternal"
+  ],
+
+  "associatedActiveFeature": "NoFeature",
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "EmergencyModeAnimInternal",
+      "behaviorClass" : "AnimSequence",
+      "animTriggers": ["ChargerDockingSorryButLowBattery"],
+      "wantsToBeActivatedCondition" : {
+        "conditionType" : "BatteryLevel",
+        "targetBatteryLevel" : "Low"
+      }
+    },
+    {
+      "behaviorName" : "CriticalTemperatureAnimInternal",
+      "behaviorClass" : "AnimSequence",
+      "animTriggers": ["HighTemperatureWarningFace"],
+      "wantsToBeActivatedCondition" : {
+        "conditionType" : "HighTemperature"
+      }
+    }
+  ]
+}

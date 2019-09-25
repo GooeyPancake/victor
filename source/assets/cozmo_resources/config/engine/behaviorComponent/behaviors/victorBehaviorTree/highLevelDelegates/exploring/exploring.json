@@ -1,0 +1,38 @@
+{
+  "behaviorID": "Exploring",
+  "behaviorClass": "DispatcherStrictPriorityWithCooldown",
+
+  "interruptActiveBehavior": true,
+
+  "associatedActiveFeature": "Exploring",
+
+  "behaviors": [    
+    {
+      "behavior": "ReactToMotion",
+      "cooldown_s": 10.0
+    },
+    {
+      "behavior": "ExploringInternal",
+      "cooldown_s": 0.0
+    }
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "ExploringInternal",
+      "behaviorClass": "Exploring",
+
+      "allowNoCharger": true,
+
+      "minSearchRadius_m": 0.0,
+      "maxSearchRadius_m": 0.5,
+      "maxChargerDistance_m": 2.0,
+      "pAcceptKnownAreas": 0.4,
+
+      "motionProfile": {
+        "speed_mmps": 120.0,
+        "isCustom": true
+      }
+    }
+  ]
+}

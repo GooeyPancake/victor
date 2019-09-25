@@ -1,0 +1,32 @@
+{
+  "behaviorID" : "DevEventSequenceCapture",
+  "behaviorClass": "DevEventSequenceCapture",
+
+  // path to save the images on the robot relative to "<reourceCacheDir>/camera/images"
+  "save_path": "classes",
+
+  // class names to cycle through by raising lift, used as subdirs to above path when saving
+  "class_names": ["on_on", "off_off", "on_off", "off_on"],
+
+  // image quality: [1-100]:JPEG quality, -1: use PNG
+  "quality": 100,
+
+  // image save scale: any scale valid with ImageCache::StringToSize
+  "image_scale": "full",
+
+  // whether or not to use capacitive touch to trigger saving
+  // if 0, uses power button istead
+  "use_capacitive_touch": false,
+
+  // Time to wait after button press before recording pre-event data
+  "sequence_setup_time": 5.0,
+
+  // Time to capture data before event
+  "pre_event_capture_time": 5.0,
+
+  // Time to capture data after event
+  "post_event_capture_time": 5.0,
+
+  // Whether to randomly tilt the head upon starting sequence
+  "enable_random_head_tilt": true
+}

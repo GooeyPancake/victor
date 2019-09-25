@@ -1,0 +1,9 @@
+// This serves to define the user entitlements stored on the robot,
+// as well as their default values and possibly other information.
+{
+  "KICKSTARTER_EYES" :
+  {
+    "defaultValue": false,
+    "updateCloudOnChange" : true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "behaviorID": "ReactToNegative",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "ReactToNegative",
+
+  "respondToUserIntents":
+  [
+    {
+      "type": "imperative_negative"
+    },
+    {
+      "type": "imperative_scold"
+    }
+  ],
+
+  "animTriggers":
+  [
+    "Feedback_BadRobot"
+  ]
+}

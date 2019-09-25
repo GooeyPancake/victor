@@ -1,0 +1,7 @@
+{
+  "behaviorID": "HowOldAreYouCounting",
+  "behaviorClass": "CountingAnimation",
+  "associatedActiveFeature": "NoFeature",
+  "SlowLoopBeginSize": 1,
+  "SlowLoopEndSize": 1
+}

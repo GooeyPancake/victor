@@ -1,0 +1,137 @@
+{
+  "behaviorID" : "HeldInPalmResponses",
+  "behaviorClass" : "DispatcherStrictPriorityWithCooldown",
+
+  "associatedActiveFeature": "HeldInPalm",
+
+  "interruptActiveBehavior": true,
+  
+  "behaviors": [
+    {
+      "behavior": "ReactToJoltInPalm",
+      "cooldown_s": 0.0,
+      "linkedBehaviorTimer": "ReactToJoltInPalm",
+      "resetLinkedTimerOnDispatcherActivation": true
+    },
+    {
+      "behavior": "SleepInAirAnimLoopInternal",
+      "cooldown_s": 0.0
+    },
+    {
+      "behavior": "LookingNervousAnimLoopInternal",
+      "cooldown_s": 0.0
+    },
+    {
+      "behavior": "NestleAnimLoopInternal",
+      "cooldown_s": 10.0
+    },
+    {
+      "behavior": "ObservingLookAtFacesInAir",
+      "cooldown_s": 60.0
+    },
+    {
+      "behavior": "LookInPlaceHeadDownInAir",
+      "cooldown_s": 0.0
+    }
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "NestleAnimLoopInternal",
+      "behaviorClass" : "AnimSequence",
+      // Cooldown will handle how often the nestling animation repeats once
+      // it wants to be activated.
+      "num_loops"        : 1,
+      "animTriggers": ["HeldOnPalmNestling"],
+
+      "wantsToBeActivatedCondition": {
+        "conditionType": "BehaviorTimer",
+        "timerName": "ReactToJoltInPalm",
+        // Nestle in the user's palm after 3 minutes of held-in-palm
+        // activity with no jolts or shocks experienced.
+        "cooldown_s": 180.0
+      }
+      // NOTE(GB): Petting does not prevent the robot from continuing
+      // to nestle in the user's palm, that way when a robot is woken
+      // from sleep by a user petting, they will default back to nestling,
+      // since the robot is still "comfortable".
+    },
+    {
+      "behaviorName"     : "SleepInAirAnimLoopInternal",
+      "behaviorClass"    : "AnimGetInLoop",
+      
+      "getIn"            : "GoToSleepGetIn",
+      "loopAnimation"    : "GoToSleepSleeping",
+      "getOut"           : "WakeupGetout",
+      "loopEndCondition" : {
+        // Requires lower threshold than that of ReactToTouchPetting
+        // in order to trigger "gentle wake-up" animation
+        "conditionType" : "RobotTouched",
+        "minTouchTime" : 0.05
+      },
+      
+      // Force the get-out animation to play to completion, so that Vector
+      // continues playing the "WakeupGetout" animation even if
+      // ReactToTouchPetting wants to quickly force a deactivation.
+      "shouldForceLoopGetOutAnim"   : true,
+      "shouldCheckEndCondDuringAnim": true,
+      "lockTreads"                  : true,
+
+      // Go to "sleep" in the user's palm after 5 minutes of held-in-palm
+      // activity with no jolts or shocks experienced.
+      "wantsToBeActivatedCondition": {
+        "conditionType": "BehaviorTimer",
+        "timerName": "ReactToJoltInPalm",
+        "cooldown_s": 300.0
+      }
+    },
+    {
+      "behaviorName"  : "LookingNervousAnimLoopInternal",
+      "behaviorClass" : "AnimSequence",
+      // Cooldown will handle how often this nervous animation repeats once
+      // it wants to be activated.
+      "num_loops"        : 1,
+      "animTriggers"     : ["HeldOnPalmLookingNervous"],
+      
+      "wantsToBeActivatedCondition": {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "Compound",
+          "and": [
+            {
+              "conditionType": "RobotPitchInRange",
+              "minPitchThreshold_deg": -20.0,
+              "maxPitchThreshold_deg": 20.0
+            },
+            {
+              "conditionType": "RobotRollInRange",
+              "minRollThreshold_deg": -20.0,
+              "maxRollThreshold_deg": 20.0
+            }
+          ]
+        }
+      }
+    }
+  ],
+
+  "wantsToCancelSelfCondition": {
+    "conditionType": "Compound",
+    "or": [
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OffTreadsState",
+          "targetState": "InAir"
+        }
+      },
+      {
+        // The turn in place actions commanded by ObservingLookAtFacesInAir or
+        // LookInPlaceHeadDownInAir might cause the robot to rotate into a position where
+        // it could almost fall off the user's hand, so for now, stop all responses if more
+        // than a single cliff is detected.
+        "conditionType": "CliffDetected",
+        "numCliffDetectionsToTrigger": 2
+      }
+    ]
+  }
+}

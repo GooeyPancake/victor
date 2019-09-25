@@ -1,0 +1,15 @@
+{
+  "behaviorClass": "AttentionTransferIfNeeded",
+  "behaviorID": "IntentUnmatched",
+
+  "attentionTransferReason": "UnmatchedIntent",
+  "recentOccurrence": {
+    "numberOfTimes": 3,
+    "amountOfSeconds": 180.0
+  },
+
+  // if the recent occurance requirements above are met, the "look at device" behavior will trigger, otherwise
+  // this animation will play, otherwise the behavior will use the "look at device" animations
+  "animsIfNotRecent": ["VC_IntentNeutral"]
+  
+}

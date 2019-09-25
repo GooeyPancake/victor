@@ -1,0 +1,17 @@
+{
+  "behaviorClass": "PoweringRobotOff",
+  "behaviorID": "OnboardingPowerOff",
+  "associatedActiveFeature": "NoFeature",
+
+  "wantsToCancelSelfCondition": {
+    "conditionType": "TriggerWordPending"
+  },
+
+  "powerButtonHeldToActivate_ms" : 1,
+  "powerOnAnimName" : "anim_power_offon_01",
+  "powerOffAnimName" : "anim_power_onoff_01",
+
+  // since onboarding will change wake word behavior when an interruption (e.g., this behavior)
+  // runs, make sure it's not running simply by a button press, and wait for anim msg
+  "waitForAnimMsg": true
+}

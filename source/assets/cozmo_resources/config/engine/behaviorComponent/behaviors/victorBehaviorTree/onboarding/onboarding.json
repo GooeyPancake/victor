@@ -1,0 +1,63 @@
+{
+  "behaviorID": "Onboarding",
+  "behaviorClass": "OnboardingCoordinator",
+
+  "associatedActiveFeature": "Onboarding",
+
+  "phases" : [
+    {
+      // The Default phase is the one we initialize to and return to if the app disconnects
+      "phaseName" : "Default",
+      "phaseBehaviorID" : "OnboardingLookAtPhone",
+      // Note that the Default phase doesn't time out, global and AppDisconnect timeouts still apply
+      "phaseTimeout_s" : 0.0
+    },
+    {
+      "phaseName" : "LookAtPhone",
+      "phaseBehaviorID" : "OnboardingLookAtPhone",
+      "phaseTimeout_s" : 60.0
+    }, 
+    {
+      "phaseName" : "WakeUp",
+      "phaseBehaviorID" : "OnboardingWakeUp",
+      "phaseTimeout_s" : 60.0,
+      "allowCoordinatorPowerOff" : true
+    },
+    {
+      "phaseName" : "LookAtUser",
+      "phaseBehaviorID" : "OnboardingLookAtUser",
+      "phaseTimeout_s" : 120.0,
+      "allowCoordinatorPowerOff" : true
+    },
+    {
+      "phaseName" : "TeachWakeWord",
+      "phaseBehaviorID" : "OnboardingTeachWakeWord",
+      "phaseTimeout_s" : 300.0,
+      "allowCoordinatorPowerOff" : true
+    },
+    {
+      "phaseName" : "TeachComeHere",
+      "phaseBehaviorID" : "OnboardingTeachComeHere",
+      "phaseTimeout_s" : 300.0,
+      "allowCoordinatorPowerOff" : true
+    },
+    {
+      "phaseName" : "TeachMeetVictor",
+      "phaseBehaviorID" : "OnboardingTeachMeetVictor",
+      "phaseTimeout_s" : 300.0,
+      "allowCoordinatorPowerOff" : true
+    },
+    {
+      "phaseName" : "Emulate1p0WaitForVC",
+      "phaseBehaviorID" : "OnboardingEmulate1p0WaitForVC",
+      "phaseTimeout_s" : 60.0,
+      "allowCoordinatorPowerOff" : true
+    }
+  ],
+
+  "startTimeout_s" : 0.0, // Exit timeout if the app never triggers onboarding. 0.0 disables this timeout.
+  "completionTimeout_s" : 0.0, // Exit timeout after starting, regardless of phase/progression 
+  "appDisconnectTimeout_s" : 180.0, // Exit timeout from default phase if the App disconnects after starting onboarding
+  "idleTimeout_s" : 300.0, // Exit timeout from idle state after phase completion
+  "allowPowerOffFromIdle" : true // Should the power button work if we're idling outside any onboarding phase?
+}

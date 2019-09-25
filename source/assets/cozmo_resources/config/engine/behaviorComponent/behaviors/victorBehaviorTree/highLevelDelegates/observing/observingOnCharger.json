@@ -1,0 +1,43 @@
+{
+  "behaviorID" : "ObservingOnCharger",
+  "behaviorClass" : "DispatcherStrictPriorityWithCooldown",
+
+  "interruptActiveBehavior": true,
+  "linkScope": true,
+
+  "associatedActiveFeature": "ObservingOnCharger",
+  
+  "behaviors": [
+    {
+      "behavior": "WiggleBackOntoChargerFromPlatform",
+      "cooldown_s": 10.0,
+      "ignoreFastForward": true
+    },
+    {
+      "behavior": "ObservingOnChargerEyeContact",
+      "cooldown_s": 15.0
+    },
+    {
+      "behavior": "ReactToMotionOnCharger",
+      "cooldown_s": 0.0
+    },
+    {
+      "behavior": "ObservingOnChargerIdle",
+      "cooldown_s": 0.0
+    }
+  ],
+
+  "anonymousBehaviors" : [
+    {
+      "behaviorClass": "DispatcherPassThrough",
+      "behaviorName": "ReactToMotionOnCharger",
+
+      "wantsToBeActivatedCondition": {
+        "conditionType": "OnCharger"
+      },
+
+      "delegateID": "ReactToMotion"
+    }
+  ]
+}
+

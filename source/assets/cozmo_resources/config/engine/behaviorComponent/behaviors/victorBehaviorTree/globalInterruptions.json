@@ -1,0 +1,34 @@
+{
+  "behaviorID" : "GlobalInterruptions",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "interruptActiveBehavior": true,
+
+  "behaviors": [
+    "MandatoryPhysicalReactions",
+    "SDKDefault",
+    "TriggerWordDetected",
+    "SingletonWallTimeCoordinator",
+    "TimerUtilityCoordinator",
+    "WeatherResponses",
+    "TakeAPhotoCoordinator",
+    "ReactToRobotShaken",
+    "ReactToTouchPetting",
+    "BasicVoiceCommands", // these are simple voice commands that we want to ignore obstacles
+    "ReactToObstacle",
+    "InterruptingVoiceReactions",
+    "ChangeEyeColor",
+    "Volume",
+    "ReactToUnclaimedIntent",
+    "HeldInPalmDispatcher",
+    "WhileInAirDispatcher",
+    "ReactToPutDown",
+    "ReactToDarkness",
+    "GreetAfterLongTime", // autonomous - I think this should be higher priority than StayOnCharger--the magic moment is worth it (?)
+    "StayOnChargerUntilCharged", // delegate includes ReactToSoundAwake
+    "ReactToSoundAwake",
+    "DanceToTheBeatCoordinator", 
+    "ConfirmHabitat",
+    "HighLevelAI"
+  ]
+}

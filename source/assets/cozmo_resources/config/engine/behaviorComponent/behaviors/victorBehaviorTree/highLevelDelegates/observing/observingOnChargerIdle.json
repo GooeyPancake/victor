@@ -1,0 +1,39 @@
+{
+  "behaviorClass": "ObservingWithoutTurn",
+  "behaviorID": "ObservingOnChargerIdle",
+
+  "wantsToBeActivatedCondition": {
+    "conditionType": "OnCharger"
+  },
+  
+  "behaviorTimer": "ObservingOnCharger",
+  
+  "small_motion_period_s": {
+    "nodes": [
+      // x = time robot has been observing on the charger, in seconds
+      // y = period between small motions, in seconds (may be longer due to waiting for another anim to finish)
+      {
+        "x": 0.0,
+        "y": 0.5
+      },
+      {
+        "x": 5.0,
+        "y": 2.0
+      },
+      {
+        "x": 30.0,
+        "y": 10.0
+      },
+      {
+        "x": 60.0,
+        "y": 30.0
+      }
+    ]
+  },
+
+  "small_motion_period_random_factor": 0.3,
+
+  // multiply the current small motion period by these numbers to find how long to stay in a given state
+  "look_up_period_multiplier": 5,
+  "look_straight_period_multiplier": 2
+}

@@ -1,0 +1,14 @@
+{
+  "behaviorID" : "FindHomeForSleeping",
+  "behaviorClass": "DispatcherStrictPriority",
+  
+  "interruptActiveBehavior" : true,
+  
+  "behaviors" : [
+    "MandatoryPhysicalReactions",
+    // TODO:(bn) different in air reaction?
+    "EmergencyModeInAir",
+    "FindAndGoToHome"
+  ]
+  
+}

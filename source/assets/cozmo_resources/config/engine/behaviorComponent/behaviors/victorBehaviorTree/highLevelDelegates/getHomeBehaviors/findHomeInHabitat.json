@@ -1,0 +1,69 @@
+{
+  "behaviorClass": "FindHome",
+  "behaviorID": "FindHomeInHabitat",
+
+  "associatedActiveFeature": "FindHome",
+  
+  // Cannot be activated if we already know where a charger is and have seen it recently enough
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "not": {
+      "conditionType": "ObjectKnown",
+      "objectTypes": [ "Charger_Basic" ],
+      "maxAge_ms" : 300000 // cannot be activated if we've seen it in the past 5 minutes
+    }
+  },
+  
+  // Behavior should cancel itself if we see a charger while running
+  "wantsToCancelSelfCondition" : {
+    "conditionType" : "ObjectKnown",
+    "objectTypes" : [ "Charger_Basic" ],
+    "maxAge_ms" : 5000
+  },
+  
+  // Animation trigger for a single ~60 degree "search turn"
+  "searchTurnAnimTrigger" : "ChargerDockingSearchSingleTurn",
+  
+  // Animation that is played after the search turn while the robot is capturing images
+  // Note: This is only played if the mood is not "high stim"
+  "searchTurnWaitingForImagesAnimTrigger" : "ChargerDockingSearchWaitForImages",
+  
+  // Anim that is played after capturing images and prior to the next search turn
+  // Note: This is only played if the mood is not "high stim"
+  "searchTurnEndAnimTrigger" : "ChargerDockingSearchSingleTurnEnd",
+  
+  // Robot must sweep at least this angle while searching in place
+  // before moving to a new search location.
+  "minSearchAngleSweep_deg" : 300.0,
+  
+  // Maximum number of turn animations to play before moving
+  // to another location to search.
+  "maxSearchTurns" : 15,
+  
+  // Rolling window of time for keeping track of how many searches have been performed
+  // recently. Also for keeping track of the locations of recent searches. If we've
+  // searched at a location within this amount of time, we will _not_ search at that
+  // location again.
+  "recentSearchWindow_sec" : 3600.0, // Only want to allow one search
+  
+  // How many 'searches' to attempt in a short time window before giving up. One 'search'
+  // means spinning around in place and looking for the charger.
+  "maxNumRecentSearches" : 1,
+  
+  // these values are irrelevant in the habitat environment (we will not drive
+  // around looking for the charger, only spin in place)
+  "minDrivingDist_mm" : 0,
+  "maxDrivingDist_mm" : 400,
+  
+  // Enable to use exposure cycling while for searching for charger to improve chances
+  // of seeing it in difficult illumination (backlight, harsh sunlight).
+  // NOTE: numImagesToWaitFor (below) also should be increased to accommodate the cycling time.
+  "useExposureCycling" : true,
+  
+  // If using exposure cycling to find charger (above), we need to wait at least cycle_length * auto_exp_period frames
+  // Default is auto exposure every 5 frames and cycle length 3, meaning 15 frames.
+  "numImagesToWaitFor" : 15,
+  
+  "numSearchesBeforePlayingPostSearchAnim" : -1,
+  "postSearchAnimTrigger" : "Count"
+}

@@ -1,0 +1,22 @@
+{
+  "behaviorID" : "SingletonTimerAntic",
+  "behaviorClass"    : "DispatcherQueue",
+
+  "associatedActiveFeature": "TimerReminder",
+
+
+  "behaviors": [
+    "TurnTowardsLastFace",
+    "SingletonAnticShowClock"
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "TurnTowardsLastFace",
+      "behaviorClass" : "TurnToFace",
+      "associatedActiveFeature": "NoFeature"
+    }
+  ]
+
+
+}

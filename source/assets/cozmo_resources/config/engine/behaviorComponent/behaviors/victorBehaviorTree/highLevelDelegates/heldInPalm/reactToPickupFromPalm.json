@@ -1,0 +1,65 @@
+{
+  "behaviorID": "ReactToPickupFromPalm",
+  "behaviorClass" : "AnimGetInLoop",
+  
+  // TODO(GB): Change to corresponding held-on-palm pickup anim
+  "getIn"            : "HeldOnPalmPickupRelaxed",
+  // Maybe make some animation that keeps asking the user to put them
+  // back in the palm of their hand
+  "loopAnimation"    : "NeutralFace",
+  "getOut"           : "ReactToPutDown",
+  "loopEndCondition" : {
+    // If the robot is put down on its treads prior to any of the cancellation
+    // conditions below, play the get-out anim and then cancel the entire behavior
+    // to allow the ReactToPutDownFromPalm to be activated by the HeldInPalmDispatcher
+    "conditionType": "OffTreadsState",
+    "targetState": "OnTreads"
+  },
+  
+  "shouldCheckEndCondDuringAnim": true,
+  "lockTreads"       : false,
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType": "OffTreadsState",
+        "targetState": "InAir"
+      },
+      {
+        // A pick-up from the palm of the user is triggered only if at least 2
+        // of the robot's cliff sensors peak over the edge of the palm.
+        "conditionType": "CliffDetected",
+        "numCliffDetectionsToTrigger": 2
+      }
+    ]
+  },
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "Compound",
+    "or": [
+      {
+        // If the user just keeps holding the robot in the air, stop the animation
+        // loop without playing the get-out animation and let the HeldInPalmDispatcher
+        // cancel itself, which in turn will allow the WhileInAirDispatcher to
+        // re-activate and start playing the InAir animations again.
+        "conditionType": "TimerInRange",
+        "begin_s": 5.0
+      },
+      {
+        // Check whether the user returned the robot to the palm of their hand, and
+        // if so, then just kill this animation loop without playing the get-out
+        // animation, since the HeldInPalmDispatcher will just cycle back to the
+        // HeldInPalmResponses
+        "conditionType": "CliffDetected",
+        "shouldDetectNoCliffs": true,
+        // Prevent the behavior from exiting too quickly when the robot is held close
+        // to the ground. Allows time for tread state to update to OnTreads as robot
+        // is put down on ground again, instead of accidentally re-activating the
+        // HeldInPalmResponses due to a false-positive detection of being put back
+        // into a palm again.
+        "minDuration_ms": 1500
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "behaviorID": "LookOverThereVoiceCommand",
+  "behaviorClass": "FindFaceAndThen",
+
+  "associatedActiveFeature": "ReactToGazeDirection",
+
+  "respondToUserIntents" : [
+    { "type": "imperative_lookoverthere" }
+  ],
+
+  "timeUntilCancelFaceLooking_s": 2.0,
+  "timeUntilCancelFaceSearch_s": 10.0,
+  "searchForFaceBehavior": "ActiveLookForFaces",
+  "shouldLeaveChargerFirst": true,
+  "driveOffChargerBehavior": "DriveOffChargerStraight",
+
+  "behavior": "ReactToGazeDirectionSurface",
+  "timeUntilCancelFollowup_s": 15.0,
+
+  "useBodyDetector": true,
+  "additionalLookTimeIfSawBody_s": 3.0,
+  "additionalSearchTimeIfSawBody_s": 3.0,
+
+  "animWhenSeesFace": "FoundFace",
+  
+  "postBehaviorSuggestion": "Socialize"
+}

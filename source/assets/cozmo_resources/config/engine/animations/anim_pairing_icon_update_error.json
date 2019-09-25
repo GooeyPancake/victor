@@ -1,0 +1,10 @@
+{
+  "anim_pairing_icon_update_error": [
+    {
+      "animName": "pairing_icon_update_error",
+      "triggerTime_ms": 0.0,
+      "frameDuration_ms": 495,
+      "Name": "FaceAnimationKeyFrame"
+    }
+  ]
+}

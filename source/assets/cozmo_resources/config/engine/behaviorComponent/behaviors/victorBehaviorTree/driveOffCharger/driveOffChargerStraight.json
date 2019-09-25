@@ -1,0 +1,8 @@
+{
+  "behaviorID": "DriveOffChargerStraight",
+  "behaviorClass": "DriveOffCharger",
+
+  "associatedActiveFeature": "NoFeature",
+
+  "driveDirectionCues": ["straight"]
+}

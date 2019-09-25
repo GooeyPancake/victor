@@ -1,0 +1,46 @@
+{
+  "behaviorID"       : "BeQuietLoop",
+  "behaviorClass"    : "DispatcherStrictPriorityWithCooldown",
+
+  "interruptActiveBehavior": true,
+
+  "resetCooldownOnDeactivation": true,
+
+  "behaviors": [
+    {
+      "behavior"    : "ObservingHeadDownInternal",
+      "cooldown_s"  : 300.0, // how long it sleeps for
+      "cooldown_random_factor": 0.5
+    },
+    {
+      "behavior"    : "SleepingInternal",
+      "cooldown_s"  : 0.0
+    }
+  ],
+  
+  "anonymousBehaviors": [
+    {
+
+      "behaviorName"     : "ObservingHeadDownInternal",
+      "behaviorClass"    : "AnimSequence",
+      "animTriggers"     : ["ObservingIdleEyesOnly"],
+      "num_loops"        : 0,
+      "tracksToLock"     : ["HEAD_TRACK", "LIFT_TRACK", "BODY_TRACK"],
+      
+      "wantsToCancelSelfCondition": {
+        "conditionType": "TimerInRange",
+        "begin_s": 600.0 // this is how long before it falls asleep
+      }
+    },
+    {
+      "behaviorName"     : "SleepingInternal",
+      "behaviorClass"    : "AnimSequence",
+      "tracksToLock"     : ["HEAD_TRACK", "LIFT_TRACK", "BODY_TRACK"],
+
+      "animTriggers": [
+        "GoToSleepGetIn",
+        "GoToSleepSleeping"
+      ]
+    }
+  ]
+}

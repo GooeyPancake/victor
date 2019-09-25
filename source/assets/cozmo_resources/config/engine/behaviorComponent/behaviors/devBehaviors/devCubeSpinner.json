@@ -1,0 +1,15 @@
+{
+  "behaviorID" : "DevCubeSpinner",
+  "behaviorClass" : "FindCubeAndThen",
+
+  "followUpBehaviorID" : "devCubeSpinnerConnectionGate",
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "devCubeSpinnerConnectionGate",
+      "behaviorClass": "ConnectToCube",
+
+      "delegateBehaviorID": "VectorPlaysCubeSpinner"
+    }
+  ]
+}

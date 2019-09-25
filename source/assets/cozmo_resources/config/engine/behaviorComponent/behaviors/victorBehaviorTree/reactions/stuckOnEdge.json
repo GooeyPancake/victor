@@ -1,0 +1,39 @@
+{
+  "behaviorClass": "AskForHelp",
+  "behaviorID": "StuckOnEdge",
+  "associatedActiveFeature": "StuckOnEdge",
+  
+  "wantsToBeActivatedCondition": {
+    "conditionType": "StuckOnEdge"
+  },
+  
+  "wantsToCancelSelfCondition": {
+    "conditionType": "Compound",
+    "or": [
+      {
+        "conditionType": "Compound",
+        "and": [
+          {
+            "conditionType": "Compound",
+            "not": {
+              "conditionType": "InCalmMode"
+            }
+          },
+          {
+            "conditionType": "Compound",
+            "not": {
+              "conditionType": "StuckOnEdge"
+            }
+          }
+        ]
+      },
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OffTreadsState",
+          "targetState": "OnTreads"
+        }
+      }
+    ]
+  }
+}

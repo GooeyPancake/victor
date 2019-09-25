@@ -1,0 +1,61 @@
+{
+  "behaviorID": "HeldInPalmDispatcher",
+  "behaviorClass" : "DispatcherQueue",
+  
+  "associatedActiveFeature": "HeldInPalm",
+  
+  // NOTE: The InAir tread state requirement is enforced in WhileInAirDispatcher
+  "wantsToBeActivatedCondition": {
+    "conditionType": "Compound",
+    "and": [
+      {
+        "conditionType": "OffTreadsState",
+        "targetState": "InAir",
+        // TODO(GB): Is this still necessary? It's possible that during the initial
+        // pick-up from the ground the other conditions may be true (i.e. less than
+        // 2 cliff sensors are detecting cliffs).
+        "minTimeSinceChange_ms": 1000
+      },
+      {
+        "conditionType": "Compound",
+        "not": {
+          "conditionType": "OnCharger"
+        }
+      },
+      {
+        // No point in trying to look around if being held by body, rather than
+        // held in hand.
+        "conditionType": "CliffDetected",
+        "shouldDetectNoCliffs": true,
+        // Just before the robot is put back down on the ground (OnTreads), the
+        // robot sees no cliffs briefly while InAir, so to prevent a false positive
+        // triggering of this dispatcher, set a minimum duration for no cliffs to
+        // be detected WHILE the robot is InAir.
+        "minDuration_ms" : 3000
+      },
+      {
+        "conditionType": "FeatureGate",
+        "feature": "HeldInPalm",
+        "expected": true
+      }
+    ]
+  },
+  
+  // If the robot is put back down on the charging platform instead of the ground,
+  // cancel everything to skip the attempted FistBump behavior that would otherwise
+  // trigger after being put down.
+  "wantsToCancelSelfCondition": {
+    "conditionType": "OnCharger"
+  },
+
+  "behaviors": [
+    "InitialHeldInPalmReaction",
+    "HeldInPalmResponses",
+    // If the pick-up reaction times out, the entire dispatcher should as well. Therefore,
+    // no other behavior after this one should be able to run while InAir. That way the
+    // WhileInAirDispatcher can be allowed to [re-]activate, since the robot will still
+    // be being held in mid-air.
+    "ReactToPickupFromPalm",
+    "ReactToPutDownFromPalm"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "behaviorID": "ReactToLove",
+  "behaviorClass": "AnimSequence",
+
+  "emotionEventOnActivated": "RespondToShortVoiceCommand",
+  "associatedActiveFeature": "ReactToLove",
+
+  "respondToUserIntents":
+  [
+    {
+      "type": "imperative_love"
+    }
+  ],
+
+  "animTriggers":
+  [
+    "Feedback_ILoveYou"
+  ]
+}

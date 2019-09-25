@@ -1,0 +1,12 @@
+{
+  "behaviorID" : "DevTestPersonDetectorBehavior",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "interruptActiveBehavior": true,
+
+  "behaviors": [
+    "ReactToBody",
+    "Wait"
+  ]
+}
+

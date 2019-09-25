@@ -1,0 +1,17 @@
+{
+  "playpenFailAnim": [
+    {
+      "audioName": [
+        "Play__Robot_Vo__Gp_Explorer_Backup_Beep"
+      ],
+      "Name": "RobotAudioKeyFrame",
+      "volume": 1.0,
+      "audioEventId": [
+        1939604322
+      ],
+      "probability": 1.0,
+      "hasAlts": false,
+      "triggerTime_ms": 0
+    }
+  ]
+}

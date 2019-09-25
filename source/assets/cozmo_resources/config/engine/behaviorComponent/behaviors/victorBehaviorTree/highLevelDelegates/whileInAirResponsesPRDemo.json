@@ -1,0 +1,43 @@
+{
+  "behaviorID" : "WhileInAirResponsesPRDemo",
+  "behaviorClass" : "DispatcherRandom",
+
+  "wantsToBeActivatedCondition":  {
+    "conditionType": "FeatureGate",
+    "feature": "PRDemo",
+    "expected": true
+  },
+
+  "behaviors": [
+    {
+      "behavior": "ReactToAirLeftInternal",
+      "cooldown_s": 0.0,
+      "weight": 0.5
+    },
+    {
+      "behavior": "ReactToAirRightInternal",
+      "cooldown_s": 0.0,
+      "weight": 0.5
+    }
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName": "ReactToAirLeftInternal",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": ["ReactToOnLeftSideLoop"],
+      "num_loops": 1
+    },
+    {
+      "behaviorName": "ReactToAirRightInternal",
+      "behaviorClass": "AnimSequence",
+      "animTriggers": ["ReactToOnRightSideLoop"],
+      "num_loops": 1
+    }
+
+  ]
+
+
+
+  
+}

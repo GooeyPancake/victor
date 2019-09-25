@@ -1,0 +1,17 @@
+[
+  {
+    "pattern" : {
+        "onColors"                 : [[0, 255, 0, 255], [0, 255, 0, 255], [0, 255, 0, 255], [0, 255, 0, 255]],
+        "offColors"                : [[0, 0, 0, 0],         [0, 0, 0, 0],         [0, 0, 0, 0],         [0, 0, 0, 0]],
+        "onPeriod_ms"              : [100,100,100,100],
+        "offPeriod_ms"             : [0,0,0,0],
+        "transitionOnPeriod_ms"    : [100,100,100,100],
+        "transitionOffPeriod_ms"   : [500,500,500,500],
+        "offset"                   : [0,0,0,0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 700,
+    "patternDebugName" : "tapResponsePulse"
+  }
+]
+

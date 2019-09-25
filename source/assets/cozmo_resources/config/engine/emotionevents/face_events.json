@@ -1,0 +1,169 @@
+{
+  "emotionEvents" : [
+    {
+      "name": "LookAtFaceVerified",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Social",
+          "value" : 0.2
+        },
+        {
+          "emotionType" : "Happy",
+          "value" : 0.15
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.1
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 0.0
+          },
+          {
+            "x" : 30.0,
+            "y" : 0.5
+          },
+          {
+            "x" : 300.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "InteractWithNamedFace",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Social",
+          "value" : 0.8
+        },
+        {
+          "emotionType" : "Happy",
+          "value" : 0.5
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.4
+        }
+      ]
+    },
+    {
+      "name": "InteractWithUnnamedFace",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Social",
+          "value" : 0.6
+        },
+        {
+          "emotionType" : "Happy",
+          "value" : 0.35
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.2
+        }
+      ]
+    },
+    {
+      "name": "InteractWithFaceRetry",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Confident",
+          "value" : -0.1
+        }
+      ],
+      "repetitionPenalty": {
+        "nodes" : [
+          {
+            "x" : 0.0,
+            "y" : 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreetingSayName",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Social",
+          "value" : 0.6
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.5
+        },
+        {
+          "emotionType" : "Happy",
+          "value" : 0.5
+        }
+      ]
+    },
+    {
+      "name": "EyeContactReaction",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Social",
+          "value" : 0.8
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 0.55
+        }
+      ]
+    },
+    {
+      "name": "EnrolledNewFace",
+      "emotionAffectors" : [
+        {
+          "emotionType" : "Social",
+          "value" : 1.0
+        },
+        {
+          "emotionType" : "Stimulated",
+          "value" : 1.0
+        },
+        {
+          "emotionType" : "Happy",
+          "value" : 0.5
+        },
+        {
+          "emotionType" : "Confident",
+          "value" : 0.5
+        }
+      ]
+    },
+    {
+      "name": "DrivingToFace",
+      "emotionAffectors": [
+        {
+          "emotionType": "Social",
+          "value": 0.1
+        },
+        {
+          "emotionType": "Confident",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "name": "DriveToFaceSuccess",
+      "emotionAffectors": [
+        {
+          "emotionType": "Social",
+          "value": 0.4
+        },
+        {
+          "emotionType": "Happy",
+          "value": 0.7
+        },
+        {
+          "emotionType": "Confident",
+          "value": 0.3
+        }
+      ]
+    }
+  ]
+}

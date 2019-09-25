@@ -1,0 +1,47 @@
+{
+  "behaviorID": "InteractWithStaticCube",
+  "behaviorClass": "DispatcherStrictPriority",
+
+  "interruptActiveBehavior": false,
+  "actAsSelector": true,
+
+  "behaviors": [
+    "RollBlockIfNotVertical",
+    "RandomInteraction"
+  ],
+
+  "anonymousBehaviors":[
+    {
+      "behaviorName" : "RandomInteraction",
+      "behaviorClass" : "DispatcherRandom",
+
+      "behaviors" : [
+        {
+          "behavior" : "CubeSpinnerConnectionGate",
+          "cooldown_s" : 300.0,
+          "weight" : 0.1
+        },
+        {
+          "behavior" : "FetchCube",
+          "cooldown_s" : 900.0,
+          "weight" : 1.0
+        },
+        {
+          "behavior" : "FindCubeAndPlayKeepaway",
+          "cooldown_s" : 300.0,
+          "weight" : 1.0
+        },
+        {
+          "behavior" : "MoveCube",
+          "cooldown_s" : 300.0,
+          "weight" : 1.0
+        },
+        {
+          "behavior" : "PopAWheelie",
+          "cooldown_s" : 300.0,
+          "weight" : 1.0
+        }
+      ]
+    }
+  ]
+}

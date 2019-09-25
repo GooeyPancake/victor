@@ -1,0 +1,126 @@
+
+namespace CozmoAnim;
+
+table LiftHeight {
+  triggerTime_ms:uint;
+  durationTime_ms:uint;
+  height_mm:ubyte;
+  heightVariability_mm:ubyte = 0;
+}
+
+table ProceduralFace {
+  triggerTime_ms:uint;
+  faceAngle:float = 0.0;
+  faceCenterX:float = 0.0;
+  faceCenterY:float = 0.0;
+  faceScaleX:float = 1.0;
+  faceScaleY:float = 1.0;
+  leftEye:[float];
+  rightEye:[float];
+  scanlineOpacity:float = 1.0;
+}
+
+table HeadAngle {
+  triggerTime_ms:uint;
+  durationTime_ms:uint;
+  angle_deg:byte;
+  angleVariability_deg:ubyte = 0;
+}
+
+table AudioEventGroup {
+  eventIds:[uint];
+  volumes:[float];
+  probabilities:[float];
+}
+
+table AudioState {
+  stateGroupId:uint = 0;
+  stateId:uint = 0;
+}
+
+table AudioSwitch {
+  switchGroupId:uint = 0;
+  stateId:uint = 0;
+}
+
+table AudioParameter {
+  parameterID:uint = 0;
+  value:float = 0.0;
+  time_ms:uint = 0;
+  curveType:ubyte = 0;
+}
+
+table RobotAudio {
+  triggerTime_ms:uint;
+  eventGroups:[AudioEventGroup];
+  states:[AudioState];
+  switches:[AudioSwitch];
+  parameters:[AudioParameter];
+}
+
+table BackpackLights {
+  triggerTime_ms:uint;
+  durationTime_ms:uint;
+  Front:[float];
+  Middle:[float];
+  Back:[float];
+}
+
+table FaceAnimation {
+  triggerTime_ms:uint;
+  animName:string (required);
+  scanlineOpacity:float = 1.0;
+}
+
+table Event {
+  triggerTime_ms:uint;
+  event_id:string (required);
+}
+
+table BodyMotion {
+  triggerTime_ms:uint;
+  durationTime_ms:uint;
+  radius_mm:string (required);
+  speed:short;
+}
+
+table RecordHeading {
+  triggerTime_ms:uint;
+}
+
+table TurnToRecordedHeading {
+  triggerTime_ms:uint;
+  durationTime_ms:uint;
+  offset_deg:short = 0;
+  speed_degPerSec:short;
+  accel_degPerSec2:short = 1000;
+  decel_degPerSec2:short = 1000;
+  tolerance_deg:ushort = 2;
+  numHalfRevs:ushort = 0;
+  useShortestDir:bool = false;
+}
+
+table Keyframes {
+  LiftHeightKeyFrame:[LiftHeight];
+  ProceduralFaceKeyFrame:[ProceduralFace];
+  HeadAngleKeyFrame:[HeadAngle];
+  RobotAudioKeyFrame:[RobotAudio];
+  BackpackLightsKeyFrame:[BackpackLights];
+  FaceAnimationKeyFrame:[FaceAnimation];
+  EventKeyFrame:[Event];
+  BodyMotionKeyFrame:[BodyMotion];
+  RecordHeadingKeyFrame:[RecordHeading];
+  TurnToRecordedHeadingKeyFrame:[TurnToRecordedHeading];
+}
+
+table AnimClip {
+  Name:string;
+  keyframes:Keyframes;
+}
+
+table AnimClips {
+  clips:[AnimClip];
+}
+
+root_type AnimClips;
+

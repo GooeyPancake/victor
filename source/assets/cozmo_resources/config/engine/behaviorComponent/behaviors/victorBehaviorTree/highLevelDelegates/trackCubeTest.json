@@ -1,0 +1,12 @@
+{
+  "behaviorID": "TrackCubeTest",
+  "behaviorClass" : "DispatcherStrictPriority",
+
+  "interruptActiveBehavior": true,
+
+  "behaviors": [
+    "TrackCube",
+    "Wait"
+  ]
+}
+

@@ -1,0 +1,16 @@
+{
+  // prevent these animation triggers from logging DAS events
+  "blacklisted_animation_triggers": [
+    "NeutralFace",
+    "ObservingIdleEyesOnly",
+    "ObservingIdleWithHeadLookingStraight",
+    "ObservingIdleWithHeadLookingUp",
+    "ObservingLookStraight",
+    "ObservingLookUp"
+  ],
+
+  // only checked if the animation is played without an AnimationTrigger
+  "blacklisted_animation_names": [
+    
+  ]
+}

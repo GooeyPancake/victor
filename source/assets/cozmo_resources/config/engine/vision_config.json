@@ -1,0 +1,196 @@
+{
+  // VisionModes that need to be scheduled by default go here
+  // Basically things that are always running
+  "InitialModeSchedules" :
+  {  
+    // If a vision mode is not listed, it is scheduled to never run (might still be enabled)
+    // Specify either an array of bools indicating a specific schedule, or an integer
+    // value to process every Nth frame
+    "DetectingMarkers" : 4, // Remove with VIC-6838 
+    "AutoExposure"     : 5, // NOTE: Should probably be no more frequent than every 5th frame
+    "WhiteBalance"     : 5 // NOTE: Should probably be no more frequent than every 5th frame
+  },
+
+  "ColorImages" : true,        // Whether color images are enabled on startup (can still be toggled later)
+
+  "FaceAlbum" : "default",     
+
+  "FaceRecognition" :
+  {
+    "RunMode": "asynchronous"  // "synchronous" or "asynchronous"
+  },
+
+  "IlluminationDetector" :
+  {
+    "ClassifierConfigPath"       : "config/engine/vision/illuminationClassifier/illuminationClassifier.json",
+
+    "FeaturePercentileSubsample" : 8,    // Stride for building histogram to compute percentiles
+    "IlluminatedMinProbability"  : 0.85, // Min probability to result in 'Illuminated' class
+    "DarkenedMaxProbability"     : 0.15, // Max probability to result in 'Darkened' class
+    "AllowMovement"              : true  // Continue to run even if robot is moving
+  },
+
+  "ImageQuality" :
+  {
+    // Auto-exposure settings
+    "InitialExposureTime_ms"    : 31,    // Sent each time we request camera calibration
+    "TargetValue"               : 128,   // [0,255] - Try to make targetPercentile have this value
+    "TargetPercentile"          : 0.50,  // [0.0, 1.0]
+    "CyclingTargetValues"       : [5, 100, 250], // When "cycling" exposure is enabled, the target values to use [0,255]
+    "TooDarkValue"              : 20,    // "Too Dark" if HighPercentile is below this
+    "TooBrightValue"            : 230,   // "Too Bright" if LowPercentile is above this
+    "LowPercentile"             : 0.10,  // [0.0, 1.0]  (Near 0.0)
+    "HighPercentile"            : 0.90,  // [0.0, 1.0]  (Near 1.0)
+    "MaxChangeFraction"         : 0.0,   // [0.0, inf]  (Relative amount we can change current exposure/wb each update, zero disables)
+    "SubSample"                 : 3,     // >= 1
+    "MeterFromDetections"       : true,  // Base auto-exposure on detected markers, faces, etc, if any
+
+    "TimeBeforeErrorMessage_ms" :       3000,  // How long VisionSystem must detect "bad" quality before notifying game
+    "RepeatedErrorMessageInterval_ms" : 300000 // Time between error messages once triggered
+  },
+
+  "NumOpenCvThreads" : 0, // Number of threads to use with OpenCV. 0 means no threading according to docs. Only affects calls from VisionSystem thread.
+
+  "PerformanceLogging" :
+  {
+    "DropStatsWindowLength_sec"         : 30,  // How long to average dropped image stats
+    "TimeBetweenProfilerInfoPrints_sec" : 60,  // How often to print Profiler info messages to the logs
+    "TimeBetweenProfilerDasLogs_sec"    : 600  // How often to log Profiler DAS events
+  },
+
+  "PetTracker" :
+  {
+    "MaxPets"             : 4,    // Detectable/trackable at the same time
+    "MinFaceSize"         : 60,
+    "MaxFaceSize"         : 240,
+    "DetectionThreshold"  : 900,  // 0 to 1000
+    "InitialSearchCycle"  : 4,    // 1 to 45
+    "NewSearchCycle"      : 8,    // 5 to 45
+    "TrackLostCount"      : 2,    // Number of frames to continue searching for (and reporting) a lost pet
+    "TrackSteadiness"     : 15    // 10 to 30 in Percentage change required to actually update size/position
+  },
+
+  "MotionDetector" :
+  {
+  	"HorizontalSize"    : 0.3,    // Fraction of the width of the image to be used for peripheral motion detection (right and left)
+  	"VerticalSize"      : 0.3,    // Fraction of the height of the image to be used for peripheral motion detection (top)
+  	"IncreaseFactor"    : 500.0,  // The higher this number, the more sensitive is motion detection to motion
+  	"DecreaseFactor"    : 0.1,    // The higher this number, the more quickly motion detection forgets about motion
+  	"MaxValue"          : 3.0,    // The higher this value, the sooner peripheral motion detection will be triggered
+    "CentroidStability" : 0.6     // How quickly should peripheral motion detection track the source of motion.
+  },
+
+  "OverheadMap" :
+  {
+    "NumRows"          : 1000,    // Size of the overhead map. Bigger sizes do not impact computation, only memory
+    "NumCols"          : 1000
+  },
+
+  "GroundPlaneClassifier" :
+  {
+    "MaxDepth"            : 7,
+    "MinSampleCount"      : 10,
+    "TruncatePrunedTree"  : true,
+    "Use1SERule"          : true,
+    "PositiveWeight"      : 1.0,
+    "OnTheFlyTrain"       : false,
+    "FileOrDirName"       : "config/engine/vision/groundClassifier/deskClassifier.yaml"
+  },
+
+  "ImageCompositing" :
+  {
+    "percentileForMaxIntensity" : 0.99,
+    "imageReadyPeriod" : 4,
+    "numImageReadyCyclesBeforeReset" : 2
+  },
+
+  "NeuralNets" :
+  {
+    // How frequently to print or log events about timing
+    "ProfilingPrintFrequency_ms"     : 10000,
+    "ProfilingEventLogFrequency_ms"  : 30000,
+
+    //
+    // Model definitions:
+    //
+    "Models" : [
+      {
+        "modelType"           : "TFLite",
+        "networkName"         : "person_detector",
+        "graphFile"           : "dfp_victor_6x6_tiny_128x128_36b906234ae4405dbf479d42d87787da.tflite",
+        "memoryMapGraph"      : 0,
+        "labelsFile"          : "person-labels.txt",
+        "architecture"        : "custom",
+        "inputLayerName"      : "input_1",
+        "outputLayerNames"    : "output_node0",
+        "outputType"          : "binary_localization",
+        "numGridRows"         : 6,
+        "numGridCols"         : 6,
+        "useFloatInput"       : 1,
+        "useGrayscale"        : 0,
+        "inputWidth"          : 128,
+        "inputHeight"         : 128,
+        "inputScale"          : 127.5, // When input is float, data is first divided by scale and then shifted
+        "inputShift"          : -1,    // I.e.:  float_input = data / inputScale + inputShift
+        "minScore"            : 0.5,
+        "verbose"             : 0,
+        "pollPeriod_ms"       : 10,
+        "timeoutDuration_sec" : 10.0,
+        "benchmarkRuns"       : 0
+      },
+      {
+        "modelType"           : "TFLite",
+        "networkName"         : "hand_detector",
+        "graphFile"           : "hand_detector_fcde4ff411c44baa9e7184c733d3b943.tflite",
+        "memoryMapGraph"      : 0,
+        "labelsFile"          : "hand-labels.txt",
+        "architecture"        : "custom",
+        "inputLayerName"      : "input",
+        "outputLayerNames"    : "probabilities",
+        "outputType"          : "classification",
+        "useFloatInput"       : 1,
+        "useGrayscale"        : 0,
+        "inputWidth"          : 128,
+        "inputHeight"         : 128,
+        "inputScale"          : 1, // Scaling performed by the network
+        "inputShift"          : 0, //    "
+        "minScore"            : 0.5,
+        "verbose"             : 0,
+        "pollPeriod_ms"       : 10,
+        "timeoutDuration_sec" : 10.0,
+        "benchmarkRuns"       : 0
+      }
+    ]
+    
+    // // OBJECTNESS MODEL
+    // "ProfilingPrintFrequency_ms"     : 10000,
+    // "ProfilingEventLogFrequency_ms"  : 30000,
+    //
+    // //
+    // // Model definition:
+    // //
+    //
+    // // Standalone TF model
+    // "graphFile"                 : "objectness-mobilenet-v2-height-192-width-192-channels-3-05-2.11.pb", 
+    // "memoryMapGraph"            : 0,
+    // "labelsFile"                : "person-labels.txt", 
+    // "architecture"              : "custom",
+    // "inputLayerName"            : "input_1",
+    // "outputLayerNames"          : "output_node0",
+    // "outputType"                : "segmentation",
+    // "numGridRows"               : 6,
+    // "numGridCols"               : 6,
+    // "useFloatInput"             : 1,
+    // "useGrayscale"              : 0,
+    // "inputWidth"                : 192, 
+    // "inputHeight"               : 192, 
+    // "inputScale"                : 127.5, 
+    // "inputShift"                : -1, 
+    // "minScore"                  : 0.5,
+    // "verbose"                   : 1,
+    // "pollPeriod_ms"             : 10,
+    // "timeoutDuration_sec"       : 100.0,
+    // "visualizationDirectory"    : "objectnessResponseMap",
+    // "benchmarkRuns"             : 0
+  }
+}

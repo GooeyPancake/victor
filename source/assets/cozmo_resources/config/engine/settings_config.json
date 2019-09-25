@@ -1,0 +1,51 @@
+// This serves to define the settings stored on the robot,
+// as well as their default values and other information.
+{
+  "clock_24_hour" :
+  {
+    "defaultValue": false,
+    "updateCloudOnChange" : true
+  },
+  "eye_color" :
+  {
+    "defaultValue" : 0,
+    "updateCloudOnChange" : false
+  },
+  "default_location" :
+  {
+    "defaultValue" : "San Francisco, California, United States",
+    "updateCloudOnChange" : true
+  },
+  "dist_is_metric" :
+  {
+    "defaultValue" : false,
+    "updateCloudOnChange" : true
+  },
+  "locale" :
+  {
+    "defaultValue" : "en-US",
+    "updateCloudOnChange" : true
+  },
+  "master_volume" :
+  {
+    "defaultValue" : 4,
+    "updateCloudOnChange" : false
+  },
+  "temp_is_fahrenheit" :
+  {
+    "defaultValue" : true,
+    "updateCloudOnChange" : true
+  },
+  "time_zone" :
+  {
+    "defaultValue" : "America/Los_Angeles",
+    "updateCloudOnChange" : true
+  },
+  "button_wakeword" :
+  {
+    "defaultValue" : 0,
+    // if a user clears user data, alexa will be disabled by default, so it's
+    // not necessary to restore the robot value from the cloud
+    "updateCloudOnChange" : false
+  }
+}

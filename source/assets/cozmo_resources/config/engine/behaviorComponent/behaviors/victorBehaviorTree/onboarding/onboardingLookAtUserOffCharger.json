@@ -1,0 +1,40 @@
+{
+  // onboarding death stare
+  "behaviorID": "OnboardingLookAtUserOffCharger",
+  "behaviorClass": "FindFaceAndThen",
+  
+  // look for face/body in startup direction for 15-45 seconds
+  // if none is found, do a (distracting) search forever until a
+  // face is found, then once found, stare at the user forever and ever
+
+  "startsWithMicDirection": false,
+  "timeUntilCancelFaceLooking_s": 15.0,
+  "timeUntilCancelFaceSearch_s": 9999.0, // never end searching if no face is founs
+  "searchForFaceBehavior": "LookInPlaceHeadUp",
+
+  "behavior": "LookAtMeInternal",
+  "timeUntilCancelFollowup_s": 999999.0, // never end once found a face
+
+  "useBodyDetector": true,
+  "additionalLookTimeIfSawBody_s": 30.0,
+  "additionalSearchTimeIfSawBody_s": 30.0,
+
+  "animWhileSearching": "OnboardingLookAtUser",
+
+  // shouldnt be needed
+  "shouldLeaveChargerFirst": true, 
+  "driveOffChargerBehavior": "DriveOffChargerStraight",
+  
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "LookAtMeInternal",
+      "behaviorClass" : "LookAtMe",
+
+      // don't turn as much, so as to not move the motors as much, so as to hear VCs better
+      "panTolerance_deg": 15.0,
+
+      "animLoop": "OnboardingLookAtUser"
+    }
+  ]
+}
+

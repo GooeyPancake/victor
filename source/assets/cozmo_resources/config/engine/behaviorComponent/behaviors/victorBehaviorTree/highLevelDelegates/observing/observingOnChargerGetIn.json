@@ -1,0 +1,25 @@
+{
+  "behaviorID": "ObservingOnChargerGetIn",
+  "behaviorClass" : "DispatcherStrictPriorityWithCooldown",
+
+  "associatedActiveFeature": "ObservingOnCharger",
+
+  "interruptActiveBehavior": false,
+  "linkScope": true,
+  
+  "behaviors": [
+    {
+      "behavior": "ObservingOnChargerGetInInternal",
+      "cooldown_s": 10.0
+    }
+  ],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorClass": "AnimSequence",
+      "behaviorName": "ObservingOnChargerGetInInternal",
+
+      "animTriggers" : ["ObservingOnChargerGetIn"]
+    }
+  ]
+}

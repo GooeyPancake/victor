@@ -1,0 +1,30 @@
+{
+  "behaviorID" : "PlayWithCube",
+  "behaviorClass" : "DispatcherQueue",
+
+  "behaviors" : [
+    "DriveOffChargerCube",
+    "PlayWithCubeInternal",
+    "PutDownBlock"
+  ],
+
+  "resetTimers": ["PlayingWithCube"],
+
+  "anonymousBehaviors": [
+    {
+      "behaviorName" : "PlayWithCubeInternal",
+      "behaviorClass" : "FindCubeAndThen",
+      "associatedActiveFeature" : "FindCube",
+
+      "wantsToBeActivatedCondition": {
+        "conditionType" : "FeatureGate",
+        "feature" : "FindCube",
+        "expected" : true
+      },
+
+      "followUpBehaviorID" : "InteractWithStaticCube",
+
+      "postBehaviorSuggestion" : "Socialize"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "behaviorID" : "SingletonTimerAlreadySet",
+  "behaviorClass" : "DispatcherQueue",
+
+  "behaviors" : [
+    "SingletonICantDoThat",
+    "SingletonTimerAntic"
+  ]
+}

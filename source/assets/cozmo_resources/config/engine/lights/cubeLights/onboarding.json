@@ -1,0 +1,16 @@
+[
+  {
+    "pattern" : {
+        "onColors"                 : [[0, 255, 0, 255], [0, 255, 0, 255], [0, 255, 0, 255], [0, 255, 0, 255]],
+        "offColors"                : [[0, 255, 0, 255], [0, 255, 0, 255], [0, 255, 0, 255], [0, 255, 0, 255]],
+        "onPeriod_ms"              : [1000,1000,1000,1000],
+        "offPeriod_ms"             : [0,0,0,0],
+        "transitionOnPeriod_ms"    : [500,500,500,500],
+        "transitionOffPeriod_ms"   : [500,500,500,500],
+        "offset"                   : [0,0,0,0],
+        "rotate"                   : false
+    },
+    "duration_ms" : 0,
+    "patternDebugName" : "onboarding"
+  }
+]

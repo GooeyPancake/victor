@@ -1,0 +1,64 @@
+{
+  "behaviorClass" : "DispatcherStrictPriority",
+  "behaviorID" : "HabitatMutedDispatcher",
+
+  "interruptActiveBehavior": true,
+
+  "behaviors" : [
+    "HabitatDoATrickInternal",
+    "HabitatMutedVoiceCommandResponse",
+    "HabitatReactToHeldCube",
+    "CoordinateGlobalInterrupts"
+  ],
+
+  "anonymousBehaviors": [                                                       
+    {                                                                           
+      "behaviorName" : "HabitatDoATrickInternal",                                      
+      "behaviorClass" : "DispatcherQueue",                                     
+      "behaviors" : [ "HabitatVCFistBumpInternal" ],
+      "respondToUserIntents" : [
+        { 
+          "type" : "play_anytrick"
+        }
+      ],
+      "wantsToBeActivatedCondition" : {
+        "conditionType" : "RobotInHabitat"
+      },
+      "anonymousBehaviors" :[
+        {
+          "behaviorClass": "FistBump",
+          "behaviorName": "HabitatVCFistBumpInternal",
+          "abortIfNoFaceFound": false,
+          "maxTimeToLookForFace_s": 2.0
+        }
+      ],
+      "associatedActiveFeature": "FistBump"
+    },
+    {
+      "behaviorName" : "HabitatReactToHeldCube",
+      "behaviorClass" : "AnimSequence",
+      "associatedActiveFeature" : "CantDoThat",
+      "animTriggers": ["ICantDoThat"],
+      "wantsToBeActivatedCondition" : {
+        "conditionType": "Compound",
+        "and": [
+          {
+            "conditionType" : "RobotInHabitat"
+          },
+          {
+            "conditionType": "UserIsHoldingCube"
+          },
+          {
+            "conditionType": "ObjectKnown",
+            "objectTypes": ["Block_LIGHTCUBE1","Block_LIGHTCUBE2","Block_LIGHTCUBE3"],
+            "maxAge_ms" : 1000
+          },
+          {
+            "conditionType": "FeatureGate",
+            "feature": "ReactToHeldCube"
+          }
+        ]
+      }
+    }
+  ]
+}
