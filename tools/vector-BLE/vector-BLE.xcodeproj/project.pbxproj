@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D03C317236DE44C00A7332A /* Vector-req.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D03C315236DE44C00A7332A /* Vector-req.cpp */; };
 		3D54D88A2344243900275498 /* link.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D54D8892344243900275498 /* link.cpp */; };
 		3D54D89B2344299D00275498 /* Vector-BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D54D8992344299D00275498 /* Vector-BLE.m */; };
 		3D5EE2142345F6A4009C7450 /* CLAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EE2132345F6A4009C7450 /* CLAD.cpp */; };
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D03C315236DE44C00A7332A /* Vector-req.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Vector-req.cpp"; sourceTree = "<group>"; };
 		3D54D8862344243900275498 /* vector-BLE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "vector-BLE"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D54D8892344243900275498 /* link.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = link.cpp; sourceTree = "<group>"; };
 		3D54D8982344299C00275498 /* Vector-BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vector-BLE.h"; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				3D54D8892344243900275498 /* link.cpp */,
 				3D5EE21523460E50009C7450 /* utils.h */,
 				3D5EE2132345F6A4009C7450 /* CLAD.cpp */,
+				3D03C315236DE44C00A7332A /* Vector-req.cpp */,
 				3D54D8962344296F00275498 /* OS-X */,
 				3D54D8872344243900275498 /* Products */,
 				3D3172932345933F00772FE1 /* Frameworks */,
@@ -139,6 +142,7 @@
 			files = (
 				3D5EE2142345F6A4009C7450 /* CLAD.cpp in Sources */,
 				3D54D89B2344299D00275498 /* Vector-BLE.m in Sources */,
+				3D03C317236DE44C00A7332A /* Vector-req.cpp in Sources */,
 				3D54D88A2344243900275498 /* link.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
