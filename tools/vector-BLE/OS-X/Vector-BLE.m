@@ -46,7 +46,11 @@ static CBCharacteristic* vectorWrite;
 
 
 /** Invoked whenever a connection is succesfully created with the peripheral.
+<<<<<<< HEAD
  Discover available services on the peripheral
+=======
+    Discover available services on the peripheral
+>>>>>>> upstream/master
  */
 - (void) centralManager:(CBCentralManager *) central
    didConnectPeripheral:(CBPeripheral     *) peripheral
@@ -56,7 +60,11 @@ static CBCharacteristic* vectorWrite;
 
 
 /** Invoked whenever an existing connection with the peripheral is torn down.
+<<<<<<< HEAD
  Reset local variables
+=======
+    Reset local variables
+>>>>>>> upstream/master
  */
 - (void) centralManager:(CBCentralManager*) central
 didDisconnectPeripheral:(CBPeripheral*    ) aPeripheral
