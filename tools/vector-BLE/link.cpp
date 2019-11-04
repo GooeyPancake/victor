@@ -30,17 +30,12 @@ enum
     VBLE_solo    = 3<<6
 };
 
+/// A buffer to hold the outgoing message
 uint8_t out_buf[4+CLAD_MAX_SIZE];
+
+/// A pointer into the payload area of the message
 uint8_t* out_msg=out_buf+3;
 
-void LEU32_encode(void* buf, uint32_t v)
-{
-    uint8_t* _buf = (uint8_t*) buf;
-    *_buf++ = v&0xff; v>>=8;
-    *_buf++ = v&0xff; v>>=8;
-    *_buf++ = v&0xff; v>>=8;
-    *_buf++ = v&0xff; v>>=8;
-}
 
 #pragma mark credentials
 /// The credentials for communicating with vector
@@ -116,7 +111,7 @@ static void connRequest_recv(uint8_t const* msg, size_t size, uint8_t version)
     @param size    the number of bytes in the message
     @param version the format version of the message
  */
-static void disconnect_recv(uint8_t const* msg, size_t size, uint8_t version)
+__attribute__((weak)) void CLAD_disconnect(uint8_t const* msg, size_t size, uint8_t version)
 {
     (void) size;
     (void) msg;
@@ -280,7 +275,7 @@ void bleRecv(uint8_t const* frame, size_t length)
             return;
         case 0x11:
             // A close connection
-            disconnect_recv(msgBody, msgSize, msgVersion);
+            CLAD_disconnect(msgBody, msgSize, msgVersion);
             return;
         case 3:
             // A nonce message

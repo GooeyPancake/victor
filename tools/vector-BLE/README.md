@@ -17,8 +17,7 @@ The protocol is documented.  Other commands could be implemented
 * The SSH authorization is interesting.  It isn't clear if SSH is available on release firmware.  I didn't see anything like a ssh server in the file system images
 * The SDK proxy is interesting.  It would be nice to extend the regular Anki Vector SDK to allow this option
 
-The full protocol is documented in a write up called Vector-BLE.pdf in the Documents folder,
-and can be found in [Vector-TRM](http://randym.name/Vector-TRM.pdf)
+The full protocol is documented in a write up called Vector-TRM.pdf
 
 ### Prerequisites
 
