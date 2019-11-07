@@ -83,8 +83,6 @@ void CloudSession_req(char const* token, char const* clientName, char const* app
 }
 
 
-
-
 /** This is called to request Vector become a WIFI access point
     @param enable  0 to disable the WIFI access point, otherwuse to enable the
                 access point
@@ -108,3 +106,17 @@ void WiFi_AP_req(uint8_t enable)
     sendMsg(0x13,1);
 }
 
+
+#pragma mark --- OTA -----------------------------------------------------------
+
+/** This is called to request an Over The Air update
+    @param URL         The URL to download the firmware from
+ */
+void OTA_req(char const* URL)
+{
+    uint8_t length = strlen(URL);
+    out_msg[0] = length           ; // The length of the URL
+    memcpy(out_msg+1, URL, length); // The URL string
+    // Send a request for an OTA update
+    sendMsg(0xe, length+1);
+}

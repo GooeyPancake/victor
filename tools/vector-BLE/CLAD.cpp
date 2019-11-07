@@ -147,7 +147,7 @@ void fileDownload_recv(uint8_t const* msg, size_t size, uint8_t version)
     //  * check the packet number
     fwrite(msg+15, 1, length, logFile);
     
-    // see if e're done
+    // see if we're done
     if (pktNum == pktTotal)
     {
         fprintf(stdout, "log: file download complete.\n");
@@ -231,6 +231,38 @@ void WiFi_AP_recv(uint8_t const* msg, size_t size, uint8_t version)
 }
 
 
+#pragma mark --- OTA -----------------------------------------------------------
+/** This is called to interpret the OTA update response message
+    @param msg     the received bytes of a message
+    @param size    the number of bytes in the message
+    @param version the format version of the message
+ 
+    These may be selectable by log filter
+ */
+void OTA_recv(uint8_t const* msg, size_t size, uint8_t version)
+{
+    // Decode the fields
+    uint8_t  status   = msg[0];
+    uint64_t current  = LEU64_decode(msg+1);//  The number of bytes downloaded
+    uint64_t expected = LEU64_decode(msg+8);// The number of bytes expected to be downloaded
+
+    static char const* const statusMsgs[] = {"idle","unknown","in progress",
+        "complete", "rebooting", "error"};
+    
+    printf("OTA: (%llu of %llu downloaded): %s (%d) \n", current, expected, status<= 5?statusMsgs[status]:"unknown", status);
+    
+    // see if we're done
+    // The update has completed the download when the current number of bytes
+    // match the expected number of bytes.
+    if (current == expected)
+    {
+        //fprintf(stdout, "OTA: file download complete.\n");
+        if (1 == status||5 == status) exit(0);
+    }
+}
+
+
+
 #pragma mark --- CLAD interface ------------------------------------------------
 /** This is called to interpret the disconnect message
     @param msg     the received bytes of a message
@@ -285,6 +317,9 @@ void CLAD_interpret(uint8_t type, uint8_t const* msg, size_t size, uint8_t versi
             // response
             response_recv(msg, size, version);
             break;
+        case 0xf:
+            // OTA
+            OTA_recv(msg, size, version);
         default:
             break;
     }
@@ -334,12 +369,19 @@ void CLAD_nextStep()
         logFile = fopen(_argv[2],"w");
         log_req();
     }
+    // see if we should trigger an OTA download
+    else if (_argc == 3 && 0==strcasecmp(_argv[1], "ota"))
+    {
+        if (0 != _myState) return;
+        _myState = 1;
+        // download the logs
+        OTA_req(_argv[2]);
+    }
     else
     {
         exit(0);
     }
     // Todo:
-    // see if we should trigger an OTA download
     // see if we should try to enable SSH
     // WIFI ip address
     // WIFI scan

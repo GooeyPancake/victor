@@ -28,6 +28,9 @@ extern uint8_t* out_msg;
 /// This is used to map a 32-bit little endian to the native format
 #define LEU32_decode(p) (LEU16_decode(p)|((uint32_t)LEU16_decode(p+2)<<16))
 
+/// This is used to map a 32-bit little endian to the native format
+#define LEU64_decode(p) (LEU32_decode(p)|((uint64_t)LEU32_decode(p+4)<<32))
+
 
 /** This is used to encode a 16-bit number into the little endian order
     @param buf  The buffer to populate
@@ -60,6 +63,7 @@ inline void LEU32_encode(void* buf, uint32_t v)
     *_buf++ = v&0xff; v>>=8;
     *_buf++ = v&0xff; v>>=8;
 }
+
 
 /** A helper to convert ASCII hex to binary
     @param c characte to convert
@@ -118,4 +122,10 @@ extern void CloudSession_req(char const* token, char const* clientName, char con
     much of Cozmo's protocol.
  */
 extern void WiFi_AP_req(uint8_t enable);
+
+/** This is called to request an Over The Air update
+    @param URL         The URL to download the firmware from
+ */
+extern void OTA_req(char const* URL);
+
 #endif /* utils_h */
