@@ -52,7 +52,8 @@ python firmware/tools/extract.py firmware/dev/1.0.1.1768.ota /tmp/extracted_firm
 
 initramfs -- the boot ramdisk -- is a CPIO archive and can be extracted:
 
-```gunzip <initramfs|cpio -vid
+```sh
+gunzip <initramfs|cpio -vid
 ```
 
 The resulting sysfs image is an gzipped ext4 filesystem and can be mounted.
@@ -65,7 +66,8 @@ sudo ext4fuse /tmp/test/apq8009-robot-sysfs.img /tmp/mount -o allow_other,defer_
 
 Or the ext4 filesystem can be extracted to the local file system using [extfstools](https://github.com/nlitsme/extfstools)
 
-```ext2rd  /tmp/test/apq8009-robot-sysfs.img  ./:extractionPath
+```sh
+ext2rd  /tmp/test/apq8009-robot-sysfs.img  ./:extractionPath
 ```
 
 The resulting boot image is an android bootimage.
