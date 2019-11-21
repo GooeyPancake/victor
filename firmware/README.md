@@ -53,7 +53,7 @@ python firmware/tools/extract.py firmware/dev/1.0.1.1768.ota /tmp/extracted_firm
 The boot image is an Android boot image and can be extracted using [imgtool](http://newandroidbook.com/tools/imgtool.html).  The ramdisk is a CPIO archive and can be extracted:
 
 ```sh
-imgtool/i*l /tmp/test/apq8009-robot-boot.img extract
+imgtool /tmp/test/apq8009-robot-boot.img extract
 gunzip <extracted/ramdisk |cpio -vid
 ```
 
