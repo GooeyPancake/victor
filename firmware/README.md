@@ -50,12 +50,25 @@ You can use the [extract.py](tools/extract.py) script to decrypt and extract an 
 python firmware/tools/extract.py firmware/dev/1.0.1.1768.ota /tmp/extracted_firmware detail/keys/ota.pas
 ```
 
+The boot image is an Android boot image and can be extracted using [imgtool](http://newandroidbook.com/tools/imgtool.html).  The ramdisk is a CPIO archive and can be extracted:
+
+```sh
+imgtool /tmp/test/apq8009-robot-boot.img extract
+gunzip <extracted/ramdisk |cpio -vid
+```
+
 The resulting sysfs image is an ext4 filesystem and can be mounted.
 
 MacOS example:
 
 ```sh
 sudo ext4fuse /tmp/test/apq8009-robot-sysfs.img /tmp/mount -o allow_other,defer_permissions
+```
+
+Or the ext4 filesystem can be extracted to the local file system using [extfstools](https://github.com/nlitsme/extfstools)
+
+```sh
+ext2rd  /tmp/test/apq8009-robot-sysfs.img  ./:extractionPath
 ```
 
 The resulting boot image is an android bootimage.
