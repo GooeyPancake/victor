@@ -3179,7 +3179,6 @@ void target_serialno(byte *param_1)
   }
   pbVar2 = (byte *)FUN_8f60e1d0();
   snprintf(param_1,(byte **)&UNK_0000000d,&DAT_8f640bec,pbVar2);
-  return;
 }
 
 
@@ -3898,7 +3897,6 @@ void hsusb_clock_init(void)
     _panic(in_lr,"ASSERT FAILED at (%s:%d): %s\n",
                  "platform/msm8909/acpuclock.c",0x5e);
   }
-  return;
 }
 
 
@@ -4121,7 +4119,6 @@ void FUN_8f604e24(void)
 {
   DAT_8f661e98 = &PTR_s_sdc1_iface_clk_8f6582d0;
   DAT_8f661e9c = 0x1f;
-  return;
 }
 
 
@@ -9271,8 +9268,8 @@ LAB_8f60dc38:
                 if (((uint)pbVar18 & 0x30) != 0) {
                   pbVar19 = (byte *)mmc_set_hs200_mode(piVar6,ppbVar20,(int)pbVar12);
                   if (pbVar19 == (byte *)0x0) goto LAB_8f60d690;
-                  _dprintf((byte *)s_Failure_to_set_HS200_mode_for_Ca_8f642cc4,
-                               (byte *)piVar6[0xe],pbVar12,pbVar18);
+                  _dprintf("Failure to set HS200 mode for Card(RCA:%x)\n",
+                               (byte *)piVar6[0xe]);
                   goto LAB_8f60cff4;
                 }
                 pbVar13 = (byte *)(uint)*(byte *)(piVar6 + 10);
@@ -9288,8 +9285,7 @@ LAB_8f60dc38:
               if ((pbVar13[0xc4] & 0xc0) != 0) {
                 pbVar19 = (byte *)mmc_set_hs400_mode(piVar6,ppbVar20,pbVar12);
                 if (pbVar19 == (byte *)0x0) goto LAB_8f60d690;
-                _dprintf((byte *)s_Failure_to_set_HS400_mode_for_Ca_8f642c98,(byte *)piVar6[0xe]
-                             ,pbVar12,pbVar18);
+                _dprintf("Failure to set HS400 mode for Card(RCA:%x)\n",(byte *)piVar6[0xe]);
                 goto LAB_8f60cff4;
               }
               if (*(char *)((int)piVar6 + 0x2a) != '\0') goto LAB_8f60dc38;
@@ -13143,10 +13139,7 @@ void scm_check_boot_fuses(void)
 
 
 
-// WARNING: Removing unreachable block (ram,0x8f614b40)
-
 undefined4 FUN_8f614af8(void)
-
 {
   scm_check_boot_fuses();
   return DAT_8f664000;
@@ -15657,11 +15650,9 @@ LAB_8f6184a4:
 
 
 void FUN_8f6185cc(void)
-
 {
   boot_device = FUN_8f604588(_DAT_0005e02c);
   DAT_8f6594c0 = DAT_8f6594c0 | boot_device << 0x10;
-  return;
 }
 
 
@@ -15670,7 +15661,6 @@ undefined4 FUN_8f61861c(void)
   return boot_device;
 }
 
-//platform_boot_dev_isemmc
 /*
  * Return 1 if boot from emmc else 0
  */
@@ -17001,9 +16991,6 @@ uint FUN_8f61a9c8(undefined4 param_1,undefined4 param_2,int param_3)
 }
 
 
-
-// WARNING: Removing unreachable block (ram,0x8f61aacc)
-
 void FUN_8f61aa14(int param_1)
 
 {
@@ -17072,15 +17059,10 @@ void timer_set_oneshot(byte *param_1,int param_2,undefined4 param_3,int param_4,
     FUN_8f600428();
     return;
   }
-  return;
 }
 
 
-
-// WARNING: Removing unreachable block (ram,0x8f61acf8)
-
 void FUN_8f61aca0(undefined4 *param_1)
-
 {
   *param_1 = 0x74696d72;
   param_1[2] = 0;
@@ -17089,21 +17071,15 @@ void FUN_8f61aca0(undefined4 *param_1)
   param_1[4] = 0;
   param_1[5] = 0;
   param_1[6] = 0;
-  return;
 }
 
 
-
-// WARNING: Removing unreachable block (ram,0x8f61ad44)
-
 void FUN_8f61acfc(undefined4 param_1,int param_2,undefined4 param_3,undefined4 param_4)
-
 {
   if (param_2 == 0) {
     param_2 = 1;
   }
   timer_set_oneshot(param_1,param_2,0,param_3,param_4);
-  return;
 }
 
 
@@ -17265,8 +17241,6 @@ void FUN_8f61af90(void)
 }
 
 
-
-// WARNING: Removing unreachable block (ram,0x8f61b260)
 
 void FUN_8f61b1dc(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 {
@@ -17933,9 +17907,6 @@ void FUN_8f61bd64(undefined4 param_1,uint *param_2,undefined4 param_3,undefined4
   FUN_8f620508();
 }
 
-
-
-// WARNING: Removing unreachable block (ram,0x8f61bf54)
 
 undefined4 FUN_8f61bed0(undefined *param_1,uint param_2)
 {
@@ -19937,7 +19908,6 @@ void pm8x41_set_boot_done(void)
   
   uVar1 = REG_READ(SMBB_MISC_BOOT_DONE);
   REG_WRITE(SMBB_MISC_BOOT_DONE,~(~(byte)((uVar1 << 0x19) >> 0x18) >> 1));
-  return;
 }
 
 void pm8x41_get_pon_reason(void)
@@ -20111,7 +20081,6 @@ void FUN_8f61f940(void)
   
   uVar1 = REG_READ(0x1c046);
   REG_WRITE(0x1c046,(byte)uVar1 & 0x7f);
-  return;
 }
 
 
@@ -20435,10 +20404,6 @@ undefined * FUN_8f62007c(uint param_1)
   return puVar1;
 }
 
-
-
-// WARNING: Removing unreachable block (ram,0x8f620128)
-
 undefined4 FUN_8f6200c8(void)
 {
   FUN_8f61ad48((int)&DAT_8f679d30);
@@ -20446,7 +20411,6 @@ undefined4 FUN_8f6200c8(void)
     FUN_8f61f940();
     DAT_8f659eec = 1;
   }
-  return 1;
 }
 
 
@@ -20456,12 +20420,8 @@ undefined4 FUN_8f6200c8(void)
 void FUN_8f62012c(void)
 {
   FUN_8f61f940();
-  return;
 }
 
-
-
-// WARNING: Removing unreachable block (ram,0x8f620204)
 
 void FUN_8f620164(int param_1,byte *param_2)
 {
@@ -20470,7 +20430,6 @@ void FUN_8f620164(int param_1,byte *param_2)
     DAT_8f659eec = 0;
     FUN_8f61aca0((undefined4 *)&DAT_8f679d30);
     FUN_8f61acfc(&DAT_8f679d30,param_1,FUN_8f6200c8,0);
-    return;
   }
   _dprintf("vibrator already turn on\n",param_2,0,0);
   return;
@@ -38914,10 +38873,6 @@ LAB_8f63d368:
   return uVar1;
 }
 
-
-
-// WARNING: Removing unreachable block (ram,0x8f63d420)
-// WARNING: Removing unreachable block (ram,0x8f63d4c8)
 
 uint FUN_8f63d460(uint *param_1)
 
