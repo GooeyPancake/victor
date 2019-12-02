@@ -1,8 +1,8 @@
 # Decompiled files
 
 The files with ".orig" is what Ghidra spit out.
-The other ones are what i have annotated, fixed obtuse string references, get the variable and
-procedure names to hatch
+The other ones are what I have annotated, fixed obtuse string references, get the variable and
+procedure names to match likely original source.
 
 ## Files
 ABOOT.c/ABOOT.orig.c is decompiled from the ABOOT partition; it is the Android bootloader
@@ -35,4 +35,10 @@ settings with qemu,
 ## Snipes & Gripes
 Maybe I'm seeing things, but it looks aboot leaks resources when there are errors.
 
+The compiler/linker leaves a lot of dead code around.
+
+Ghidra occassionally screws up the decompile, e.g. getting the paramete order wrong, or strange dead code
+
 And the SBL uses "DENTAL PLAN!" as a magic cookie.
+
+
