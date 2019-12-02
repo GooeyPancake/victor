@@ -41903,7 +41903,6 @@ undefined4 FUN_0802222c(short *param_1)
 
 
 void FUN_08022244(void)
-
 {
   int iVar1;
   

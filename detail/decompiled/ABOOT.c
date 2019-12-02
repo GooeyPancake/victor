@@ -18010,7 +18010,6 @@ static void verify_signed_bootimg(uint32_t bootimg_addr, uint32_t bootimg_size)
     device.is_tampered = 0;
     auth_kernel_img = 1;
   }
-  return;
 }
 
 // boot_linux_from_mmc ?
