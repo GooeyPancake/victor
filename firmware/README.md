@@ -93,7 +93,7 @@ TODO: Downgrading Vector will likely be crucial for some exploit, we should put 
 <!-- markdownlint-disable no-emphasis-as-heading -->
 | NOTE: There is something weird about the extracted OTA file.
 | --- |
-**The [spriteSequences](assets/cozmo_resources/assets/sprites/spriteSequences) directory from an OTA file contains a few
+**The [spriteSequences](../source/assets/cozmo_resources/assets/sprites/spriteSequences) directory from an OTA file contains a few
 symlinks pointing to different system files present on vector, but are absolute and may properly resolve. That means you
 may mess up your system if you try to write to these files (especially as sudo).**
 
