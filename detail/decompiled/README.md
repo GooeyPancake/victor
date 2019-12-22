@@ -45,6 +45,8 @@ https://alephsecurity.com/2018/01/22/qualcomm-edl-2/
 With Vector the DEVINFO partition is all zeros, and there is /no code to read it/.  There is nothing that I can find in aboot
 that reads a partition and will put it into “fastboot" mode.  Maybe someone can find it.
 
+I also checked if anything else modifies the 'device' structure with these flags.  There isn’t anything that reads and populates ‘device’ struct where the program holds its working copy of is_unlocked, verity_mode etc.  I checked the underlying binary for all references to the variable and structure addresses, and addresses around them.
+
 ### GPIO bypass
 In most aboot a couple of keys (like volume up and down) are checked to see they are both pressed during boot.  If so,
 “boot_into_fastboot” is set, causing the code to skip the signature checks and do a “fastboot”.
