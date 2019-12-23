@@ -12,8 +12,14 @@ SBL1.c/SBL1.orig.c is decompiled from the SBL1 partition; it is the secondary bo
 RPM.orig.c is decompiled from the RPM partition; it is the resource/power manager?
 
 ## Resources
-The closest thing I found whose bootloader code matches the code above is in:
+Update: The source for Anki's aboot (modified from Qualcomm) and other modules is in:
+https://anki-vic-pubfiles.anki.com/license/prod/1.0.0/licences/OStarball.v160.tgz 
+{Credits to:   Melanie who posted it on discord in August, and Cyril who was able to bring the post to all of our attention}
+
+Past: The closest thing I found whose bootloader code matches the code above is in the following, and the decompiled code is annotated against it:
 https://git.szzt.com/yixing/ticai_src/blob/a616182007156a89e11cfcc9cba6fe8c6951d61c/LA.UM.5.6/LINUX/android/bootable/bootloader/lk/
+
+
 
 
 ## The differences between the pairs of files
